@@ -1,0 +1,18 @@
+{
+  "id": "pediatric-fever",
+  "category": "maternal-child",
+  "title": "Paediatric Fever / High Temperature in Children",
+  "severity": "acute",
+  "icon": "👶",
+  "color": "green",
+  "summary": "Content coming in Phase C.",
+  "steps": ["Content coming in Phase C."],
+  "warnings": ["Content coming in Phase C."],
+  "redFlags": ["Content coming in Phase C."],
+  "pharmacyGuidance": {
+    "helpful": [],
+    "avoid": [],
+    "askFor": []
+  },
+  "whenToGetHelp": "Content coming in Phase C."
+}
