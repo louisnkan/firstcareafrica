@@ -2,204 +2,267 @@ import Link from 'next/link'
 
 export default function HomePage() {
   return (
-    <div className="py-4">
+    <div style={{ paddingTop: '20px', paddingBottom: '20px' }}>
 
       {/* Hero */}
-      <div className="text-center mb-6 pt-2">
-        <h1 className="text-white mb-1">
+      <div style={{ textAlign: 'center', marginBottom: '28px', paddingTop: '8px' }}>
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '6px',
+          background: 'rgba(240,140,0,0.1)',
+          border: '1px solid rgba(240,140,0,0.25)',
+          borderRadius: '20px',
+          padding: '4px 12px',
+          marginBottom: '14px'
+        }}>
+          <span style={{ fontSize: '0.65rem', fontWeight: '700',
+            letterSpacing: '0.1em', textTransform: 'uppercase',
+            color: '#F08C00' }}>
+            Free · Works Offline · No Login
+          </span>
+        </div>
+        <h1 style={{ marginBottom: '10px', fontSize: '1.9rem' }}>
           Medical help when
-          <span className="text-red-500"> you need it most</span>
+          <span style={{
+            color: '#F08C00',
+            fontStyle: 'italic',
+            display: 'block'
+          }}> you need it most</span>
         </h1>
-        <p className="text-gray-400 text-sm">
-          Step-by-step guidance when doctors aren't available.
-          Works offline.
+        <p style={{
+          color: '#9BA8B5',
+          fontSize: '0.92rem',
+          maxWidth: '300px',
+          margin: '0 auto',
+          lineHeight: '1.6'
+        }}>
+          Trusted guidance when doctors aren't available,
+          hospitals are far, or help hasn't arrived yet.
         </p>
       </div>
 
-      {/* EMERGENCY — takes visual priority */}
-      <Link href="/emergency" className="block mb-4">
-        <div className="card-emergency block w-full text-left">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-4xl">🚨</span>
-            <span className="bg-red-800 text-red-200 text-xs 
-                             px-2 py-1 rounded-full font-medium">
-              CRITICAL
-            </span>
+      {/* EMERGENCY CARD */}
+      <Link href="/emergency" style={{ display: 'block', marginBottom: '12px', textDecoration: 'none' }}>
+        <div className="card-emergency" style={{ minHeight: '140px' }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            justifyContent: 'space-between',
+            marginBottom: '12px'
+          }}>
+            <span className="pulse-heart" style={{ fontSize: '2.5rem' }}>🚨</span>
+            <span style={{
+              background: 'rgba(0,0,0,0.25)',
+              color: 'rgba(255,255,255,0.85)',
+              fontSize: '0.62rem',
+              fontWeight: '700',
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              padding: '4px 10px',
+              borderRadius: '20px',
+              border: '1px solid rgba(255,255,255,0.15)'
+            }}>Critical</span>
           </div>
-          <h2 className="text-white text-xl font-bold mb-1">
-            Emergency
-          </h2>
-          <p className="text-red-200 text-sm">
-            Severe bleeding · Unconscious · Choking · 
-            Heart attack · Childbirth · Drowning
+          <h2 style={{
+            color: 'white',
+            fontSize: '1.5rem',
+            marginBottom: '6px',
+            fontFamily: "'DM Serif Display', serif"
+          }}>Emergency</h2>
+          <p style={{
+            color: 'rgba(255,255,255,0.75)',
+            fontSize: '0.82rem',
+            marginBottom: '16px',
+            lineHeight: '1.5'
+          }}>
+            Severe bleeding · Unconscious · Choking ·
+            Heart attack · Childbirth · Drowning · Head injury
           </p>
-          <div className="mt-3 bg-red-700 rounded-xl px-4 py-2 
-                          text-center text-white font-semibold 
-                          text-sm">
-            TAP FOR EMERGENCY HELP →
+          <div style={{
+            background: 'rgba(0,0,0,0.2)',
+            border: '1px solid rgba(255,255,255,0.15)',
+            borderRadius: '12px',
+            padding: '12px 16px',
+            textAlign: 'center',
+            color: 'white',
+            fontWeight: '700',
+            fontSize: '0.85rem',
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase'
+          }}>
+            Tap for Emergency Help →
           </div>
         </div>
       </Link>
 
-      {/* AI Triage — second most prominent */}
-      <Link href="/triage" className="block mb-4">
-        <div className="bg-gray-800 border border-gray-600 
-                        rounded-2xl p-4 block w-full text-left
-                        active:bg-gray-750 transition-colors">
-          <div className="flex items-center gap-3">
-            <span className="text-3xl">🔍</span>
+      {/* AI TRIAGE */}
+      <Link href="/triage" style={{ display: 'block', marginBottom: '24px', textDecoration: 'none' }}>
+        <div className="card-triage">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div className="icon-badge badge-purple">🔍</div>
             <div>
-              <h2 className="text-white font-bold text-lg">
+              <h3 style={{ color: '#F5F0E8', marginBottom: '3px' }}>
                 Describe Your Situation
-              </h2>
-              <p className="text-gray-400 text-sm">
-                Not sure what's wrong? Tell me your symptoms 
-                and I'll guide you.
+              </h3>
+              <p style={{ color: '#9BA8B5', fontSize: '0.82rem', lineHeight: '1.4' }}>
+                Not sure what's wrong? Describe your symptoms
+                and get structured guidance instantly.
               </p>
             </div>
           </div>
         </div>
       </Link>
 
-      {/* Section header */}
-      <h3 className="text-gray-400 text-xs font-semibold 
-                     uppercase tracking-wider mb-3 mt-2">
-        Medical Guidance
-      </h3>
+      {/* SECTION LABEL */}
+      <div className="section-label">Medical Guidance</div>
 
-      {/* Category grid */}
-      <div className="grid grid-cols-2 gap-3 mb-4">
-
-        <Link href="/category/acute" className="block">
-          <div className="card-acute h-full min-h-24">
-            <span className="text-2xl block mb-2">🤒</span>
-            <h3 className="font-bold text-sm mb-1">
+      {/* CATEGORY GRID */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '10px',
+        marginBottom: '10px'
+      }}>
+        <Link href="/category/acute" style={{ textDecoration: 'none' }}>
+          <div className="card-acute" style={{ height: '100%', minHeight: '110px' }}>
+            <div className="icon-badge badge-orange">🤒</div>
+            <h3 style={{ color: '#F5F0E8', fontSize: '0.9rem', marginBottom: '5px' }}>
               Acute Illness
             </h3>
-            <p className="text-orange-200 text-xs">
+            <p style={{ color: '#9BA8B5', fontSize: '0.75rem', lineHeight: '1.4' }}>
               Malaria · Typhoid · Fever · Chest pain
             </p>
           </div>
         </Link>
 
-        <Link href="/category/common" className="block">
-          <div className="card-common h-full min-h-24">
-            <span className="text-2xl block mb-2">💊</span>
-            <h3 className="font-bold text-sm mb-1">
+        <Link href="/category/common" style={{ textDecoration: 'none' }}>
+          <div className="card-common" style={{ height: '100%', minHeight: '110px' }}>
+            <div className="icon-badge badge-blue">💊</div>
+            <h3 style={{ color: '#F5F0E8', fontSize: '0.9rem', marginBottom: '5px' }}>
               Common Conditions
             </h3>
-            <p className="text-blue-200 text-xs">
+            <p style={{ color: '#9BA8B5', fontSize: '0.75rem', lineHeight: '1.4' }}>
               Cold · Infection · Headache · Diarrhoea
             </p>
           </div>
         </Link>
 
-        <Link href="/category/womens-health" className="block">
-          <div className="card-womens h-full min-h-24">
-            <span className="text-2xl block mb-2">🌸</span>
-            <h3 className="font-bold text-sm mb-1">
+        <Link href="/category/womens-health" style={{ textDecoration: 'none' }}>
+          <div className="card-womens" style={{ height: '100%', minHeight: '110px' }}>
+            <div className="icon-badge badge-purple">🌸</div>
+            <h3 style={{ color: '#F5F0E8', fontSize: '0.9rem', marginBottom: '5px' }}>
               Women's Health
             </h3>
-            <p className="text-purple-200 text-xs">
+            <p style={{ color: '#9BA8B5', fontSize: '0.75rem', lineHeight: '1.4' }}>
               Period pain · Discharge · Pregnancy signs
             </p>
           </div>
         </Link>
 
-        <Link href="/category/chronic" className="block">
-          <div className="card-chronic h-full min-h-24">
-            <span className="text-2xl block mb-2">🫀</span>
-            <h3 className="font-bold text-sm mb-1">
+        <Link href="/category/chronic" style={{ textDecoration: 'none' }}>
+          <div className="card-chronic" style={{ height: '100%', minHeight: '110px' }}>
+            <div className="icon-badge badge-teal">🫀</div>
+            <h3 style={{ color: '#F5F0E8', fontSize: '0.9rem', marginBottom: '5px' }}>
               Chronic Conditions
             </h3>
-            <p className="text-teal-200 text-xs">
-              Hypertension · Diabetes · Asthma · Sickle cell
+            <p style={{ color: '#9BA8B5', fontSize: '0.75rem', lineHeight: '1.4' }}>
+              Hypertension · Diabetes · Asthma
             </p>
           </div>
         </Link>
-
-        <Link href="/category/maternal-child" 
-              className="block col-span-2">
-          <div className="card-maternal">
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">👶</span>
-              <div>
-                <h3 className="font-bold text-sm mb-1">
-                  Maternal & Child Health
-                </h3>
-                <p className="text-green-200 text-xs">
-                  Newborn care · Child fever · 
-                  Breastfeeding · Dehydration
-                </p>
-              </div>
-            </div>
-          </div>
-        </Link>
-
       </div>
 
-      {/* Quick Reference */}
-      <Link href="/quick-reference" className="block mb-4">
-        <div className="bg-gray-800 border border-gray-700 
-                        rounded-2xl p-4 flex items-center gap-3
-                        active:bg-gray-750">
-          <span className="text-2xl">📋</span>
-          <div>
-            <h3 className="text-white font-bold text-sm">
-              Quick Reference
-            </h3>
-            <p className="text-gray-400 text-xs">
-              Normal vital signs · Drug doses · ORS recipe · 
-              Danger signs
-            </p>
+      {/* MATERNAL — full width */}
+      <Link href="/category/maternal-child"
+        style={{ display: 'block', marginBottom: '10px', textDecoration: 'none' }}>
+        <div className="card-maternal">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div className="icon-badge badge-green">👶</div>
+            <div>
+              <h3 style={{ color: '#F5F0E8', fontSize: '0.9rem', marginBottom: '3px' }}>
+                Maternal & Child Health
+              </h3>
+              <p style={{ color: '#9BA8B5', fontSize: '0.75rem', lineHeight: '1.4' }}>
+                Newborn care · Child fever · Breastfeeding · Dehydration
+              </p>
+            </div>
+            <span style={{ color: '#5C6E7E', marginLeft: 'auto',
+              fontSize: '1rem', flexShrink: 0 }}>→</span>
           </div>
-          <span className="text-gray-500 ml-auto">→</span>
         </div>
       </Link>
 
-      {/* Trust indicators */}
-      <div className="bg-gray-900 rounded-2xl p-4 mb-4">
-        <h3 className="text-white font-semibold text-sm mb-3">
-          About FirstCare Africa
-        </h3>
-        <div className="space-y-2">
-          <div className="flex items-start gap-2">
-            <span className="text-green-500 mt-0.5">✓</span>
-            <p className="text-gray-400 text-xs">
-              Based on universal medical guidelines and 
-              WHO-endorsed first aid protocols
-            </p>
+      {/* QUICK REFERENCE */}
+      <Link href="/quick-reference"
+        style={{ display: 'block', marginBottom: '28px', textDecoration: 'none' }}>
+        <div className="card-reference">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div className="icon-badge badge-amber">📋</div>
+            <div>
+              <h3 style={{ color: '#F5F0E8', fontSize: '0.9rem', marginBottom: '3px' }}>
+                Quick Reference
+              </h3>
+              <p style={{ color: '#9BA8B5', fontSize: '0.75rem', lineHeight: '1.4' }}>
+                Vital signs · Drug doses · ORS recipe · Danger signs
+              </p>
+            </div>
+            <span style={{ color: '#5C6E7E', marginLeft: 'auto',
+              fontSize: '1rem', flexShrink: 0 }}>→</span>
           </div>
-          <div className="flex items-start gap-2">
-            <span className="text-green-500 mt-0.5">✓</span>
-            <p className="text-gray-400 text-xs">
-              Works offline after first visit — 
-              no internet required
-            </p>
-          </div>
-          <div className="flex items-start gap-2">
-            <span className="text-green-500 mt-0.5">✓</span>
-            <p className="text-gray-400 text-xs">
-              Written for untrained individuals in 
-              low-resource settings
-            </p>
-          </div>
-          <div className="flex items-start gap-2">
-            <span className="text-green-500 mt-0.5">✓</span>
-            <p className="text-gray-400 text-xs">
-              Free forever. No account required. 
-              No data collected.
-            </p>
-          </div>
+        </div>
+      </Link>
+
+      <div className="divider" />
+
+      {/* TRUST SECTION */}
+      <div style={{ marginBottom: '24px' }}>
+        <div className="section-label" style={{ marginBottom: '16px' }}>
+          Why Trust FirstCare Africa
+        </div>
+        <div style={{
+          background: 'var(--bg-secondary)',
+          border: '1px solid var(--border)',
+          borderRadius: '16px',
+          padding: '4px 16px'
+        }}>
+          {[
+            ['⚕️', 'Based on WHO and universal first-aid protocols'],
+            ['📶', 'Works offline after first visit — no data needed'],
+            ['🌍', 'Written for untrained individuals in low-resource settings'],
+            ['🔒', 'No account, no tracking, no data collected. Ever.'],
+          ].map(([icon, text]) => (
+            <div key={text} className="trust-check">
+              <span style={{ fontSize: '0.95rem', marginTop: '1px',
+                flexShrink: 0 }}>{icon}</span>
+              <p style={{ color: '#9BA8B5', fontSize: '0.82rem',
+                lineHeight: '1.5', margin: 0 }}>{text}</p>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Medical review pending notice */}
-      <div className="bg-yellow-950 border border-yellow-800 
-                      rounded-xl p-3 mb-4">
-        <p className="text-yellow-400 text-xs text-center">
-          ⚕️ Content under medical review. 
-          Use professional judgment alongside this guidance.
+      {/* MEDICAL REVIEW NOTICE */}
+      <div style={{
+        background: 'rgba(240,140,0,0.06)',
+        border: '1px solid rgba(240,140,0,0.2)',
+        borderRadius: '14px',
+        padding: '12px 16px',
+        marginBottom: '8px',
+        display: 'flex',
+        gap: '10px',
+        alignItems: 'flex-start'
+      }}>
+        <span style={{ fontSize: '0.9rem', flexShrink: 0 }}>⚕️</span>
+        <p style={{
+          color: 'rgba(240,140,0,0.85)',
+          fontSize: '0.75rem',
+          lineHeight: '1.5',
+          margin: 0
+        }}>
+          Content currently under medical review.
+          Use professional judgment alongside this guidance
+          until review is complete.
         </p>
       </div>
 
