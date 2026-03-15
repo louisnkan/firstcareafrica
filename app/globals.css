@@ -2,140 +2,400 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
 @layer base {
-  /* Force mobile-optimized rendering */
+  :root {
+    --bg-primary: #0F1923;
+    --bg-secondary: #162030;
+    --bg-card: #1C2B3A;
+    --bg-card-hover: #1E3048;
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.15);
+    --text-primary: #F5F0E8;
+    --text-secondary: #9BA8B5;
+    --text-muted: #5C6E7E;
+    --accent-red: #E03131;
+    --accent-red-dark: #C92A2A;
+    --accent-amber: #F08C00;
+    --accent-amber-light: #FFD43B;
+    --accent-orange: #D4500A;
+    --accent-blue: #1971C2;
+    --accent-purple: #6741D9;
+    --accent-teal: #0C8599;
+    --accent-green: #2F9E44;
+    --grain-opacity: 0.035;
+  }
+
   html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-gray-950 text-gray-100;
-    font-family: -apple-system, BlinkMacSystemFont, 
-                 'Segoe UI', Roboto, sans-serif;
-    font-size: 17px;
-    line-height: 1.6;
-    /* Prevent overscroll bounce on iOS */
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
     overscroll-behavior: none;
+    /* Subtle grain texture */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
   }
 
-  /* Minimum tap target size — critical for emergency use */
   button, a {
-    min-height: 48px;
+    min-height: 44px;
     display: inline-flex;
     align-items: center;
   }
 
-  /* Remove tap highlight on mobile */
-  * {
-    -webkit-tap-highlight-color: transparent;
+  * { -webkit-tap-highlight-color: transparent; }
+
+  h1 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
   }
 
-  h1 { @apply text-2xl font-bold leading-tight; }
-  h2 { @apply text-xl font-semibold leading-snug; }
-  h3 { @apply text-lg font-semibold; }
+  h2 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
 }
 
 @layer components {
-  /* Emergency card — the most important UI element */
+
+  /* ── EMERGENCY CARD ─────────────────────────── */
   .card-emergency {
-    @apply bg-red-600 text-white rounded-2xl p-5
-           active:scale-95 transition-transform
-           cursor-pointer select-none;
-    min-height: 120px;
+    background: linear-gradient(135deg, #C92A2A 0%, #E03131 50%, #C92A2A 100%);
+    border: 1px solid rgba(255,100,100,0.3);
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+      0 4px 24px rgba(224, 49, 49, 0.35),
+      inset 0 1px 0 rgba(255,255,255,0.15);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
 
-  /* Category cards */
+  .card-emergency:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 12px rgba(224, 49, 49, 0.25);
+  }
+
+  /* Subtle shimmer on emergency card */
+  .card-emergency::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(255,255,255,0.04) 50%,
+      transparent 70%
+    );
+    animation: shimmer 4s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%) translateY(-100%); }
+    100% { transform: translateX(100%) translateY(100%); }
+  }
+
+  /* Heartbeat pulse on emergency icon */
+  .pulse-heart {
+    animation: heartbeat 2s ease-in-out infinite;
+    display: inline-block;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    14% { transform: scale(1.15); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.1); }
+    56% { transform: scale(1); }
+  }
+
+  /* ── CATEGORY CARDS ─────────────────────────── */
+  .card-base {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    cursor: pointer;
+    transition: transform 0.15s ease, 
+                background-color 0.15s ease,
+                border-color 0.15s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .card-base:active {
+    transform: scale(0.97);
+    background-color: var(--bg-card-hover);
+  }
+
   .card-acute {
-    @apply bg-orange-600 text-white rounded-2xl p-4
-           active:scale-95 transition-transform cursor-pointer;
+    @apply card-base;
+    border-top: 2px solid var(--accent-orange);
   }
 
   .card-common {
-    @apply bg-blue-600 text-white rounded-2xl p-4
-           active:scale-95 transition-transform cursor-pointer;
+    @apply card-base;
+    border-top: 2px solid var(--accent-blue);
   }
 
   .card-womens {
-    @apply bg-purple-600 text-white rounded-2xl p-4
-           active:scale-95 transition-transform cursor-pointer;
+    @apply card-base;
+    border-top: 2px solid var(--accent-purple);
   }
 
   .card-chronic {
-    @apply bg-teal-600 text-white rounded-2xl p-4
-           active:scale-95 transition-transform cursor-pointer;
+    @apply card-base;
+    border-top: 2px solid var(--accent-teal);
   }
 
   .card-maternal {
-    @apply bg-green-600 text-white rounded-2xl p-4
-           active:scale-95 transition-transform cursor-pointer;
+    @apply card-base;
+    border-top: 2px solid var(--accent-green);
   }
 
-  /* Step items on condition pages */
+  .card-reference {
+    @apply card-base;
+    border-top: 2px solid var(--accent-amber);
+  }
+
+  .card-triage {
+    background: linear-gradient(135deg, 
+      var(--bg-card) 0%, 
+      rgba(103, 65, 217, 0.15) 100%);
+    border: 1px solid rgba(103, 65, 217, 0.3);
+    border-radius: 16px;
+    padding: 18px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    box-shadow: 0 2px 12px rgba(103,65,217,0.1);
+  }
+
+  .card-triage:active { transform: scale(0.98); }
+
+  /* ── ICON BADGES ────────────────────────────── */
+  .icon-badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+  }
+
+  .badge-red    { background: rgba(224,49,49,0.2); }
+  .badge-orange { background: rgba(212,80,10,0.2); }
+  .badge-blue   { background: rgba(25,113,194,0.2); }
+  .badge-purple { background: rgba(103,65,217,0.2); }
+  .badge-teal   { background: rgba(12,133,153,0.2); }
+  .badge-green  { background: rgba(47,158,68,0.2); }
+  .badge-amber  { background: rgba(240,140,0,0.2); }
+
+  /* ── CONDITION PAGE COMPONENTS ──────────────── */
   .step-item {
-    @apply flex gap-3 p-4 bg-gray-800 rounded-xl mb-3;
+    display: flex;
+    gap: 14px;
+    padding: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    margin-bottom: 10px;
   }
 
   .step-number {
-    @apply bg-red-600 text-white rounded-full w-8 h-8
-           flex items-center justify-center font-bold
-           text-sm shrink-0;
+    background: var(--accent-red);
+    color: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    margin-top: 1px;
   }
 
-  /* Warning and red flag boxes */
   .warning-box {
-    @apply bg-yellow-900 border border-yellow-600 
-           rounded-xl p-4 mb-3;
+    background: rgba(240,140,0,0.1);
+    border: 1px solid rgba(240,140,0,0.3);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 10px;
   }
 
   .redflag-box {
-    @apply bg-red-950 border border-red-600 
-           rounded-xl p-4 mb-3;
+    background: rgba(224,49,49,0.08);
+    border: 1px solid rgba(224,49,49,0.3);
+    border-left: 3px solid var(--accent-red);
+    border-radius: 0 14px 14px 0;
+    padding: 16px;
+    margin-bottom: 10px;
   }
 
   .pharmacy-box {
-    @apply bg-blue-950 border border-blue-600 
-           rounded-xl p-4 mb-3;
+    background: rgba(25,113,194,0.08);
+    border: 1px solid rgba(25,113,194,0.25);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 10px;
   }
 
-  /* AI chat components */
+  /* ── AI COMPONENTS ──────────────────────────── */
+  .triage-input {
+    width: 100%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-strong);
+    border-radius: 14px;
+    padding: 16px;
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: none;
+    min-height: 110px;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  .triage-input:focus {
+    border-color: rgba(103,65,217,0.6);
+    box-shadow: 0 0 0 3px rgba(103,65,217,0.1);
+  }
+
+  .triage-input::placeholder { color: var(--text-muted); }
+
   .ai-response {
-    @apply bg-gray-800 rounded-xl p-4 mt-3;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+    margin-top: 12px;
+    animation: fadeInUp 0.3s ease;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 
   .ai-disclaimer {
-    @apply text-xs text-yellow-400 mt-2 
-           border-t border-gray-700 pt-2;
+    font-size: 0.72rem;
+    color: var(--accent-amber);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    line-height: 1.4;
   }
 
-  /* Triage input */
-  .triage-input {
-    @apply w-full bg-gray-800 border border-gray-600 
-           rounded-xl p-4 text-gray-100 text-base
-           focus:outline-none focus:border-blue-500
-           resize-none;
-    min-height: 100px;
-  }
-
-  /* Primary action button */
+  /* ── BUTTONS ────────────────────────────────── */
   .btn-primary {
-    @apply bg-red-600 text-white font-semibold 
-           rounded-xl px-6 py-3 w-full
-           active:bg-red-700 transition-colors
-           text-center justify-center;
+    background: var(--accent-red);
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 14px;
+    padding: 14px 24px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    transition: background 0.15s, transform 0.15s;
+    letter-spacing: 0.01em;
+  }
+
+  .btn-primary:active {
+    background: var(--accent-red-dark);
+    transform: scale(0.98);
   }
 
   .btn-secondary {
-    @apply bg-gray-700 text-white font-semibold
-           rounded-xl px-6 py-3 w-full
-           active:bg-gray-600 transition-colors
-           text-center justify-center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-strong);
+    color: var(--text-primary);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    border-radius: 14px;
+    padding: 14px 24px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    transition: background 0.15s;
   }
 
-  /* Medical disclaimer banner */
+  .btn-secondary:active { background: var(--bg-card-hover); }
+
+  /* ── UTILITY ────────────────────────────────── */
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    margin-top: 8px;
+  }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 20px 0;
+  }
+
   .disclaimer-banner {
-    @apply bg-gray-800 border border-gray-600 
-           rounded-xl p-3 text-xs text-gray-400 
-           text-center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .trust-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .trust-check:last-child { border-bottom: none; }
+
+  /* ── PAGE TRANSITIONS ───────────────────────── */
+  main {
+    animation: pageIn 0.25s ease;
+  }
+
+  @keyframes pageIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 }
