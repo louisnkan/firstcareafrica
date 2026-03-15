@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Force mobile-optimized rendering */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-gray-950 text-gray-100;
+    font-family: -apple-system, BlinkMacSystemFont, 
+                 'Segoe UI', Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    /* Prevent overscroll bounce on iOS */
+    overscroll-behavior: none;
+  }
+
+  /* Minimum tap target size — critical for emergency use */
+  button, a {
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Remove tap highlight on mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1 { @apply text-2xl font-bold leading-tight; }
+  h2 { @apply text-xl font-semibold leading-snug; }
+  h3 { @apply text-lg font-semibold; }
+}
+
+@layer components {
+  /* Emergency card — the most important UI element */
+  .card-emergency {
+    @apply bg-red-600 text-white rounded-2xl p-5
+           active:scale-95 transition-transform
+           cursor-pointer select-none;
+    min-height: 120px;
+  }
+
+  /* Category cards */
+  .card-acute {
+    @apply bg-orange-600 text-white rounded-2xl p-4
+           active:scale-95 transition-transform cursor-pointer;
+  }
+
+  .card-common {
+    @apply bg-blue-600 text-white rounded-2xl p-4
+           active:scale-95 transition-transform cursor-pointer;
+  }
+
+  .card-womens {
+    @apply bg-purple-600 text-white rounded-2xl p-4
+           active:scale-95 transition-transform cursor-pointer;
+  }
+
+  .card-chronic {
+    @apply bg-teal-600 text-white rounded-2xl p-4
+           active:scale-95 transition-transform cursor-pointer;
+  }
+
+  .card-maternal {
+    @apply bg-green-600 text-white rounded-2xl p-4
+           active:scale-95 transition-transform cursor-pointer;
+  }
+
+  /* Step items on condition pages */
+  .step-item {
+    @apply flex gap-3 p-4 bg-gray-800 rounded-xl mb-3;
+  }
+
+  .step-number {
+    @apply bg-red-600 text-white rounded-full w-8 h-8
+           flex items-center justify-center font-bold
+           text-sm shrink-0;
+  }
+
+  /* Warning and red flag boxes */
+  .warning-box {
+    @apply bg-yellow-900 border border-yellow-600 
+           rounded-xl p-4 mb-3;
+  }
+
+  .redflag-box {
+    @apply bg-red-950 border border-red-600 
+           rounded-xl p-4 mb-3;
+  }
+
+  .pharmacy-box {
+    @apply bg-blue-950 border border-blue-600 
+           rounded-xl p-4 mb-3;
+  }
+
+  /* AI chat components */
+  .ai-response {
+    @apply bg-gray-800 rounded-xl p-4 mt-3;
+  }
+
+  .ai-disclaimer {
+    @apply text-xs text-yellow-400 mt-2 
+           border-t border-gray-700 pt-2;
+  }
+
+  /* Triage input */
+  .triage-input {
+    @apply w-full bg-gray-800 border border-gray-600 
+           rounded-xl p-4 text-gray-100 text-base
+           focus:outline-none focus:border-blue-500
+           resize-none;
+    min-height: 100px;
+  }
+
+  /* Primary action button */
+  .btn-primary {
+    @apply bg-red-600 text-white font-semibold 
+           rounded-xl px-6 py-3 w-full
+           active:bg-red-700 transition-colors
+           text-center justify-center;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-700 text-white font-semibold
+           rounded-xl px-6 py-3 w-full
+           active:bg-gray-600 transition-colors
+           text-center justify-center;
+  }
+
+  /* Medical disclaimer banner */
+  .disclaimer-banner {
+    @apply bg-gray-800 border border-gray-600 
+           rounded-xl p-3 text-xs text-gray-400 
+           text-center;
+  }
+}
