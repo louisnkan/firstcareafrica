@@ -1,0 +1,48 @@
+{
+  "id": "broken-jaw",
+  "category": "emergency",
+  "title": "Broken Jaw / Facial Fracture",
+  "severity": "critical",
+  "icon": "🦷",
+  "color": "red",
+  "summary": "A suspected fracture of the jaw or facial bones following trauma, accident, or assault.",
+  "steps": [
+    "Keep the person as calm and still as possible. Do not move their head or neck unnecessarily.",
+    "If the person is conscious, tell them to keep their teeth gently together — this naturally supports the jaw.",
+    "Support the jaw from below with your hand or a folded cloth tied gently over the head and under the chin to hold it in place.",
+    "Check the airway first — can they breathe clearly? If they are gurgling or struggling to breathe, this is the priority over the jaw.",
+    "If there is bleeding inside the mouth, position them leaning slightly forward so blood drains out rather than back into the throat.",
+    "Do not give anything to eat or drink.",
+    "Do not attempt to realign or push the jaw back into place.",
+    "Keep them still and get to a hospital as quickly as possible."
+  ],
+  "warnings": [
+    "Never attempt to force the mouth open or closed.",
+    "Do not bind the jaw so tightly that it restricts breathing.",
+    "Do not give painkillers that require chewing.",
+    "If the person vomits, remove the jaw support immediately to prevent choking."
+  ],
+  "redFlags": [
+    "Person cannot breathe or is making gurgling sounds — airway is blocked, this is the immediate priority.",
+    "Teeth are severely misaligned or missing and embedded in soft tissue.",
+    "Person is losing consciousness.",
+    "Significant swelling is closing the throat.",
+    "Injury followed a high-impact accident — suspect spinal injury, do not move the neck."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Cold compress or ice wrapped in cloth to reduce swelling — apply gently, never directly to skin",
+      "Liquid paracetamol for pain if person can swallow safely"
+    ],
+    "avoid": [
+      "Aspirin — increases bleeding risk",
+      "Any tablet medication that requires chewing",
+      "Solid food of any kind"
+    ],
+    "askFor": [
+      "Sterile gauze to control mouth bleeding",
+      "Liquid pain relief only"
+    ]
+  },
+  "whenToGetHelp": "All jaw fractures require hospital treatment. This is not manageable at home. Get to the nearest facility with surgical capacity as soon as possible."
+}
