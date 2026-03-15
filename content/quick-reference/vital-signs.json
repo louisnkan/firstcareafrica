@@ -1,0 +1,31 @@
+{
+  "id": "vital-signs",
+  "category": "quick-reference",
+  "title": "Normal Vital Signs Reference",
+  "icon": "📋",
+  "color": "blue",
+  "data": {
+    "temperature": {
+      "normal": "36.1°C – 37.2°C (97°F – 99°F)",
+      "fever": "Above 38°C (100.4°F)",
+      "highFever": "Above 39.5°C (103°F)",
+      "dangerous": "Above 40°C (104°F) — act immediately"
+    },
+    "heartRate": {
+      "adult": "60–100 beats per minute",
+      "child1to12": "70–120 beats per minute",
+      "infant": "100–160 beats per minute"
+    },
+    "respiratoryRate": {
+      "adult": "12–20 breaths per minute",
+      "child": "20–30 breaths per minute",
+      "infant": "30–60 breaths per minute"
+    },
+    "bloodPressure": {
+      "normal": "Below 120/80 mmHg",
+      "elevated": "120–129 / below 80 mmHg",
+      "high": "130/80 mmHg or above",
+      "crisis": "Above 180/120 mmHg — emergency"
+    }
+  }
+}
