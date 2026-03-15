@@ -1,0 +1,18 @@
+{
+  "id": "common-cold",
+  "category": "common",
+  "title": "Upper Respiratory Tract Infection",
+  "severity": "common",
+  "icon": "🤧",
+  "color": "blue",
+  "summary": "Content coming in Phase C.",
+  "steps": ["Content coming in Phase C."],
+  "warnings": ["Content coming in Phase C."],
+  "redFlags": ["Content coming in Phase C."],
+  "pharmacyGuidance": {
+    "helpful": [],
+    "avoid": [],
+    "askFor": []
+  },
+  "whenToGetHelp": "Content coming in Phase C."
+}
