@@ -1,0 +1,18 @@
+{
+  "id": "hypertensive-crisis",
+  "category": "chronic",
+  "title": "Hypertensive Crisis / Dangerously High Blood Pressure",
+  "severity": "acute",
+  "icon": "🫀",
+  "color": "red",
+  "summary": "Content coming in Phase C.",
+  "steps": ["Content coming in Phase C."],
+  "warnings": ["Content coming in Phase C."],
+  "redFlags": ["Content coming in Phase C."],
+  "pharmacyGuidance": {
+    "helpful": [],
+    "avoid": [],
+    "askFor": []
+  },
+  "whenToGetHelp": "Content coming in Phase C."
+}
