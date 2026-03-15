@@ -1,0 +1,46 @@
+{
+  "id": "severe-bleeding",
+  "category": "emergency",
+  "title": "Severe Bleeding / Haemorrhage",
+  "severity": "critical",
+  "icon": "🩸",
+  "color": "red",
+  "summary": "Uncontrolled bleeding that will not stop on its own.",
+  "steps": [
+    "Stay as calm as you can. Panic makes hands shake and slows your thinking.",
+    "Press firmly on the wound with the cleanest cloth available — clothing, a towel, anything.",
+    "Do not remove the cloth once applied. If it soaks through, press more cloth on top.",
+    "Maintain firm, continuous pressure for a minimum of 10 full minutes without releasing.",
+    "If the wound is on an arm or leg, raise that limb above the level of the heart.",
+    "If bleeding is from a limb and will not stop after 10 minutes of pressure, tie a firm band of cloth above the wound — never on the neck, chest, or abdomen.",
+    "Keep the person lying down and still. Talk to them calmly to prevent shock.",
+    "Send someone for help immediately while you maintain pressure."
+  ],
+  "warnings": [
+    "Do not remove any object embedded in the wound — press around it instead.",
+    "Do not apply a tourniquet to the neck, chest, or abdomen under any circumstances.",
+    "Do not give the person anything to eat or drink — surgery may be required.",
+    "Do not release pressure to check the wound before 10 minutes have passed."
+  ],
+  "redFlags": [
+    "Blood is bright red and spurting rhythmically — arterial bleeding, extremely urgent.",
+    "Person becomes confused, pale, cold and clammy — signs of haemorrhagic shock.",
+    "Bleeding is from the neck, chest, or abdomen.",
+    "Bleeding follows a serious fall, accident, or impact to the head."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Sterile gauze or bandages to maintain pressure",
+      "Medical tape to secure dressing once bleeding slows"
+    ],
+    "avoid": [
+      "Do not apply any cream, powder, or home remedy to an actively bleeding wound",
+      "Avoid aspirin — it thins blood and worsens bleeding"
+    ],
+    "askFor": [
+      "Sterile wound dressings",
+      "Antiseptic solution for cleaning once bleeding is controlled"
+    ]
+  },
+  "whenToGetHelp": "This is a life-threatening emergency. Get to the nearest hospital or clinic immediately. Do not wait to see if bleeding improves on its own."
+}
