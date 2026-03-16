@@ -266,6 +266,137 @@ export default function HomePage() {
         </p>
       </div>
 
+{/* SHARE SECTION */}
+      <div style={{ marginTop: '8px', marginBottom: '8px' }}>
+        <div className="section-label" style={{ marginBottom: '14px' }}>
+          Share FirstCare Africa
+        </div>
+        <p style={{
+          color: '#9BA8B5',
+          fontSize: '0.8rem',
+          marginBottom: '14px',
+          lineHeight: '1.5'
+        }}>
+          Someone you know might need this. Share it — it could 
+          save a life.
+        </p>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '8px',
+          marginBottom: '10px'
+        }}>
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.%20Works%20offline.%20Free%20forever.%20https%3A%2F%2Ffirstcareafrica.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px',
+              background: 'rgba(37,211,102,0.1)',
+              border: '1px solid rgba(37,211,102,0.25)',
+              borderRadius: '12px',
+              padding: '12px',
+              textDecoration: 'none',
+              color: '#25D366',
+              fontSize: '0.82rem',
+              fontWeight: '600',
+              minHeight: '44px'
+            }}>
+            <span>💬</span> WhatsApp
+          </a>
+
+          {/* X / Twitter */}
+          <a
+            href="https://twitter.com/intent/tweet?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.%20Free%2C%20offline-capable%2C%20no%20login.%20Built%20for%20Africa.&url=https%3A%2F%2Ffirstcareafrica.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px',
+              background: 'rgba(255,255,255,0.05)',
+              border: '1px solid rgba(255,255,255,0.12)',
+              borderRadius: '12px',
+              padding: '12px',
+              textDecoration: 'none',
+              color: '#F5F0E8',
+              fontSize: '0.82rem',
+              fontWeight: '600',
+              minHeight: '44px'
+            }}>
+            <span>𝕏</span> Twitter/X
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffirstcareafrica.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px',
+              background: 'rgba(10,102,194,0.1)',
+              border: '1px solid rgba(10,102,194,0.25)',
+              borderRadius: '12px',
+              padding: '12px',
+              textDecoration: 'none',
+              color: '#0A66C2',
+              fontSize: '0.82rem',
+              fontWeight: '600',
+              minHeight: '44px'
+            }}>
+            <span>💼</span> LinkedIn
+          </a>
+
+          {/* Copy Link */}
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText(
+                'https://firstcareafrica.vercel.app'
+              )
+              alert('Link copied!')
+            }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px',
+              background: 'rgba(240,140,0,0.1)',
+              border: '1px solid rgba(240,140,0,0.25)',
+              borderRadius: '12px',
+              padding: '12px',
+              color: '#F08C00',
+              fontSize: '0.82rem',
+              fontWeight: '600',
+              cursor: 'pointer',
+              minHeight: '44px',
+              width: '100%'
+            }}>
+            <span>🔗</span> Copy Link
+          </button>
+        </div>
+
+        {/* Instagram note */}
+        <p style={{
+          color: '#5C6E7E',
+          fontSize: '0.72rem',
+          textAlign: 'center',
+          lineHeight: '1.5'
+        }}>
+          For Instagram: copy the link above and paste 
+          in your bio or story link sticker.
+        </p>
+      </div>
+
     </div>
   )
-}
+  }
+     
