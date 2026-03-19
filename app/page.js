@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ShareButton from '../components/ShareButton'
 
 export default function HomePage() {
   return (
@@ -356,32 +357,8 @@ export default function HomePage() {
             <span>💼</span> LinkedIn
           </a>
 
-          {/* Copy Link */}
-          <button
-            onClick={() => {
-              navigator.clipboard.writeText(
-                'https://firstcareafrica.vercel.app'
-              )
-              alert('Link copied!')
-            }}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '8px',
-              background: 'rgba(240,140,0,0.1)',
-              border: '1px solid rgba(240,140,0,0.25)',
-              borderRadius: '12px',
-              padding: '12px',
-              color: '#F08C00',
-              fontSize: '0.82rem',
-              fontWeight: '600',
-              cursor: 'pointer',
-              minHeight: '44px',
-              width: '100%'
-            }}>
-            <span>🔗</span> Copy Link
-          </button>
+{/* Copy Link */}
+          <ShareButton />
         </div>
 
         {/* Instagram note */}
