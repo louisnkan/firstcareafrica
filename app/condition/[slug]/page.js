@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import fs from 'fs'
 import path from 'path'
+import ConditionChat from '../../../components/ConditionChat'
 
 // Find a condition JSON from any category folder
 function getConditionData(slug) {
@@ -400,33 +401,12 @@ export default function ConditionPage({ params }) {
         </p>
       </div>
 
-      {/* AI FOLLOW-UP — placeholder for Phase D */}
-      <div style={{
-        background: 'rgba(103,65,217,0.08)',
-        border: '1px solid rgba(103,65,217,0.25)',
-        borderRadius: '16px',
-        padding: '16px',
-        marginBottom: '24px'
-      }}>
-        <p style={{
-          color: '#6741D9',
-          fontSize: '0.72rem',
-          fontWeight: '700',
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          marginBottom: '6px'
-        }}>
-          🤖 AI Follow-Up
-        </p>
-        <p style={{
-          color: '#9BA8B5',
-          fontSize: '0.82rem',
-          lineHeight: '1.5',
-          margin: 0
-        }}>
-          Have a question about this condition?
-          AI-powered follow-up coming in the next update.
-        </p>
+      {/* AI FOLLOW-UP — Phase D */}
+      <div style={{ marginBottom: '24px' }}>
+        <ConditionChat
+          conditionName={condition.title}
+          conditionCategory={condition.category}
+        />
       </div>
 
       {/* Disclaimer */}
