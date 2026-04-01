@@ -1,0 +1,50 @@
+{
+  "id": "breast-concerns",
+  "category": "womens-health",
+  "title": "Breast Pain, Lumps & Self-Examination",
+  "severity": "common",
+  "icon": "🫀",
+  "color": "purple",
+  "summary": "Most breast changes are benign but all new lumps, nipple changes, or persistent pain should be assessed by a doctor. Early detection of breast cancer dramatically improves outcomes.",
+  "steps": [
+    "Perform a self-examination every month, ideally a week after your period ends when breasts are least swollen and tender.",
+    "How to examine: stand in front of a mirror with arms at your side. Look for any changes in shape, size, or skin. Raise both arms above your head and look again. Look for any skin dimpling, puckering, or nipple changes.",
+    "Lie down to feel the breast tissue. Using the flat of the three middle fingers, make small circular movements covering the entire breast from armpit to centre of the chest, and up to the collarbone. Feel for any lumps, thickening, or hardness.",
+    "Check the nipple — gently squeeze to check for any discharge that you did not notice otherwise.",
+    "Check the armpit for any swollen lumps or nodes.",
+    "Cyclical breast pain — tenderness that worsens before your period and improves after — is very common and usually not a cause for concern. Evening primrose oil and reducing caffeine can help.",
+    "Non-cyclical breast pain that is constant or in one specific spot needs medical assessment.",
+    "If you find a lump: do not panic — most lumps are benign cysts or fibroadenomas. But all new lumps must be assessed by a doctor. Note when you found it, where it is, and whether it changes with your cycle."
+  ],
+  "warnings": [
+    "Do not ignore a new lump even if it is painless — most breast cancers are painless.",
+    "Do not delay seeking assessment because you are afraid — early detection is the most important factor in breast cancer survival.",
+    "Do not assume pain means cancer — breast pain is rarely caused by cancer.",
+    "Do not use unverified herbal treatments as a substitute for medical investigation."
+  ],
+  "redFlags": [
+    "A new lump or thickening in the breast or armpit that was not there before.",
+    "Skin dimpling, puckering, or an orange-peel texture on the breast.",
+    "Nipple changes — turning inward, changing shape, or a new rash around the nipple.",
+    "Blood-stained or clear spontaneous nipple discharge from one breast.",
+    "Change in the size or shape of one breast compared to the other.",
+    "Redness, warmth, and swelling of the breast in a non-breastfeeding woman — possible infection or inflammatory breast cancer.",
+    "Persistent pain in one specific spot that does not change with the menstrual cycle."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Evening primrose oil 3000mg daily — reduces cyclical breast pain",
+      "Well-fitting supportive bra — reduces mechanical breast pain significantly",
+      "Ibuprofen or paracetamol for temporary pain relief"
+    ],
+    "avoid": [
+      "Caffeine reduction helps many women with cyclical breast pain",
+      "High-fat diet is associated with worsened breast pain"
+    ],
+    "askFor": [
+      "Clinical breast examination at your nearest clinic",
+      "Ultrasound or mammogram if a lump is found — ask for a referral"
+    ]
+  },
+  "whenToGetHelp": "See a doctor or nurse for any new lump, nipple discharge, skin changes, or persistent one-sided pain. Do not wait. Breast cancer is treatable, especially when found early. Clinical examination and imaging are the only reliable ways to assess a breast change."
+}
