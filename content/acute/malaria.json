@@ -1,0 +1,57 @@
+{
+  "id": "malaria",
+  "category": "acute",
+  "title": "Suspected Malaria",
+  "severity": "acute",
+  "icon": "🦟",
+  "color": "orange",
+  "summary": "A parasitic infection transmitted by mosquito bites. The most common cause of fever in Sub-Saharan Africa. Highly treatable when caught early but fatal if delayed.",
+  "steps": [
+    "Suspect malaria in anyone with fever, chills, and flu-like symptoms in a malaria-endemic area — especially if symptoms began 7 to 30 days after a mosquito bite.",
+    "Classic symptoms: sudden fever with sweating and chills that come in cycles, severe headache, muscle aches, nausea and vomiting, extreme tiredness, and sometimes vomiting or diarrhoea.",
+    "Test before treating if a rapid diagnostic test (RDT) is available at a pharmacy or clinic. A positive result confirms malaria. A negative result does not completely rule it out if symptoms are strong.",
+    "For uncomplicated malaria in adults and children over 5kg: the first-line treatment in most of Africa is Artemether-Lumefantrine (Coartem or Lonart). Take exactly as directed — completing the full course is critical.",
+    "Take antimalarials with food or milk — they absorb better with fat and cause less nausea.",
+    "Rest completely. Malaria causes severe fatigue and physical exertion worsens the illness.",
+    "Treat fever with paracetamol. Keep the person cool with a damp cloth on the forehead and armpits.",
+    "Push fluids aggressively — water, oral rehydration solution, and light soups. Malaria causes significant dehydration especially in children.",
+    "Monitor closely for danger signs every few hours, especially in children under 5."
+  ],
+  "warnings": [
+    "Never give aspirin to children under 16 with malaria fever — risk of Reye syndrome.",
+    "Do not stop antimalarial treatment early even if you feel better — incomplete courses cause resistance and relapse.",
+    "Malaria in pregnancy is significantly more dangerous — always seek medical care.",
+    "Chloroquine resistance is widespread in Africa — it is no longer a reliable first-line treatment in most regions.",
+    "Do not rely on traditional remedies as a substitute for proven antimalarial medication."
+  ],
+  "redFlags": [
+    "Confusion, disorientation, or loss of consciousness — cerebral malaria, immediately life-threatening.",
+    "Seizures — especially in children.",
+    "Inability to stand, sit, or walk.",
+    "Breathing difficulty or very fast breathing.",
+    "Child cannot feed or keep any fluids down.",
+    "Jaundice — yellow eyes or skin.",
+    "Very dark or black urine — blackwater fever, a serious complication.",
+    "No improvement after 24 hours of correct treatment.",
+    "Malaria confirmed in a pregnant woman."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Artemether-Lumefantrine (Coartem, Lonart) — first-line treatment, ensure correct dosing by weight",
+      "Paracetamol for fever — do not exceed recommended dose",
+      "Oral rehydration salts for hydration",
+      "Rapid Diagnostic Test (RDT) kit to confirm diagnosis"
+    ],
+    "avoid": [
+      "Aspirin in children under 16",
+      "Chloroquine as first-line treatment — widespread resistance in Africa",
+      "Stopping antimalarial course early"
+    ],
+    "askFor": [
+      "Malaria RDT test before buying medication",
+      "Weight-appropriate dosing for children — dosing is by body weight not age",
+      "Artemether-Lumefantrine — confirm availability and correct formulation"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately if the person has any danger signs listed above, if they cannot keep medication down, if there is no improvement after 24 hours of treatment, or if malaria is confirmed in a child under 5 or a pregnant woman. Severe malaria requires injectable treatment that is only available at a health facility."
+}
