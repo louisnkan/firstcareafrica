@@ -143,17 +143,48 @@ export async function POST(request) {
   } catch (error) {
     console.error('Chat API error:', error)
 
-    // Don't expose internal errors to client
+    // Identify specific Anthropic errors
+    const errorMessage = error?.message || ''
+    const errorStatus = error?.status || 500
+
+    if (errorStatus === 401 || errorMessage.includes('auth')) {
+      return Response.json(
+        {
+          error: 'api_error',
+          message: 'AI guidance is temporarily unavailable. The fixed first-aid steps above are still accurate and reliable.'
+        },
+        { status: 503 }
+      )
+    }
+
+    if (errorStatus === 429 || errorMessage.includes('rate')) {
+      return Response.json(
+        {
+          error: 'rate_error',
+          message: 'Too many requests right now. Please wait 60 seconds and try again.'
+        },
+        { status: 429 }
+      )
+    }
+
+    if (errorStatus === 529 || errorMessage.includes('overload')) {
+      return Response.json(
+        {
+          error: 'overload_error',
+          message: 'AI is busy right now. Please try again in a moment. The steps above are still fully accurate.'
+        },
+        { status: 503 }
+      )
+    }
+
     return Response.json(
       {
         error: 'server_error',
-        message: 'Something went wrong. Please try again in a moment.'
+        message: 'AI guidance is temporarily unavailable. Please use the step-by-step guidance above.'
       },
       { status: 500 }
     )
   }
-}
-
 // Block non-POST requests
 export async function GET() {
   return Response.json(
