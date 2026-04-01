@@ -1,18 +1,44 @@
 {
   "id": "drowning",
   "category": "emergency",
-  "title": "Drowning/Near-Drowning",
+  "title": "Drowning / Near-Drowning",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "🌊",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "Drowning can be silent and fast. A person who has been submerged in water, even if conscious and breathing, requires immediate assessment.",
+  "steps": [
+    "Ensure your own safety first. Do not jump into fast-moving or deep water unless you are a strong swimmer. Throw a rope, extend a branch, or use a flotation object.",
+    "Once the person is out of the water, lay them flat on a firm surface.",
+    "Check for response — shout their name and tap their shoulders.",
+    "Check for breathing — tilt the head back, lift the chin, look for chest movement, listen for breath, feel for air for up to 10 seconds.",
+    "If not breathing: begin CPR immediately with 5 rescue breaths first (unlike standard CPR which starts with compressions). Then continue 30 compressions to 2 breaths.",
+    "If breathing: place in the recovery position on their side. Keep them warm — drowning victims lose body heat rapidly.",
+    "Remove wet clothing and cover with whatever dry material is available.",
+    "Do not leave the person unattended even if they appear to have recovered fully.",
+    "Do not give food or fluids until they have been fully assessed — aspiration of water into the lungs is common and may not show symptoms immediately."
+  ],
+  "warnings": [
+    "Never assume a drowning victim is fine because they are conscious — secondary drowning can occur hours later as lungs continue to fill with inhaled water.",
+    "Do not attempt to drain water from the lungs — it is ineffective and wastes critical time.",
+    "Do not hold the person upside down.",
+    "Suspect cervical spine injury in diving accidents — take great care moving the neck."
+  ],
+  "redFlags": [
+    "Person is not breathing — begin CPR immediately.",
+    "Person regained consciousness but develops coughing, chest pain, or difficulty breathing in the hours after rescue — secondary drowning.",
+    "Person is confused, unusually sleepy, or behaves strangely after rescue.",
+    "Diving injury — suspected neck or spine damage.",
+    "Child was submerged even briefly — always requires hospital assessment."
+  ],
   "pharmacyGuidance": {
     "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "avoid": [
+      "Do not give anything by mouth until the person is fully alert and assessed"
+    ],
+    "askFor": [
+      "Oxygen if available at a clinic",
+      "Warm blankets for hypothermia management"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "Every person who has been submerged in water must be assessed at a hospital — even if they appear fully recovered. Secondary drowning is a real and silent danger. Do not send them home without medical clearance."
 }
