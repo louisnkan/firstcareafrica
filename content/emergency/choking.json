@@ -1,18 +1,39 @@
 {
   "id": "choking",
   "category": "emergency",
-  "title": "Choking/Airway Obstruction",
+  "title": "Choking / Airway Obstruction",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "🫁",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "An object is blocking the airway preventing normal breathing. Can be partial or complete obstruction.",
+  "steps": [
+    "Ask the person 'Are you choking?' If they can cough, speak, or breathe — encourage them to keep coughing forcefully. Do not interfere.",
+    "If they cannot cough, speak, or breathe — act immediately. Stand behind them, lean them forward slightly.",
+    "Give 5 firm back blows: use the heel of your hand between their shoulder blades. Each blow should be a separate, deliberate strike.",
+    "Check the mouth after each blow. If you can see the object, carefully remove it with your fingers. Never do a blind finger sweep.",
+    "If back blows fail, perform abdominal thrusts (Heimlich manoeuvre): stand behind the person, wrap your arms around their waist, make a fist with one hand and place it just above the navel and well below the breastbone, grasp your fist with the other hand, pull sharply inward and upward. Repeat up to 5 times.",
+    "Alternate 5 back blows with 5 abdominal thrusts until the object is dislodged or the person loses consciousness.",
+    "If the person becomes unconscious: lower them carefully to the ground, call for help, and begin CPR — chest compressions may help dislodge the object.",
+    "For a baby under 1 year: lay face-down on your forearm, give 5 back blows between shoulder blades with 2 fingers, then turn face-up and give 5 chest thrusts with 2 fingers on the centre of the chest. Never do abdominal thrusts on an infant."
+  ],
+  "warnings": [
+    "Never perform abdominal thrusts on a baby under 1 year, a pregnant woman's abdomen, or anyone who is very obese — use chest thrusts instead.",
+    "Do not do blind finger sweeps into the mouth — you may push the object deeper.",
+    "Do not shake or hold the person upside down.",
+    "After successful removal of an obstruction, the person should still be seen by a doctor — internal injury is possible."
+  ],
+  "redFlags": [
+    "Person cannot make any sound at all — complete obstruction, act immediately.",
+    "Lips, face, or fingernails turning blue — oxygen level is critically low.",
+    "Person loses consciousness — begin CPR.",
+    "Child is choking and back blows and chest thrusts are not working after 2 cycles."
+  ],
   "pharmacyGuidance": {
     "helpful": [],
-    "avoid": [],
+    "avoid": [
+      "Do not give water or anything by mouth during active choking"
+    ],
     "askFor": []
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "Get to a hospital immediately after any choking episode — even if the object was removed. Internal damage to the throat or airway needs to be assessed by a doctor."
 }
