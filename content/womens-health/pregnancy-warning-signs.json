@@ -1,0 +1,57 @@
+{
+  "id": "pregnancy-warning-signs",
+  "category": "womens-health",
+  "title": "Pregnancy Warning Signs",
+  "severity": "acute",
+  "icon": "🤰",
+  "color": "purple",
+  "summary": "Certain symptoms during pregnancy require immediate medical attention. Knowing the warning signs can save both mother and baby.",
+  "steps": [
+    "Know the danger signs of pregnancy by heart — these require going to a clinic or hospital immediately, not waiting until morning.",
+    "DANGER SIGN 1 — Heavy vaginal bleeding at any stage of pregnancy. Light spotting in early pregnancy can be normal, but heavy bleeding is never normal.",
+    "DANGER SIGN 2 — Severe headache that does not go away with paracetamol, especially with blurred vision, seeing spots, or swelling of the face and hands. This combination suggests pre-eclampsia.",
+    "DANGER SIGN 3 — Fits or convulsions during pregnancy. Eclampsia is life-threatening for both mother and baby.",
+    "DANGER SIGN 4 — Reduced or absent fetal movement after 28 weeks. Count movements daily. If you feel fewer than 10 movements in 2 hours, go to a clinic.",
+    "DANGER SIGN 5 — Fever above 38°C during pregnancy — infections spread faster and cause more harm in pregnancy.",
+    "DANGER SIGN 6 — Severe abdominal pain at any stage — particularly one-sided pain in early pregnancy which may indicate ectopic pregnancy.",
+    "DANGER SIGN 7 — Fluid leaking from the vagina before labour is due — this is the waters breaking prematurely.",
+    "DANGER SIGN 8 — Swelling of the face, hands, and feet that comes on suddenly — especially with headache or visual changes.",
+    "For all danger signs: go to the nearest health facility immediately. Do not wait."
+  ],
+  "warnings": [
+    "Do not take any medication during pregnancy without checking it is safe — many common drugs are harmful to the developing baby.",
+    "Do not take ibuprofen or aspirin in pregnancy without medical advice.",
+    "Do not ignore any of the danger signs listed — in pregnancy, waiting is dangerous.",
+    "Do not use traditional herbal remedies during pregnancy without medical clearance."
+  ],
+  "redFlags": [
+    "Heavy vaginal bleeding at any stage.",
+    "Severe headache with visual disturbance — pre-eclampsia.",
+    "Convulsions or fitting — eclampsia.",
+    "One-sided abdominal pain with positive pregnancy test — possible ectopic pregnancy.",
+    "Reduced fetal movement after 28 weeks.",
+    "Sudden severe swelling of face and hands.",
+    "High fever above 38°C.",
+    "Fluid leaking from the vagina before 37 weeks of pregnancy."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol — the only safe pain and fever reliever in pregnancy",
+      "Folic acid 5mg daily — essential in first trimester to prevent neural tube defects",
+      "Iron supplements as prescribed — anaemia is common in pregnancy in Africa",
+      "Oral rehydration salts for dehydration from vomiting in early pregnancy"
+    ],
+    "avoid": [
+      "Ibuprofen and all NSAIDs — harmful to the baby especially after 30 weeks",
+      "Aspirin except under specific medical supervision",
+      "All herbal teas and traditional medicines unless cleared by a doctor",
+      "Tetracycline antibiotics — cause permanent staining of baby's teeth"
+    ],
+    "askFor": [
+      "Antenatal care — register as early as possible, ideally before 12 weeks",
+      "Malaria prevention — intermittent preventive treatment in pregnancy is recommended in malaria-endemic areas",
+      "Folic acid and iron supplementation from your first antenatal visit"
+    ]
+  },
+  "whenToGetHelp": "Go to a hospital or clinic immediately for any of the danger signs listed above. Do not wait until morning. Complications of pregnancy can deteriorate very rapidly. Regular antenatal visits are the most important thing you can do for a safe pregnancy."
+}
