@@ -1,0 +1,52 @@
+{
+  "id": "heavy-bleeding",
+  "category": "womens-health",
+  "title": "Menorrhagia / Heavy Menstrual Bleeding",
+  "severity": "acute",
+  "icon": "🩸",
+  "color": "purple",
+  "summary": "Menstrual bleeding that is significantly heavier than usual, lasts longer than 7 days, or both. Can cause anaemia and significantly impact daily life.",
+  "steps": [
+    "Assess the severity — heavy bleeding means soaking through a pad or tampon every hour for several consecutive hours, passing clots larger than a 50 naira coin, or bleeding lasting more than 7 days.",
+    "Rest and avoid strenuous physical activity during heavy bleeding — exertion increases blood flow.",
+    "Stay well hydrated with water and fluids. Heavy bleeding causes significant fluid loss.",
+    "Eat iron-rich foods during and after your period — red meat, liver, beans, dark leafy greens, eggs. Iron is lost with blood loss.",
+    "Take ibuprofen or mefenamic acid — both reduce menstrual blood flow as well as pain by blocking prostaglandins. Start at the beginning of your period.",
+    "Use high-absorbency pads or menstrual products. Track how many you use per day to accurately describe the bleeding to a doctor.",
+    "Monitor for signs of anaemia from ongoing heavy periods — unusual tiredness, breathlessness, dizziness, pale skin inside the lower eyelid, rapid heartbeat.",
+    "Keep a period diary for 2 to 3 months noting duration, number of pads used, and clot size. This is essential information for a doctor."
+  ],
+  "warnings": [
+    "Do not take aspirin during heavy periods — it significantly worsens bleeding.",
+    "Heavy periods that occur suddenly in someone with previously normal periods require investigation.",
+    "Do not ignore chronic heavy periods — ongoing blood loss causes iron deficiency anaemia which has serious long-term health consequences.",
+    "Do not use traditional herbal remedies to stop bleeding without medical advice."
+  ],
+  "redFlags": [
+    "Soaking more than one pad per hour for more than 2 consecutive hours — go to hospital.",
+    "Feeling faint, lightheaded, or very weak with heavy bleeding.",
+    "Bleeding between periods or after sex.",
+    "Bleeding after menopause — any bleeding after periods have stopped for 12 months needs immediate investigation.",
+    "Severe abdominal pain accompanying the bleeding.",
+    "Signs of severe anaemia — extreme fatigue, shortness of breath, palpitations.",
+    "Unexplained weight loss with heavy periods."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ibuprofen 400 to 600mg three times daily with food from day 1 of period — reduces blood loss",
+      "Mefenamic acid 500mg three times daily — specifically reduces heavy menstrual bleeding",
+      "Iron supplements — ferrous sulphate or ferrous fumarate — to replace lost iron",
+      "Vitamin C taken with iron supplements improves absorption"
+    ],
+    "avoid": [
+      "Aspirin — significantly worsens bleeding",
+      "Alcohol during heavy periods"
+    ],
+    "askFor": [
+      "Tranexamic acid — prescription tablet that significantly reduces menstrual blood loss",
+      "Ferrous sulphate tablets for iron deficiency",
+      "Referral for investigation — ultrasound to rule out fibroids, polyps, or other causes"
+    ]
+  },
+  "whenToGetHelp": "See a doctor if your periods are consistently heavy, if you soak through protection every hour, if you have bleeding between periods or after sex, or if you feel constantly tired and breathless. Heavy periods are one of the most treatable conditions in women's health."
+}
