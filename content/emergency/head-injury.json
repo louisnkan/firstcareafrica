@@ -1,18 +1,50 @@
 {
   "id": "head-injury",
   "category": "emergency",
-  "title": "Traumatic Head Injury/Concussion",
+  "title": "Traumatic Head Injury / Concussion",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "🧠",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "Any impact to the head from a fall, accident, or assault. Even injuries that appear minor can cause serious internal bleeding.",
+  "steps": [
+    "Keep the person still. Do not move them unless they are in immediate danger — suspect neck and spine injury with any significant head trauma.",
+    "If they are conscious, keep them awake and talking. Ask simple questions — their name, where they are, what day it is.",
+    "Control any external bleeding by pressing a clean cloth firmly against the wound. Do not apply direct pressure if the skull appears deformed or caved in.",
+    "If they are unconscious but breathing, carefully place them in the recovery position maintaining alignment of the head, neck, and spine as a unit.",
+    "Monitor breathing continuously. Be prepared to start CPR.",
+    "Do not give anything to eat or drink.",
+    "Do not remove a helmet if the person is wearing one — leave this to medical professionals.",
+    "Note the exact time of injury, whether they lost consciousness, for how long, and what they can and cannot remember. Give this information to the doctor."
+  ],
+  "warnings": [
+    "Never leave a person with a head injury alone for the first 24 hours.",
+    "Do not give aspirin or ibuprofen — they increase bleeding risk. Paracetamol only.",
+    "Do not allow the person to return to sport, driving, or strenuous activity.",
+    "Do not assume a lucid person is fine — a 'lucid interval' can occur before sudden deterioration with internal bleeding."
+  ],
+  "redFlags": [
+    "Loss of consciousness — even briefly.",
+    "Confusion, disorientation, or unusual behaviour after the injury.",
+    "Severe headache that is getting progressively worse.",
+    "Vomiting more than once after the injury.",
+    "Seizure following the injury.",
+    "Clear fluid from the nose or ears — may indicate skull fracture.",
+    "Unequal pupils or eyes not tracking properly.",
+    "Weakness or numbness in arms or legs.",
+    "Injury in a child under 2 years — any significant head impact requires assessment."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Paracetamol only for headache — not aspirin or ibuprofen"
+    ],
+    "avoid": [
+      "Aspirin and ibuprofen — both increase risk of internal bleeding",
+      "Sedatives or sleeping medication — mask warning symptoms",
+      "Alcohol"
+    ],
+    "askFor": [
+      "Paracetamol for pain management only"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "All significant head injuries require hospital assessment, especially if there was any loss of consciousness, confusion, or vomiting. Internal bleeding in the brain can develop slowly and become fatal without treatment."
 }
