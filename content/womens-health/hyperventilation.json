@@ -1,0 +1,50 @@
+{
+  "id": "hyperventilation",
+  "category": "womens-health",
+  "title": "Hyperventilation / Panic Attack",
+  "severity": "acute",
+  "icon": "💨",
+  "color": "purple",
+  "summary": "Rapid, shallow breathing that upsets the balance of oxygen and carbon dioxide in the blood. Often triggered by anxiety, stress, or panic. More common in women. Frightening but not immediately life-threatening when caused by anxiety.",
+  "steps": [
+    "Recognise what is happening. Tell the person — or remind yourself — that hyperventilation is not a heart attack and will not cause death. This is critical for reducing panic which worsens the breathing.",
+    "Get away from the triggering situation if possible. Move to a quiet, calm space.",
+    "Focus on slowing the breathing deliberately. Breathe IN slowly through the nose for 4 counts. Hold for 2 counts. Breathe OUT slowly through pursed lips for 6 counts. Repeat.",
+    "The classic paper bag technique — breathing into a paper bag — can help raise carbon dioxide levels. Only use a paper bag, never a plastic bag. Only do this for 30 seconds at a time.",
+    "Sit or lie down. Do not stand up suddenly — hyperventilation reduces blood flow to the brain and can cause fainting.",
+    "Ground yourself. Name 5 things you can see, 4 you can touch, 3 you can hear. This interrupts the panic cycle.",
+    "Loosen any tight clothing around the chest or neck.",
+    "If the episode resolves within 10 to 20 minutes with controlled breathing, it was likely a panic or anxiety attack.",
+    "After recovery, drink water and rest. Do not resume strenuous activity immediately."
+  ],
+  "warnings": [
+    "Never use a plastic bag — only paper. Better still, use the controlled breathing technique instead.",
+    "Do not assume all episodes of difficulty breathing are panic attacks — check for other causes first.",
+    "Hyperventilation with chest pain and left arm pain in a person over 40 may be a cardiac event — treat as such.",
+    "Hyperventilation in a diabetic may be caused by diabetic ketoacidosis — get medical help."
+  ],
+  "redFlags": [
+    "Chest pain accompanying the breathing difficulty — rule out cardiac cause.",
+    "Breathing difficulty that does not resolve with controlled breathing within 20 minutes.",
+    "Loss of consciousness.",
+    "Lips or fingernails turning blue — this is not hyperventilation, something else is causing oxygen failure.",
+    "Hyperventilation in a diabetic — may signal dangerous blood sugar problem.",
+    "Severe one-sided chest pain — possible pneumothorax.",
+    "First episode in someone over 40 without a history of anxiety — must rule out cardiac cause."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Controlled breathing technique is the primary treatment — no medication needed for most episodes",
+      "Magnesium supplement daily — may reduce frequency of anxiety-related hyperventilation"
+    ],
+    "avoid": [
+      "Do not take sedatives without medical advice",
+      "Avoid caffeine if prone to anxiety and panic attacks"
+    ],
+    "askFor": [
+      "Referral to counselling or mental health support if panic attacks are frequent",
+      "Discuss beta-blockers or other anxiety management with a doctor if episodes are frequent and disabling"
+    ]
+  },
+  "whenToGetHelp": "Seek medical help if this is your first episode, if you have chest pain, if breathing difficulty lasts more than 20 minutes, or if you feel this is different from previous panic attacks. Conditions including asthma, pulmonary embolism, and cardiac events can mimic hyperventilation."
+}
