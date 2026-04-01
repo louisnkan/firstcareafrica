@@ -3,16 +3,53 @@
   "category": "emergency",
   "title": "Emergency Childbirth",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "🤱",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "A baby arriving before medical help is available. Most straightforward births can be safely guided with calm, clear steps.",
+  "steps": [
+    "Stay calm and reassure the mother. Tell her she is not alone and you will help her through this.",
+    "Call for help immediately — send someone for a nurse, midwife, or doctor. Keep trying to reach help throughout.",
+    "Wash your hands thoroughly with soap and water. Use gloves if available.",
+    "Help the mother find a comfortable position — lying on her back with knees bent, or on her side. Place clean cloths or towels beneath her.",
+    "Do not try to stop or delay the birth. Do not tell her to hold the baby in.",
+    "As the baby's head appears, support it gently with clean hands. Do not pull — let the baby come naturally with contractions.",
+    "If a membrane (bag of water) covers the baby's face, carefully break it and pull it away from the face immediately.",
+    "Check if the umbilical cord is around the baby's neck. If it is, gently and quickly slip it over the baby's head.",
+    "Once the head is out, the body usually follows quickly. Support the baby's body as it emerges — babies are slippery.",
+    "Hold the baby face down at the level of the mother's belly to help drain fluid from the airways. Wipe the mouth and nose gently.",
+    "The baby should cry and breathe within seconds. If not, rub the back firmly, flick the soles of the feet gently.",
+    "Place the baby on the mother's chest, skin to skin. Cover them both with a clean cloth to keep warm.",
+    "Do not cut the umbilical cord unless you have sterile scissors or a blade and sterile ties. If you must tie it: tie firmly 4 finger-widths from the baby's belly, tie again 2 finger-widths further away, cut between the two ties with the cleanest instrument available.",
+    "The placenta will deliver 5 to 30 minutes after the baby. Let it come naturally. Do not pull the cord."
+  ],
+  "warnings": [
+    "Do not pull on the baby's head or body to speed up delivery.",
+    "Do not cut the cord with an unclean instrument — infection risk is severe.",
+    "Do not leave the mother and baby alone after delivery — bleeding and complications can occur.",
+    "If the baby's bottom or feet appear first (breech) — this is high risk. Do not pull. Get medical help urgently."
+  ],
+  "redFlags": [
+    "Baby's buttocks or feet are coming first, not the head — breech birth, needs urgent medical help.",
+    "The cord is coming out before the baby — this is a cord prolapse, life-threatening. Get help immediately.",
+    "Heavy bright red bleeding from the mother before the baby is born.",
+    "Baby is not breathing after 1 minute of stimulation.",
+    "Mother loses consciousness.",
+    "Placenta has not delivered after 1 hour."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Clean cloths or towels for warmth and hygiene",
+      "Sterile gloves if available"
+    ],
+    "avoid": [
+      "Do not give the mother pain medication that could sedate her during pushing",
+      "Do not use traditional herbs or substances to speed up labour"
+    ],
+    "askFor": [
+      "Oxytocin injection for the mother after delivery if a health worker is present — reduces post-delivery bleeding",
+      "Sterile cord clamps or ties",
+      "Clean sterile scissors"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "Get to a hospital or maternity clinic as soon as possible after delivery — both mother and baby need to be assessed. Do not wait until tomorrow."
 }
