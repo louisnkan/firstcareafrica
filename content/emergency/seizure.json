@@ -1,0 +1,49 @@
+{
+  "id": "seizure",
+  "category": "emergency",
+  "title": "Seizure / Convulsions",
+  "severity": "critical",
+  "icon": "⚡",
+  "color": "red",
+  "summary": "Sudden uncontrolled electrical activity in the brain causing shaking, stiffness, or loss of consciousness. Common in children with high fever and in people with epilepsy.",
+  "steps": [
+    "Stay calm. Most seizures stop on their own within 1 to 3 minutes.",
+    "Time the seizure from when it starts — this information is critical for the doctor.",
+    "Clear the area immediately. Move any hard, sharp, or dangerous objects away from the person.",
+    "Protect the head. Place something soft — folded clothing, a bag — under their head. Do not hold it down.",
+    "Do not restrain the person. Do not hold their arms, legs, or body down. Let the shaking happen.",
+    "Once the shaking stops, roll them gently onto their side into the recovery position to keep the airway clear and prevent choking if they vomit.",
+    "Stay with them. After the seizure, most people are confused, sleepy, or frightened. Talk to them calmly and reassure them.",
+    "Check their breathing once the seizure ends. If they are not breathing, begin CPR.",
+    "For a child with febrile seizure — remove excess clothing and fan them gently to lower body temperature. Do not put in cold water."
+  ],
+  "warnings": [
+    "Never put anything in the person's mouth during a seizure — not fingers, not spoons, not cloth. The tongue cannot be swallowed.",
+    "Do not restrain the person — you can cause bone fractures or injury.",
+    "Do not give water or medication during the seizure.",
+    "Do not leave the person alone until they are fully awake and alert."
+  ],
+  "redFlags": [
+    "Seizure lasts longer than 5 minutes — this is status epilepticus, a medical emergency.",
+    "Person does not regain consciousness after the seizure stops.",
+    "Person is not breathing after the seizure.",
+    "A second seizure occurs shortly after the first.",
+    "Seizure occurs in water — risk of drowning even after it stops.",
+    "Pregnant woman has a seizure — may indicate eclampsia, extremely dangerous.",
+    "First ever seizure in an adult with no history of epilepsy."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol (not aspirin) to reduce fever in children with febrile seizures — only after the seizure stops and they can swallow safely"
+    ],
+    "avoid": [
+      "Do not give any medication during the seizure",
+      "Avoid aspirin in children under 16"
+    ],
+    "askFor": [
+      "Diazepam rectal solution if available and seizure is prolonged — for known epilepsy patients only",
+      "Fever reducing medication for children after the seizure"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately if the seizure lasts more than 5 minutes, if the person does not recover consciousness, if it is their first seizure, or if the person is pregnant. All first-time seizures must be evaluated by a doctor."
+}
