@@ -1,0 +1,52 @@
+{
+  "id": "typhoid",
+  "category": "acute",
+  "title": "Typhoid Fever / Enteric Fever",
+  "severity": "acute",
+  "icon": "🌡️",
+  "color": "orange",
+  "summary": "A bacterial infection caused by Salmonella typhi, spread through contaminated food and water. Common across Africa. Causes a sustained high fever that gets progressively worse over days.",
+  "steps": [
+    "Recognise the pattern — typhoid fever typically builds gradually over several days. Unlike malaria, the fever does not come in cycles. It rises steadily and persists.",
+    "Classic symptoms: sustained fever rising to 39 to 40°C, severe headache, abdominal pain and tenderness, loss of appetite, constipation in early stages followed by diarrhoea later, a flat pink rash on the trunk in some patients, extreme weakness and fatigue.",
+    "Typhoid is easily confused with malaria — both cause fever in Africa. A blood test or Widal test can help distinguish them. If both are possible, treat the more dangerous one first based on symptoms.",
+    "Hydration is critical — push fluids constantly. Water, oral rehydration solution, clear broths. The person may not feel thirsty but must drink.",
+    "Soft, easily digestible food only — rice, boiled potatoes, bananas, toast. Avoid spicy, fatty, or high-fibre foods which worsen abdominal pain.",
+    "Complete bed rest. Typhoid causes serious fatigue and physical activity risks complications.",
+    "Treat fever with paracetamol. Cool damp cloths on the forehead and body.",
+    "Typhoid requires antibiotic treatment — ciprofloxacin or azithromycin are first-line in most of Africa. See a doctor or health worker for a prescription.",
+    "Complete the full antibiotic course — usually 7 to 14 days. Stopping early causes relapse."
+  ],
+  "warnings": [
+    "Do not give ibuprofen for typhoid fever — it increases the risk of intestinal bleeding.",
+    "Do not give high-fibre or spicy foods during illness — risk of intestinal perforation.",
+    "Never stop antibiotics early — typhoid relapse is common and the second illness is often worse.",
+    "Typhoid carriers who have recovered can still spread the bacteria — strict hand washing and hygiene is essential."
+  ],
+  "redFlags": [
+    "Sudden severe abdominal pain that spreads across the entire abdomen — possible intestinal perforation, surgical emergency.",
+    "Bright red blood in stool.",
+    "Person becomes confused or delirious.",
+    "Fever above 40°C that is not responding to paracetamol.",
+    "Rigid or board-like abdomen.",
+    "Signs of shock — pale, cold, sweating, rapid breathing."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol for fever — not ibuprofen",
+      "Oral rehydration salts",
+      "Widal test or blood culture to confirm diagnosis"
+    ],
+    "avoid": [
+      "Ibuprofen and aspirin — increase bleeding risk in typhoid",
+      "High-fibre, spicy, or fatty food",
+      "Alcohol"
+    ],
+    "askFor": [
+      "Ciprofloxacin 500mg twice daily for 10 to 14 days — first-line antibiotic",
+      "Azithromycin — alternative if ciprofloxacin resistance is suspected",
+      "Blood test or Widal test to confirm typhoid diagnosis"
+    ]
+  },
+  "whenToGetHelp": "See a doctor for all suspected typhoid to get appropriate antibiotics and confirm the diagnosis. Go to hospital immediately if there is sudden severe abdominal pain, blood in stool, confusion, or signs of shock. Intestinal perforation is a surgical emergency."
+}
