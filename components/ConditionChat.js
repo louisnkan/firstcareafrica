@@ -192,14 +192,19 @@ export default function ConditionChat({ conditionName, conditionCategory }) {
             maxWidth: '92%'
           }}>
             <p style={{
-              color: '#F5F0E8',
-              fontSize: '0.85rem',
-              lineHeight: '1.6',
-              margin: 0,
-              whiteSpace: 'pre-wrap'
-            }}>
-              {msg.content}
-            </p>
+                  color: '#F5F0E8',
+                  fontSize: '0.88rem',
+                  lineHeight: '1.65',
+                  margin: 0,
+                  whiteSpace: 'pre-wrap'
+                }}>
+                  {msg.content
+                    .replace(/\*\*(.*?)\*\*/g, '$1')
+                    .replace(/\*(.*?)\*/g, '$1')
+                    .replace(/^#{1,3}\s/gm, '')
+                    .trim()
+                  }
+                </p>
           </div>
         </div>
       ))}
