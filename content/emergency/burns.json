@@ -3,16 +3,52 @@
   "category": "emergency",
   "title": "Severe Burns",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "🔥",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "Burns destroy skin and tissue from heat, chemicals, electricity, or radiation. Severity depends on depth and how much of the body is affected.",
+  "steps": [
+    "Remove the source of the burn immediately. Turn off electricity, remove the person from fire, remove burning clothing — but do not remove clothing that is stuck to the skin.",
+    "Cool the burn immediately with cool running water for a minimum of 20 minutes. This is the single most important step. Start cooling as fast as possible.",
+    "Do not stop the cooling early — 20 full minutes, even if the person says the pain has reduced.",
+    "Remove jewellery, watches, and belts near the burn area before swelling begins — do this gently and only if they are not stuck to skin.",
+    "Cover the burn loosely with a clean non-fluffy material — cling film is ideal, or a clean plastic bag. If unavailable, use a clean cloth.",
+    "Keep the person warm — cooling a large area can cause dangerous drop in body temperature especially in children. Cover the rest of the body.",
+    "Give the person fluids to drink if they are conscious — water or oral rehydration solution. Burns cause significant fluid loss.",
+    "Assess the size of the burn using the palm rule — the person's palm equals approximately 1% of their body surface area.",
+    "Keep the person still and calm while organising transport to hospital."
+  ],
+  "warnings": [
+    "Never use ice, iced water, butter, toothpaste, oil, or any home remedy on a burn — these cause further damage.",
+    "Never burst blisters — they protect against infection.",
+    "Never remove clothing or material stuck to the skin.",
+    "Do not use fluffy cotton wool, towels with fibres, or anything that will stick to the wound.",
+    "Chemical burns: rinse with large amounts of water for 20 minutes. Do not try to neutralise chemicals with other chemicals."
+  ],
+  "redFlags": [
+    "Burn covers more than 10% of the body in an adult or more than 5% in a child.",
+    "Burn involves the face, hands, feet, genitals, major joints, or goes all the way around a limb.",
+    "Burn is deep — white, brown, or black in colour, leathery or waxy appearance, painless.",
+    "Burn was caused by electricity — always requires hospital evaluation even if small.",
+    "Inhalation injury — singed eyebrows, burns inside the mouth, hoarse voice, difficulty breathing.",
+    "Chemical burn to the eyes — flush immediately and go to hospital.",
+    "Burn in a child under 5 or adult over 60."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Paracetamol or ibuprofen for pain relief in mild burns",
+      "Cling film or clean plastic bags for covering",
+      "Oral rehydration salts for hydration"
+    ],
+    "avoid": [
+      "Butter, oil, toothpaste, egg white — all worsen burns",
+      "Ice or very cold water — causes further tissue damage",
+      "Aspirin in children under 16"
+    ],
+    "askFor": [
+      "Sterile non-stick dressings such as paraffin gauze",
+      "Ibuprofen gel for minor surface burns only",
+      "Silver sulfadiazine cream — only for burns under medical guidance"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "All deep burns, large burns, burns to the face or hands, electrical burns, and chemical burns require immediate hospital treatment. Minor burns covering a small area of unbroken skin can be managed at home with proper cooling and dressing but should be reviewed by a nurse or doctor within 24 hours."
 }
