@@ -2,17 +2,50 @@
   "id": "dysmenorrhoea",
   "category": "womens-health",
   "title": "Dysmenorrhoea / Severe Period Pain",
-  "severity": "common",
+  "severity": "acute",
   "icon": "🌸",
   "color": "purple",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "Painful menstrual cramps occurring before or during a period. Can range from mild discomfort to debilitating pain. Most common gynaecological complaint in women of reproductive age.",
+  "steps": [
+    "Apply a heat source to the lower abdomen — a hot water bottle wrapped in cloth, a warm compress, or a heated cloth. Heat relaxes the uterine muscle and reduces cramping significantly.",
+    "Take ibuprofen or naproxen as soon as the pain begins — do not wait for it to become severe. These anti-inflammatory drugs reduce prostaglandins, the chemicals that cause uterine cramping. Take with food.",
+    "If ibuprofen is unavailable, paracetamol reduces pain but is less effective for period cramps specifically.",
+    "Gentle movement helps more than complete bed rest. Light walking or gentle stretching of the lower back and hips can reduce muscle tension.",
+    "Try the knee-to-chest position — lie on your side and bring your knees up toward your chest. This relieves pressure on the lower back and abdomen.",
+    "Stay well hydrated. Dehydration worsens cramping.",
+    "Avoid caffeine, alcohol, and salty food during your period — these worsen bloating and cramping.",
+    "Magnesium-rich foods such as bananas, leafy greens, and nuts can reduce cramping when eaten regularly throughout the month."
+  ],
+  "warnings": [
+    "Do not take ibuprofen on an empty stomach — always eat something first to protect the stomach lining.",
+    "Do not exceed the recommended dose of any pain medication.",
+    "Do not ignore pain that is significantly worse than previous periods — this can indicate a new underlying condition.",
+    "Avoid very hot baths during heavy bleeding as heat increases blood flow."
+  ],
+  "redFlags": [
+    "Pain is far worse than usual or suddenly different in character — may indicate a new problem.",
+    "Fever above 38°C accompanying period pain — possible infection.",
+    "Pain continues after the period ends.",
+    "Extremely heavy bleeding — soaking more than one pad per hour for several hours.",
+    "Passing large clots consistently.",
+    "Pain during sex or when using the toilet during your period — possible sign of endometriosis.",
+    "Pain so severe it causes vomiting or fainting."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Ibuprofen 400mg every 6 to 8 hours with food — most effective for period pain",
+      "Naproxen sodium 500mg twice daily — longer acting alternative",
+      "Paracetamol 1000mg every 6 hours — if ibuprofen is unavailable or not tolerated",
+      "Buscopan (hyoscine butylbromide) — specifically targets cramping and spasm"
+    ],
+    "avoid": [
+      "Aspirin during heavy periods — increases bleeding",
+      "Ibuprofen if you have stomach ulcers or kidney problems"
+    ],
+    "askFor": [
+      "Mefenamic acid — prescription strength anti-prostaglandin specifically for period pain",
+      "Combined oral contraceptive pill — if recurring severe dysmenorrhoea, discuss with a doctor"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "See a doctor if your period pain is consistently severe, is getting worse over time, does not respond to standard pain relief, or is accompanied by very heavy bleeding. Conditions such as endometriosis, fibroids, and pelvic inflammatory disease can cause severe period pain and are treatable."
 }
