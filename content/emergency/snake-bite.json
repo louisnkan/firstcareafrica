@@ -1,18 +1,47 @@
 {
   "id": "snake-bite",
   "category": "emergency",
-  "title": "Snake Envenomation/Animal Bite",
+  "title": "Snake Envenomation / Animal Bite",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "🐍",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "A bite from a venomous snake or animal requiring urgent management. Africa has some of the world's most venomous snakes including black mamba, puff adder, spitting cobra, and boomslang.",
+  "steps": [
+    "Move the person away from the snake immediately. Do not attempt to catch or kill the snake. If safe, note its colour and markings for the doctor.",
+    "Keep the person as calm and still as possible. Physical activity speeds venom absorption through the lymphatic system.",
+    "Remove any tight clothing, jewellery, or watches from the bitten limb immediately — swelling will develop.",
+    "Immobilise the bitten limb in a position lower than the heart if possible. Treat it as if it were fractured — splint it gently.",
+    "Mark the edge of any swelling with a pen or fingernail if available, and note the time. This helps doctors track how fast the venom is spreading.",
+    "Keep the person lying down and still during transport to hospital.",
+    "If the bite is from a spitting cobra and venom has entered the eyes: flush the eyes immediately with large amounts of clean water for 15 to 20 minutes.",
+    "Monitor breathing closely — some venoms cause respiratory paralysis. Be prepared to perform CPR."
+  ],
+  "warnings": [
+    "Never cut the wound and suck out venom — this does not work and causes infection.",
+    "Never apply a tourniquet — this concentrates venom and destroys tissue.",
+    "Never apply ice, electric shock, or traditional remedies to the bite.",
+    "Do not give alcohol.",
+    "Do not apply a tight bandage unless specifically instructed for a neurotoxic snake — firm bandaging is used only for mamba or cobra bites, not puff adder bites."
+  ],
+  "redFlags": [
+    "Difficulty breathing or swallowing — neurotoxic venom affecting respiratory muscles.",
+    "Drooping eyelids, double vision, or inability to open the mouth.",
+    "Rapid swelling spreading beyond the bitten limb.",
+    "Bleeding from the bite site that will not stop, or bleeding from gums, nose, or other sites — cytotoxic or haemotoxic venom.",
+    "The person collapses or loses consciousness.",
+    "Signs of anaphylaxis — severe swelling, hives, difficulty breathing."
+  ],
   "pharmacyGuidance": {
     "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "avoid": [
+      "Aspirin and ibuprofen — worsen bleeding with haemotoxic venoms",
+      "Alcohol of any kind",
+      "Traditional bite remedies — none are effective and many are harmful"
+    ],
+    "askFor": [
+      "Antivenom is the only effective treatment — available at district hospitals",
+      "Paracetamol only for pain if the snake is confirmed non-venomous"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "All snakebites must be treated as a medical emergency until confirmed otherwise. Get to the nearest hospital with antivenom immediately. Time is critical — do not wait for symptoms to develop."
 }
