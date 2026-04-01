@@ -1,18 +1,52 @@
 {
   "id": "fractures",
   "category": "emergency",
-  "title": "Fractures/Broken Bones",
+  "title": "Fractures / Broken Bones",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "🦴",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "A complete or partial break in a bone, usually caused by trauma, fall, or impact. Can be closed (skin intact) or open (bone visible through skin).",
+  "steps": [
+    "Keep the person as still and calm as possible. Do not move the injured limb unnecessarily.",
+    "Look but do not touch — assess whether the skin is broken or if bone is visible. Do not attempt to push bone back in.",
+    "Immobilise the injury in the position you find it. Use whatever is available — rolled clothing, sticks, cardboard, folded magazines — as a splint. Secure above and below the fracture with strips of cloth. Not too tight.",
+    "Check circulation after splinting: press on a fingernail or toenail beyond the fracture, it should turn white then return pink within 2 seconds. Check the person can feel touch beyond the fracture. If circulation is impaired, loosen the splint slightly.",
+    "For an open fracture with bone visible: cover the wound with a clean cloth. Do not apply direct pressure over the bone. Do not push the bone back in.",
+    "Control any bleeding around an open fracture by pressing gently around the wound, not directly on it.",
+    "Elevate the injured limb gently above heart level if possible to reduce swelling.",
+    "Apply a cold compress wrapped in cloth to reduce pain and swelling — never directly on skin.",
+    "Keep the person warm and still. Monitor for shock — pale, sweaty, rapid breathing.",
+    "For suspected spinal fracture after a fall or impact: do not move the person at all unless they are in immediate danger. Keep the head, neck, and spine aligned at all times."
+  ],
+  "warnings": [
+    "Never try to straighten a fractured bone.",
+    "Never apply a splint so tight it cuts off blood flow.",
+    "Never move a person with a suspected spinal injury — incorrect movement can cause permanent paralysis.",
+    "Do not give food or drink — surgery may be required.",
+    "Suspected hip fracture in elderly people — do not attempt to move them without medical guidance."
+  ],
+  "redFlags": [
+    "Open fracture with bone visible through the skin.",
+    "Suspected spinal, neck, or pelvic fracture — do not move the person.",
+    "Loss of feeling or inability to move below the fracture point.",
+    "Limb appears severely deformed, rotated, or shortened.",
+    "Significant blood loss around the fracture site.",
+    "Signs of shock: pale, cold, sweating, rapid shallow breathing.",
+    "Head injury accompanying the fracture."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Paracetamol or ibuprofen for pain relief",
+      "Cold compress — ice in a cloth or cold wet cloth applied to the area"
+    ],
+    "avoid": [
+      "Aspirin in children under 16",
+      "Do not give strong painkillers that may mask warning symptoms"
+    ],
+    "askFor": [
+      "Bandages and padding for splinting",
+      "Triangle bandage sling for arm injuries"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "All suspected fractures need X-ray confirmation and proper treatment at a hospital or clinic. An untreated fracture can heal incorrectly and cause permanent disability. Get medical care as soon as possible."
 }
