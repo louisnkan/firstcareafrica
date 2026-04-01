@@ -1,0 +1,54 @@
+{
+  "id": "vaginal-discharge",
+  "category": "womens-health",
+  "title": "Vaginal Discharge — Normal vs Abnormal",
+  "severity": "common",
+  "icon": "🔬",
+  "color": "purple",
+  "summary": "Vaginal discharge is a normal part of female reproductive health. Changes in colour, smell, consistency, or amount can indicate infection or other conditions requiring treatment.",
+  "steps": [
+    "Assess the discharge carefully using this guide before deciding whether treatment is needed.",
+    "NORMAL discharge: clear to white or slightly yellow when dry on underwear, no strong odour, consistency varies throughout the month — watery around ovulation, thicker before a period. No itching or burning.",
+    "BACTERIAL VAGINOSIS (BV): thin, greyish-white discharge with a strong fishy odour that is worse after sex. Usually no itching. Very common and easily treated.",
+    "THRUSH (yeast infection / candidiasis): thick, white, cottage-cheese-like discharge with little or no odour. Accompanied by intense itching, burning, and redness around the vagina.",
+    "TRICHOMONIASIS: yellow-green, frothy discharge with a strong unpleasant odour. Often accompanied by itching, burning, and discomfort when passing urine. This is a sexually transmitted infection.",
+    "If symptoms suggest BV or thrush, treatment is available from a pharmacy without a prescription in most African countries.",
+    "For BV: complete the full course of antibiotics even if symptoms improve early.",
+    "For thrush: use antifungal cream or pessary as directed. Avoid tight synthetic underwear. Wear cotton underwear.",
+    "Keep the vaginal area clean with water only — soap, douching, and scented products disrupt the natural balance and worsen infections."
+  ],
+  "warnings": [
+    "Never douche — it destroys the natural protective bacteria and worsens infections.",
+    "Do not use scented soaps, bubble baths, or feminine hygiene sprays inside or around the vagina.",
+    "Do not self-treat if you are pregnant — see a doctor or midwife first.",
+    "Do not share towels, underwear, or clothing during an active infection.",
+    "If you have a new sexual partner and develop discharge, get tested for sexually transmitted infections."
+  ],
+  "redFlags": [
+    "Discharge accompanied by pelvic or lower abdominal pain — possible pelvic inflammatory disease.",
+    "Discharge with fever above 38°C.",
+    "Discharge that is brown or blood-stained and not related to your period — especially after sex.",
+    "Symptoms do not improve after completing a full course of appropriate treatment.",
+    "Discharge with sores, blisters, or ulcers around the vagina or vulva.",
+    "Discharge in a girl who has not started her period.",
+    "Discharge after a procedure or during pregnancy."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Clotrimazole cream or pessary for thrush — available without prescription",
+      "Fluconazole 150mg single oral tablet for thrush — available at most pharmacies",
+      "Metronidazole (Flagyl) 400mg twice daily for 7 days for bacterial vaginosis"
+    ],
+    "avoid": [
+      "Alcohol when taking metronidazole — causes severe nausea and vomiting",
+      "Sexual intercourse during treatment for any vaginal infection",
+      "Scented products in the vaginal area at all times"
+    ],
+    "askFor": [
+      "Metronidazole for bacterial vaginosis",
+      "Clotrimazole pessary and cream for thrush",
+      "STI testing if trichomoniasis is suspected — this requires a prescription treatment and partner treatment"
+    ]
+  },
+  "whenToGetHelp": "See a doctor or nurse if you have pelvic pain with discharge, fever, discharge during pregnancy, discharge that does not clear with appropriate treatment, or if you suspect a sexually transmitted infection. STIs require testing and specific treatment."
+}
