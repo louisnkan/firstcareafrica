@@ -1,0 +1,45 @@
+{
+  "id": "ovulation-pain",
+  "category": "womens-health",
+  "title": "Ovulation Pain / Mittelschmerz",
+  "severity": "common",
+  "icon": "📅",
+  "color": "purple",
+  "summary": "A one-sided lower abdominal pain occurring around the middle of the menstrual cycle when an egg is released. Usually brief and mild but can occasionally be sharp.",
+  "steps": [
+    "Track your cycle — ovulation pain typically occurs 10 to 16 days before your next expected period. If the timing matches, this is most likely ovulation pain.",
+    "Note which side the pain is on — it occurs on the side of the ovary releasing the egg. It alternates sides from month to month or stays on one side.",
+    "Rest and apply warmth to the lower abdomen. A hot water bottle or warm compress reduces the discomfort effectively.",
+    "Take ibuprofen or paracetamol if the pain is significant. Ibuprofen is more effective for this type of cramping.",
+    "The pain usually lasts from a few minutes to a few hours. Maximum 24 to 48 hours. If it lasts longer, something else may be causing it.",
+    "Note any associated symptoms — light spotting around ovulation is normal. Nausea can occasionally accompany it.",
+    "Track the pain over 2 to 3 cycles using a calendar or phone app. This helps confirm it is ovulation pain and rules out other causes."
+  ],
+  "warnings": [
+    "Do not confuse ovulation pain with appendicitis — appendix pain (right side) is persistent, worsens over hours, and is accompanied by fever and nausea.",
+    "Pain that is severe, worsening, or accompanied by fever is not typical ovulation pain.",
+    "Pain that occurs outside of the expected mid-cycle window needs investigation."
+  ],
+  "redFlags": [
+    "Pain is severe and does not reduce within 24 hours.",
+    "Fever accompanies the pain — possible infection.",
+    "Pain is on the right side and is getting progressively worse — rule out appendicitis.",
+    "Heavy bleeding accompanies the pain.",
+    "You have a positive pregnancy test and develop one-sided pain — possible ectopic pregnancy, a medical emergency.",
+    "Pain is consistent and severe every month — possible endometriosis or ovarian cyst."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ibuprofen 400mg with food for cramping",
+      "Paracetamol 1000mg if ibuprofen is not suitable",
+      "Heat patch or hot water bottle"
+    ],
+    "avoid": [
+      "Aspirin during any mid-cycle bleeding"
+    ],
+    "askFor": [
+      "Discuss hormonal contraception with a doctor if ovulation pain is consistently severe — it prevents ovulation and therefore eliminates ovulation pain"
+    ]
+  },
+  "whenToGetHelp": "See a doctor if the pain is severe, lasts more than 48 hours, is accompanied by fever, or occurs alongside a possible positive pregnancy test. Ectopic pregnancy causes one-sided pelvic pain and is life-threatening without treatment."
+}
