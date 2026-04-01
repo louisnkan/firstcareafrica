@@ -1,18 +1,51 @@
 {
   "id": "anaphylaxis",
   "category": "emergency",
-  "title": "Anaphylaxis/Severe Allergic Reaction",
+  "title": "Anaphylaxis / Severe Allergic Reaction",
   "severity": "critical",
   "icon": "🚨",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "A life-threatening allergic reaction that can develop within minutes of exposure to a trigger — food, insect sting, medication, or latex. Airways can close rapidly.",
+  "steps": [
+    "Act immediately — anaphylaxis can become fatal within minutes.",
+    "If the person has a prescribed epinephrine auto-injector (EpiPen), use it immediately on the outer thigh, even through clothing. Hold for 10 seconds.",
+    "Call for emergency help immediately after giving epinephrine.",
+    "If the person is conscious and breathing, help them sit upright to make breathing easier.",
+    "If they are having difficulty breathing and feel faint, lay them flat with legs raised — do not sit them up.",
+    "If they are unconscious but breathing, place in the recovery position.",
+    "If breathing stops, begin CPR.",
+    "Remove the trigger if possible — a stinger from an insect bite should be scraped out sideways, not squeezed.",
+    "Keep the person warm and still. Monitor breathing continuously.",
+    "Even if symptoms improve after epinephrine, do not let the person go home — reactions can return hours later (biphasic reaction)."
+  ],
+  "warnings": [
+    "Do not give oral antihistamines as the primary treatment for anaphylaxis — they are too slow and insufficient for a severe reaction.",
+    "Do not give anything by mouth if the person has throat swelling or difficulty swallowing.",
+    "Do not leave the person alone — condition can deteriorate suddenly.",
+    "Antihistamines can help with mild hives but do not treat the life-threatening aspects of anaphylaxis."
+  ],
+  "redFlags": [
+    "Throat swelling or tightening — airway closing rapidly.",
+    "Stridor — a high-pitched sound on breathing in.",
+    "Severe difficulty breathing or wheezing.",
+    "Rapid drop in blood pressure — faintness, collapse, loss of consciousness.",
+    "Swelling of the tongue or lips.",
+    "Skin turning blue around the lips or fingernails.",
+    "Person collapses — begin CPR."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Epinephrine auto-injector (EpiPen) — the only first-line treatment, use immediately if available",
+      "Oral antihistamine such as loratadine or chlorphenamine for mild allergic reactions only"
+    ],
+    "avoid": [
+      "Oral antihistamines alone are not sufficient for anaphylaxis",
+      "Do not delay going to hospital waiting to see if antihistamine works"
+    ],
+    "askFor": [
+      "Epinephrine injection — available at hospitals and some clinics",
+      "Ask your doctor about carrying a prescribed EpiPen if you have known severe allergies"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "Anaphylaxis is always a hospital emergency, even if symptoms improve. The reaction can return hours later without warning. Do not go home after an anaphylactic episode without hospital assessment and observation for at least 6 hours."
 }
