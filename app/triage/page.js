@@ -201,7 +201,12 @@ export default function TriagePage() {
                   margin: 0,
                   whiteSpace: 'pre-wrap'
                 }}>
-                  {msg.content}
+                  {msg.content
+                    .replace(/\*\*(.*?)\*\*/g, '$1')
+                    .replace(/\*(.*?)\*/g, '$1')
+                    .replace(/^#{1,3}\s/gm, '')
+                    .trim()
+                  }
                 </p>
               </div>
             </div>
