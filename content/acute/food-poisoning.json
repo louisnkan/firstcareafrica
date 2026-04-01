@@ -1,0 +1,53 @@
+{
+  "id": "food-poisoning",
+  "category": "acute",
+  "title": "Food Poisoning / Acute Gastroenteritis",
+  "severity": "acute",
+  "icon": "🤢",
+  "color": "orange",
+  "summary": "Illness caused by eating contaminated food or water. Usually begins within hours of eating. Most cases resolve within 24 to 48 hours with proper hydration but can be dangerous in children and the elderly.",
+  "steps": [
+    "Stop eating solid food temporarily. Give the stomach a rest for 2 to 4 hours.",
+    "Begin oral rehydration immediately — this is the most important treatment. Use ORS sachets mixed exactly as directed, or make a home solution: 1 litre of clean water, 6 level teaspoons of sugar, half a teaspoon of salt. Stir completely.",
+    "Give small amounts frequently — a few sips every few minutes is better than large amounts which trigger more vomiting.",
+    "For children: offer ORS after every episode of vomiting or diarrhoea. Children dehydrate extremely fast — a sick child who is not drinking is a medical emergency.",
+    "Signs of adequate hydration — passing urine regularly, moist mouth, no longer feeling extremely thirsty.",
+    "Once vomiting settles, introduce bland foods slowly — dry toast, plain rice, bananas, boiled potatoes. Avoid dairy, spicy, or fatty food for 24 hours.",
+    "Rest. Avoid preparing food for others until fully recovered.",
+    "Wash hands thoroughly with soap before touching food or surfaces."
+  ],
+  "warnings": [
+    "Do not give anti-diarrhoea medication such as loperamide to children under 5 or in cases of bloody diarrhoea — the body needs to expel the infection.",
+    "Do not stop ORS even if the person feels nausea — small sips continued consistently prevent dangerous dehydration.",
+    "Homemade ORS must be mixed accurately — too much salt is dangerous, especially in infants.",
+    "Do not give plain water alone as the only fluid — it does not replace the electrolytes lost in vomiting and diarrhoea."
+  ],
+  "redFlags": [
+    "Blood in vomit or diarrhoea.",
+    "Child is not passing urine, has dry mouth, sunken eyes, or is unusually sleepy — severe dehydration.",
+    "Confusion or altered consciousness.",
+    "Fever above 39°C accompanying the vomiting and diarrhoea.",
+    "Symptoms in a pregnant woman.",
+    "Severe abdominal pain that is persistent and worsening.",
+    "No improvement after 24 to 48 hours.",
+    "Person cannot keep any fluid down for more than 6 hours."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Oral rehydration salts — the single most important treatment",
+      "Zinc tablets for children under 5 — reduces duration and severity of diarrhoea",
+      "Paracetamol for fever"
+    ],
+    "avoid": [
+      "Loperamide (Imodium) in children under 5 or with bloody diarrhoea",
+      "Dairy products until recovered",
+      "Sugary drinks, juice, or fizzy drinks as ORS substitutes — they worsen diarrhoea"
+    ],
+    "askFor": [
+      "ORS sachets — every pharmacy carries these",
+      "Zinc sulphate 20mg for children under 5 — reduces illness duration",
+      "Antibiotics only if prescribed — most food poisoning is viral and antibiotics do not help"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital or clinic immediately if a child shows signs of severe dehydration, if there is blood in stool, if the person cannot keep any fluid down, or if there is no improvement after 48 hours. Intravenous fluids may be needed."
+}
