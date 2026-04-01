@@ -1,18 +1,44 @@
 {
-  "id": "unconscious person",
+  "id": "unconscious-person",
   "category": "emergency",
-  "title": "Unconsciousness/Unresponsive person",
+  "title": "Unconsciousness / Unresponsive Person",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "😵",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "A person who cannot be woken, does not respond to voice or touch, and may or may not be breathing normally.",
+  "steps": [
+    "Try to wake them — shout their name loudly and tap their shoulders firmly. If no response, they are unconscious.",
+    "Call for help immediately. Shout loudly for anyone nearby. Send someone to find a doctor or call emergency services.",
+    "Check if they are breathing — tilt their head back gently, lift the chin, and look for chest rise, listen for breath sounds, feel for air on your cheek. Do this for 10 seconds.",
+    "If they are breathing: place them in the recovery position — roll them gently onto their side, bend the upper knee forward to stop them rolling, tilt the head back slightly to keep the airway open.",
+    "If they are NOT breathing: begin CPR immediately. Place the heel of your hand on the centre of their chest. Press down hard and fast — 30 compressions, then 2 rescue breaths. Repeat until help arrives.",
+    "For rescue breaths: tilt the head back, lift the chin, pinch the nose shut, seal your mouth over theirs, and blow steadily for 1 second. Watch for chest rise.",
+    "Do not give the person anything to eat or drink.",
+    "Do not leave them alone. Stay until help arrives.",
+    "If they vomit, roll them onto their side immediately to prevent choking."
+  ],
+  "warnings": [
+    "Do not move the person if you suspect a neck or spine injury — only move them if they are in immediate danger.",
+    "Do not put anything in their mouth.",
+    "Do not try to wake them with cold water, slapping, or shaking violently.",
+    "If the person is a child under 1 year, use 2 fingers for chest compressions, not the full hand."
+  ],
+  "redFlags": [
+    "Person is not breathing — begin CPR immediately.",
+    "Lips or fingernails are turning blue — airway is blocked or oxygen is failing.",
+    "Seizure activity — limbs shaking, eyes rolling back.",
+    "Head or neck injury is suspected — extreme care with movement.",
+    "Person remains unconscious for more than 2 minutes despite stimulation."
+  ],
   "pharmacyGuidance": {
     "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "avoid": [
+      "Do not administer any medication to an unconscious person by mouth — they cannot swallow safely and may choke"
+    ],
+    "askFor": [
+      "Oxygen if available at a clinic or health post",
+      "Glucose gel or sugar solution only if low blood sugar is confirmed cause and person can swallow"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "Unconsciousness is always a medical emergency. Get the person to a hospital immediately. Do not wait to see if they wake up on their own."
 }
