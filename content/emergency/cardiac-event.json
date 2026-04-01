@@ -1,18 +1,48 @@
 {
-  "id": "cardaic event",
+  "id": "cardiac-event",
   "category": "emergency",
-  "title": "Suspected Cardiac Event/Heart Attack",
+  "title": "Suspected Cardiac Event / Heart Attack",
   "severity": "critical",
-  "icon": "🚨",
+  "icon": "❤️",
   "color": "red",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "A heart attack occurs when blood supply to the heart muscle is blocked. Every minute without treatment increases damage. Act immediately.",
+  "steps": [
+    "Call for emergency help immediately. This is time-critical — the faster the person receives medical care, the better the outcome.",
+    "Help the person sit down in a comfortable position — sitting upright with knees bent reduces strain on the heart. Do not let them walk around.",
+    "Loosen any tight clothing around the neck and chest.",
+    "If the person is conscious and not allergic to aspirin, and if aspirin is available — give one full adult aspirin tablet (300mg) to chew slowly, not swallow whole. This is one of the most important things you can do.",
+    "Keep the person calm and reassured. Stress and anxiety worsen cardiac events.",
+    "Monitor the person closely. If they lose consciousness and stop breathing, begin CPR immediately.",
+    "CPR: 30 hard, fast chest compressions on the centre of the chest followed by 2 rescue breaths. Continue without stopping until help arrives.",
+    "Do not give food, water, or any other medication.",
+    "Do not leave them alone."
+  ],
+  "warnings": [
+    "Do not give aspirin if the person is allergic, has a bleeding disorder, or has taken blood thinners.",
+    "Do not let the person walk to the car or hospital — exertion worsens damage.",
+    "Do not give nitroglycerin unless prescribed specifically for this person.",
+    "Heart attack symptoms in women are often different — nausea, jaw pain, back pain, and fatigue may be the only signs, without classic chest pain."
+  ],
+  "redFlags": [
+    "Chest pain, pressure, tightness, or squeezing — especially if spreading to the left arm, jaw, neck, or back.",
+    "Sudden severe shortness of breath with or without chest pain.",
+    "Person loses consciousness or stops breathing — begin CPR.",
+    "Pale, grey, sweating, and feeling of doom — classic signs of serious cardiac event.",
+    "Pulse is very fast, very slow, or irregular."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Aspirin 300mg — chewed, not swallowed whole, if person is conscious and not allergic"
+    ],
+    "avoid": [
+      "Ibuprofen and other NSAIDs — can worsen cardiac events",
+      "Any stimulants",
+      "Food or water"
+    ],
+    "askFor": [
+      "Aspirin 300mg tablets — keep in every home and first aid kit",
+      "Oxygen if available at a clinic"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "This is an absolute emergency. Every minute of delay causes more permanent heart muscle damage. Get the person to the nearest hospital with a cardiac unit immediately. Do not drive yourself — have someone else drive or find any transport available."
 }
