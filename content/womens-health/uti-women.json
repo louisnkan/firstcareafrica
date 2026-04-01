@@ -1,0 +1,52 @@
+{
+  "id": "uti-women",
+  "category": "womens-health",
+  "title": "Urinary Tract Infection in Women",
+  "severity": "acute",
+  "icon": "🔥",
+  "color": "purple",
+  "summary": "Bacterial infection of the bladder or urethra. Women are 30 times more likely to get a UTI than men due to anatomy. Highly treatable but can become serious if it reaches the kidneys.",
+  "steps": [
+    "Recognise the symptoms — burning or stinging when passing urine, needing to urinate urgently and frequently but passing only small amounts, cloudy or strong-smelling urine, lower abdominal discomfort or pressure.",
+    "Increase fluid intake dramatically — drink at least 2 to 3 litres of water per day. Flushing the urinary tract helps clear bacteria.",
+    "Urinate frequently. Do not hold urine in. Empty the bladder completely each time.",
+    "Avoid caffeine, alcohol, and fizzy drinks — they irritate the bladder and worsen symptoms.",
+    "A simple uncomplicated UTI in a healthy woman is often treated with a short course of antibiotics. See a pharmacist or doctor.",
+    "Complete the full course of antibiotics even if you feel better within 24 hours. Stopping early allows resistant bacteria to survive.",
+    "For pain relief while waiting for antibiotics to work — paracetamol or ibuprofen reduces the discomfort.",
+    "After recovery: urinate after sexual intercourse, wipe front to back, and wear cotton underwear — these reduce recurrence significantly."
+  ],
+  "warnings": [
+    "Do not treat a UTI in pregnancy without seeing a doctor — untreated UTIs in pregnancy cause premature labour.",
+    "Do not self-treat if you have fever, back pain, or feel very unwell — this may indicate kidney infection.",
+    "Do not use leftover antibiotics from a previous illness — the wrong antibiotic makes resistance worse.",
+    "Do not douche or use vaginal sprays — these disrupt normal bacteria and increase UTI risk."
+  ],
+  "redFlags": [
+    "Fever above 38°C with urinary symptoms — possible kidney infection (pyelonephritis).",
+    "Pain in the back or side, especially under the ribs — kidney involvement.",
+    "Nausea and vomiting with urinary symptoms.",
+    "Blood visible in urine — haematuria.",
+    "Symptoms in a pregnant woman — always requires medical assessment.",
+    "Symptoms in a child — always requires medical assessment.",
+    "UTI symptoms in a man — always requires investigation for underlying cause.",
+    "Recurring UTIs more than 3 times per year."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Increased water intake — the most important initial step",
+      "Paracetamol or ibuprofen for pain and discomfort",
+      "Cystitis sachets — sodium citrate or potassium citrate — alkalinise the urine and reduce burning"
+    ],
+    "avoid": [
+      "Caffeine, alcohol, fizzy drinks, citrus juice during active UTI",
+      "Antibiotics from a previous prescription — always get current appropriate treatment"
+    ],
+    "askFor": [
+      "Nitrofurantoin or trimethoprim — first-line UTI antibiotics, short course",
+      "Urine dipstick test to confirm infection before antibiotics",
+      "Urine culture if symptoms recur — to identify the specific bacteria and its sensitivities"
+    ]
+  },
+  "whenToGetHelp": "See a doctor immediately if you have fever, back or side pain, vomiting, or if you are pregnant. Kidney infections require stronger antibiotics and sometimes hospitalisation. All UTIs in children, men, and pregnant women need medical assessment."
+}
