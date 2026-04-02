@@ -1,0 +1,53 @@
+{
+  "id": "wound-infection",
+  "category": "acute",
+  "title": "Wound Infection / Cellulitis",
+  "severity": "acute",
+  "icon": "🩹",
+  "color": "orange",
+  "summary": "A wound that has become infected with bacteria. Can spread rapidly if untreated. Early recognition and treatment prevents serious complications including sepsis.",
+  "steps": [
+    "Identify signs of wound infection: increasing redness around the wound that is spreading, warmth and swelling, pus or cloudy discharge, increasing pain rather than improving pain, bad odour, and fever.",
+    "A wound infected within 24 hours of injury may indicate a more aggressive bacteria — seek medical care promptly.",
+    "Clean the wound thoroughly with clean running water for at least 5 minutes. Remove any visible debris gently.",
+    "Apply antiseptic solution — diluted iodine, chlorhexidine, or hydrogen peroxide diluted 1 part to 3 parts water. Do not use neat hydrogen peroxide — it damages tissue.",
+    "Cover with a clean dry dressing. Change the dressing twice daily.",
+    "Mark the edge of any redness with a pen and note the time. If the redness spreads beyond the mark within hours, this is spreading cellulitis — go to hospital.",
+    "Keep the infected limb elevated above heart level to reduce swelling.",
+    "Most wound infections require antibiotic treatment — see a doctor or health worker.",
+    "Monitor body temperature twice daily. Fever developing with a wound infection is a serious sign."
+  ],
+  "warnings": [
+    "Do not close or cover a deep puncture wound tightly — anaerobic bacteria thrive without oxygen.",
+    "Animal bites — especially dog and human bites — have high infection rates and need medical evaluation.",
+    "Wounds from rusty metal, soil, or animal bites carry tetanus risk — check vaccination status.",
+    "Do not squeeze pus from a deep wound — this spreads infection deeper."
+  ],
+  "redFlags": [
+    "Red streaks spreading up the limb from the wound — tracking lymphangitis, infection spreading through lymphatic system.",
+    "Swollen and tender lymph nodes above the wound.",
+    "Fever above 38.5°C with wound infection — possible early sepsis.",
+    "Wound in a diabetic or immunocompromised person — infections spread much faster.",
+    "Black or grey discolouration of tissue around the wound — possible necrotising fasciitis, emergency.",
+    "Wound does not improve after 48 hours of antibiotic treatment."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Chlorhexidine solution for wound cleaning",
+      "Diluted povidone iodine for antiseptic cleaning",
+      "Non-stick sterile dressings",
+      "Paracetamol or ibuprofen for pain and fever"
+    ],
+    "avoid": [
+      "Neat undiluted hydrogen peroxide — damages healthy tissue",
+      "Closing a deep dirty wound with tape or stitches before cleaning",
+      "Traditional poultices or herbal applications on open wounds"
+    ],
+    "askFor": [
+      "Amoxicillin-clavulanate (Augmentin) — broad spectrum antibiotic for skin infections",
+      "Flucloxacillin for wound infections if amoxicillin allergy",
+      "Tetanus vaccination if not up to date and wound is dirty"
+    ]
+  },
+  "whenToGetHelp": "See a doctor for any wound showing signs of infection, any animal or human bite, any puncture wound from a rusty object, and any wound in a diabetic person. Go immediately if red streaks are spreading, there is fever, or the tissue around the wound is turning dark."
+}
