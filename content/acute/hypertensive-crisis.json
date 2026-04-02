@@ -1,0 +1,53 @@
+{
+  "id": "hypertensive-crisis",
+  "category": "acute",
+  "title": "Hypertensive Crisis / Dangerously High Blood Pressure",
+  "severity": "acute",
+  "icon": "🩺",
+  "color": "orange",
+  "summary": "Blood pressure above 180/120 mmHg with symptoms. A hypertensive emergency can cause stroke, heart attack, or kidney failure if not treated urgently.",
+  "steps": [
+    "Recognise the signs: severe headache at the back of the head, blurred or double vision, nausea and vomiting, shortness of breath, chest pain, confusion or difficulty thinking, nosebleed that will not stop.",
+    "Sit or lie the person down quietly. Rest significantly lowers blood pressure — do not leave them standing or agitated.",
+    "Measure blood pressure if a cuff is available. Above 180/120 with symptoms is a hypertensive emergency.",
+    "Loosen any tight clothing around the neck and chest.",
+    "Keep the person absolutely calm. Stress and anxiety directly raise blood pressure further.",
+    "If the person is on prescribed blood pressure medication and has missed doses, they may take their regular medication now — but do not give extra doses.",
+    "Do not give any over-the-counter medication to lower blood pressure unless specifically prescribed for hypertensive crises.",
+    "Get the person to a hospital or clinic with blood pressure monitoring and medication as quickly as possible.",
+    "Monitor for neurological symptoms — confusion, weakness of one side, slurred speech. These indicate stroke and require emergency response."
+  ],
+  "warnings": [
+    "Do not give nifedipine capsules to bite and swallow — this outdated practice causes a dangerous rapid drop in blood pressure.",
+    "Do not try to lower blood pressure too quickly at home — a rapid drop is as dangerous as a high reading.",
+    "Do not give extra doses of blood pressure medication without medical guidance.",
+    "A person with consistently high blood pressure needs long-term daily medication — this is not optional."
+  ],
+  "redFlags": [
+    "Sudden severe headache with vision changes — possible hypertensive encephalopathy or stroke.",
+    "Weakness or numbness on one side of the face or body — stroke.",
+    "Slurred speech or sudden confusion.",
+    "Chest pain with high blood pressure — possible heart attack.",
+    "Shortness of breath with high blood pressure — possible heart failure.",
+    "Hypertension in pregnancy with headache and swelling — eclampsia.",
+    "Nosebleed that will not stop with standard first aid."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Continue prescribed blood pressure medication consistently every day — this is the most important action",
+      "Monitor blood pressure regularly at a pharmacy or clinic"
+    ],
+    "avoid": [
+      "Biting nifedipine capsules — causes dangerous rapid blood pressure drop",
+      "Salt in any form — reduce dietary salt permanently",
+      "Alcohol — raises blood pressure acutely",
+      "Extra doses of any antihypertensive without medical advice"
+    ],
+    "askFor": [
+      "Prescription antihypertensive medications — amlodipine, lisinopril, or hydrochlorothiazide are common first-line choices",
+      "Regular blood pressure monitoring at a clinic",
+      "Lifestyle counselling on diet, exercise, and salt reduction"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately for blood pressure above 180/120 with symptoms, any neurological symptoms, chest pain, or significant shortness of breath. All people with high blood pressure need regular medical follow-up and consistent daily medication."
+}
