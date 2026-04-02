@@ -1,0 +1,52 @@
+{
+  "id": "acute-abdominal-pain",
+  "category": "acute",
+  "title": "Acute Abdominal Pain",
+  "severity": "acute",
+  "icon": "😣",
+  "color": "orange",
+  "summary": "Sudden or severe abdominal pain that needs careful assessment. Some causes are manageable at home. Others — appendicitis, ectopic pregnancy, obstruction — are surgical emergencies.",
+  "steps": [
+    "Locate the pain precisely. Ask the person to point with one finger to where it hurts most. The location is the most important diagnostic clue.",
+    "RIGHT LOWER ABDOMEN — appendicitis territory. Pain that starts around the navel and moves to the right lower abdomen, worsens over hours, with fever and nausea. This is a surgical emergency.",
+    "UPPER ABDOMEN — gastritis, peptic ulcer, or pancreatitis. Burning or gnawing pain, worse after eating or with alcohol.",
+    "LOWER ABDOMEN IN WOMEN — ovarian cyst, ectopic pregnancy, pelvic inflammatory disease. One-sided pain in a woman of reproductive age needs urgent assessment.",
+    "GENERALISED ABDOMEN — peritonitis, bowel obstruction. Board-like rigid abdomen with severe diffuse pain is a surgical emergency.",
+    "Assess the severity: Can the person stand up straight? Does movement or pressing make it much worse? Is there fever? Is there vomiting without diarrhoea?",
+    "Position of comfort: most people with abdominal pain prefer to lie still. Encourage the least painful position — usually knees drawn up.",
+    "Do not give food or water if surgery may be needed.",
+    "Monitor closely — note whether pain is improving, staying the same, or worsening over 30 to 60 minutes."
+  ],
+  "warnings": [
+    "Do not give strong painkillers that mask symptoms — this can delay diagnosis of a surgical emergency.",
+    "Do not apply heat to an acutely painful abdomen — can worsen inflammation.",
+    "Do not give laxatives for abdominal pain — dangerous if bowel obstruction is present.",
+    "A rigid board-like abdomen is always a surgical emergency."
+  ],
+  "redFlags": [
+    "Pain in the right lower abdomen that is worsening over hours — possible appendicitis.",
+    "Rigid board-like abdomen — peritonitis or perforation.",
+    "One-sided pelvic pain with positive pregnancy test — possible ectopic pregnancy.",
+    "Severe pain with vomiting and no bowel movement for more than 24 hours — possible obstruction.",
+    "Pain following abdominal trauma.",
+    "Vomiting blood or passing black tarry stool with abdominal pain.",
+    "Fever above 38.5°C with abdominal pain."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol for mild to moderate pain — does not mask surgical symptoms the way stronger drugs do",
+      "Antacids for confirmed gastric pain — aluminium hydroxide or omeprazole"
+    ],
+    "avoid": [
+      "Ibuprofen and aspirin worsen gastric ulcers and cause stomach bleeding",
+      "Laxatives with any abdominal pain until cause is known",
+      "Strong opioid painkillers before diagnosis"
+    ],
+    "askFor": [
+      "Urgent medical assessment for any abdominal pain with fever",
+      "Pregnancy test for any woman of reproductive age with lower abdominal pain",
+      "Omeprazole for gastric pain with known ulcer history"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately for pain in the right lower abdomen that is worsening, a rigid abdomen, one-sided pelvic pain in a woman who could be pregnant, pain with vomiting and no bowel movements, or any severe pain with fever. These are potential surgical emergencies."
+}
