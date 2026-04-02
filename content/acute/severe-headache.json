@@ -1,0 +1,53 @@
+{
+  "id": "severe-headache",
+  "category": "acute",
+  "title": "Severe Headache — Assessment & Response",
+  "severity": "acute",
+  "icon": "🤕",
+  "color": "orange",
+  "summary": "Most headaches are benign tension or migraine headaches. A small number signal dangerous conditions including meningitis, hypertensive crisis, or brain bleeding. Knowing the difference is life-saving.",
+  "steps": [
+    "Assess the onset. Ask: Did this come on suddenly and reach maximum intensity within seconds or minutes — like a thunderclap? This is a medical emergency. Or did it build gradually over hours? Gradual onset is usually less dangerous.",
+    "TENSION HEADACHE — dull, pressing pain on both sides of the head, like a tight band, worsens with stress and improves with rest. Most common type. Usually responds to paracetamol.",
+    "MIGRAINE — severe throbbing pain, usually one-sided, with nausea, vomiting, and sensitivity to light and sound. May be preceded by visual disturbances. Debilitating but not dangerous.",
+    "HYPERTENSIVE HEADACHE — throbbing pain at the back of the head, often in the morning, in someone known to have high blood pressure. Measure blood pressure if possible.",
+    "MENINGITIS HEADACHE — severe headache with fever, stiff neck, sensitivity to light, and a rash that does not fade when pressed with a glass. This is a medical emergency.",
+    "For tension headache: paracetamol or ibuprofen, rest in a dark quiet room, drink water, gentle neck stretches.",
+    "For migraine: paracetamol or ibuprofen taken early, rest in a completely dark and quiet room, cold compress on the forehead or back of neck, sleep if possible.",
+    "Keep the person hydrated. Dehydration is one of the most common headache triggers.",
+    "Note all associated symptoms and their timing — this is critical information for the doctor."
+  ],
+  "warnings": [
+    "A thunderclap headache — sudden maximum intensity pain — is a medical emergency until proven otherwise.",
+    "Do not give aspirin to children under 16.",
+    "Do not take pain medication more than 3 days per week for headaches — overuse causes rebound headaches that are harder to treat.",
+    "Do not ignore a headache that is different from any previous headache the person has had."
+  ],
+  "redFlags": [
+    "Thunderclap headache — worst headache of life, reaching maximum intensity within seconds — possible brain bleed.",
+    "Headache with fever and stiff neck — possible meningitis.",
+    "Headache with a rash that does not fade when pressed — meningococcal disease.",
+    "Headache with confusion, slurred speech, or weakness of one side of the body — possible stroke.",
+    "Headache in a pregnant woman with visual changes and swelling — possible eclampsia.",
+    "Progressively worsening headache over days with no relief.",
+    "Headache following a head injury."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol 1000mg for tension headache",
+      "Ibuprofen 400mg with food for migraine — most effective taken at onset",
+      "Oral rehydration or water for dehydration headache"
+    ],
+    "avoid": [
+      "Aspirin in children under 16",
+      "Codeine or strong opioids without medical prescription",
+      "Taking pain medication daily — causes rebound headaches"
+    ],
+    "askFor": [
+      "Sumatriptan — specific migraine medication available on prescription",
+      "Blood pressure check for persistent morning headaches",
+      "Urgent referral for thunderclap headache or headache with neurological symptoms"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately for any thunderclap headache, headache with fever and neck stiffness, headache with confusion or weakness, or headache in pregnancy with visual changes. These are medical emergencies."
+}
