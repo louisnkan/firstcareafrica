@@ -1,0 +1,53 @@
+{
+  "id": "eye-infection",
+  "category": "acute",
+  "title": "Eye Infection / Conjunctivitis",
+  "severity": "common",
+  "icon": "👁️",
+  "color": "orange",
+  "summary": "Infection or inflammation of the clear membrane covering the eye and inner eyelid. Highly contagious. Usually resolves with treatment but some types can permanently damage vision.",
+  "steps": [
+    "Identify the type: bacterial conjunctivitis causes thick yellow or green discharge that crusts the eyelids shut, especially in the morning. Viral conjunctivitis causes watery discharge and red eye, often following a cold. Allergic conjunctivitis causes intense itching with watery discharge.",
+    "Wash hands thoroughly before and after touching the eye.",
+    "Clean the eye gently using a clean cotton ball soaked in clean cooled boiled water. Wipe from the inner corner outward. Use a fresh cotton ball for each wipe and for each eye.",
+    "For bacterial conjunctivitis: antibiotic eye drops or ointment are needed. Chloramphenicol eye drops are available at most pharmacies.",
+    "For viral conjunctivitis: no antibiotic needed — it resolves on its own in 7 to 14 days. Cold compresses provide relief.",
+    "For allergic conjunctivitis: antihistamine eye drops or oral antihistamine. Identify and avoid the trigger.",
+    "Do not share towels, pillowcases, or eye products during an active infection.",
+    "Do not wear contact lenses until fully recovered.",
+    "Wash pillowcases and face towels in hot water daily during infection."
+  ],
+  "warnings": [
+    "Do not rub the eyes — it worsens the infection and spreads it to others.",
+    "Do not share any face or eye products during infection.",
+    "Conjunctivitis in a newborn in the first month of life is a medical emergency — go to hospital immediately.",
+    "Do not self-treat with leftover ear drops — they are not the same formulation as eye drops."
+  ],
+  "redFlags": [
+    "Severe eye pain — not just irritation.",
+    "Significant change in vision or sudden blurred vision.",
+    "Eye does not respond to light normally.",
+    "Cornea appears cloudy or white.",
+    "Discharge in a newborn baby's eye.",
+    "Eye is protruding or bulging.",
+    "No improvement after 48 hours of antibiotic eye drops."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Chloramphenicol 0.5% eye drops — 1 drop every 2 hours for 48 hours then reduce — for bacterial conjunctivitis",
+      "Chloramphenicol 1% eye ointment — easier to apply in children, apply at night",
+      "Sodium cromoglicate eye drops for allergic conjunctivitis",
+      "Cold compress for viral or allergic conjunctivitis"
+    ],
+    "avoid": [
+      "Steroid eye drops without medical prescription — they worsen viral and bacterial infections",
+      "Sharing eye drops between people",
+      "Contact lenses during any eye infection"
+    ],
+    "askFor": [
+      "Chloramphenicol eye drops for bacterial conjunctivitis",
+      "Antihistamine eye drops for allergic conjunctivitis"
+    ]
+  },
+  "whenToGetHelp": "See a doctor or eye clinic for any eye pain, vision changes, corneal cloudiness, eye infection in a newborn, or infection that does not improve after 48 hours of treatment. Eye infections that are not treated correctly can cause permanent vision damage."
+}
