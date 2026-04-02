@@ -1,0 +1,50 @@
+{
+  "id": "difficulty-breathing",
+  "category": "acute",
+  "title": "Difficulty Breathing / Dyspnoea",
+  "severity": "acute",
+  "icon": "🫁",
+  "color": "orange",
+  "summary": "Shortness of breath that is sudden, worsening, or not explained by physical exertion. Can indicate conditions ranging from asthma to cardiac failure. Always take seriously.",
+  "steps": [
+    "Sit the person upright immediately — leaning slightly forward with hands on knees (tripod position). This opens the airway and makes breathing easier. Never lay a breathless person flat.",
+    "Loosen any tight clothing around the neck and chest.",
+    "Keep the person calm. Panic and anxiety significantly worsen breathing difficulty.",
+    "Assess the pattern: Is there wheezing — a whistling sound when breathing out? Is there stridor — a high-pitched sound when breathing in? Is breathing fast and shallow? Is there pain with breathing?",
+    "ASTHMA — wheezing, coughing, tightness in the chest, worse at night or with cold air or exercise. If the person has an inhaler, use it immediately. Sit upright, use the inhaler every 20 minutes up to 3 doses.",
+    "PNEUMONIA — fever, cough, sharp chest pain when breathing, fast breathing. Needs antibiotic treatment from a doctor.",
+    "HEART FAILURE — breathlessness worse lying down, waking at night gasping, ankle swelling, pink frothy sputum. Sit completely upright. Get medical help urgently.",
+    "Count the breathing rate — normal adult is 12 to 20 breaths per minute. Above 25 breaths per minute at rest is a danger sign.",
+    "Monitor for blue colouring of the lips or fingernails — this means oxygen levels are critically low."
+  ],
+  "warnings": [
+    "Never lay a breathless person completely flat — always keep upright.",
+    "Do not leave a person with breathing difficulty alone.",
+    "A child breathing very fast is a medical emergency.",
+    "Do not give a second dose of salbutamol inhaler if there is no improvement after 3 doses — get to hospital."
+  ],
+  "redFlags": [
+    "Lips or fingernails turning blue — oxygen critically low.",
+    "Breathing rate above 30 per minute at rest.",
+    "Person cannot speak in full sentences due to breathlessness.",
+    "Severe breathing difficulty not improving after using asthma inhaler.",
+    "Child with fast breathing, chest drawing in with each breath, or grunting.",
+    "Breathlessness with chest pain and coughing up blood.",
+    "Sudden breathlessness with one-sided chest pain after a long journey — possible pulmonary embolism."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Salbutamol inhaler (Ventolin) for asthma — 2 to 4 puffs via spacer or direct, repeat after 20 minutes if needed up to 3 times"
+    ],
+    "avoid": [
+      "Do not give sedatives or antihistamines that may suppress breathing drive",
+      "Do not give aspirin if asthma is triggered by aspirin — some asthmatics are sensitive"
+    ],
+    "askFor": [
+      "Salbutamol reliever inhaler for known asthma patients",
+      "Oral prednisolone — for severe asthma attacks under medical direction",
+      "Oxygen if available at a clinic"
+    ]
+  },
+  "whenToGetHelp": "Any breathing difficulty that is not rapidly improving with first aid requires medical assessment. Go to hospital immediately if there is blue discolouration, the person cannot speak, the asthma inhaler is not working, or a child is breathing abnormally fast."
+}
