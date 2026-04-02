@@ -1,0 +1,51 @@
+{
+  "id": "dizziness",
+  "category": "acute",
+  "title": "Acute Vertigo / Severe Dizziness",
+  "severity": "acute",
+  "icon": "💫",
+  "color": "orange",
+  "summary": "A sensation that the room is spinning or that you are moving when you are not. Most commonly caused by inner ear problems but can occasionally signal a serious neurological condition.",
+  "steps": [
+    "Help the person sit or lie down immediately in whichever position reduces the spinning sensation most. Falling is the main immediate danger.",
+    "Keep the environment quiet and still. Reduce visual stimulation — dim the lights if possible.",
+    "BPPV (benign positional vertigo) — the most common cause. Brief intense spinning that lasts less than a minute, triggered by specific head movements such as lying down, looking up, or rolling over in bed. Resolves on its own with specific head repositioning exercises.",
+    "LABYRINTHITIS or VESTIBULAR NEURITIS — prolonged dizziness lasting days, following a recent ear infection or viral illness. Usually improves with rest and time.",
+    "For nausea and vomiting with vertigo: prochlorperazine (Stemetil) or cyclizine from a pharmacy provides relief.",
+    "For BPPV: the Epley manoeuvre — a sequence of head movements performed lying down — can resolve symptoms within minutes. Ask a pharmacist or nurse to demonstrate or look up the steps carefully.",
+    "Encourage the person to focus on a fixed point in the distance when moving — this helps the brain compensate.",
+    "Avoid sudden head movements until the episode passes.",
+    "Stay hydrated — dehydration worsens dizziness significantly."
+  ],
+  "warnings": [
+    "Do not drive or operate machinery during a vertigo episode.",
+    "Dizziness with other neurological symptoms is not simple vertigo — get medical help immediately.",
+    "Dizziness caused by standing up quickly is usually low blood pressure — sit back down slowly and rise gradually.",
+    "New onset dizziness in anyone over 60 with cardiovascular risk factors needs medical assessment."
+  ],
+  "redFlags": [
+    "Dizziness with sudden severe headache — possible brain bleed.",
+    "Dizziness with double vision, difficulty swallowing, or slurred speech — possible stroke.",
+    "Dizziness with one-sided weakness or facial drooping.",
+    "Hearing loss and ringing in the ear with new onset dizziness — Meniere's disease.",
+    "Dizziness after a head injury.",
+    "Episode lasts more than 24 hours without improvement."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Prochlorperazine 5mg (Stemetil) — reduces vertigo and nausea effectively",
+      "Cyclizine 50mg — anti-nausea for vertigo episodes",
+      "Ginger — natural anti-nausea remedy for milder symptoms"
+    ],
+    "avoid": [
+      "Alcohol worsens all forms of dizziness",
+      "Driving or any activity requiring balance during an episode"
+    ],
+    "askFor": [
+      "Prochlorperazine tablets or buccal tablets for acute vertigo",
+      "Betahistine — for recurrent vertigo, requires prescription",
+      "Referral for vestibular physiotherapy if BPPV is recurrent"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately if dizziness is accompanied by severe headache, any neurological symptoms, facial drooping, or weakness. See a doctor for dizziness lasting more than 48 hours, hearing loss, or dizziness following a head injury."
+}
