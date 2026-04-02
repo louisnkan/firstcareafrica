@@ -1,0 +1,50 @@
+{
+  "id": "chest-pain",
+  "category": "acute",
+  "title": "Chest Pain — Assessment & Response",
+  "severity": "acute",
+  "icon": "💔",
+  "color": "orange",
+  "summary": "Chest pain has many causes ranging from minor muscle strain to life-threatening cardiac events. Knowing the difference is critical. When in doubt, treat as cardiac.",
+  "steps": [
+    "Assess the character of the pain immediately. Ask these questions: Where exactly is the pain? Does it spread to the arm, jaw, neck, or back? Is it crushing, tight, or squeezing? Did it come on suddenly? Is there shortness of breath, sweating, or nausea?",
+    "CARDIAC PATTERN — crushing pressure or tightness in the centre of the chest, spreading to the left arm, jaw, or back, with sweating, nausea, and shortness of breath: treat as a heart attack. See the Cardiac Event guide immediately.",
+    "PLEURITIC PATTERN — sharp pain that is worse when breathing in or coughing, often one-sided: may indicate pneumonia, pleuritis, or pulmonary embolism. Needs urgent medical assessment.",
+    "MUSCULOSKELETAL PATTERN — pain that is worse when you press on the chest wall, worsens with movement or certain positions, improves with rest: likely a strained muscle or costochondritis. Less dangerous but still needs assessment.",
+    "GASTRIC PATTERN — burning pain behind the breastbone, worse after eating or lying down, relieved by antacids: likely acid reflux or gastritis.",
+    "For all chest pain: have the person sit or lie in a comfortable position. Loosen tight clothing. Keep them calm.",
+    "If cardiac cause is possible: give one aspirin 300mg to chew if not allergic and conscious.",
+    "Do not leave the person alone. Monitor breathing continuously.",
+    "Do not attempt to drive yourself to hospital — have someone else drive."
+  ],
+  "warnings": [
+    "Never assume chest pain is just indigestion without ruling out cardiac causes, especially in anyone over 35.",
+    "Women, diabetics, and elderly patients often have atypical cardiac symptoms — jaw pain, fatigue, and nausea without classic chest pain.",
+    "Do not give aspirin if the person is allergic or has a bleeding disorder.",
+    "Chest pain in a young person after cocaine or stimulant use can cause cardiac events."
+  ],
+  "redFlags": [
+    "Crushing central chest pain spreading to arm, jaw, or back — cardiac emergency.",
+    "Chest pain with shortness of breath, sweating, and nausea together.",
+    "Loss of consciousness with chest pain.",
+    "Chest pain with coughing up blood.",
+    "Sudden tearing pain in the back between shoulder blades — possible aortic dissection.",
+    "Chest pain with leg swelling and recent long journey — possible pulmonary embolism.",
+    "Any chest pain that lasts more than 15 minutes."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Aspirin 300mg chewed — for suspected cardiac chest pain only",
+      "Antacids for confirmed gastric pain — Gaviscon or aluminium hydroxide"
+    ],
+    "avoid": [
+      "Ibuprofen for chest pain — can worsen cardiac events",
+      "Ignoring chest pain and waiting to see if it resolves"
+    ],
+    "askFor": [
+      "ECG test at a clinic or hospital to assess heart rhythm",
+      "Referral to doctor for all chest pain lasting more than 15 minutes"
+    ]
+  },
+  "whenToGetHelp": "All chest pain lasting more than 15 minutes, all chest pain with associated symptoms such as breathlessness or sweating, and all chest pain in anyone over 35 requires urgent medical assessment. When in doubt, go immediately."
+}
