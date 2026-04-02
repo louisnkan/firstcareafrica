@@ -1,0 +1,51 @@
+{
+  "id": "body-heaviness",
+  "category": "acute",
+  "title": "Generalised Body Heaviness / Extreme Fatigue",
+  "severity": "common",
+  "icon": "😴",
+  "color": "orange",
+  "summary": "Overwhelming physical fatigue and body heaviness that is disproportionate to activity. In Africa, this symptom pattern commonly indicates malaria, anaemia, typhoid, or severe dehydration — all of which are treatable.",
+  "steps": [
+    "Take this symptom seriously in an African context. Extreme fatigue with body heaviness is a key early symptom of malaria, anaemia, and typhoid — do not dismiss it as just tiredness.",
+    "Check for accompanying symptoms: fever, chills, headache (malaria pattern). Pallor of inner eyelids and gums, shortness of breath with minimal activity (anaemia pattern). Sustained fever with abdominal discomfort (typhoid pattern). Recent illness, vomiting, diarrhoea (dehydration pattern).",
+    "Check hydration status: is the urine dark yellow? Is the mouth dry? Is there headache? Dehydration alone causes significant body fatigue — push fluids first.",
+    "Check the colour of the inside of the lower eyelid. Pull it down gently. Normal pink indicates normal haemoglobin. Pale white or very pale pink indicates possible anaemia.",
+    "Rest completely. Do not push through extreme fatigue in an acute illness — it worsens the condition.",
+    "Push fluids — water and oral rehydration solution. Aim for urine that is pale yellow.",
+    "Eat iron-rich food if anaemia is suspected — liver, red meat, beans, dark leafy vegetables.",
+    "If malaria symptoms are present — act on the malaria guidance immediately. This is the most urgent possibility.",
+    "Monitor the temperature twice daily. Document all symptoms and their timeline for the doctor."
+  ],
+  "warnings": [
+    "Do not assume extreme fatigue is normal in a sick person — it can be the primary symptom of a serious treatable illness.",
+    "Fatigue with pallor in a pregnant woman is a medical emergency — severe anaemia in pregnancy is dangerous.",
+    "Fatigue following a long illness, surgery, or significant blood loss needs medical assessment for anaemia.",
+    "Persistent unexplained fatigue lasting more than 2 weeks without fever or other obvious cause needs investigation."
+  ],
+  "redFlags": [
+    "Extreme fatigue with fever and chills — test for malaria immediately.",
+    "Fatigue with pallor, breathlessness at rest, and rapid heartbeat — severe anaemia.",
+    "Fatigue with jaundice — yellow skin or eyes.",
+    "Fatigue with weight loss and night sweats — possible tuberculosis.",
+    "Fatigue with persistent fever above 38°C for more than 3 days.",
+    "Person cannot sit up or perform basic self-care."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Malaria rapid diagnostic test — test first before anything else in endemic areas",
+      "Oral rehydration salts if dehydration is contributing",
+      "Ferrous sulphate tablets if anaemia is confirmed or suspected"
+    ],
+    "avoid": [
+      "Energy drinks and stimulants — they mask symptoms without treating the cause",
+      "Pushing through extreme fatigue in an acute illness"
+    ],
+    "askFor": [
+      "Malaria RDT test at a pharmacy",
+      "Full blood count at a clinic to check for anaemia",
+      "Ferrous sulphate for iron deficiency anaemia"
+    ]
+  },
+  "whenToGetHelp": "See a doctor or health worker for extreme fatigue lasting more than 3 days, fatigue with fever, fatigue with pallor especially in pregnancy, or fatigue that prevents normal daily activity. In malaria-endemic areas, always rule out malaria first."
+}
