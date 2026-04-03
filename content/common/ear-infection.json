@@ -1,0 +1,51 @@
+{
+  "id": "ear-infection",
+  "category": "common",
+  "title": "Ear Infection / Otitis Media",
+  "severity": "common",
+  "icon": "👂",
+  "color": "blue",
+  "summary": "Infection of the middle or outer ear. Extremely common in children under 5. Causes significant pain and can affect hearing. Most resolve with or without antibiotics but need assessment.",
+  "steps": [
+    "Identify the location. Middle ear infection (otitis media) — pain felt deep inside the ear, often following a cold, with muffled hearing and sometimes fever. Outer ear infection (otitis externa, swimmer's ear) — pain in the ear canal, worsens when you pull the outer ear, often follows swimming or moisture in the ear.",
+    "For pain relief: paracetamol or ibuprofen taken regularly rather than waiting for pain to become severe.",
+    "Warm compress against the ear — a warm cloth or warm water bottle wrapped in cloth — provides significant pain relief.",
+    "Keep the ear dry. Do not allow water to enter the ear canal during bathing — cover with a cotton wool ball lightly coated in petroleum jelly.",
+    "Do not insert anything into the ear canal — no cotton buds, pins, or fingers. This pushes infection deeper and damages the delicate canal.",
+    "Most middle ear infections in children over 2 years resolve without antibiotics within 2 to 3 days. Pain management and monitoring is appropriate for mild cases.",
+    "Children under 2 with ear infection should see a doctor — they are at higher risk of complications.",
+    "If discharge is coming from the ear — the eardrum may have perforated. This is actually a sign the pressure has relieved and the pain usually improves. Keep the ear dry and see a doctor."
+  ],
+  "warnings": [
+    "Never insert anything into the ear canal.",
+    "Do not use ear drops unless prescribed — some drops are harmful if the eardrum has perforated.",
+    "Recurrent ear infections in children cause cumulative hearing loss — get medical assessment.",
+    "Do not ignore ear infection in an infant — they cannot describe the pain and may just be unusually irritable."
+  ],
+  "redFlags": [
+    "Swelling, redness, and tenderness behind the ear — mastoiditis, serious complication.",
+    "Facial weakness on the same side as the ear infection.",
+    "Severe dizziness or balance problems with ear pain.",
+    "Discharge from the ear in a child under 2.",
+    "High fever above 39°C with ear pain.",
+    "No improvement after 48 to 72 hours of pain management."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol or ibuprofen for pain — ibuprofen is particularly effective for ear pain",
+      "Warm compress for pain relief",
+      "Olive oil drops — 2 to 3 drops of warm olive oil in the ear canal for pain relief in otitis externa"
+    ],
+    "avoid": [
+      "Cotton buds in the ear canal",
+      "Swimming or allowing water in the ear during infection",
+      "Prescribed ear drops if the eardrum is perforated — check with a doctor first"
+    ],
+    "askFor": [
+      "Amoxicillin if antibiotic is needed — standard first-line for middle ear infection",
+      "Otomize or Sofradex ear drops for outer ear infection only — not if eardrum perforated",
+      "Audiometry referral if recurrent infections affecting hearing"
+    ]
+  },
+  "whenToGetHelp": "See a doctor for ear infection in a child under 2, any ear infection with fever above 39°C, swelling behind the ear, facial weakness, or no improvement after 3 days of pain management. All ear infections with discharge should be assessed."
+}
