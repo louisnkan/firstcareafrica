@@ -1,0 +1,53 @@
+{
+  "id": "skin-rash",
+  "category": "common",
+  "title": "Skin Rash — Identification & Management",
+  "severity": "common",
+  "icon": "🔴",
+  "color": "blue",
+  "summary": "Rashes have many causes — allergic reactions, viral infections, bacterial infections, fungal infections, and parasites. Identifying the type determines the correct treatment.",
+  "steps": [
+    "Describe the rash systematically: Where on the body? When did it start? Is it spreading? Is it itchy, painful, or neither? Are there blisters or is the skin flat? Is there fever? Did it follow eating a new food, taking medication, or an insect bite?",
+    "ALLERGIC RASH (urticaria/hives) — raised, red, intensely itchy welts that appear suddenly. May appear and disappear within hours. Often follows food, medication, or insect sting. Treat with antihistamine.",
+    "HEAT RASH (prickly heat) — tiny red bumps in skin folds and on the trunk, common in hot humid weather. Keep the area cool and dry.",
+    "FUNGAL RASH (ringworm, tinea) — circular, scaly, slightly raised patches with clear central area. Common in warm moist environments. Treat with antifungal cream.",
+    "CHICKENPOX — red spots that become fluid-filled blisters that crust over. Appear first on the trunk then spread. Highly contagious. Treat symptoms; isolate the person.",
+    "MEASLES — starts with fever, cough, runny nose, red eyes, then a red blotchy rash beginning at the hairline spreading downward. Highly contagious. Get medical assessment.",
+    "SCABIES — intense itching especially at night, between fingers, on wrists and waistline. Caused by mites. Requires specific prescription treatment and treatment of all close contacts.",
+    "For itching: cool water compresses and oral antihistamine provide relief. Keep nails short to prevent scratching.",
+    "For all rashes: keep the area clean and dry. Avoid tight clothing over the affected area."
+  ],
+  "warnings": [
+    "A rash that does not fade when you press a glass against it — this is a non-blanching rash and is a medical emergency. Could indicate meningococcal disease.",
+    "Do not use steroid cream on a rash without knowing the cause — steroids worsen fungal and viral rashes significantly.",
+    "Do not scratch blistered rashes — introduces secondary infection.",
+    "Rash with difficulty breathing or throat swelling is anaphylaxis — emergency."
+  ],
+  "redFlags": [
+    "Rash that does not fade when pressed with a glass — meningococcal disease, emergency.",
+    "Rash with fever, stiff neck, and headache — meningitis.",
+    "Rash with difficulty breathing or throat swelling — anaphylaxis.",
+    "Rapidly spreading rash with fever and the person feeling very unwell.",
+    "Blistered rash around one side of the body or face in an adult — possible shingles.",
+    "Rash in a newborn."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Chlorphenamine (Piriton) or loratadine for allergic rash and itching",
+      "Clotrimazole cream for fungal rash — apply twice daily for 2 to 4 weeks",
+      "Calamine lotion for chickenpox and heat rash — soothes itching",
+      "Hydrocortisone 1% cream for confirmed allergic contact dermatitis only"
+    ],
+    "avoid": [
+      "Steroid cream on fungal, bacterial, or viral rashes — worsens them",
+      "Scratching any blistered rash",
+      "Sharing towels or clothing during any active skin infection"
+    ],
+    "askFor": [
+      "Permethrin cream for scabies — treat all household contacts simultaneously",
+      "Antifungal oral medication for extensive fungal infections",
+      "Medical assessment for any rash with fever or unusual features"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately for any rash that does not fade when pressed, rash with difficulty breathing, or rash in a newborn. See a doctor for rashes with fever, blistered rashes spreading rapidly, rashes that do not improve after appropriate treatment, or measles."
+}
