@@ -1,0 +1,68 @@
+{
+  "id": "dehydration-child",
+  "category": "maternal-child",
+  "title": "Dehydration in Children",
+  "severity": "acute",
+  "icon": "💧",
+  "color": "green",
+  "summary": "Children dehydrate much faster than adults. Dehydration from diarrhoea, vomiting, fever, or poor feeding is a leading cause of child death in Africa. It is entirely preventable and treatable.",
+  "steps": [
+    "Recognise dehydration early. Mild: thirsty, slightly dry mouth, urine darker than usual. Moderate: no urine for 6 to 8 hours, dry mouth and tongue, sunken eyes, no tears when crying, irritable. Severe: very sunken eyes, skin that stays pinched when you lift it, extremely weak or unconscious.",
+    "Test skin turgor: gently pinch the skin on the child's abdomen, hold for 2 seconds, release. In a well-hydrated child skin returns to normal instantly. Slow return indicates dehydration. Skin that stays tented is severe dehydration.",
+    "For mild to moderate dehydration: begin oral rehydration solution immediately. ORS sachets mixed exactly as directed — not more concentrated. Give small amounts frequently.",
+    "ORS dosing for children: for every episode of diarrhoea or vomiting, give 50 to 100ml of ORS for a child under 10kg. Give 100 to 200ml for a child over 10kg.",
+    "Give with a spoon or syringe — not a bottle or cup which leads to gulping and more vomiting. Small sips every 1 to 2 minutes.",
+    "If the child vomits after ORS: wait 5 to 10 minutes then resume more slowly. Do not stop — continue giving small amounts.",
+    "Continue breastfeeding throughout. Breast milk provides both hydration and immune support.",
+    "Home ORS recipe if sachets unavailable: 1 litre of clean water, 6 level teaspoons of sugar, half a teaspoon of salt. Mix completely.",
+    "Do not give plain water alone as the only rehydration — it dilutes the blood's sodium level and can cause dangerous hyponatraemia in young children.",
+    "Once the child is tolerating ORS, reintroduce breast milk or formula and then soft food."
+  ],
+  "warnings": [
+    "Do not give plain water as the only fluid in a dehydrated child — it worsens electrolyte imbalance.",
+    "Do not give fizzy drinks, undiluted juice, or sports drinks — high sugar content worsens diarrhoea.",
+    "Dehydration in a newborn is an emergency — go to hospital.",
+    "Do not make home ORS too salty — too much salt is dangerous, especially in infants."
+  ],
+  "redFlags": [
+    "Child has had no urine for more than 8 hours.",
+    "Skin remains tented after pinching.",
+    "Child is very weak, limp, or cannot be woken.",
+    "Sunken fontanelle (soft spot) in an infant — the spot appears sunken inward.",
+    "Blood in stool with dehydration.",
+    "Child is less than 3 months old with any dehydration.",
+    "Child cannot keep any ORS down after 2 hours of trying."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "ORS sachets — the single most important treatment, every home should have these",
+      "Zinc tablets 20mg daily for 10 to 14 days for children under 5 with diarrhoea — reduces severity and duration",
+      "Continue feeding — do not starve a dehydrated child"
+    ],
+    "avoid": [
+      "Fizzy drinks and undiluted juice",
+      "Plain water as the only fluid",
+      "Anti-diarrhoea drugs like loperamide in children under 5"
+    ],
+    "askFor": [
+      "ORS sachets — available at every pharmacy",
+      "Zinc sulphate for children under 5 with diarrhoea",
+      "Intravenous fluids at a clinic if child cannot tolerate oral rehydration"
+    ]
+  },
+  "faq": [
+    {
+      "question": "How do I know if my baby is dehydrated?",
+      "answer": "Check for: no wet nappy for 6 hours, sunken soft spot on head, dry mouth, no tears when crying, and very dark urine. Pinch the skin on the tummy — if it stays pinched, go to hospital immediately."
+    },
+    {
+      "question": "Can I make ORS at home?",
+      "answer": "Yes. Mix 1 litre of clean water with 6 level teaspoons of sugar and half a teaspoon of salt. Stir completely. Give in small sips frequently."
+    },
+    {
+      "question": "Should I stop breastfeeding if my baby has diarrhoea?",
+      "answer": "No. Continue breastfeeding throughout diarrhoea and vomiting. Breast milk provides hydration, nutrition, and antibodies that help fight the infection."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately if the child has no urine for 8 hours, skin stays tented when pinched, child is very weak or unconscious, or if the child is under 3 months. Children can deteriorate from moderate to severe dehydration within hours."
+}
