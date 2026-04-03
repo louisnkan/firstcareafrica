@@ -1,0 +1,51 @@
+{
+  "id": "minor-burns",
+  "category": "common",
+  "title": "Minor Burns & Scalds",
+  "severity": "common",
+  "icon": "🔥",
+  "color": "blue",
+  "summary": "Small burns from hot water, steam, hot objects, or brief flame contact. Affecting less than 5% of the body surface area in adults with no involvement of face, hands, or joints.",
+  "steps": [
+    "Cool the burn immediately under cool running water for a minimum of 20 minutes. Start this within seconds if possible. This is the most important step — it reduces depth of injury and significantly reduces pain.",
+    "Do not stop cooling before 20 minutes even if the pain has eased.",
+    "Remove jewellery, watches, or clothing from the burned area before swelling develops — do this gently and only if not stuck.",
+    "After cooling, cover loosely with cling film or a clean plastic bag. If unavailable, use a clean non-fluffy cloth. Do not wrap tightly.",
+    "Take paracetamol or ibuprofen for pain relief.",
+    "Assess the depth. Superficial burn — red, painful, no blisters. Partial thickness — blisters, very painful, weeping. Full thickness — white, brown, or black, often painless. Full thickness burns always need hospital treatment.",
+    "Small blisters — leave them intact. They protect the burn from infection. If a blister bursts accidentally, keep the overlying skin in place as a dressing and cover with a clean non-stick dressing.",
+    "Change dressing daily using clean technique. The burn should show signs of healing within 5 to 7 days.",
+    "Signs of healing: pain gradually reducing, edges of burn appearing pink. Signs of infection: increasing pain, spreading redness, pus, fever."
+  ],
+  "warnings": [
+    "Never apply butter, oil, toothpaste, egg white, or any food product — they increase infection risk and retain heat.",
+    "Never apply ice — it causes frostbite and worsens tissue damage.",
+    "Never burst blisters deliberately.",
+    "Never use fluffy cotton wool directly on a burn — fibres stick to the wound."
+  ],
+  "redFlags": [
+    "Burn larger than the person's palm.",
+    "Any burn on the face, hands, feet, genitals, or a joint.",
+    "Burn that appears white, brown, or black — full thickness.",
+    "Burn in a child under 5 or elderly person.",
+    "Burn showing signs of infection — spreading redness, pus, increasing pain, fever.",
+    "Chemical or electrical burn of any size."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol or ibuprofen for pain",
+      "Cling film or clean plastic bags for covering",
+      "Non-adherent sterile dressings such as Melolin or Jelonet"
+    ],
+    "avoid": [
+      "Butter, oil, toothpaste, egg white",
+      "Ice or very cold water",
+      "Fluffy cotton wool directly on the burn"
+    ],
+    "askFor": [
+      "Paraffin gauze non-stick dressings for wound coverage",
+      "Silver sulfadiazine cream for burns under medical guidance only"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital for any burn on the face, hands, feet, or genitals. Any burn larger than the person's palm. Any full thickness burn. Burns in children under 5 or the elderly. Any burn showing signs of infection. Any chemical or electrical burn."
+}
