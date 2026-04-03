@@ -1,0 +1,52 @@
+{
+  "id": "constipation",
+  "category": "common",
+  "title": "Constipation",
+  "severity": "common",
+  "icon": "🚽",
+  "color": "blue",
+  "summary": "Infrequent or difficult bowel movements. Fewer than 3 bowel movements per week, hard stools, straining, or a feeling of incomplete emptying. Very common and usually manageable with diet and hydration.",
+  "steps": [
+    "Increase fluid intake immediately — drink at least 2 litres of water daily. Dehydration is the most common cause of constipation in warm climates.",
+    "Increase fibre intake. Eat fruits — pawpaw, mango, oranges. Eat vegetables, whole grains, and legumes. Fibre adds bulk to stool and speeds intestinal movement.",
+    "Physical movement helps bowel movement — a 20 to 30 minute walk stimulates intestinal contractions. Do not remain sedentary.",
+    "Establish a toilet routine. Sit on the toilet at the same time each day, preferably 15 to 30 minutes after breakfast when the gastrocolic reflex is strongest.",
+    "Do not ignore the urge to use the toilet — suppressing the urge consistently trains the bowel to ignore signals.",
+    "Warm prune juice, pawpaw, or a warm drink in the morning stimulates bowel movement naturally.",
+    "Elevate the feet on a small stool when sitting on the toilet — the squatting position is more anatomically effective for bowel emptying.",
+    "If no bowel movement after 3 days: a glycerine suppository or mild osmotic laxative such as lactulose or macrogol is safe and effective.",
+    "Avoid regular use of stimulant laxatives — they cause dependency over time."
+  ],
+  "warnings": [
+    "Do not strain excessively — straining causes haemorrhoids and can trigger cardiac events in the elderly.",
+    "Do not use strong stimulant laxatives regularly — bowel becomes dependent.",
+    "Constipation in a newborn or young infant is not normal — see a doctor.",
+    "Sudden change in bowel habit in anyone over 40 needs medical investigation."
+  ],
+  "redFlags": [
+    "Blood in the stool or on toilet paper.",
+    "Unexplained weight loss with change in bowel habit.",
+    "Constipation alternating with diarrhoea.",
+    "Abdominal bloating and pain with no bowel movement for more than 5 days.",
+    "Constipation with vomiting — possible bowel obstruction.",
+    "New onset constipation in a person over 40 with no dietary explanation."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Lactulose syrup — gentle osmotic laxative, safe long term, particularly good for children and elderly",
+      "Macrogol sachets (Movicol) — effective and gentle",
+      "Glycerine suppositories — work within 30 minutes for immediate relief",
+      "Senna tablets — stimulant laxative for short-term use only"
+    ],
+    "avoid": [
+      "Regular use of stimulant laxatives — causes bowel dependence",
+      "Codeine and opioid pain medication — severely worsens constipation"
+    ],
+    "askFor": [
+      "Lactulose or macrogol for mild to moderate constipation",
+      "Dietary and fibre counselling at a clinic",
+      "Colonoscopy referral if new onset over 40 with unexplained change in bowel habit"
+    ]
+  },
+  "whenToGetHelp": "See a doctor for blood in stool, unexplained weight loss, constipation alternating with diarrhoea, no bowel movement for more than 5 days despite laxatives, or any new onset change in bowel habit in someone over 40."
+}
