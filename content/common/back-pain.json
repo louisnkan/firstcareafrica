@@ -1,0 +1,54 @@
+{
+  "id": "back-pain",
+  "category": "common",
+  "title": "Back Pain / Musculoskeletal Pain",
+  "severity": "common",
+  "icon": "🦴",
+  "color": "blue",
+  "summary": "Pain in the lower, middle, or upper back. The majority of back pain is musculoskeletal — caused by muscle strain, poor posture, or overexertion. Usually improves within 2 to 6 weeks with active management.",
+  "steps": [
+    "Assess the character of the pain. Musculoskeletal back pain — dull or aching, worsens with movement and improves with rest, often follows physical activity or awkward lifting. Nerve pain — shooting or burning pain radiating down the leg (sciatica), with numbness or tingling.",
+    "Continue moving. Prolonged bed rest worsens back pain and slows recovery. Stay as active as the pain allows.",
+    "Apply heat to the painful area — a warm cloth, hot water bottle, or heat patch. Heat relaxes tense muscles. Use for 15 to 20 minutes several times daily. After the first 48 hours, heat is more beneficial than ice.",
+    "In the first 48 hours: ice wrapped in cloth for 15 minutes can reduce acute inflammation.",
+    "Take ibuprofen with food — it reduces both pain and muscle inflammation. Paracetamol for pain if ibuprofen is not suitable.",
+    "Gentle stretching helps. Lie on your back, bring both knees to the chest and hold for 30 seconds. Repeat 3 to 5 times.",
+    "Correct your posture immediately. When lifting heavy objects: bend the knees, keep the back straight, hold the load close to the body.",
+    "Sleep on a firm surface on your side with knees slightly bent. Avoid sleeping on your stomach.",
+    "Return to normal activities as soon as possible — this is the most important part of recovery."
+  ],
+  "warnings": [
+    "Do not stay in bed for more than 1 to 2 days — prolonged rest weakens back muscles and delays recovery.",
+    "Do not lift heavy loads during recovery.",
+    "Back pain with fever and urinary symptoms may indicate a kidney infection, not a musculoskeletal problem.",
+    "Back pain following a fall or impact needs assessment for fracture."
+  ],
+  "redFlags": [
+    "Back pain with loss of bladder or bowel control — cauda equina syndrome, emergency.",
+    "Back pain with numbness in the groin or inner thighs.",
+    "Back pain with fever and urinary symptoms — possible kidney infection.",
+    "Back pain following significant trauma — possible fracture.",
+    "Severe back pain that is constant, does not change with position, and wakes you from sleep.",
+    "Back pain with unexplained weight loss — requires investigation.",
+    "New back pain in anyone over 55 without obvious cause."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ibuprofen 400mg three times daily with food for the first 5 days",
+      "Paracetamol 1000mg as alternative or in combination",
+      "Diclofenac gel applied topically to the painful area",
+      "Heat patches worn on the lower back during the day"
+    ],
+    "avoid": [
+      "Prolonged bed rest",
+      "Heavy lifting during recovery",
+      "Strong opioid painkillers as first-line treatment"
+    ],
+    "askFor": [
+      "Physiotherapy referral for back pain lasting more than 2 weeks",
+      "Muscle relaxant such as diazepam for short-term use in severe acute spasm",
+      "X-ray or MRI only if red flag symptoms are present"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately for back pain with loss of bladder or bowel control or numbness in the groin. See a doctor for back pain following trauma, back pain with fever and urinary symptoms, or back pain that is constant, severe, and not improving after 2 weeks."
+}
