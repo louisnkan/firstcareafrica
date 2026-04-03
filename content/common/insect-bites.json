@@ -1,0 +1,51 @@
+{
+  "id": "insect-bites",
+  "category": "common",
+  "title": "Insect Bites & Stings — Non-Venomous",
+  "severity": "common",
+  "icon": "🦟",
+  "color": "blue",
+  "summary": "Common bites from mosquitoes, ants, bedbugs, and non-venomous insects. Usually cause local swelling, redness, and itching. Rarely dangerous unless allergic or infected.",
+  "steps": [
+    "For a bee or wasp sting: remove the stinger immediately by scraping sideways with a credit card or fingernail. Do not squeeze with tweezers — this injects more venom.",
+    "Wash the bite or sting area thoroughly with soap and water.",
+    "Apply a cold compress — ice wrapped in cloth — for 10 to 15 minutes to reduce swelling and pain.",
+    "Apply calamine lotion or 1% hydrocortisone cream to reduce itching and inflammation.",
+    "Take an oral antihistamine — loratadine or chlorphenamine — to reduce itching, swelling, and allergic response.",
+    "Keep the bite area clean and avoid scratching — broken skin from scratching allows bacteria to enter and cause infection.",
+    "For mosquito bites: the primary concern in Africa is malaria transmission. Monitor for fever, chills, and flu-like symptoms in the 7 to 30 days following a mosquito bite.",
+    "Trim fingernails short if bites are being scratched during sleep.",
+    "Use mosquito repellent containing DEET when outdoors. Sleep under a treated mosquito net."
+  ],
+  "warnings": [
+    "Any bite or sting causing throat swelling, difficulty breathing, or rapid spread of swelling beyond the bite site is anaphylaxis — treat as a medical emergency.",
+    "Multiple bee or wasp stings — more than 10 in an adult or more than 3 in a child — can cause systemic toxicity even without allergy. Get medical assessment.",
+    "Bites that become red, warm, and increasingly painful over days suggest infection — see wound infection guidance.",
+    "Any mosquito bite in a malaria-endemic area is a potential malaria exposure."
+  ],
+  "redFlags": [
+    "Throat tightening, difficulty swallowing, or breathing after a sting — anaphylaxis, emergency.",
+    "Widespread hives appearing over the whole body after a sting.",
+    "Multiple stings from bees or wasps — possible venom toxicity.",
+    "Fever developing 7 to 30 days after a mosquito bite — test for malaria.",
+    "Bite site showing spreading redness, warmth, and pus — infected bite."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Loratadine 10mg daily or chlorphenamine 4mg for itching and allergic response",
+      "Calamine lotion applied to bite for soothing",
+      "Hydrocortisone 1% cream for localised inflammation",
+      "DEET-containing repellent for prevention"
+    ],
+    "avoid": [
+      "Squeezing a bee stinger with tweezers",
+      "Scratching bites until broken — causes infection"
+    ],
+    "askFor": [
+      "Oral antihistamine for allergic response to bites",
+      "EpiPen prescription if you have had a severe allergic reaction to stings previously",
+      "Permethrin-treated mosquito nets for prevention"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately for any signs of anaphylaxis after a sting. See a doctor for multiple stings, bites showing signs of infection, or fever developing after mosquito exposure in a malaria area."
+}
