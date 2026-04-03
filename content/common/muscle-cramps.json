@@ -1,0 +1,51 @@
+{
+  "id": "muscle-cramps",
+  "category": "common",
+  "title": "Muscle Cramps / Pulls / Strains",
+  "severity": "common",
+  "icon": "💪",
+  "color": "blue",
+  "summary": "Sudden involuntary muscle contractions causing intense pain. Usually harmless and brief. Can indicate dehydration, electrolyte imbalance, or overexertion.",
+  "steps": [
+    "For an active cramp: stop the activity immediately. Gently stretch and massage the cramping muscle in the direction that opposes the contraction.",
+    "CALF CRAMP — straighten the leg and gently flex the foot upward, pulling the toes toward the shin. Hold for 30 seconds. Walk on it gently once the cramp releases.",
+    "THIGH CRAMP — for a front thigh cramp, bend the knee to bring the heel toward the buttock. For a back thigh cramp, straighten the leg and flex the foot.",
+    "FOOT CRAMP — press the foot flat on the floor and apply weight to stretch the arch.",
+    "Apply heat to the muscle after the cramp releases — warm cloth or hot water bottle. Heat relaxes muscle fibres and reduces recurrence.",
+    "Drink water with a pinch of salt or take an oral rehydration solution — most cramps in hot climates are caused by dehydration and salt loss through sweat.",
+    "For muscle strain — a pulled muscle from overexertion: follow RICE. Rest the muscle. Ice wrapped in cloth for 15 minutes every hour for the first 24 hours. Compression with a bandage. Elevation above heart level.",
+    "After 48 hours, switch from ice to heat for a muscle strain to promote blood flow and healing.",
+    "Gentle movement after 48 hours. Do not rest completely for longer than necessary — muscles stiffen and weaken with prolonged rest."
+  ],
+  "warnings": [
+    "Do not apply ice directly to skin — wrap in cloth.",
+    "Do not massage a potentially torn muscle vigorously — you can worsen the injury.",
+    "Severe swelling, bruising, or inability to bear weight after a muscle injury needs medical assessment.",
+    "Cramps that occur at rest, are frequent, and do not respond to stretching need investigation."
+  ],
+  "redFlags": [
+    "Muscle pain with significant swelling and bruising after injury — possible tear.",
+    "Inability to bear weight on the leg after a muscle injury.",
+    "Calf pain and swelling in someone who has been immobile or recently travelled — possible deep vein thrombosis.",
+    "Muscle cramps with weakness and dark urine after extreme exertion — rhabdomyolysis.",
+    "Frequent severe cramps at rest in a person with diabetes or vascular disease."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Oral rehydration salts during and after exercise in hot conditions",
+      "Magnesium supplement — reduces frequency of nocturnal leg cramps",
+      "Ibuprofen gel applied topically for muscle strain",
+      "Ibuprofen or paracetamol tablets for pain management"
+    ],
+    "avoid": [
+      "Quinine tablets — previously used for cramps but now not recommended due to side effects",
+      "Applying ice directly to skin"
+    ],
+    "askFor": [
+      "Magnesium glycinate or magnesium citrate for recurrent night cramps",
+      "Electrolyte replacement drinks or sachets for exercise-related cramps",
+      "Medical assessment if cramps are frequent, severe, or associated with weakness"
+    ]
+  },
+  "whenToGetHelp": "See a doctor for frequent unexplained muscle cramps, cramps that occur at rest regularly, muscle pain with significant swelling after injury, or inability to bear weight. Calf swelling and pain in someone who has been immobile needs urgent assessment to rule out blood clot."
+}
