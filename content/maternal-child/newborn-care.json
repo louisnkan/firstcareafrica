@@ -1,0 +1,68 @@
+{
+  "id": "newborn-care",
+  "category": "maternal-child",
+  "title": "Newborn Baby Care — First Days",
+  "severity": "common",
+  "icon": "👶",
+  "color": "green",
+  "summary": "Essential guidance for caring for a newborn in the first days of life when hospital access may be limited. Covering warmth, feeding, umbilical cord care, and recognising danger signs.",
+  "steps": [
+    "Keep the baby warm immediately after birth. Dry the baby thoroughly, wrap in a clean dry cloth, and place skin-to-skin on the mother's chest. Skin-to-skin contact maintains temperature, stabilises breathing, and promotes breastfeeding.",
+    "Initiate breastfeeding within the first hour of life. The first milk (colostrum) is yellow and thick — it is extremely valuable. It provides antibodies, clears the gut, and prevents low blood sugar. Do not discard it.",
+    "Breastfeed on demand — whenever the baby shows feeding cues: rooting, sucking hands, turning head. A newborn typically feeds 8 to 12 times in 24 hours.",
+    "Check the umbilical cord stump daily. Keep it clean and dry. Fold the nappy below it. Clean with a dry cotton swab if dirty. The stump falls off naturally in 1 to 3 weeks.",
+    "Normal newborn behaviour: sleeps 16 to 20 hours per day, has 6 to 8 wet nappies per day from day 3 onward, passes dark green stool (meconium) in first 24 hours which becomes yellow and seedy once breastfeeding is established.",
+    "Normal newborn appearance: mottled blueish hands and feet in first 24 hours, swollen eyelids, flattened nose, soft spots on skull (fontanelles), breast swelling in both boys and girls from maternal hormones — all normal.",
+    "Bathing: sponge baths only until the umbilical cord stump falls off. Use warm water, no harsh soap on face.",
+    "Sleep position: always place the baby on their back to sleep — this is the only safe sleep position. Never on the tummy.",
+    "Never shake a baby — even gentle shaking causes serious brain damage."
+  ],
+  "warnings": [
+    "Never place a baby to sleep on their stomach — risk of sudden infant death syndrome.",
+    "Never share a bed with a baby if you have been drinking alcohol, taking medication, or are a smoker.",
+    "Never give water, tea, or any other fluid to a newborn — breast milk or formula only for the first 6 months.",
+    "Never shake a baby — causes irreversible brain damage."
+  ],
+  "redFlags": [
+    "Baby is not breathing normally or making grunting sounds with each breath.",
+    "Skin or whites of eyes turning yellow in the first 24 hours — jaundice this early is dangerous.",
+    "Baby has not passed urine by 24 hours or stool by 48 hours.",
+    "Umbilical cord stump is red, smelly, or has pus — possible infection.",
+    "Baby is not waking for feeds or is impossible to wake.",
+    "Persistent high-pitched cry different from normal cry.",
+    "Baby feels cold despite warming attempts.",
+    "Blueness of the lips or tongue at any time."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Vitamin K injection at birth — prevents dangerous bleeding disorder in newborns, given by health worker",
+      "Clean cotton swabs for umbilical cord care",
+      "Chlorhexidine 7.1% gel — apply to umbilical cord stump daily in first week in high-risk settings"
+    ],
+    "avoid": [
+      "Applying traditional remedies, ash, or dung to the umbilical stump — causes serious infection",
+      "Water, tea, or any liquid other than breast milk or formula",
+      "Any medication not specifically prescribed for newborns"
+    ],
+    "askFor": [
+      "Vitamin K injection at birth at the nearest health facility",
+      "BCG and hepatitis B vaccination at birth",
+      "Chlorhexidine cord care gel in areas with high umbilical infection rates"
+    ]
+  },
+  "faq": [
+    {
+      "question": "How do I know if my newborn is getting enough milk?",
+      "answer": "Your baby is getting enough if they have 6 or more wet nappies per day from day 3, are regaining birth weight by 2 weeks, and seem satisfied after feeds. Weight gain is the most reliable sign."
+    },
+    {
+      "question": "Why is my newborn's skin yellow?",
+      "answer": "Mild jaundice appearing after day 2 is common and usually resolves. Jaundice appearing in the first 24 hours is dangerous — go to hospital immediately. Jaundice spreading to the abdomen and legs needs medical assessment."
+    },
+    {
+      "question": "My newborn's umbilical cord stump is bleeding slightly — is this normal?",
+      "answer": "A small amount of blood when the stump is drying and separating is normal. Active bleeding, redness spreading around the base, or smelly discharge is not normal — see a doctor."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for any breathing difficulty, jaundice in first 24 hours, blueness of lips or tongue, no urine by 24 hours, no stool by 48 hours, or any baby that cannot be woken for feeds. Newborns deteriorate rapidly — when in doubt, go."
+}
