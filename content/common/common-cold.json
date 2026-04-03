@@ -1,18 +1,54 @@
 {
   "id": "common-cold",
   "category": "common",
-  "title": "Upper Respiratory Tract Infection",
+  "title": "Upper Respiratory Tract Infection / Common Cold",
   "severity": "common",
   "icon": "🤧",
   "color": "blue",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "A viral infection of the nose, throat, and sinuses. The most common illness in humans. Usually resolves in 7 to 10 days without treatment. Antibiotics do not help.",
+  "steps": [
+    "Rest as much as possible. The immune system works harder during sleep — rest is genuinely the most effective treatment.",
+    "Stay well hydrated. Drink water, warm broth, or herbal tea consistently throughout the day. Fluids thin mucus and prevent dehydration from fever.",
+    "For a blocked or runny nose: saline nasal rinse with a pinch of salt in a cup of warm clean water, sniffed gently into each nostril, provides significant relief. Steam inhalation — breathing over a bowl of hot water with a towel over the head — loosens congestion.",
+    "For sore throat: gargle with warm salt water (half a teaspoon of salt in a glass of warm water) every few hours. Honey in warm water soothes throat irritation.",
+    "For fever and body aches: paracetamol or ibuprofen taken with food.",
+    "Keep warm. Avoid cold air, especially at night.",
+    "Eat light nutritious food even if appetite is poor — your body needs fuel to fight the infection.",
+    "Wash hands frequently to prevent spreading to others.",
+    "Stay away from work, school, or crowded places for the first 2 to 3 days when you are most contagious."
+  ],
+  "warnings": [
+    "Do not take antibiotics for a cold — they have no effect on viruses and contribute to antibiotic resistance.",
+    "Do not give aspirin to children under 16.",
+    "Do not give cold and flu decongestant medications to children under 6 — they can cause dangerous side effects.",
+    "Avoid giving honey to children under 1 year — risk of infant botulism."
+  ],
+  "redFlags": [
+    "Fever above 39°C that does not reduce with paracetamol.",
+    "Difficulty breathing or rapid breathing.",
+    "Severe throat pain making it impossible to swallow — possible tonsillitis or abscess.",
+    "Ear pain developing during a cold — possible ear infection.",
+    "Symptoms worsening after day 5 rather than improving — possible secondary bacterial infection.",
+    "Stiff neck with fever and headache — rule out meningitis.",
+    "Cold symptoms in a newborn or infant under 3 months — always see a doctor."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Paracetamol for fever and body aches",
+      "Ibuprofen for fever, body aches, and sore throat — take with food",
+      "Saline nasal spray for congestion",
+      "Throat lozenges containing benzocaine or menthol for sore throat relief",
+      "Vitamin C and zinc supplements may reduce duration slightly"
+    ],
+    "avoid": [
+      "Antibiotics — no benefit for viral infections",
+      "Aspirin in children under 16",
+      "Decongestant nasal sprays for more than 3 days — cause rebound congestion"
+    ],
+    "askFor": [
+      "Saline nasal rinse sachets",
+      "Paracetamol or ibuprofen appropriate to weight for children"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "whenToGetHelp": "See a doctor if fever is above 39°C, breathing is difficult, symptoms are worsening after day 5, ear pain develops, or if a child under 3 months has any cold symptoms. Most colds resolve without medical treatment."
 }
