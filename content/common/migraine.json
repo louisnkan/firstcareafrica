@@ -1,0 +1,53 @@
+{
+  "id": "migraine",
+  "category": "common",
+  "title": "Migraine",
+  "severity": "common",
+  "icon": "🤯",
+  "color": "blue",
+  "summary": "A neurological condition causing severe throbbing headache, usually one-sided, with nausea, vomiting, and sensitivity to light and sound. Debilitating but manageable with correct treatment.",
+  "steps": [
+    "Act at the first warning signs. Migraine is much easier to treat at the earliest stage — waiting until pain is severe makes medication far less effective.",
+    "Take pain medication immediately at the first sign of migraine — ibuprofen 400 to 600mg or paracetamol 1000mg. Take with a small amount of food and water.",
+    "Move to a dark, quiet room immediately. Light and sound dramatically worsen migraine and prolong the attack.",
+    "Lie down with eyes closed. Sleep is one of the most effective treatments for migraine — many attacks resolve completely with sleep.",
+    "Apply a cold compress to the forehead or back of the neck.",
+    "Stay hydrated — dehydration triggers and worsens migraines. Sip water consistently even if nauseous.",
+    "If nausea or vomiting prevents taking tablets: prochlorperazine (Stemetil) dissolves under the tongue and controls nausea, allowing other medication to be taken.",
+    "Identify your triggers over time: common triggers include skipped meals, dehydration, poor sleep, stress, strong smells, bright lights, and certain foods such as aged cheese, red wine, and processed meat.",
+    "Rest for at least 1 to 2 hours after the headache resolves — the post-migraine phase causes fatigue and sensitivity even after the pain is gone."
+  ],
+  "warnings": [
+    "Do not take pain medication more than 3 days per week for migraine — causes medication overuse headache which is harder to treat.",
+    "A headache described as the worst headache of your life coming on suddenly is not migraine — it is an emergency.",
+    "Do not drive or operate machinery during a migraine.",
+    "Migraine with aura (visual disturbances before the headache) combined with oral contraceptive pill use increases stroke risk — discuss with a doctor."
+  ],
+  "redFlags": [
+    "Thunderclap headache — sudden maximum severity within seconds — not migraine, emergency.",
+    "Headache with fever, stiff neck, or rash.",
+    "Headache with confusion, weakness, or slurred speech — possible stroke.",
+    "Migraine lasting more than 72 hours (status migrainosus).",
+    "Significant change in usual migraine pattern.",
+    "First ever migraine in someone over 40."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ibuprofen 600mg taken at first sign of attack — most effective OTC treatment",
+      "Paracetamol 1000mg as alternative",
+      "Prochlorperazine 5mg buccal tablet (dissolves under tongue) for nausea",
+      "Aspirin 900mg is effective for migraine in adults who are not children"
+    ],
+    "avoid": [
+      "Taking pain medication more than 3 days per week",
+      "Bright screens and lights during attack",
+      "Known personal triggers"
+    ],
+    "askFor": [
+      "Sumatriptan 50mg — prescription triptan specifically for migraine, most effective treatment",
+      "Preventive medication such as propranolol or amitriptyline if migraines are frequent",
+      "Neurologist referral for frequent or complex migraines"
+    ]
+  },
+  "whenToGetHelp": "Go to hospital immediately for any sudden severe headache unlike previous headaches, headache with fever and stiff neck, or headache with neurological symptoms. See a doctor if migraines are occurring more than twice per month, lasting more than 72 hours, or not responding to medication."
+}
