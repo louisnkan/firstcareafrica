@@ -1,0 +1,53 @@
+{
+  "id": "sore-throat",
+  "category": "common",
+  "title": "Sore Throat / Pharyngitis / Tonsillitis",
+  "severity": "common",
+  "icon": "🗣️",
+  "color": "blue",
+  "summary": "Inflammation of the throat causing pain, especially when swallowing. Most are viral and resolve without antibiotics. Bacterial tonsillitis requires antibiotic treatment.",
+  "steps": [
+    "Assess whether this is likely viral or bacterial. Viral sore throat: gradual onset, accompanied by runny nose, cough, and mild fever. Bacterial (streptococcal) tonsillitis: sudden severe throat pain, high fever above 38.5°C, white or yellow patches on the tonsils, swollen neck glands, no cough.",
+    "Gargle with warm salt water — half a teaspoon of salt dissolved in a glass of warm water. Gargle for 30 seconds and spit. Repeat every 2 to 3 hours. This reduces inflammation and kills surface bacteria.",
+    "Drink warm fluids consistently — warm water, herbal tea, warm broth. Cold drinks can temporarily numb the pain.",
+    "Take paracetamol or ibuprofen for pain and fever. Ibuprofen is more effective for throat inflammation.",
+    "Rest the voice. Avoid speaking loudly or whispering — whispering actually strains the vocal cords more than normal speaking.",
+    "Eat soft foods that are easy to swallow — porridge, soup, mashed foods, yoghurt.",
+    "Avoid smoking and smoke exposure — it significantly worsens throat irritation.",
+    "For viral sore throat: symptoms should improve within 5 to 7 days without antibiotics.",
+    "For suspected bacterial tonsillitis: see a doctor or pharmacist for antibiotic assessment."
+  ],
+  "warnings": [
+    "Do not take antibiotics without confirmation of bacterial infection — overuse causes resistance.",
+    "Do not give aspirin to children under 16.",
+    "A sore throat that makes breathing difficult is an emergency — go to hospital immediately.",
+    "Recurrent tonsillitis more than 5 times per year should be discussed with a doctor — tonsil removal may be considered."
+  ],
+  "redFlags": [
+    "Difficulty breathing or stridor — swollen throat obstructing airway.",
+    "Inability to open the mouth — possible peritonsillar abscess.",
+    "Drooling because swallowing is impossible.",
+    "Muffled or hot-potato voice with severe unilateral throat pain — peritonsillar abscess.",
+    "Stiff neck with sore throat and fever — rule out meningitis.",
+    "Sore throat lasting more than 2 weeks without improvement."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ibuprofen 400mg with food — most effective for throat inflammation",
+      "Paracetamol 1000mg as alternative",
+      "Benzydamine throat spray or gargle — topical anti-inflammatory",
+      "Throat lozenges with local anaesthetic for temporary relief",
+      "Difflam spray for significant throat pain"
+    ],
+    "avoid": [
+      "Antibiotics for viral sore throat",
+      "Aspirin in children under 16"
+    ],
+    "askFor": [
+      "Throat swab test if bacterial tonsillitis suspected",
+      "Phenoxymethylpenicillin or amoxicillin for confirmed bacterial tonsillitis",
+      "Clarithromycin if penicillin allergic"
+    ]
+  },
+  "whenToGetHelp": "See a doctor immediately if you cannot breathe normally, cannot open your mouth, are drooling because you cannot swallow, or have a muffled voice with severe one-sided throat pain. These suggest a peritonsillar abscess which requires urgent drainage."
+}
