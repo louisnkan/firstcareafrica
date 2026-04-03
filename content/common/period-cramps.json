@@ -1,0 +1,50 @@
+{
+  "id": "period-cramps",
+  "category": "common",
+  "title": "Menstrual Pain / Period Cramps",
+  "severity": "common",
+  "icon": "🌸",
+  "color": "blue",
+  "summary": "Lower abdominal cramping before or during menstruation. Affects most women at some point. Usually manageable with medication and heat. Severe pain may indicate an underlying condition.",
+  "steps": [
+    "Take ibuprofen or naproxen at the first sign of cramping — do not wait for pain to become severe. These drugs block the prostaglandins that cause uterine cramping. They are significantly more effective than paracetamol for period pain.",
+    "Apply heat to the lower abdomen and lower back — a hot water bottle wrapped in cloth, a warm compress, or a heat patch. Heat relaxes uterine muscle effectively.",
+    "Light exercise such as walking, yoga, or gentle stretching reduces period pain by releasing endorphins and improving blood flow to the uterus.",
+    "The knee-to-chest position or child's pose reduces pressure on the lower abdomen and provides comfort.",
+    "Stay warm. Cold temperatures worsen cramping for many women.",
+    "Avoid caffeine, alcohol, and high-salt foods during your period — they worsen bloating and cramping.",
+    "Stay well hydrated — dehydration worsens cramping.",
+    "If cramps are consistently severe: tracking your cycle and taking ibuprofen starting 1 to 2 days before your expected period begins can significantly reduce pain."
+  ],
+  "warnings": [
+    "Do not take ibuprofen on an empty stomach.",
+    "Do not exceed the recommended dose.",
+    "Pain that is getting progressively worse each month needs medical investigation.",
+    "Pain during sex, during bowel movements during your period, or between periods suggests endometriosis."
+  ],
+  "redFlags": [
+    "Pain significantly worse than usual periods.",
+    "Fever with period pain — possible pelvic infection.",
+    "Pain continuing after the period ends.",
+    "Very heavy bleeding with severe pain.",
+    "Pain during sex or bowel movements — possible endometriosis.",
+    "Pain that is getting worse each cycle rather than staying the same."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ibuprofen 400mg every 6 to 8 hours with food — most effective for period pain",
+      "Naproxen sodium 500mg twice daily — longer acting alternative",
+      "Buscopan (hyoscine butylbromide) — targets uterine cramping and spasm specifically",
+      "Heat patch worn on the lower abdomen"
+    ],
+    "avoid": [
+      "Aspirin during heavy periods",
+      "Ibuprofen on empty stomach"
+    ],
+    "askFor": [
+      "Mefenamic acid — prescription strength specifically for period pain",
+      "Discuss hormonal options with a doctor if pain is consistently severe"
+    ]
+  },
+  "whenToGetHelp": "See a doctor if period pain is consistently severe, is getting worse over time, does not respond to ibuprofen, is accompanied by very heavy bleeding, or if you have pain during sex or between periods. These symptoms suggest conditions such as endometriosis or fibroids which are treatable."
+}
