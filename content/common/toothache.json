@@ -1,0 +1,53 @@
+{
+  "id": "toothache",
+  "category": "common",
+  "title": "Toothache / Dental Abscess",
+  "severity": "common",
+  "icon": "🦷",
+  "color": "blue",
+  "summary": "Tooth pain ranging from mild sensitivity to severe throbbing pain from an abscess. Dental abscesses can spread to the jaw, neck, and airway — never ignore severe tooth pain.",
+  "steps": [
+    "Assess severity: Is the pain constant or triggered by hot, cold, or biting? Is there swelling of the cheek or jaw? Is there fever? Constant severe throbbing pain with swelling suggests an abscess.",
+    "Rinse the mouth with warm salt water — half a teaspoon of salt in a glass of warm water. Rinse gently for 30 seconds. This reduces bacteria and soothes inflamed gum tissue.",
+    "Take ibuprofen for dental pain — it is more effective than paracetamol for tooth pain because it reduces both pain and the underlying inflammation. Take with food.",
+    "Clove oil contains eugenol, a natural dental anaesthetic. Apply a small amount to a cotton ball and hold against the painful tooth for temporary relief. Available at most pharmacies.",
+    "Avoid hot, cold, and sweet foods and drinks which trigger pain on sensitive teeth.",
+    "If there is visible food stuck between teeth or in a cavity, gently rinse and use a toothpick carefully to remove it — this often provides immediate relief.",
+    "Keep the head elevated when resting — lying flat increases blood pressure in the head and worsens tooth pain.",
+    "Dental abscess with swelling requires antibiotics and dental treatment — manage pain and get to a dentist or doctor as soon as possible.",
+    "A burst abscess may taste salty and foul — rinse with warm salt water and still see a dentist. The infection has not resolved even if the pain temporarily eases."
+  ],
+  "warnings": [
+    "Never put aspirin directly on the tooth or gum — it burns the tissue.",
+    "Do not lance or squeeze a dental abscess — spreads infection.",
+    "A dental abscess that is left untreated can spread to the throat and airway causing Ludwig's angina — a life-threatening emergency.",
+    "Facial swelling from a dental abscess spreads faster in diabetics and immunocompromised individuals."
+  ],
+  "redFlags": [
+    "Swelling extending to the eye, neck, or floor of the mouth.",
+    "Difficulty opening the mouth (trismus).",
+    "Difficulty swallowing or breathing.",
+    "Fever above 38.5°C with dental pain and swelling.",
+    "Swelling that has grown rapidly over hours.",
+    "Toothache with swelling in a diabetic or immunocompromised person."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ibuprofen 400mg with food — most effective OTC pain relief for dental pain",
+      "Paracetamol 1000mg — combine with ibuprofen for severe pain if not contraindicated",
+      "Clove oil (eugenol) — apply to cotton ball and hold on tooth",
+      "Dental anaesthetic gel containing benzocaine for temporary gum relief"
+    ],
+    "avoid": [
+      "Placing aspirin directly on teeth or gums",
+      "Very hot or cold food and drinks",
+      "Lancing or squeezing abscesses"
+    ],
+    "askFor": [
+      "Amoxicillin 500mg three times daily for 5 to 7 days for dental abscess",
+      "Metronidazole (Flagyl) added to amoxicillin for severe abscess",
+      "Urgent dental referral — antibiotics treat infection but the tooth still needs treatment"
+    ]
+  },
+  "whenToGetHelp": "See a dentist or doctor for all dental abscesses — antibiotics control the infection but dental treatment is needed to resolve it. Go to hospital immediately if there is swelling extending to the neck, difficulty breathing or swallowing, or inability to open the mouth."
+}
