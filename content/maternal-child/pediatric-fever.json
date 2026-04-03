@@ -1,18 +1,68 @@
 {
   "id": "pediatric-fever",
   "category": "maternal-child",
-  "title": "Paediatric Fever / High Temperature in Children",
+  "title": "Fever in Children / Paediatric High Temperature",
   "severity": "acute",
-  "icon": "👶",
+  "icon": "🌡️",
   "color": "green",
-  "summary": "Content coming in Phase C.",
-  "steps": ["Content coming in Phase C."],
-  "warnings": ["Content coming in Phase C."],
-  "redFlags": ["Content coming in Phase C."],
+  "summary": "High body temperature in babies and children. Fever itself is not dangerous — it is the body fighting infection. The cause and the child's behaviour matter more than the number alone.",
+  "steps": [
+    "Measure the temperature correctly. Normal is 36.1 to 37.2°C. Fever is above 38°C. High fever is above 39°C. Dangerous fever is above 40°C — act immediately.",
+    "Remove excess clothing and blankets. Do not wrap a feverish child tightly — heat must escape.",
+    "Give paracetamol syrup dosed by weight, not age. Dose is 15mg per kilogram. Example: a 10kg child receives 150mg. Give every 4 to 6 hours. Do not exceed 4 doses in 24 hours.",
+    "Ibuprofen syrup can be alternated with paracetamol for high fevers. Give ibuprofen 3 to 4 hours after paracetamol if fever has not reduced. Do not give ibuprofen to infants under 3 months.",
+    "Encourage fluids constantly — breast milk, formula, water, or diluted fruit juice. Fever causes dehydration rapidly in children.",
+    "Sponge the child with lukewarm water — not cold. Lukewarm sponging helps reduce temperature without causing shivering which paradoxically raises temperature.",
+    "Monitor the child's behaviour as closely as the temperature. A child with a 39°C fever who is playing and drinking is less concerning than a 38.5°C child who is listless and refusing all fluids.",
+    "Recheck temperature 30 to 60 minutes after giving paracetamol.",
+    "For a child who has had a febrile seizure before: begin fever treatment at 38°C to prevent the temperature reaching seizure threshold."
+  ],
+  "warnings": [
+    "Never give aspirin to children under 16 — causes Reye syndrome, a rare but fatal liver and brain condition.",
+    "Do not use cold water or ice for sponging — causes shivering which raises temperature.",
+    "Do not overdress or over-wrap a feverish child.",
+    "Never exceed the recommended paracetamol dose — liver damage occurs with overdose."
+  ],
+  "redFlags": [
+    "Fever in a baby under 3 months — always a medical emergency regardless of temperature.",
+    "Fever above 40°C in any child.",
+    "Seizure occurring with the fever.",
+    "Child is extremely difficult to wake or unusually unresponsive.",
+    "Child has a rash that does not fade when pressed with a glass.",
+    "Severe headache or stiff neck with fever.",
+    "Child is not passing urine — severe dehydration.",
+    "Fever lasting more than 3 days."
+  ],
   "pharmacyGuidance": {
-    "helpful": [],
-    "avoid": [],
-    "askFor": []
+    "helpful": [
+      "Paracetamol syrup dosed by weight — 15mg per kilogram every 4 to 6 hours",
+      "Ibuprofen syrup for children over 3 months — 5 to 10mg per kilogram every 6 to 8 hours",
+      "Oral rehydration salts to prevent dehydration"
+    ],
+    "avoid": [
+      "Aspirin in any child under 16",
+      "Cold water sponging",
+      "Combining two paracetamol-containing products simultaneously"
+    ],
+    "askFor": [
+      "Weight-appropriate dosing chart at the pharmacy",
+      "Malaria RDT test — fever in malaria-endemic Africa needs malaria excluded first",
+      "Medical assessment if fever lasts more than 3 days"
+    ]
   },
-  "whenToGetHelp": "Content coming in Phase C."
+  "faq": [
+    {
+      "question": "What temperature is dangerous for a child?",
+      "answer": "Above 40°C is dangerous and needs immediate medical attention. Any fever in a baby under 3 months is an emergency regardless of the exact temperature."
+    },
+    {
+      "question": "Should I take my child to hospital for fever?",
+      "answer": "Yes immediately if the child is under 3 months, has a seizure, has a rash, cannot be woken, or the fever is above 40°C. Otherwise monitor closely and go if no improvement after 24 hours."
+    },
+    {
+      "question": "Can I give my child both paracetamol and ibuprofen?",
+      "answer": "Yes, you can alternate them — give ibuprofen 3 to 4 hours after paracetamol if fever has not reduced. Never give them at the same time."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for fever in any baby under 3 months, fever above 40°C, seizure, rash, severe drowsiness, or a child who cannot be woken. See a doctor for any fever lasting more than 3 days or a child who is not drinking."
 }
