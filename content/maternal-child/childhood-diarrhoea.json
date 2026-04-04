@@ -1,0 +1,64 @@
+{
+  "id": "childhood-diarrhoea",
+  "category": "maternal-child",
+  "title": "Diarrhoea in Children",
+  "severity": "acute",
+  "icon": "🚨",
+  "color": "green",
+  "summary": "Frequent loose or watery stools. The second leading cause of death in children under 5 globally. Deaths are almost always from dehydration which is entirely preventable with ORS.",
+  "steps": [
+    "Begin ORS immediately at the first loose stool. Do not wait to see if it gets worse. Early rehydration prevents serious dehydration.",
+    "Give ORS after every loose stool: 50 to 100ml for children under 2 years. 100 to 200ml for children 2 to 10 years. As much as they want for older children.",
+    "Continue breastfeeding throughout. Breast milk reduces the severity and duration of diarrhoea.",
+    "Continue feeding age-appropriate food. The old advice to starve a child with diarrhoea was wrong. Food speeds gut recovery. Offer frequent small amounts of easily digestible food.",
+    "Give zinc for 10 to 14 days: 10mg daily for infants under 6 months. 20mg daily for children 6 months and over. Zinc significantly reduces diarrhoea severity and prevents recurrence.",
+    "Keep the child clean and dry. Change nappies promptly. Apply barrier cream to prevent nappy rash from frequent stools.",
+    "Wash hands thoroughly with soap before preparing food, before feeding the child, and after changing nappies.",
+    "Monitor hydration closely — check for wet nappies, tears when crying, moist mouth, and normal activity level.",
+    "Most acute diarrhoea in children is viral and resolves within 5 to 7 days with ORS and zinc."
+  ],
+  "warnings": [
+    "Do not give anti-diarrhoeal drugs like loperamide to children under 5.",
+    "Do not give antibiotics unless specifically prescribed — most childhood diarrhoea is viral.",
+    "Do not withhold food.",
+    "Do not give plain water as the only fluid — give ORS."
+  ],
+  "redFlags": [
+    "Blood in the stool — dysentery requires antibiotic treatment.",
+    "No urine for 6 to 8 hours.",
+    "Child is very weak, limp, or difficult to wake.",
+    "Sunken eyes and dry mouth — moderate to severe dehydration.",
+    "Diarrhoea more than 10 times in 24 hours.",
+    "Vomiting preventing ORS from being kept down.",
+    "Diarrhoea lasting more than 7 days.",
+    "Diarrhoea in a newborn or infant under 3 months."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "ORS sachets — most important treatment",
+      "Zinc tablets 20mg daily for 10 to 14 days for children over 6 months",
+      "Zinc 10mg daily for infants under 6 months"
+    ],
+    "avoid": [
+      "Loperamide in children under 5",
+      "Fizzy drinks and undiluted juice",
+      "Antibiotics without prescription"
+    ],
+    "askFor": [
+      "ORS and zinc from any pharmacy",
+      "Medical assessment for blood in stool or diarrhoea lasting more than 7 days",
+      "Cotrimoxazole or metronidazole for dysentery if blood in stool — requires prescription"
+    ]
+  },
+  "faq": [
+    {
+      "question": "What is the best thing to give a child with diarrhoea?",
+      "answer": "ORS (oral rehydration solution) is the most important treatment. Continue feeding and breastfeeding. Add zinc tablets for 10 to 14 days. Do not give anti-diarrhoea medications to children under 5."
+    },
+    {
+      "question": "When should I take my child to hospital for diarrhoea?",
+      "answer": "Go immediately if there is blood in the stool, no urine for 6 hours, the child is very weak or cannot be woken, sunken eyes, or if the child cannot keep any ORS down after 2 hours of trying."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for blood in stool, no urine for 6 hours, very weak or unconscious child, or a child who cannot keep down any ORS. See a doctor for diarrhoea lasting more than 7 days or diarrhoea in a child under 3 months."
+}
