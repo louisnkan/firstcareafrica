@@ -408,6 +408,64 @@ export default function ConditionPage({ params }) {
           conditionCategory={condition.category}
         />
       </div>
+{/* FAQ SECTION — SEO goldmine */}
+      {condition.faq && condition.faq.length > 0 && (
+        <div style={{ marginBottom: '24px' }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            marginBottom: '14px'
+          }}>
+            <div style={{
+              width: '3px',
+              height: '20px',
+              background: '#F08C00',
+              borderRadius: '2px',
+              flexShrink: 0
+            }} />
+            <h2 style={{
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: '0.8rem',
+              fontWeight: '700',
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              color: '#F08C00',
+              margin: 0
+            }}>
+              Frequently Asked Questions
+            </h2>
+          </div>
+
+          {condition.faq.map((item, i) => (
+            <div key={i} style={{
+              background: '#1C2B3A',
+              border: '1px solid rgba(255,255,255,0.08)',
+              borderRadius: '14px',
+              padding: '16px',
+              marginBottom: '10px'
+            }}>
+              <p style={{
+                color: '#F08C00',
+                fontSize: '0.88rem',
+                fontWeight: '600',
+                marginBottom: '8px',
+                lineHeight: '1.4'
+              }}>
+                {item.question}
+              </p>
+              <p style={{
+                color: '#F5F0E8',
+                fontSize: '0.85rem',
+                lineHeight: '1.65',
+                margin: 0
+              }}>
+                {item.answer}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Disclaimer */}
       <div className="disclaimer-banner">
