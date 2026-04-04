@@ -1,0 +1,66 @@
+{
+  "id": "diabetes",
+  "category": "chronic",
+  "title": "Diabetes — Management & Acute Episodes",
+  "severity": "acute",
+  "icon": "🩸",
+  "color": "teal",
+  "summary": "A chronic condition of high blood sugar. Type 1 requires insulin. Type 2 is managed with lifestyle and medication. Both require daily attention. Poorly controlled diabetes causes blindness, kidney failure, amputation, and early death — all largely preventable.",
+  "steps": [
+    "Know your target blood sugar ranges. Fasting (before meals): 4.0 to 7.0 mmol/L. Two hours after meals: below 10 mmol/L. These targets reduce the risk of complications.",
+    "Take medication as prescribed every day. For Type 1: insulin must not be missed — it is life-sustaining. For Type 2: metformin and other tablets must be taken consistently.",
+    "Monitor blood sugar regularly if a glucometer is available. Keep a log of readings. High readings (above 14 mmol/L consistently) and low readings (below 4 mmol/L) both need action.",
+    "HYPOGLYCAEMIA (low blood sugar — below 4 mmol/L): symptoms include shaking, sweating, confusion, weakness, hunger, and palpitations. Treat immediately with 15 to 20g of fast-acting sugar — 4 glucose tablets, half a cup of juice, 3 teaspoons of sugar dissolved in water. Recheck after 15 minutes.",
+    "HYPERGLYCAEMIA (high blood sugar — above 14 mmol/L): symptoms include frequent urination, extreme thirst, blurred vision, fatigue. Drink water. Take medication as prescribed. If above 20 mmol/L with vomiting — go to hospital.",
+    "Foot care is critical. Inspect both feet daily for any cut, blister, or sore — diabetes reduces sensation so injuries are not felt. Wash with warm water, dry between toes, moisturise. Wear shoes at all times. Never walk barefoot.",
+    "Diet: reduce refined carbohydrates — white rice, white bread, sugar, soft drinks. Eat more vegetables, legumes, and whole grains. Eat smaller portions more frequently.",
+    "Exercise regularly — walking 30 minutes daily improves insulin sensitivity significantly.",
+    "Attend all follow-up appointments. HbA1c blood test every 3 months. Annual eye check. Annual kidney function and urine test. Annual foot examination."
+  ],
+  "warnings": [
+    "Never skip insulin if you have Type 1 diabetes — even if unwell and not eating. Adjust the dose but never stop completely without medical guidance.",
+    "Never drive or operate machinery if your blood sugar is low.",
+    "Any foot injury in a diabetic is a medical emergency — infections spread extremely fast due to reduced circulation and immunity.",
+    "Illness significantly raises blood sugar — monitor more frequently when sick."
+  ],
+  "redFlags": [
+    "Blood sugar below 2.8 mmol/L or unconsciousness from low blood sugar — glucagon injection or intravenous glucose urgently.",
+    "Blood sugar consistently above 20 mmol/L with vomiting — possible diabetic ketoacidosis.",
+    "Fruity-smelling breath, rapid breathing, vomiting, and confusion — diabetic ketoacidosis, emergency.",
+    "Any foot wound, ulcer, or infection in a diabetic — urgent medical attention.",
+    "Sudden vision loss.",
+    "Chest pain in a diabetic — higher risk of silent heart attack."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Metformin 500mg to 1000mg twice daily — first-line for Type 2 diabetes",
+      "Glucometer and test strips for home monitoring",
+      "Glucose tablets or gel for treating hypoglycaemia episodes"
+    ],
+    "avoid": [
+      "Sugary drinks, white bread, white rice, and processed foods",
+      "Skipping meals — causes dangerous blood sugar drops on medication",
+      "Alcohol on an empty stomach — severe hypoglycaemia risk"
+    ],
+    "askFor": [
+      "HbA1c blood test every 3 months",
+      "Insulin and appropriate needles for Type 1 diabetes",
+      "Referral to diabetic clinic for specialist management"
+    ]
+  },
+  "faq": [
+    {
+      "question": "What do I do if my blood sugar is very low and I feel shaky?",
+      "answer": "Eat or drink fast-acting sugar immediately — 3 teaspoons of sugar in water, half a cup of fruit juice, or glucose tablets. Sit down. Recheck after 15 minutes. If you cannot swallow or lose consciousness, this is an emergency — someone must get medical help immediately."
+    },
+    {
+      "question": "Can Type 2 diabetes be reversed?",
+      "answer": "In early stages, significant weight loss, dietary change, and exercise can bring blood sugar to normal levels without medication in some people. This is not a cure but a remission. Vigilance must continue."
+    },
+    {
+      "question": "I have a small cut on my foot — do I need to see a doctor?",
+      "answer": "Yes. Any foot wound in a diabetic needs medical assessment within 24 hours. Diabetic foot infections spread and worsen much faster than in non-diabetics and can lead to amputation if not treated promptly."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for unconsciousness from low blood sugar, blood sugar above 20 with vomiting, fruity breath with confusion, or any foot wound or infection. See your doctor every 3 months for routine diabetes review."
+}
