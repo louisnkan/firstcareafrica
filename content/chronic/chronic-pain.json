@@ -1,0 +1,62 @@
+{
+  "id": "chronic-pain",
+  "category": "chronic",
+  "title": "Chronic Pain Management",
+  "severity": "common",
+  "icon": "💊",
+  "color": "teal",
+  "summary": "Pain lasting more than 3 months. Includes arthritis, chronic back pain, nerve pain, and fibromyalgia. Chronic pain is real, complex, and manageable — it requires a different approach than acute pain.",
+  "steps": [
+    "Understand that chronic pain is different from acute pain. Acute pain warns of injury. Chronic pain often persists after healing and involves changes in how the nervous system processes pain signals.",
+    "Keep a pain diary: note pain level (0 to 10), location, triggers, what helps, and what worsens it. This information is valuable for your doctor and helps identify patterns.",
+    "Gentle regular movement is one of the most effective chronic pain treatments. Avoid the cycle of resting because of pain — rest causes muscle weakness which worsens pain. Start with gentle daily walking and increase gradually.",
+    "Heat and cold: heat (warm compress or hot water bottle) helps muscle pain and stiffness. Cold (ice wrapped in cloth) helps joint inflammation and acute flare-ups. Alternate as needed.",
+    "Paracetamol taken regularly (rather than waiting for breakthrough pain) is more effective than taking it reactively. Discuss a regular dosing schedule with a doctor.",
+    "Topical treatments — diclofenac gel, ibuprofen gel, menthol cream — applied directly to the painful area provide relief with fewer systemic side effects than oral medication.",
+    "Sleep is critical in chronic pain management — poor sleep significantly amplifies pain perception. Establish a consistent sleep routine. Keep the bedroom dark and cool.",
+    "Mental approach: pain catastrophising — assuming the worst, feeling helpless — significantly worsens chronic pain. Acceptance-based approaches, mindfulness, and pacing activities reduce pain experience over time.",
+    "Maintain social connections and purposeful activity — isolation and inactivity create a worsening pain cycle."
+  ],
+  "warnings": [
+    "Long-term regular use of ibuprofen and other NSAIDs causes stomach ulcers and kidney damage — use the lowest effective dose for the shortest time.",
+    "Opioid medication for chronic non-cancer pain requires careful medical supervision — dependency risk is significant.",
+    "Do not ignore new pain or pain that has changed character — it may signal a new condition that needs investigation.",
+    "Chronic pain is not imaginary — dismissing it causes harm and worsens outcomes."
+  ],
+  "redFlags": [
+    "New severe pain in a person with chronic pain — may indicate a new acute problem.",
+    "Pain with unexplained weight loss — needs investigation.",
+    "Pain with fever — possible infection.",
+    "Nerve pain with progressive weakness or numbness — possible nerve compression.",
+    "Chronic pain leading to complete inability to function or suicidal thoughts."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol 1000mg regularly dosed — safer long-term than NSAIDs",
+      "Topical diclofenac or ibuprofen gel for localised pain",
+      "Amitriptyline low dose — effective for nerve pain and improves sleep in chronic pain",
+      "Heat patches for musculoskeletal chronic pain"
+    ],
+    "avoid": [
+      "Long-term daily NSAID use without stomach protection",
+      "Opioid medication without specialist supervision",
+      "Complete rest and inactivity — worsens chronic pain over time"
+    ],
+    "askFor": [
+      "Referral to physiotherapy for chronic musculoskeletal pain",
+      "Amitriptyline or gabapentin for nerve pain",
+      "Omeprazole stomach protection if NSAIDs are needed long-term"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Is chronic pain all in the mind?",
+      "answer": "No. Chronic pain involves real changes in how the nervous system processes pain signals. However, psychological factors including stress, anxiety, and depression significantly affect pain intensity. Treating both the physical and psychological aspects gives the best outcomes."
+    },
+    {
+      "question": "Will I have to live with this pain forever?",
+      "answer": "Many people with chronic pain significantly improve their function and quality of life with the right combination of physical therapy, medication, and pain management strategies. Complete cure is not always possible but substantial improvement usually is."
+    }
+  ],
+  "whenToGetHelp": "See a doctor for any new severe pain, pain that has changed character, pain with unexplained weight loss or fever, or chronic pain that is preventing you from functioning or causing suicidal thoughts. Ask for referral to physiotherapy and pain management services."
+}
