@@ -1,0 +1,61 @@
+{
+  "id": "neonatal-jaundice",
+  "category": "maternal-child",
+  "title": "Neonatal Jaundice / Yellow Baby",
+  "severity": "acute",
+  "icon": "🟡",
+  "color": "green",
+  "summary": "Yellowing of a newborn's skin and eyes caused by bilirubin buildup. Common and usually harmless when mild. Can cause brain damage if severe and untreated.",
+  "steps": [
+    "Recognise jaundice: yellowing of the skin and whites of the eyes. Check in good natural light — press gently on the forehead skin and look at the colour when released.",
+    "Assess severity by spread: jaundice limited to the face and upper chest — mild. Spreading to the abdomen — moderate. Spreading to the hands and feet — severe. Get medical assessment for anything beyond the face.",
+    "Timing matters: jaundice appearing in the first 24 hours of life is always abnormal and requires immediate hospital assessment. Jaundice appearing on day 2 to 3 in a healthy breastfed baby is common and usually resolves.",
+    "The most important treatment is frequent feeding. Breastfeed at least every 2 hours — this helps the baby pass the bilirubin through the gut. Do not give water — it does not help jaundice.",
+    "Sunlight exposure: indirect natural sunlight (not direct hot sun) on the baby's skin for short periods helps break down bilirubin. Keep the baby comfortable and cool. This is a supplement to feeding, not a replacement for medical care.",
+    "Phototherapy (blue light treatment) at a clinic or hospital is the medical treatment for significant jaundice. It is safe and effective.",
+    "Monitor the baby's alertness — a very jaundiced baby who becomes sleepy and difficult to wake needs urgent medical care.",
+    "Continue breastfeeding throughout treatment — stopping breastfeeding for jaundice is almost never necessary."
+  ],
+  "warnings": [
+    "Do not expose a newborn to direct hot sun — causes overheating and sunburn.",
+    "Do not give water or glucose water to treat jaundice — it is ineffective and displaces breast milk.",
+    "Never ignore jaundice spreading to the arms and legs in a newborn.",
+    "Jaundice with fever, lethargy, or poor feeding needs immediate hospital assessment."
+  ],
+  "redFlags": [
+    "Jaundice appearing in the first 24 hours of life.",
+    "Jaundice spreading to the hands and feet.",
+    "Baby is very sleepy, limp, or cannot be woken for feeds.",
+    "Baby has a high-pitched unusual cry.",
+    "Jaundice with fever.",
+    "Jaundice not improving or worsening after day 5.",
+    "Dark brown or cola-coloured urine — very high bilirubin."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Frequent breastfeeding — the most important intervention",
+      "Brief indirect natural light exposure"
+    ],
+    "avoid": [
+      "Water or glucose water to treat jaundice",
+      "Direct hot sunlight",
+      "Any herbal remedies for jaundice"
+    ],
+    "askFor": [
+      "Bilirubin blood test or transcutaneous measurement at a clinic",
+      "Phototherapy at the nearest health facility for significant jaundice",
+      "Assessment for blood group incompatibility if jaundice is in first 24 hours"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Is jaundice in newborns normal?",
+      "answer": "Mild jaundice appearing after day 2 in a healthy breastfeeding baby is very common and usually resolves on its own with frequent feeding. Jaundice in the first 24 hours or spreading to the hands and feet is not normal and needs hospital care."
+    },
+    {
+      "question": "Does my baby need to stop breastfeeding for jaundice?",
+      "answer": "Almost never. More frequent breastfeeding is part of the treatment. Only in rare specific cases does a doctor recommend temporary formula supplementation."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for jaundice in the first 24 hours, jaundice spreading to hands and feet, a drowsy or limp baby, or any jaundiced baby who is difficult to feed. All jaundice should be assessed by a health worker within the first week of life."
+}
