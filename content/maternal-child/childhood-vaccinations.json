@@ -1,0 +1,62 @@
+{
+  "id": "childhood-vaccinations",
+  "category": "maternal-child",
+  "title": "Childhood Vaccinations — Reference Guide",
+  "severity": "common",
+  "icon": "💉",
+  "color": "green",
+  "summary": "Vaccinations are the most effective medical intervention in history. This guide covers the standard African childhood vaccination schedule and what to do after vaccinations.",
+  "steps": [
+    "AT BIRTH: BCG (tuberculosis) — one injection in the left upper arm. Hepatitis B first dose. Oral polio vaccine (OPV) first dose.",
+    "AT 6 WEEKS: DPT-HepB-Hib (diphtheria, pertussis, tetanus, hepatitis B, Hib) first dose. Oral polio second dose. Pneumococcal vaccine (PCV) first dose. Rotavirus vaccine first dose.",
+    "AT 10 WEEKS: DPT-HepB-Hib second dose. Oral polio third dose. PCV second dose. Rotavirus second dose.",
+    "AT 14 WEEKS: DPT-HepB-Hib third dose. Oral polio fourth dose. PCV third dose. IPV (inactivated polio vaccine) first dose.",
+    "AT 9 MONTHS: Measles-rubella vaccine first dose. Yellow fever vaccine (in endemic areas). Meningococcal vaccine where available.",
+    "AT 15 TO 18 MONTHS: Measles-rubella second dose.",
+    "After vaccination: a small lump at the BCG injection site is normal and expected — it will form a small scar. Mild fever and soreness at injection sites in the first 24 to 48 hours is normal. Give paracetamol for fever.",
+    "Bring the vaccination card to every health visit. Keep it safe — it is a permanent record.",
+    "A missed vaccination does not mean starting over — continue from where you left off."
+  ],
+  "warnings": [
+    "Never skip vaccinations because a child has a mild cold or mild fever — mild illness is not a reason to postpone.",
+    "Vaccinations cannot cause the diseases they prevent.",
+    "A vaccination card is a critical document — keep it waterproof and safe.",
+    "If a child misses a vaccine, see a health worker to catch up — it is never too late."
+  ],
+  "redFlags": [
+    "High fever above 39°C more than 48 hours after vaccination.",
+    "Seizure occurring within 24 hours of vaccination.",
+    "Excessive crying lasting more than 3 hours after vaccination.",
+    "Large swelling beyond the injection site spreading up the limb.",
+    "Child is unusually drowsy or difficult to wake after vaccination."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol syrup dosed by weight for fever after vaccination",
+      "Cool compress on injection site for soreness"
+    ],
+    "avoid": [
+      "Aspirin in children under 16",
+      "Skipping vaccines based on myths about side effects"
+    ],
+    "askFor": [
+      "All childhood vaccines are free at government health centres in most African countries",
+      "Catch-up vaccination schedule if doses have been missed"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Can vaccines cause the diseases they protect against?",
+      "answer": "No. Vaccines use killed, weakened, or partial versions of pathogens that cannot cause the disease. The mild fever after vaccination is a normal immune response, not the disease."
+    },
+    {
+      "question": "My child missed some vaccines — is it too late?",
+      "answer": "No. Go to the nearest health centre and explain which vaccines were missed. A catch-up schedule will be given. It is never too late to vaccinate."
+    },
+    {
+      "question": "My child has a cold — should I postpone the vaccine?",
+      "answer": "A mild cold is not a reason to delay. Postpone only if the child has a high fever above 38.5°C or is seriously unwell."
+    }
+  ],
+  "whenToGetHelp": "Go to the clinic for any high fever, seizure, or unusual drowsiness after vaccination. For vaccination questions and missed doses, visit your nearest government health centre — all childhood vaccinations are free."
+}
