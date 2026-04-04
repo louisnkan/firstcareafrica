@@ -2,11 +2,11 @@ export default function sitemap() {
   const baseUrl = 'https://firstcareafrica.vercel.app'
 
   // Emergency conditions
-  const emergencies = [
+const emergencies = [
     'severe-bleeding', 'unconscious-person', 'choking',
     'seizure', 'childbirth', 'burns', 'fractures',
     'snake-bite', 'drowning', 'head-injury',
-    'cardiac-event', 'anaphylaxis', 'broken-jaw'
+    'cardiac-event', 'anaphylaxis', 'broken-jaw', 'stroke'
   ]
 
   // Categories
