@@ -1,0 +1,60 @@
+{
+  "id": "malaria-prevention",
+  "category": "chronic",
+  "title": "Malaria Prevention — Living in Endemic Areas",
+  "severity": "common",
+  "icon": "🦟",
+  "color": "teal",
+  "summary": "For people living in malaria-endemic Africa, prevention is a daily practice. Simple consistent measures dramatically reduce infection risk and deaths, especially in children under 5 and pregnant women.",
+  "steps": [
+    "Sleep under an insecticide-treated mosquito net (ITN) every night without exception. This is the single most effective malaria prevention tool available. Ensure the net has no holes. Tuck it under the mattress.",
+    "Apply mosquito repellent containing DEET (at least 20%) to exposed skin from dusk to dawn when mosquitoes are most active.",
+    "Wear long-sleeved clothing and long trousers in the evenings when outdoors.",
+    "Eliminate mosquito breeding sites around the home: empty any containers that collect standing water — buckets, tyres, flower pots. Mosquitoes breed in still water. Change water in animal troughs weekly.",
+    "Use indoor residual spraying (IRS) if available through local health programmes — governments and NGOs periodically spray homes in endemic areas.",
+    "For children under 5: seasonal malaria chemoprevention (SMC) programmes in high-burden areas provide preventive antimalarials during peak transmission months. Participate when offered.",
+    "For pregnant women: intermittent preventive treatment in pregnancy (IPTp) with sulfadoxine-pyrimethamine is given at antenatal visits from 13 weeks. This is free and essential — do not miss these doses.",
+    "Know the early symptoms: fever, chills, headache, body aches beginning 7 to 30 days after a mosquito bite. Test immediately — rapid diagnostic tests are available at pharmacies.",
+    "Treat promptly — delays in treatment cause rapid deterioration, especially in children."
+  ],
+  "warnings": [
+    "No single measure prevents all malaria — use multiple strategies simultaneously.",
+    "DEET repellent should not be used on infants under 2 months — use physical barriers only.",
+    "Untreated nets lose effectiveness — retreatment or replacement is needed every 2 to 3 years.",
+    "Malaria during pregnancy is significantly more dangerous than outside pregnancy."
+  ],
+  "redFlags": [
+    "Fever with chills in a child under 5 — test for malaria immediately.",
+    "Any fever in a pregnant woman — test for malaria and seek medical care.",
+    "Symptoms of cerebral malaria: fever with confusion, seizures, or unconsciousness.",
+    "Child who cannot stand, sit, or has multiple seizures with fever."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Insecticide-treated mosquito nets — available at health centres and pharmacies",
+      "DEET-containing repellent — 20% or higher",
+      "Rapid diagnostic test kits for early testing when symptoms develop"
+    ],
+    "avoid": [
+      "Untreated mosquito nets — effectiveness is minimal without insecticide",
+      "Relying on repellent alone without a net",
+      "Delaying testing when fever develops"
+    ],
+    "askFor": [
+      "Free ITNs through government and NGO distribution programmes",
+      "Sulfadoxine-pyrimethamine at antenatal visits for pregnant women",
+      "Seasonal malaria chemoprevention for children under 5 in Sahel region countries"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Do mosquito nets really work?",
+      "answer": "Yes. Sleeping under an insecticide-treated net every night reduces malaria transmission by up to 50%. They are the most cost-effective health intervention in Sub-Saharan Africa."
+    },
+    {
+      "question": "Can I get malaria more than once?",
+      "answer": "Yes. Immunity to malaria is partial and takes many years of repeated exposure to develop. Even people who grew up in endemic areas can get severe malaria, especially if they move away and return."
+    }
+  ],
+  "whenToGetHelp": "Test for malaria immediately whenever fever develops in a malaria-endemic area. Seek medical care for any positive test, any fever in a pregnant woman, any fever in a child under 5, or any fever with confusion or seizures."
+}
