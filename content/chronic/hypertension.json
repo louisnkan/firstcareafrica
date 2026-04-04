@@ -1,0 +1,68 @@
+{
+  "id": "hypertension",
+  "category": "chronic",
+  "title": "Hypertension / High Blood Pressure",
+  "severity": "acute",
+  "icon": "🩺",
+  "color": "teal",
+  "summary": "A chronic condition where blood pressure is consistently above 130/80 mmHg. The leading cause of stroke, heart attack, and kidney failure in Africa. Entirely manageable with medication and lifestyle changes.",
+  "steps": [
+    "Understand your numbers. Normal blood pressure is below 120/80 mmHg. Elevated is 120 to 129 systolic. Stage 1 hypertension is 130 to 139 over 80 to 89. Stage 2 is above 140 over 90. Hypertensive crisis is above 180 over 120.",
+    "Take your medication every single day without exception. Missing doses causes dangerous blood pressure spikes. Set a daily alarm if needed. Do not stop medication because you feel well — hypertension has no symptoms until it causes a crisis.",
+    "Measure your blood pressure regularly. Home monitoring or pharmacy monitoring twice a week. Keep a log of readings with dates and times to show your doctor.",
+    "Reduce salt intake dramatically. Avoid adding salt to food. Avoid processed foods, stock cubes, canned goods, and fast food. Salt is the single biggest dietary driver of high blood pressure.",
+    "Eat more potassium-rich foods — bananas, sweet potato, tomatoes, beans, leafy greens. Potassium helps the kidneys excrete excess sodium.",
+    "Exercise regularly. 30 minutes of brisk walking five times per week lowers blood pressure by 5 to 8 mmHg — comparable to a medication dose.",
+    "Reduce alcohol consumption significantly. Alcohol raises blood pressure and interferes with medication.",
+    "Stop smoking. Every cigarette raises blood pressure acutely and causes long-term arterial damage.",
+    "Manage stress. Chronic stress elevates blood pressure continuously. Regular rest, prayer, community, and removing unnecessary stressors all contribute.",
+    "Attend all follow-up appointments. Hypertension management requires regular review and medication adjustment."
+  ],
+  "warnings": [
+    "Never stop blood pressure medication abruptly — causes dangerous rebound hypertension.",
+    "Do not rely on symptoms to tell you if your blood pressure is high — it usually has no symptoms.",
+    "Traditional herbal remedies do not reliably control blood pressure — they can interact dangerously with medication.",
+    "Uncontrolled hypertension during pregnancy is life-threatening — see a doctor immediately."
+  ],
+  "redFlags": [
+    "Blood pressure above 180/120 with headache, vision changes, or chest pain — hypertensive emergency.",
+    "Sudden severe headache unlike any previous headache — possible stroke.",
+    "Sudden weakness of one side of the body, face drooping, or slurred speech — stroke, emergency.",
+    "Chest pain with high blood pressure — possible heart attack.",
+    "Significantly reduced urine output with high blood pressure — kidney emergency."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Amlodipine 5 to 10mg daily — calcium channel blocker, first-line in Africa",
+      "Lisinopril or enalapril — ACE inhibitor, particularly good for diabetics with hypertension",
+      "Hydrochlorothiazide — thiazide diuretic, particularly effective in Black African patients",
+      "Home blood pressure monitor — essential for self-management"
+    ],
+    "avoid": [
+      "Salt in any form",
+      "Alcohol",
+      "NSAIDs including ibuprofen taken regularly — they raise blood pressure and reduce effectiveness of some antihypertensives",
+      "Missing medication doses"
+    ],
+    "askFor": [
+      "Combination antihypertensive tablet if two separate drugs are needed — improves adherence",
+      "Annual kidney function and urine protein test",
+      "ECG to check for heart effects of long-term hypertension"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Can I stop my blood pressure medication if my readings are normal?",
+      "answer": "No. Normal readings mean the medication is working. Stopping causes blood pressure to rise again, often suddenly and dangerously. Continue medication unless your doctor specifically tells you to stop."
+    },
+    {
+      "question": "Does high blood pressure cause symptoms?",
+      "answer": "Usually not. This is why it is called the silent killer. Most people feel completely normal while their blood pressure is dangerously high. The only way to know is to measure it regularly."
+    },
+    {
+      "question": "Can I control blood pressure without medication?",
+      "answer": "Mild hypertension can sometimes be managed with lifestyle changes alone — salt reduction, exercise, weight loss, no alcohol, no smoking. Stage 2 hypertension almost always requires medication as well as lifestyle changes."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for blood pressure above 180/120 with symptoms, stroke symptoms, or chest pain. See your doctor regularly for all hypertension — medication review every 3 to 6 months minimum. Get your kidneys and heart checked annually."
+}
