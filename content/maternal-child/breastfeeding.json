@@ -1,0 +1,63 @@
+{
+  "id": "breastfeeding",
+  "category": "maternal-child",
+  "title": "Breastfeeding Difficulties",
+  "severity": "common",
+  "icon": "🤱",
+  "color": "green",
+  "summary": "Common breastfeeding problems including poor latch, engorgement, mastitis, and low milk supply. Most issues are solvable. Breastfeeding is the single most important thing a mother can do for infant health.",
+  "steps": [
+    "POOR LATCH — the most common cause of breastfeeding problems. Correct latch: baby's mouth covers not just the nipple but a large portion of the areola (dark area). Lips are flanged outward. Chin touches the breast. You hear swallowing, not clicking. If it is painful, the latch is wrong — break the suction gently with a finger and reattach.",
+    "ENGORGEMENT — breasts are painfully full, hard, and swollen. Feed the baby frequently on demand. Before feeding, apply a warm compress and gently massage the breast toward the nipple. After feeding, cold compress reduces swelling. Do not restrict feeding — this worsens engorgement.",
+    "SORE AND CRACKED NIPPLES — almost always caused by incorrect latch. Fix the latch first. After feeding, apply a small amount of expressed breast milk to the nipple and let it air dry. Lanolin cream helps heal cracked nipples.",
+    "LOW MILK SUPPLY (real or perceived) — most women produce enough milk. Supply is driven by demand. Feed more frequently. Ensure correct latch. Avoid formula supplementation unless medically necessary — it reduces demand and therefore supply. Stay hydrated and eat enough food.",
+    "MASTITIS — painful, red, hard, warm area of the breast, often with fever and flu-like symptoms. Do not stop breastfeeding — continued feeding clears the blockage and is safe for the baby. Apply warm compresses. Feed frequently starting on the affected side. Antibiotics are needed if symptoms do not improve within 24 hours.",
+    "BLOCKED MILK DUCT — a hard, tender lump in the breast without fever. Apply warm compress before feeding, massage the lump gently toward the nipple during feeding, and position the baby with their chin pointing toward the lump.",
+    "Feeding position: the baby's body should face the mother's body completely. Baby's ear, shoulder, and hip should be in a straight line. The baby comes to the breast — not the mother leaning into the baby."
+  ],
+  "warnings": [
+    "Do not stop breastfeeding during mastitis — this causes milk stasis and increases the risk of abscess.",
+    "Do not give water, tea, or juice to a baby under 6 months — breast milk provides all required fluid.",
+    "Do not use soap on nipples — it dries and damages the natural protective oils.",
+    "An untreated breast abscess requires surgical drainage — do not delay getting treatment."
+  ],
+  "redFlags": [
+    "Mastitis not improving after 24 hours of treatment with antibiotics.",
+    "A fluctuant (soft, fluid-filled) lump in the breast — possible abscess requiring drainage.",
+    "Baby losing weight and not producing adequate wet nappies despite feeding.",
+    "Baby refusing to feed from one side consistently — can indicate an ear infection or other problem in the baby.",
+    "Severe nipple pain throughout the entire feed rather than just at initial latch."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Lanolin cream for cracked nipples — safe for baby",
+      "Ibuprofen for mastitis pain and inflammation",
+      "Warm compress materials for engorgement and blocked ducts"
+    ],
+    "avoid": [
+      "Soap on nipples",
+      "Restricting breastfeeding to treat engorgement",
+      "Stopping breastfeeding during mastitis"
+    ],
+    "askFor": [
+      "Flucloxacillin or dicloxacillin for mastitis — safe during breastfeeding",
+      "Referral to a lactation consultant or breastfeeding support group",
+      "Ultrasound assessment if a breast lump persists after treating mastitis"
+    ]
+  },
+  "faq": [
+    {
+      "question": "How do I know my baby is getting enough breast milk?",
+      "answer": "A baby getting enough milk has 6 or more wet nappies per day from day 3, feeds 8 to 12 times in 24 hours, is gaining weight, and seems content after feeds. Weight gain measured weekly is the most reliable sign."
+    },
+    {
+      "question": "Can I breastfeed if I have mastitis?",
+      "answer": "Yes and you should. Continuing to breastfeed from the affected breast drains the milk, clears the blockage, and speeds recovery. Stopping feeding makes mastitis worse and increases risk of abscess."
+    },
+    {
+      "question": "Is my milk supply too low?",
+      "answer": "Truly low supply is rare. If your baby has 6 or more wet nappies daily and is gaining weight, your supply is adequate. The feeling of small breasts or not feeling milk let down does not mean low supply."
+    }
+  ],
+  "whenToGetHelp": "See a health worker for mastitis not improving within 24 hours, a baby losing weight, a breast lump that does not resolve after treating a blocked duct, or any breastfeeding problem that is causing significant pain or affecting feeding."
+}
