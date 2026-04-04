@@ -1,0 +1,63 @@
+{
+  "id": "epilepsy",
+  "category": "chronic",
+  "title": "Epilepsy — Daily Management & Seizure Response",
+  "severity": "acute",
+  "icon": "⚡",
+  "color": "teal",
+  "summary": "A neurological condition causing recurrent seizures. With correct medication, 70% of people with epilepsy can be seizure-free. Stigma must not prevent treatment — epilepsy is a medical condition, not a spiritual one.",
+  "steps": [
+    "Take antiepileptic medication every single day at the same time. Missing even one dose significantly increases seizure risk. Set a daily alarm.",
+    "Know your seizure triggers. Common triggers: missed medication, sleep deprivation, alcohol, flashing lights, fever, and stress. Identify and avoid yours.",
+    "For someone having a seizure: stay calm. Time the seizure. Clear the area of hazards. Protect the head with something soft. Do not restrain. Do not put anything in the mouth. When shaking stops, place in recovery position.",
+    "After a seizure: most people are confused and exhausted for 10 to 30 minutes. This is the postictal phase — stay with them, speak calmly, reassure them.",
+    "Epilepsy and driving: do not drive until you have been seizure-free for the period required in your country. A seizure while driving is dangerous for you and others.",
+    "Epilepsy and water: never bath in a full bath alone. Shower is safer. Never swim alone. The drowning risk during a seizure is significant.",
+    "Epilepsy and fire: do not cook over an open flame alone if seizures are poorly controlled.",
+    "Wear a medical alert bracelet identifying your condition and medication — this allows bystanders and medical staff to respond correctly.",
+    "Women with epilepsy planning pregnancy must consult a neurologist before conceiving — some antiepileptic drugs cause birth defects and safer alternatives exist."
+  ],
+  "warnings": [
+    "Never stop antiepileptic medication abruptly — causes dangerous withdrawal seizures.",
+    "Alcohol significantly lowers seizure threshold — avoid completely or minimise.",
+    "Some common medications interact with antiepileptic drugs — always tell any doctor about epilepsy medication.",
+    "Epilepsy is not caused by witchcraft or spirits — traditional treatments delay correct medical management and allow harm."
+  ],
+  "redFlags": [
+    "Seizure lasting more than 5 minutes — status epilepticus, emergency.",
+    "Second seizure beginning before full recovery from the first.",
+    "Seizure in water.",
+    "Seizure in a pregnant woman.",
+    "Person does not regain consciousness 30 minutes after seizure ends.",
+    "First ever seizure — needs investigation for cause."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Sodium valproate — broad spectrum antiepileptic, common first-line choice",
+      "Carbamazepine — effective for focal seizures",
+      "Phenobarbitone — widely available and effective where other drugs are not accessible",
+      "Diazepam rectal solution — for prolonged seizures at home, prescribed for known epileptics"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Missing medication doses",
+      "Stopping medication without medical guidance"
+    ],
+    "askFor": [
+      "Regular blood levels of antiepileptic medication to ensure therapeutic levels",
+      "Neurologist referral for poorly controlled epilepsy",
+      "Folic acid supplementation for women of childbearing age on antiepileptics"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Can epilepsy be cured?",
+      "answer": "There is no cure, but 70% of people with epilepsy become seizure-free on the right medication. Some children outgrow certain types of epilepsy. Surgery helps some people with specific types. Medication controls the condition very effectively for most people."
+    },
+    {
+      "question": "Is it safe to leave someone with epilepsy alone?",
+      "answer": "Depends on how well controlled the seizures are. With seizures well controlled on medication, most people live completely independently. With frequent uncontrolled seizures, supervision near water, fire, or heights is important."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for any seizure lasting more than 5 minutes, a second seizure before recovery from the first, or a seizure in water or pregnancy. See a neurologist for poorly controlled epilepsy, a first seizure, or if medication needs review."
+}
