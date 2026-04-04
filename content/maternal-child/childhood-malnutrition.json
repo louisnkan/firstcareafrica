@@ -1,0 +1,61 @@
+{
+  "id": "childhood-malnutrition",
+  "category": "maternal-child",
+  "title": "Childhood Malnutrition — Warning Signs",
+  "severity": "acute",
+  "icon": "⚠️",
+  "color": "green",
+  "summary": "Malnutrition in children under 5 causes irreversible damage to brain development, immune function, and growth. Early recognition allows intervention before permanent harm occurs.",
+  "steps": [
+    "Know the signs of malnutrition. Moderate acute malnutrition: visibly thin with prominent ribs and shoulder bones, upper arm muscle wasting, child is weak and inactive. Severe acute malnutrition: severely wasted with skin hanging loosely, OR severe bilateral leg oedema (swelling of both feet and legs), OR both.",
+    "Measure the mid-upper arm circumference (MUAC) if a tape is available. Measure halfway between the shoulder tip and elbow of the left arm, with arm hanging relaxed. Above 12.5cm — normal. 11.5 to 12.5cm — moderate malnutrition. Below 11.5cm — severe malnutrition, requires hospital treatment.",
+    "Check for bilateral pitting oedema: press with a thumb on the top of both feet for 3 seconds. If an indent remains on both feet, this is kwashiorkor — protein deficiency malnutrition.",
+    "Assess feeding: is the child breastfeeding? What foods is the child eating? How many times per day? Dietary history identifies the cause.",
+    "For mild to moderate malnutrition: increase feeding frequency and energy density. Add groundnut paste, oil, or egg to porridge. Continue breastfeeding.",
+    "Ready-to-use therapeutic food (RUTF) such as Plumpy'Nut is the most effective community treatment for moderate malnutrition — available through health centres and NGOs.",
+    "Treat associated infections. Malnourished children have impaired immunity and frequently have infections that must be treated alongside nutritional rehabilitation.",
+    "Stimulation and play are important alongside feeding — malnourished children are often developmentally delayed and need active engagement.",
+    "Monitor weight weekly if possible."
+  ],
+  "warnings": [
+    "Do not give full-fat cow milk alone as the primary treatment — it can cause complications in severely malnourished children.",
+    "Do not try to rehabilitate a severely malnourished child entirely at home — severe malnutrition with complications needs hospital care.",
+    "Do not overfeed a severely malnourished child rapidly — refeeding syndrome is dangerous.",
+    "Malnutrition is not just about food — infections, poor sanitation, and inadequate breastfeeding are key drivers."
+  ],
+  "redFlags": [
+    "MUAC below 11.5cm.",
+    "Bilateral pitting oedema in both feet.",
+    "Child is not responding to stimulation or is unconscious.",
+    "Severe wasting visible — ribs, hip bones, and shoulder blades very prominent.",
+    "Associated fever, fast breathing, or severe diarrhoea.",
+    "Child is refusing all food and fluids."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ready-to-use therapeutic food (RUTF) — Plumpy'Nut or equivalent, available through NGOs and health programmes",
+      "Multiple micronutrient supplements for children",
+      "ORS for associated dehydration"
+    ],
+    "avoid": [
+      "Forcing large amounts of food on a severely malnourished child",
+      "Giving only carbohydrates without protein and fat"
+    ],
+    "askFor": [
+      "Community-based management of acute malnutrition programmes at the nearest health centre",
+      "RUTF therapeutic food through nutrition programmes",
+      "Vitamin A supplementation and deworming at health centre"
+    ]
+  },
+  "faq": [
+    {
+      "question": "How do I know if my child is malnourished?",
+      "answer": "Look for visible wasting of muscles especially in the arms and buttocks, a swollen belly with thin limbs, swelling of both feet, or hair that has become thin, dry and changed colour. Measuring the upper arm with a tape measure is the most accurate home assessment."
+    },
+    {
+      "question": "My child is thin but active and eating — is that malnutrition?",
+      "answer": "Not necessarily. Some children are naturally lean. Malnutrition is indicated by muscle wasting, weakness, developmental delay, frequent illness, and poor growth over time — not thinness alone."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital or a nutrition programme immediately for any child with MUAC below 11.5cm, swelling of both feet, visible severe wasting, or a child who refuses all food. Severe malnutrition is a medical emergency."
+}
