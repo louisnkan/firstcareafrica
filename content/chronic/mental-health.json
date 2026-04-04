@@ -1,0 +1,65 @@
+{
+  "id": "mental-health",
+  "category": "chronic",
+  "title": "Mental Health — Depression, Anxiety & Stress",
+  "severity": "common",
+  "icon": "🧠",
+  "color": "teal",
+  "summary": "Mental health conditions are medical conditions, not weakness or spiritual failure. Depression and anxiety are the most common mental health conditions globally and are highly treatable. Seeking help is strength.",
+  "steps": [
+    "Recognise the signs of depression: persistent sadness or emptiness lasting more than 2 weeks, loss of interest in things you previously enjoyed, changes in sleep — sleeping too much or too little, changes in appetite and weight, fatigue and low energy, difficulty concentrating, feelings of worthlessness or excessive guilt, and in severe cases, thoughts of death or suicide.",
+    "Recognise the signs of anxiety: persistent worry that is difficult to control, restlessness, muscle tension, irritability, difficulty sleeping, racing heart, and avoiding situations that cause fear.",
+    "Talk to someone trusted. Social isolation worsens both depression and anxiety. Talking with family, a trusted friend, a pastor, imam, or community elder can provide immediate relief and support.",
+    "Maintain routine. Regular sleep, meals, and gentle physical activity provide structure that counteracts depression and anxiety.",
+    "Physical activity is a proven treatment for mild to moderate depression — 30 minutes of walking 3 to 5 times per week has comparable effects to antidepressant medication in mild cases.",
+    "Reduce alcohol. Alcohol is a central nervous system depressant — it worsens both depression and anxiety despite providing temporary relief.",
+    "Seek professional help. A doctor, nurse, or community mental health worker can assess and provide treatment including counselling and medication.",
+    "If someone expresses thoughts of suicide: take it seriously. Stay with them. Remove access to means of self-harm. Get them to a health facility or call for help immediately.",
+    "Stigma is real but mental illness is not shame. Depression changes the brain chemistry — it is as medical as malaria or hypertension."
+  ],
+  "warnings": [
+    "Never dismiss someone expressing suicidal thoughts as attention-seeking — all expressions of suicidal ideation must be taken seriously.",
+    "Antidepressant medication takes 2 to 4 weeks to show effect — do not stop early if you feel no immediate change.",
+    "Do not stop antidepressant medication suddenly without medical guidance — causes withdrawal symptoms.",
+    "Alcohol and drug use worsen all mental health conditions significantly."
+  ],
+  "redFlags": [
+    "Active thoughts of suicide or self-harm — stay with the person and get immediate help.",
+    "Psychosis — seeing or hearing things others cannot, believing things that are not real.",
+    "Complete inability to care for oneself or children due to mental state.",
+    "Severe depression with complete withdrawal from all activity and food refusal.",
+    "Mania — very elevated mood, no need for sleep, reckless behaviour, rapid speech."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Amitriptyline — widely available antidepressant effective for depression and anxiety",
+      "Fluoxetine (Prozac) — SSRI antidepressant, first-line in many settings",
+      "Diazepam — for short-term severe anxiety only, not for long-term use"
+    ],
+    "avoid": [
+      "Alcohol — significantly worsens depression and anxiety",
+      "Self-medicating with benzodiazepines long-term — highly addictive",
+      "Stopping antidepressants suddenly"
+    ],
+    "askFor": [
+      "Referral to counselling or psychotherapy",
+      "Community mental health services",
+      "Assessment for antidepressant medication if symptoms are moderate to severe"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Is depression real or just sadness?",
+      "answer": "Depression is a medical condition involving changes in brain chemistry, sleep, appetite, and energy. It is not ordinary sadness, weakness, or a choice. It requires treatment just like any other medical condition."
+    },
+    {
+      "question": "Someone told me they want to kill themselves — what do I do?",
+      "answer": "Take it seriously. Stay with them. Do not leave them alone. Remove any obvious means of harm. Get them to a doctor, hospital, or mental health worker immediately. Listen without judging."
+    },
+    {
+      "question": "Can prayer and faith help with mental health?",
+      "answer": "Faith, community, and spiritual support are genuinely important protective factors for mental health. They work best alongside — not instead of — professional treatment when symptoms are moderate or severe."
+    }
+  ],
+  "whenToGetHelp": "Seek help immediately for any expression of suicidal thoughts, psychosis, or inability to function. See a doctor or mental health worker for depression or anxiety lasting more than 2 weeks that is affecting daily life. Mental health conditions are treatable — do not wait."
+}
