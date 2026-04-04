@@ -1,0 +1,62 @@
+{
+  "id": "postpartum-care",
+  "category": "maternal-child",
+  "title": "Postpartum Care — After Delivery",
+  "severity": "acute",
+  "icon": "🏥",
+  "color": "green",
+  "summary": "Care for the mother in the days and weeks after childbirth. The postpartum period carries significant risks including haemorrhage, infection, and mental health complications. Most deaths after delivery are preventable.",
+  "steps": [
+    "For the first 24 hours after delivery: the mother needs complete rest. Monitor for excessive bleeding. A normal amount is soaking one pad per hour initially, reducing rapidly. Soaking more than one pad per hour is abnormal.",
+    "Uterine massage in the first hours after delivery helps the uterus contract and reduces bleeding. Place a hand firmly on the lower abdomen and massage in circular motions.",
+    "Encourage early and frequent breastfeeding — it causes the uterus to contract through oxytocin release, reducing bleeding.",
+    "Perineal care after vaginal delivery: pour warm water over the perineum when urinating to reduce stinging. Pat dry gently with clean cloth. Change pads frequently. Signs of perineal infection: increasing pain, smell, redness, and swelling after day 3.",
+    "Normal lochia (post-delivery discharge): bright red and heavy for first 3 to 4 days, decreasing and turning pink to brown over 2 weeks, becoming yellowish-white by week 4. Foul-smelling discharge at any stage indicates infection.",
+    "Rest and nutrition are essential for recovery. Eat iron-rich foods — liver, red meat, beans, leafy greens. Blood loss during delivery depletes iron significantly.",
+    "Postpartum mood: mild sadness or emotional swings in the first week (baby blues) is normal and common. Persistent depression, inability to care for the baby, or thoughts of harming yourself or the baby are not normal — seek help immediately.",
+    "Postnatal clinic visit: attend at 6 days, 6 weeks, and whenever concerned. Do not miss these visits."
+  ],
+  "warnings": [
+    "Do not ignore heavy postpartum bleeding — it is the leading cause of maternal death globally.",
+    "Do not resume sexual intercourse until at least 6 weeks after delivery and after medical clearance.",
+    "Postnatal depression is a medical condition — it is not weakness and it is treatable.",
+    "Do not take NSAIDs (ibuprofen, diclofenac) in large doses if breastfeeding — small doses are generally safe but check with a health worker."
+  ],
+  "redFlags": [
+    "Soaking more than one pad per hour — postpartum haemorrhage.",
+    "Passage of large clots after the first day.",
+    "Foul-smelling vaginal discharge — uterine infection.",
+    "Fever above 38°C after delivery — possible infection.",
+    "Severe headache with visual changes after delivery — possible eclampsia.",
+    "Inability to urinate within 6 hours of delivery.",
+    "Leg pain and swelling — possible deep vein thrombosis.",
+    "Persistent sadness, inability to bond with baby, or thoughts of self-harm — postnatal depression."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ferrous sulphate iron tablets to replace blood loss",
+      "Paracetamol for perineal pain — safe during breastfeeding",
+      "Vitamin C to improve iron absorption"
+    ],
+    "avoid": [
+      "High-dose ibuprofen in breastfeeding mothers without medical guidance",
+      "Aspirin while breastfeeding"
+    ],
+    "askFor": [
+      "Iron and folic acid supplementation for at least 3 months after delivery",
+      "Family planning counselling at 6-week postnatal visit",
+      "Mental health support if experiencing persistent low mood"
+    ]
+  },
+  "faq": [
+    {
+      "question": "How much bleeding after delivery is normal?",
+      "answer": "Heavy bright red bleeding in the first few hours reducing to a lighter flow over days is normal. Soaking more than one pad per hour, passing large clots, or bleeding increasing after it had reduced is not normal — go to hospital."
+    },
+    {
+      "question": "I feel very sad since having my baby — is this normal?",
+      "answer": "Mild baby blues in the first week are common and usually pass. Persistent depression, inability to function, or thoughts of harm are postnatal depression — a real medical condition that is very treatable. Tell a health worker."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for heavy bleeding, fever, foul-smelling discharge, severe headache with visual changes, or inability to urinate. Attend postnatal clinic at 6 days and 6 weeks. Seek help immediately for any thoughts of self-harm or harming the baby."
+}
