@@ -1,0 +1,66 @@
+{
+  "id": "asthma",
+  "category": "chronic",
+  "title": "Asthma — Management & Acute Attacks",
+  "severity": "acute",
+  "icon": "💨",
+  "color": "teal",
+  "summary": "A chronic inflammatory airway condition causing recurrent episodes of wheezing, coughing, chest tightness, and shortness of breath. Highly controllable with correct medication and trigger avoidance.",
+  "steps": [
+    "Know the difference between your two inhalers. RELIEVER (usually blue — salbutamol/Ventolin): opens airways quickly during an attack. Use when symptoms occur. PREVENTER (usually brown, orange, or purple — corticosteroid): reduces inflammation daily. Use every day even when well. Never stop preventer inhaler without medical advice.",
+    "For an acute asthma attack: sit upright, lean forward slightly with hands on knees. This position maximises airflow. Loosen tight clothing.",
+    "Use reliever inhaler: 2 to 4 puffs via spacer, or direct if no spacer. Wait 20 to 30 seconds between puffs. If no improvement after 5 minutes, take 2 to 4 more puffs. Can repeat up to 3 times over 15 minutes.",
+    "Correct inhaler technique with spacer: shake the inhaler, attach to spacer, exhale fully, seal lips around spacer mouthpiece, press inhaler once, breathe in slowly and deeply, hold for 10 seconds, breathe out slowly.",
+    "Stay calm. Panic worsens an asthma attack by increasing respiratory rate and muscle tension.",
+    "Identify and avoid your triggers. Common triggers: dust, smoke, pollen, pet dander, cold air, exercise, strong smells, respiratory infections, and stress.",
+    "Take preventer inhaler every day as prescribed — even when feeling completely well. It prevents attacks from happening. The most common cause of poor asthma control is stopping preventer medication.",
+    "Have an action plan. Know when to use more reliever medication and when to go to hospital.",
+    "Rinse mouth after using preventer inhaler — reduces risk of oral thrush."
+  ],
+  "warnings": [
+    "Do not stop preventer inhaler because you feel well — it is preventing the attacks.",
+    "Never give a sedative to someone having an asthma attack — it suppresses breathing drive.",
+    "Asthma attacks can be fatal — do not underestimate a severe attack.",
+    "If reliever inhaler is not working after 3 doses — this is a severe attack. Go to hospital immediately."
+  ],
+  "redFlags": [
+    "Reliever inhaler not helping after 3 uses in 15 minutes.",
+    "Person cannot speak in full sentences due to breathlessness.",
+    "Breathing rate above 25 per minute at rest.",
+    "Lips or fingernails turning blue.",
+    "The person is exhausted from the effort of breathing.",
+    "Silent chest — no wheeze despite obvious breathing difficulty means very little air is moving, severe attack."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Salbutamol (Ventolin) reliever inhaler — for acute symptom relief",
+      "Beclometasone or budesonide preventer inhaler — daily use reduces attacks",
+      "Spacer device — significantly improves inhaler effectiveness, especially for children"
+    ],
+    "avoid": [
+      "Aspirin and ibuprofen in aspirin-sensitive asthmatics — can trigger severe attacks in some",
+      "Beta-blocker medications — can worsen asthma",
+      "Smoke exposure of any kind"
+    ],
+    "askFor": [
+      "Preventer inhaler prescription if having attacks more than twice per week",
+      "Written asthma action plan from your doctor",
+      "Annual asthma review to assess control and adjust medication"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Do I need to use my preventer inhaler every day even when I feel fine?",
+      "answer": "Yes. The preventer works by reducing inflammation over time. Missing doses allows inflammation to build up and makes attacks more likely. Use it every morning and evening as prescribed."
+    },
+    {
+      "question": "What is a spacer and do I need one?",
+      "answer": "A spacer is a chamber that attaches to your inhaler and holds the medication as a mist so you can breathe it in slowly. It improves the amount reaching your lungs by up to 50% compared to using the inhaler alone. Everyone with asthma should use one."
+    },
+    {
+      "question": "Can I exercise with asthma?",
+      "answer": "Yes. Regular exercise improves asthma control over time. Use your reliever inhaler 15 minutes before exercise if exercise-induced symptoms are an issue. Warm up slowly and breathe through the nose."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately if the reliever inhaler is not working after 3 doses, if you cannot speak in full sentences, if lips are turning blue, or if breathing is becoming exhausted. See your doctor for an annual asthma review and whenever control deteriorates."
+}
