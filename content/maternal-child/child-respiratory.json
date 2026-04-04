@@ -1,0 +1,62 @@
+{
+  "id": "child-respiratory",
+  "category": "maternal-child",
+  "title": "Respiratory Illness in Children / Child Won't Stop Coughing",
+  "severity": "acute",
+  "icon": "🫁",
+  "color": "green",
+  "summary": "Cough and breathing problems are the leading cause of child death from infectious disease after diarrhoea. Knowing the difference between a simple cough and pneumonia is life-saving.",
+  "steps": [
+    "Count the breathing rate for 60 full seconds when the child is calm and not crying. Normal rates: under 2 months — below 60 breaths per minute. 2 to 12 months — below 50. 1 to 5 years — below 40. Above these rates at rest is fast breathing — a key sign of pneumonia.",
+    "Look for chest in-drawing: watch the lower chest as the child breathes in. If the chest wall sucks inward with each breath (in-drawing), this indicates the child is working hard to breathe — serious respiratory illness.",
+    "Listen for sounds: stridor (high-pitched sound on breathing in) suggests upper airway obstruction. Wheeze (musical sound on breathing out) suggests asthma or bronchiolitis. Grunting with each breath in an infant is a serious danger sign.",
+    "SIMPLE COLD or COUGH: runny nose, mild fever, cough, normal breathing rate, no chest in-drawing. Manage with fluids, paracetamol for fever, and monitor.",
+    "CROUP: barking cough like a seal, stridor, often worse at night. Keep the child calm — crying worsens it. Breathing cool night air or steam inhalation helps. Go to hospital for severe stridor or breathing difficulty.",
+    "BRONCHIOLITIS (common in infants under 1): wheeze and fast breathing after a cold in a baby. Keep the baby hydrated, keep upright, monitor breathing rate. Hospital if breathing rate is high or feeding is affected.",
+    "PNEUMONIA: fast breathing, chest in-drawing, fever, and a sick-looking child. This requires antibiotic treatment and often hospital admission. Do not delay.",
+    "WHOOPING COUGH (pertussis): intense coughing fits followed by a whooping sound on breathing in, sometimes vomiting after coughing. Highly contagious. Needs medical assessment."
+  ],
+  "warnings": [
+    "Do not give cough suppressants to children under 6 — they can cause dangerous side effects.",
+    "Do not give honey to infants under 1 year.",
+    "A blue colour around the lips or fingernails is an emergency at any age.",
+    "A child who is too breathless to feed is a medical emergency."
+  ],
+  "redFlags": [
+    "Breathing rate above the normal range for age at rest.",
+    "Chest in-drawing with each breath.",
+    "Blue or dusky colour around the lips or fingernails.",
+    "Grunting sound with each breath in an infant.",
+    "Child too breathless to feed or speak.",
+    "Stridor at rest — not just during crying.",
+    "Child is very drowsy or unresponsive."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Paracetamol for fever by weight",
+      "Saline nasal drops to clear blocked nose in infants — makes feeding easier",
+      "Salbutamol inhaler with spacer for wheeze if asthma is confirmed"
+    ],
+    "avoid": [
+      "Cough suppressants in children under 6",
+      "Decongestant medications in children under 6",
+      "Honey in children under 1 year"
+    ],
+    "askFor": [
+      "Amoxicillin for confirmed pneumonia in children",
+      "Salbutamol inhaler for wheeze — requires assessment",
+      "Urgent medical assessment for any child with fast breathing or chest in-drawing"
+    ]
+  },
+  "faq": [
+    {
+      "question": "How do I know if my child has pneumonia or just a cold?",
+      "answer": "Count the breaths for 60 seconds when the child is calm. Fast breathing at rest, chest sucking inward with each breath, and a sick-looking child suggest pneumonia. A child with a runny nose and normal breathing rate likely has a cold."
+    },
+    {
+      "question": "My baby has been coughing for 2 weeks — what should I do?",
+      "answer": "A cough lasting more than 2 weeks in a child needs medical assessment. It may be whooping cough, a persistent infection, or asthma. Go to a clinic."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for fast breathing at rest, chest in-drawing, blue lips or nails, grunting breaths in an infant, or a child too breathless to feed. See a doctor for any cough lasting more than 2 weeks or any wheeze in a child."
+}
