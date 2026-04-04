@@ -1,0 +1,68 @@
+{
+  "id": "sickle-cell",
+  "category": "chronic",
+  "title": "Sickle Cell Disease — Management & Crisis",
+  "severity": "acute",
+  "icon": "🔴",
+  "color": "teal",
+  "summary": "A genetic blood disorder most prevalent in West and Central Africa. Causes episodes of severe pain, anaemia, and increased susceptibility to serious infections. Daily management prevents crises and complications.",
+  "steps": [
+    "PAIN CRISIS (vaso-occlusive crisis) — the most common complication. Severe deep bone pain, usually in the chest, back, arms, and legs. Begins when sickled red blood cells block small blood vessels.",
+    "For pain crisis at home: take prescribed pain medication immediately — do not wait for pain to become severe. Ibuprofen and paracetamol together provide better relief than either alone. Stronger opioid medication if prescribed.",
+    "Apply heat to painful areas — warm compress or hot water bottle wrapped in cloth.",
+    "Hydration is critical during a crisis. Drink at least 3 to 4 litres of fluid per day. Dehydration triggers and worsens sickling. ORS is particularly useful.",
+    "Rest completely during a crisis. Physical exertion worsens sickling.",
+    "Daily prevention measures: drink at least 2 to 3 litres of water daily. Take prescribed folic acid 5mg daily — essential for red blood cell production. Take prescribed hydroxyurea if prescribed. Take prophylactic penicillin if prescribed (especially children under 5).",
+    "Avoid triggers: dehydration, cold temperatures, high altitude, extreme physical exertion, infections, and stress all trigger sickling episodes.",
+    "Infections are dangerous in sickle cell — seek medical care earlier than you would for a normal illness. The spleen is often damaged, reducing immunity to bacterial infections.",
+    "Vaccinations are especially important — ensure pneumococcal, meningococcal, and flu vaccines are up to date."
+  ],
+  "warnings": [
+    "Fever above 38.5°C in a person with sickle cell is a medical emergency — bacterial infections spread rapidly without a functioning spleen.",
+    "Chest pain and breathing difficulty in sickle cell may indicate acute chest syndrome — life-threatening, go to hospital immediately.",
+    "Do not give a person in sickle cell crisis cold fluids or expose them to cold environments.",
+    "Priapism (painful prolonged erection) in males with sickle cell is a medical emergency — go to hospital within 2 hours."
+  ],
+  "redFlags": [
+    "Fever above 38.5°C — urgent hospital assessment.",
+    "Chest pain and difficulty breathing — acute chest syndrome.",
+    "Stroke symptoms — face drooping, arm weakness, speech difficulty.",
+    "Severe abdominal pain — splenic sequestration.",
+    "Sudden paleness, rapid heart rate, extreme weakness — acute anaemia.",
+    "Priapism lasting more than 2 hours.",
+    "Pain crisis not responding to home medication after 2 to 4 hours."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Folic acid 5mg daily — take every day for life",
+      "Paracetamol and ibuprofen together for pain crisis management",
+      "Oral rehydration salts for hydration during crisis",
+      "Penicillin V — prophylactic antibiotic especially for children under 5"
+    ],
+    "avoid": [
+      "Cold environments and cold drinks during crisis",
+      "Dehydration — drink consistently throughout the day",
+      "High altitude travel without medical advice"
+    ],
+    "askFor": [
+      "Hydroxyurea — reduces frequency and severity of crises significantly, discuss with haematologist",
+      "Stronger pain medication prescription for crisis management at home",
+      "Regular full blood count to monitor haemoglobin levels"
+    ]
+  },
+  "faq": [
+    {
+      "question": "What triggers a sickle cell crisis?",
+      "answer": "The main triggers are dehydration, infection, cold temperatures, physical overexertion, high altitude, emotional stress, and alcohol. Drinking enough water every day is the single most effective prevention strategy."
+    },
+    {
+      "question": "When should I go to hospital during a pain crisis?",
+      "answer": "Go immediately if the pain is not controlled by home medication after 2 to 4 hours, if there is fever, chest pain, breathing difficulty, or if this is the worst crisis you have experienced. Do not manage severe crises at home."
+    },
+    {
+      "question": "My child has sickle cell — what do they need every day?",
+      "answer": "Daily folic acid, daily penicillin (under 5), plenty of fluids, all recommended vaccinations, and prompt medical attention for any fever. Regular clinic visits are essential for monitoring growth and preventing complications."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for fever above 38.5°C, chest pain with breathing difficulty, stroke symptoms, severe pain not responding to home medication, or acute paleness with rapid heartbeat. Sickle cell emergencies deteriorate rapidly."
+}
