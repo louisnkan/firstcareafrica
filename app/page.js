@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import ShareButton from '../components/ShareButton'
+import SearchBar from '../components/SearchBar'
 
 export default function HomePage() {
   return (
