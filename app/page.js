@@ -44,6 +44,9 @@ export default function HomePage() {
         </p>
       </div>
 
+      {/* SEARCH */}
+      <SearchBar />
+
       {/* EMERGENCY CARD */}
       <Link href="/emergency" style={{ display: 'block', marginBottom: '12px', textDecoration: 'none' }}>
         <div className="card-emergency" style={{ minHeight: '140px' }}>
