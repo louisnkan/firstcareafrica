@@ -4,6 +4,13 @@ import fs from 'fs'
 import path from 'path'
 
 const categoryMeta = {
+  'sexual-health': {
+    title: 'Sexual Health',
+    subtitle: 'STIs, prevention, testing and sexual wellbeing for all genders',
+    color: '#0C8599',
+    icon: '🔬',
+    warning: null
+  },
   emergency: {
     title: 'Emergency',
     subtitle: 'Life-threatening situations requiring immediate action',
