@@ -4,14 +4,7 @@ const ALLOWED_ORIGINS = [
   'http://localhost:3000'
 ]
 
-// In the POST function, add:
-const origin = request.headers.get('origin')
-if (origin && !ALLOWED_ORIGINS.includes(origin)) {
-  return Response.json(
-    { error: 'Forbidden' },
-    { status: 403 }
-  )
-}
+
 import Anthropic from '@anthropic-ai/sdk'
 
 const client = new Anthropic({
@@ -87,6 +80,19 @@ Guidance only. Seek professional medical help as soon as possible.`
 
 export async function POST(request) {
   try {
+    // CORS check
+    const origin = request.headers.get('origin')
+    const allowedOrigins = [
+      'https://firstcareafrica.vercel.app',
+      'https://firstcareafrica.health',
+      'http://localhost:3000'
+    ]
+    if (origin && !allowedOrigins.includes(origin)) {
+      return Response.json(
+        { error: 'Forbidden' },
+        { status: 403 }
+      )
+    }
     const ip = request.headers.get('x-forwarded-for') ||
                 request.headers.get('x-real-ip') ||
                 'unknown'
