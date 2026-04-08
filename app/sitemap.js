@@ -1,5 +1,6 @@
 export default function sitemap() {
-  const baseUrl = 'https://firstcareafrica.vercel.app'
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 
+  'https://firstcareafrica.vercel.app'
 
   // Emergency conditions
 const emergencies = [
