@@ -1,0 +1,59 @@
+{
+  "id": "gonorrhoea",
+  "category": "sexual-health",
+  "title": "Gonorrhoea",
+  "severity": "acute",
+  "icon": "🔬",
+  "color": "teal",
+  "summary": "A bacterial sexually transmitted infection caused by Neisseria gonorrhoeae. One of the most common STIs in Africa. Highly treatable but if left untreated causes infertility, chronic pelvic pain, and increased HIV risk in both men and women.",
+  "steps": [
+    "Recognise symptoms. In men: burning pain when urinating, yellow or green penile discharge, painful or swollen testicles. In women: increased vaginal discharge, burning when urinating, bleeding between periods, pelvic pain. Important: up to 50% of women and 10% of men have NO symptoms at all.",
+    "Stop sexual activity immediately until treatment is complete and confirmed. Gonorrhoea is highly contagious.",
+    "Do not attempt to self-treat without testing — gonorrhoea is often confused with other infections and antibiotic resistance is increasing. Testing matters.",
+    "Get tested at the nearest clinic, sexual health centre, or laboratory. A urine sample or swab confirms the diagnosis.",
+    "Inform all sexual partners from the past 60 days so they can be tested and treated. This is essential — untreated partners cause reinfection.",
+    "Complete the full antibiotic course even if symptoms disappear early.",
+    "Return for a test of cure 1 to 2 weeks after completing treatment — gonorrhoea resistance to antibiotics is increasing in Africa.",
+    "Test for other STIs at the same time — co-infection with chlamydia is extremely common. HIV and syphilis testing is recommended."
+  ],
+  "warnings": [
+    "Gonorrhoea during pregnancy can cause serious eye infection in the newborn causing blindness — always treat promptly.",
+    "Antibiotic resistance in gonorrhoea is a growing problem in Africa — do not use old antibiotic prescriptions.",
+    "Do not share medication with a partner — both need individual assessment and treatment.",
+    "Condoms significantly reduce but do not completely eliminate transmission risk."
+  ],
+  "redFlags": [
+    "Severe pelvic pain in women — possible pelvic inflammatory disease.",
+    "Fever with genital symptoms.",
+    "Joint pain and skin rash with genital discharge — disseminated gonorrhoea.",
+    "Eye discharge in a newborn — gonorrhoeal ophthalmia, emergency.",
+    "Scrotal pain and swelling — epididymo-orchitis."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Ceftriaxone 500mg single intramuscular injection — current first-line treatment",
+      "Azithromycin 1g single dose — often given alongside for dual therapy"
+    ],
+    "avoid": [
+      "Ciprofloxacin and penicillin — widespread resistance, no longer reliable",
+      "Self-treating without confirmed diagnosis",
+      "Alcohol during treatment"
+    ],
+    "askFor": [
+      "Gonorrhoea and chlamydia combined swab test",
+      "HIV and syphilis test at the same time",
+      "Ceftriaxone injection — requires clinic or health worker administration"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Can I have gonorrhoea with no symptoms?",
+      "answer": "Yes. Up to half of women and 1 in 10 men with gonorrhoea have no symptoms at all. This is why testing matters — untreated silent infection causes infertility and continues to spread."
+    },
+    {
+      "question": "Can gonorrhoea come back after treatment?",
+      "answer": "Yes if a partner is not treated or if you are reinfected. Successfully treated gonorrhoea does not provide immunity. Consistent condom use significantly reduces reinfection risk."
+    }
+  ],
+  "whenToGetHelp": "See a doctor or sexual health clinic for all suspected gonorrhoea. Go immediately for pelvic pain with fever, joint pain, or eye symptoms in a newborn. All sexual partners must be notified and tested."
+}
