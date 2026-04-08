@@ -1,3 +1,17 @@
+const ALLOWED_ORIGINS = [
+  'https://firstcareafrica.vercel.app',
+  'https://firstcareafrica.health',
+  'http://localhost:3000'
+]
+
+// In the POST function, add:
+const origin = request.headers.get('origin')
+if (origin && !ALLOWED_ORIGINS.includes(origin)) {
+  return Response.json(
+    { error: 'Forbidden' },
+    { status: 403 }
+  )
+}
 import Anthropic from '@anthropic-ai/sdk'
 
 const client = new Anthropic({
