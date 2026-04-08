@@ -177,6 +177,17 @@ export default function HomePage() {
           </div>
         </Link>
       </div>
+<Link href="/category/sexual-health" style={{ textDecoration: 'none' }}>
+          <div className="card-chronic" style={{ height: '100%', minHeight: '110px' }}>
+            <div className="icon-badge badge-teal">🔬</div>
+            <h3 style={{ color: '#F5F0E8', fontSize: '0.9rem', marginBottom: '5px' }}>
+              Sexual Health
+            </h3>
+            <p style={{ color: '#9BA8B5', fontSize: '0.75rem', lineHeight: '1.4' }}>
+              STIs · HIV · Prevention · Testing
+            </p>
+          </div>
+        </Link>
 
       {/* MATERNAL — full width */}
       <Link href="/category/maternal-child"
