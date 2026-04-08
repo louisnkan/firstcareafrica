@@ -14,8 +14,13 @@ function getConditionData(slug) {
   // ... rest of function
 function getConditionData(slug) {
   const categories = [
-    'emergency', 'acute', 'common',
-    'womens-health', 'chronic', 'maternal-child'
+    'emergency',
+    'acute',
+    'common',
+    'womens-health',
+    'chronic',
+    'maternal-child',
+    'sexual-health'
   ]
 
   for (const category of categories) {
