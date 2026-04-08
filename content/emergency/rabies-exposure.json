@@ -1,0 +1,64 @@
+{
+  "id": "rabies-exposure",
+  "category": "emergency",
+  "title": "Rabies Exposure — Animal Bite Management",
+  "severity": "critical",
+  "icon": "🐕",
+  "color": "red",
+  "summary": "Rabies is almost universally fatal once symptoms develop. However it is completely preventable if post-exposure treatment is started promptly after a bite. Time is critical — do not wait.",
+  "steps": [
+    "Wash the wound immediately and aggressively. This is the single most important first step. Scrub with soap and water for a minimum of 15 minutes under running water. This mechanical washing removes virus particles from the wound. Then apply antiseptic — iodine, alcohol, or chlorhexidine.",
+    "Assess the exposure. HIGH RISK: bite or scratch from a dog, cat, bat, monkey, or other mammal that broke the skin. Saliva contact with open wound or mucous membrane. LOWER RISK: contact with intact skin only.",
+    "Do not kill the animal if possible — an animal that can be observed for 10 days and remains healthy significantly reduces rabies risk. If it must be killed, preserve the head for testing.",
+    "Go to the nearest hospital with rabies post-exposure prophylaxis (PEP) immediately. Do not wait for symptoms. Do not wait to see if the animal appears ill. Go today.",
+    "Rabies PEP consists of: rabies immunoglobulin (RIG) injected into and around the wound on day 0, PLUS rabies vaccine given on days 0, 3, 7, and 14. Both are required for unvaccinated individuals.",
+    "Complete every dose of the vaccine schedule. Missing a dose significantly reduces protection.",
+    "If you have been previously vaccinated against rabies: you still need 2 vaccine doses (days 0 and 3) but do not need immunoglobulin.",
+    "Monitor for rabies symptoms: fever, headache, tingling at bite site, anxiety, hydrophobia (fear of water), agitation. If symptoms develop, hospital admission is required."
+  ],
+  "warnings": [
+    "Once rabies symptoms develop, survival is almost impossible. Post-exposure treatment must happen BEFORE symptoms.",
+    "Bat bites may be painless and unnoticed — any contact with a bat indoors is considered a potential exposure.",
+    "Rabies immunoglobulin must be given with the first vaccine dose — it cannot be given later in the schedule.",
+    "Wild animals behaving unusually during the day, appearing tame, or attacking without provocation are at high risk of rabies."
+  ],
+  "redFlags": [
+    "Any bite from a wild animal — fox, jackal, mongoose, bat.",
+    "Bite from a domestic animal that was behaving abnormally.",
+    "Bite to the face, head, or neck — higher risk due to proximity to brain.",
+    "Deep bite wounds.",
+    "Tingling, burning, or itching at an old healed bite site — possible early rabies.",
+    "Symptoms of hydrophobia or aerophobia after an animal bite — late rabies, seek palliative care."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Soap and water for immediate wound washing — the most important intervention",
+      "Povidone iodine or chlorhexidine for antiseptic cleaning after washing"
+    ],
+    "avoid": [
+      "Closing or suturing bite wounds before thorough irrigation",
+      "Delaying hospital visit to observe the animal first",
+      "Traditional remedies applied to bite wounds"
+    ],
+    "askFor": [
+      "Rabies post-exposure prophylaxis (PEP) — vaccine plus immunoglobulin at hospital",
+      "Tetanus toxoid if not up to date — animal bites carry dual infection risk",
+      "Amoxicillin-clavulanate for bite wound infection prevention"
+    ]
+  },
+  "faq": [
+    {
+      "question": "The dog that bit me looked healthy — do I still need treatment?",
+      "answer": "Yes, start the process immediately. A healthy-appearing dog can still be in the early infectious stage of rabies before symptoms show. If the dog can be observed for 10 days and remains healthy, the vaccine series can be stopped. Do not wait to see if symptoms develop before starting."
+    },
+    {
+      "question": "How long after a bite can I still get the rabies vaccine?",
+      "answer": "As soon as possible — ideally the same day. The vaccine can still be given days after exposure but its effectiveness reduces with time. There is no safe window to wait. Go today."
+    },
+    {
+      "question": "Is rabies treatment available in Africa?",
+      "answer": "Rabies vaccine and immunoglobulin are available at major district hospitals and referral centres across Africa. Availability varies by country and region. Go to the largest hospital you can reach quickly."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital today — the same day as the bite. Do not wait. Post-exposure prophylaxis only works before symptoms develop. Once rabies symptoms begin, treatment becomes palliative. This is a time-critical emergency."
+}
