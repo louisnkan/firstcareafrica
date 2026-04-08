@@ -6,6 +6,13 @@ import ConditionChat from '../../../components/ConditionChat'
 
 // Find a condition JSON from any category folder
 function getConditionData(slug) {
+  // Sanitise slug — only allow lowercase letters, 
+  // numbers and hyphens
+  if (!slug || !/^[a-z0-9-]+$/.test(slug)) {
+    return null
+  }
+  // ... rest of function
+function getConditionData(slug) {
   const categories = [
     'emergency', 'acute', 'common',
     'womens-health', 'chronic', 'maternal-child'
