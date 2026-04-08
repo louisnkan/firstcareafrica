@@ -1,0 +1,62 @@
+{
+  "id": "genital-herpes",
+  "category": "sexual-health",
+  "title": "Genital Herpes",
+  "severity": "common",
+  "icon": "🔬",
+  "color": "teal",
+  "summary": "A lifelong viral infection caused by herpes simplex virus (HSV-2 or HSV-1). Cannot be cured but can be effectively managed. Very common — affects 1 in 8 adults globally. Most people with herpes do not know they have it.",
+  "steps": [
+    "Recognise the first outbreak. Tingling, burning or itching in the genital area followed by clusters of small blisters or sores. Blisters burst leaving painful ulcers that heal in 2 to 4 weeks. First outbreak is usually the most severe and may include fever and swollen glands.",
+    "Keep the affected area clean and dry. Loose cotton underwear reduces friction and discomfort.",
+    "Antiviral medication (aciclovir or valaciclovir) started within 72 hours of the first outbreak reduces severity and duration significantly.",
+    "For recurrent outbreaks: most become shorter and milder over time. Antivirals started at the very first sign of tingling (prodrome) reduce the outbreak.",
+    "Daily suppressive therapy with antivirals significantly reduces both outbreaks and the risk of transmission to partners.",
+    "Inform sexual partners. Herpes can be transmitted even when no sores are visible — this is called asymptomatic shedding.",
+    "Condoms reduce but do not eliminate transmission risk since the virus sheds from areas not covered by condoms.",
+    "Avoid sexual contact during active outbreaks — transmission risk is highest when sores are present.",
+    "Herpes in pregnancy needs careful management — discuss with a doctor or midwife."
+  ],
+  "warnings": [
+    "Herpes is a lifelong condition — it cannot be cured, only managed.",
+    "Neonatal herpes (transmission to baby during birth) is rare but serious — always inform your obstetrician.",
+    "Herpes increases HIV transmission and acquisition risk.",
+    "Do not touch sores then touch eyes — herpes can infect the eye."
+  ],
+  "redFlags": [
+    "Severe first outbreak with inability to urinate — urinary retention from severe swelling.",
+    "Symptoms involving the eye — herpes keratitis, urgent ophthalmology needed.",
+    "Severe headache and stiff neck with herpes — possible herpes encephalitis.",
+    "Herpes outbreak in a newborn — emergency.",
+    "Frequent severe outbreaks more than 6 per year — consider daily suppressive therapy."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Aciclovir 400mg three times daily for 5 days for outbreak treatment",
+      "Valaciclovir 500mg twice daily — more convenient dosing, equally effective",
+      "Aciclovir 400mg twice daily for suppressive therapy to reduce outbreaks",
+      "Paracetamol and ibuprofen for pain relief during outbreaks"
+    ],
+    "avoid": [
+      "Petroleum jelly or thick creams on active sores — traps heat and worsens healing",
+      "Tight synthetic underwear during outbreaks",
+      "Sexual contact during active outbreaks"
+    ],
+    "askFor": [
+      "HSV swab test from an active sore for confirmation",
+      "Blood test for HSV antibodies to confirm past infection",
+      "Daily suppressive therapy prescription if outbreaks are frequent"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Does having herpes mean my life is over?",
+      "answer": "No. Herpes is extremely common and most people with it live completely normal lives including healthy relationships. With time, outbreaks usually become less frequent and less severe. Many people in long-term relationships never transmit it to their partner."
+    },
+    {
+      "question": "Can I pass herpes to my baby?",
+      "answer": "The risk is very low with proper management. Tell your doctor or midwife you have herpes at the start of pregnancy. Antiviral medication near the end of pregnancy reduces risk. Caesarean section may be recommended if you have an active outbreak at delivery."
+    }
+  ],
+  "whenToGetHelp": "See a doctor for a first herpes outbreak — early antiviral treatment significantly reduces severity. Go immediately for eye symptoms, severe headache with stiff neck, inability to urinate, or any herpes symptoms in a newborn."
+}
