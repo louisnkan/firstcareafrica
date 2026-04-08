@@ -1,4 +1,5 @@
 import './globals.css'
+import FABChat from '../components/FABChat'
 
 export const metadata = {
   title: 'FirstCare Africa — Medical Guidance When Doctors Aren\'t Available',
@@ -148,6 +149,9 @@ export default function RootLayout({ children }) {
           }}>
             {children}
           </main>
+
+          {/* AI Doctor FAB — appears on every page */}
+          <FABChat />
 
           {/* Footer */}
           <footer style={{
