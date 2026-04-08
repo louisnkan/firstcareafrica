@@ -1,0 +1,58 @@
+{
+  "id": "tetanus",
+  "category": "emergency",
+  "title": "Tetanus — Wound Management & Prevention",
+  "severity": "critical",
+  "icon": "⚠️",
+  "color": "red",
+  "summary": "A life-threatening bacterial infection caused by Clostridium tetani entering through wounds. Preventable by vaccination. Once symptoms develop, it is a medical emergency with high mortality without hospital treatment.",
+  "steps": [
+    "For any wound that may carry tetanus risk — puncture wounds, rusty metal injuries, animal bites, wounds contaminated with soil or manure, burns, crush injuries — assess tetanus vaccination status immediately.",
+    "Clean the wound aggressively. Flush with large amounts of clean running water for at least 10 minutes. Tetanus bacteria are anaerobic — they die with oxygen and cleaning. Remove all visible dirt and debris.",
+    "Do not close deep puncture wounds tightly — tetanus bacteria thrive in deep wounds with no oxygen. Keep them open and clean.",
+    "Tetanus vaccination status determines next steps: fully vaccinated (5 doses in lifetime, last dose within 10 years) — wound care only. Incomplete vaccination or unknown status — get tetanus toxoid injection urgently at nearest clinic. Unvaccinated with high-risk wound — needs tetanus immunoglobulin (TIG) AND tetanus toxoid at hospital.",
+    "If tetanus symptoms have developed — stiffness of the jaw (lockjaw), neck stiffness, difficulty swallowing, muscle spasms, arched back — this is a medical emergency. Go to hospital immediately.",
+    "Keep the person in a quiet, dark room — stimulation triggers painful muscle spasms.",
+    "Do not attempt home treatment of established tetanus — it requires ICU-level care."
+  ],
+  "warnings": [
+    "Tetanus cannot be diagnosed by appearance of the wound — a clean-looking wound can still cause tetanus.",
+    "The incubation period is 3 to 21 days — symptoms may appear long after the injury.",
+    "Tetanus immunoglobulin must be given within 24 hours of injury for maximum benefit.",
+    "Tetanus vaccination does not treat established infection — it only prevents it."
+  ],
+  "redFlags": [
+    "Jaw stiffness or inability to open the mouth fully — lockjaw.",
+    "Neck stiffness and difficulty swallowing after a wound.",
+    "Muscle spasms triggered by noise, light, or touch.",
+    "Arched back during spasms.",
+    "Difficulty breathing during muscle spasms.",
+    "Any tetanus symptom in an unvaccinated person."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Thorough wound cleaning with clean water and antiseptic",
+      "Metronidazole 400mg three times daily for 7 days — antibiotic of choice for tetanus wounds"
+    ],
+    "avoid": [
+      "Closing deep puncture wounds before thorough cleaning",
+      "Traditional wound applications — soil, leaves, dung all introduce tetanus bacteria"
+    ],
+    "askFor": [
+      "Tetanus toxoid injection at nearest clinic for incomplete or unknown vaccination status",
+      "Tetanus immunoglobulin (TIG) at hospital for unvaccinated with high-risk wounds",
+      "Amoxicillin or metronidazole for wound infection prevention"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Does every cut need a tetanus injection?",
+      "answer": "No. Clean minor cuts in a fully vaccinated person do not need a tetanus injection. High-risk wounds — deep punctures, animal bites, wounds contaminated with soil — in anyone unvaccinated or with unknown vaccination status do need one urgently."
+    },
+    {
+      "question": "What makes a wound high risk for tetanus?",
+      "answer": "Puncture wounds from nails or thorns, wounds contaminated with soil or manure, animal bites, crush injuries, burns, and wounds where dead tissue is present are all high risk. The deeper and dirtier the wound, the higher the risk."
+    }
+  ],
+  "whenToGetHelp": "Go to a clinic immediately after any high-risk wound if vaccination status is unknown or incomplete — tetanus immunisation must be given promptly. Go to hospital immediately if any tetanus symptoms develop. Established tetanus requires intensive hospital care."
+}
