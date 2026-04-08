@@ -9,7 +9,8 @@ function buildSearchIndex() {
     'common',
     'womens-health',
     'chronic',
-    'maternal-child'
+    'maternal-child',
+    'sexual-health'
   ]
 
   const index = []
