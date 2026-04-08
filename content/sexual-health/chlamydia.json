@@ -1,0 +1,57 @@
+{
+  "id": "chlamydia",
+  "category": "sexual-health",
+  "title": "Chlamydia",
+  "severity": "acute",
+  "icon": "🔬",
+  "color": "teal",
+  "summary": "The most common bacterial STI globally. Often completely silent with no symptoms. A leading cause of preventable infertility in both men and women. Easily treated with a single dose of antibiotics.",
+  "steps": [
+    "Know that most people with chlamydia have no symptoms. When symptoms do occur in women: unusual vaginal discharge, burning when urinating, pelvic pain, bleeding between periods or after sex. In men: discharge from the penis, burning when urinating, testicular pain.",
+    "Get tested. Chlamydia testing is a urine sample or genital swab. It cannot be diagnosed by symptoms alone because most people have none.",
+    "Stop sexual activity until testing is complete and treatment is given.",
+    "Inform all sexual partners from the past 60 days. They need testing and treatment regardless of symptoms.",
+    "Both partners must be treated simultaneously — treating only one person causes immediate reinfection.",
+    "Azithromycin single dose is the standard treatment — highly effective and convenient.",
+    "Test for other STIs at the same time — co-infection with gonorrhoea is common. Request HIV and syphilis testing.",
+    "Retest 3 months after treatment — reinfection from untreated partners is common."
+  ],
+  "warnings": [
+    "Untreated chlamydia in women causes pelvic inflammatory disease — a leading cause of ectopic pregnancy and infertility.",
+    "Untreated chlamydia in men causes epididymitis and can cause infertility.",
+    "Chlamydia during pregnancy increases risk of premature delivery and eye and lung infection in the newborn.",
+    "Having chlamydia doubles the risk of acquiring HIV."
+  ],
+  "redFlags": [
+    "Pelvic or lower abdominal pain with fever — pelvic inflammatory disease.",
+    "Severe testicular pain and swelling.",
+    "Eye infection in a newborn.",
+    "Symptoms returning after treatment — possible reinfection or resistance."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Azithromycin 1g single oral dose — first-line, highly effective",
+      "Doxycycline 100mg twice daily for 7 days — alternative, avoid in pregnancy"
+    ],
+    "avoid": [
+      "Doxycycline in pregnancy and children under 12",
+      "Self-treating without testing — many conditions mimic chlamydia"
+    ],
+    "askFor": [
+      "Chlamydia urine test or swab at a clinic",
+      "HIV, syphilis, and gonorrhoea testing at the same visit",
+      "Azithromycin single dose — most pharmacies stock this"
+    ]
+  },
+  "faq": [
+    {
+      "question": "How did I get chlamydia if I have no symptoms?",
+      "answer": "Chlamydia is extremely common and most infected people have no symptoms for months or years. You can have it and not know. Regular testing — especially after new sexual partners — is the only reliable way to know."
+    },
+    {
+      "question": "Does chlamydia go away on its own?",
+      "answer": "No. Without treatment it persists and continues to cause damage silently. The damage to the reproductive system from untreated chlamydia is cumulative and can become permanent."
+    }
+  ],
+  "whenToGetHelp": "Get tested at a clinic for all suspected chlamydia. Go immediately for pelvic pain with fever or severe testicular pain. All recent sexual partners must be notified and tested."
+}
