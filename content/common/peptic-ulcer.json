@@ -1,0 +1,69 @@
+{
+  "id": "peptic-ulcer",
+  "category": "common",
+  "title": "Peptic Ulcer / Stomach Ulcer Pain",
+  "severity": "acute",
+  "icon": "🔥",
+  "color": "blue",
+  "summary": "A sore in the lining of the stomach or upper small intestine. Causes burning or gnawing pain, often related to eating. Very common in Africa due to H. pylori infection, NSAID overuse, and stress.",
+  "steps": [
+    "Recognise the pattern. Peptic ulcer pain is typically burning or gnawing in the upper middle abdomen. Gastric ulcer pain often worsens with eating. Duodenal ulcer pain often improves briefly with eating then returns 2 to 3 hours later. Night pain that wakes you from sleep is a classic duodenal ulcer pattern.",
+    "Take an antacid immediately for pain relief. Aluminium hydroxide, magnesium trisilicate, or Gaviscon neutralise stomach acid within minutes.",
+    "Eat small, frequent meals rather than large meals. An empty stomach allows acid to attack the ulcer lining directly.",
+    "Avoid all NSAIDs immediately — ibuprofen, diclofenac, aspirin, and naproxen all damage the stomach lining and worsen ulcers significantly. Use paracetamol for pain relief instead.",
+    "Avoid alcohol, coffee, spicy foods, citrus, and carbonated drinks — all stimulate acid production.",
+    "Stop smoking if applicable. Smoking doubles ulcer healing time and significantly increases recurrence.",
+    "Sleep with the head of the bed elevated — this prevents acid reflux worsening overnight.",
+    "Omeprazole or other proton pump inhibitors are the most effective treatment — they reduce acid production significantly. A standard course is 4 to 8 weeks.",
+    "H. pylori infection causes most peptic ulcers in Africa. If confirmed by breath test or stool antigen test, a 7 to 14 day eradication course of antibiotics plus omeprazole cures the underlying cause and prevents recurrence."
+  ],
+  "warnings": [
+    "Never take ibuprofen, aspirin, or diclofenac with an active ulcer — causes serious bleeding.",
+    "Never ignore black tarry stool — this is digested blood from a bleeding ulcer, a medical emergency.",
+    "Do not self-treat suspected ulcer with antacids alone long-term — underlying H. pylori infection will not clear without antibiotics.",
+    "Ulcer pain that suddenly becomes severe and constant may indicate perforation — surgical emergency."
+  ],
+  "redFlags": [
+    "Vomiting blood — bright red or coffee-ground appearance.",
+    "Black, tarry, foul-smelling stool — bleeding ulcer.",
+    "Sudden severe constant abdominal pain replacing the usual pattern — possible perforation.",
+    "Pain spreading to the back — possible penetrating ulcer.",
+    "Unexplained weight loss with ulcer symptoms.",
+    "Difficulty swallowing or feeling of food sticking.",
+    "Symptoms in anyone over 55 with new onset — needs urgent investigation."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Omeprazole 20mg once daily before breakfast — most effective acid suppressor, 4 to 8 week course",
+      "Aluminium hydroxide or magnesium trisilicate antacid for immediate pain relief",
+      "Gaviscon for reflux component",
+      "Paracetamol for any other pain — safe with ulcers"
+    ],
+    "avoid": [
+      "Ibuprofen, aspirin, diclofenac, naproxen — all worsen ulcers significantly",
+      "Alcohol, coffee, spicy food, carbonated drinks",
+      "Steroids — worsen ulcers",
+      "Smoking"
+    ],
+    "askFor": [
+      "H. pylori stool antigen test or urea breath test to confirm bacterial cause",
+      "Triple therapy eradication: omeprazole + amoxicillin + clarithromycin for 7 to 14 days if H. pylori confirmed",
+      "Urgent referral for endoscopy if red flag symptoms are present"
+    ]
+  },
+  "faq": [
+    {
+      "question": "What causes stomach ulcers?",
+      "answer": "In Africa, the most common cause is H. pylori bacterial infection which affects over 70% of adults. The second most common cause is regular use of NSAIDs like ibuprofen and diclofenac. Stress and spicy food do not cause ulcers but worsen existing ones."
+    },
+    {
+      "question": "Can stomach ulcers be cured?",
+      "answer": "Yes. If caused by H. pylori, a 7 to 14 day course of antibiotics plus omeprazole clears the infection and the ulcer heals completely in most cases. If caused by NSAIDs, stopping the medication and taking omeprazole allows healing."
+    },
+    {
+      "question": "How do I know if my stomach pain is an ulcer or just gastritis?",
+      "answer": "Both cause upper abdominal pain but ulcer pain is typically more localised, follows a pattern related to meals, and often causes night pain. Gastritis is more diffuse. Both are treated similarly initially. A confirmed diagnosis needs an endoscopy."
+    }
+  ],
+  "whenToGetHelp": "Go to hospital immediately for vomiting blood, black tarry stool, sudden severe abdominal pain, or pain spreading to the back. See a doctor for all suspected ulcers — proper diagnosis and H. pylori testing changes the treatment significantly and prevents recurrence."
+}
