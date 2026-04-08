@@ -1,0 +1,57 @@
+{
+  "id": "syphilis",
+  "category": "sexual-health",
+  "title": "Syphilis",
+  "severity": "acute",
+  "icon": "🔬",
+  "color": "teal",
+  "summary": "A bacterial STI caused by Treponema pallidum progressing through stages. Completely curable with penicillin in early stages. Untreated late-stage syphilis causes brain damage, heart disease, and death. Re-emerging in Africa.",
+  "steps": [
+    "Know the stages. PRIMARY (week 1 to 12): a single painless sore (chancre) at the infection site — penis, vagina, anus, mouth. It heals on its own but infection persists. SECONDARY (weeks 6 to 24): widespread rash including the palms and soles, flu-like symptoms, mouth sores, swollen lymph nodes. LATENT: no symptoms but still infectious. TERTIARY: occurs years later — brain, heart, and organ damage.",
+    "The painless sore of primary syphilis is commonly missed or confused with a normal sore. Any new genital sore should be tested.",
+    "Stop sexual activity and get tested immediately. Blood test (RPR or VDRL) confirms syphilis. Swab of the sore in primary stage.",
+    "Notify all sexual partners — syphilis is highly contagious in primary and secondary stages.",
+    "Treatment is highly effective with penicillin — a single injection in early syphilis. The earlier the treatment, the more complete the cure.",
+    "Retest at 3, 6, and 12 months after treatment to confirm the infection has cleared.",
+    "Syphilis in pregnancy requires urgent treatment to prevent congenital syphilis which causes stillbirth, severe birth defects, and newborn death.",
+    "Test for HIV, gonorrhoea, and chlamydia at the same time."
+  ],
+  "warnings": [
+    "The painless sore heals without treatment but syphilis does not — the disease progresses silently.",
+    "Syphilis massively increases HIV transmission and acquisition.",
+    "Congenital syphilis (from mother to baby) is preventable with antenatal testing and treatment.",
+    "Syphilis can affect the brain even in early stages — neurological symptoms at any stage need urgent assessment."
+  ],
+  "redFlags": [
+    "Headache, stiff neck, or visual changes in someone with syphilis — neurosyphilis.",
+    "Genital sore in a pregnant woman — urgent treatment needed.",
+    "Rash on palms and soles with flu symptoms.",
+    "Any new neurological symptom in a person with known syphilis history."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Benzathine penicillin G 2.4 million units single IM injection — first-line for early syphilis",
+      "Doxycycline 100mg twice daily for 14 days — if allergic to penicillin"
+    ],
+    "avoid": [
+      "Oral amoxicillin — not adequate for syphilis treatment",
+      "Delaying treatment in pregnancy"
+    ],
+    "askFor": [
+      "RPR or VDRL blood test to confirm and stage syphilis",
+      "Benzathine penicillin injection at a clinic",
+      "Antenatal syphilis screening at first ANC visit"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Can syphilis be cured completely?",
+      "answer": "Yes, in primary and secondary stages a single penicillin injection cures it completely. Later stages require longer treatment. The damage already caused by tertiary syphilis cannot be reversed, which is why early treatment matters."
+    },
+    {
+      "question": "The sore went away — am I cured?",
+      "answer": "No. The sore heals on its own but syphilis continues silently. You must get tested and treated. The disappearance of the sore is not a sign of cure."
+    }
+  ],
+  "whenToGetHelp": "See a doctor or sexual health clinic for any genital sore, the syphilis rash, or any neurological symptoms. Pregnant women with syphilis need immediate treatment. All sexual partners must be tested and treated."
+}
