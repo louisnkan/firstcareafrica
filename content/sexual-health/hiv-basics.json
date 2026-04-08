@@ -1,0 +1,65 @@
+{
+  "id": "hiv-basics",
+  "category": "sexual-health",
+  "title": "HIV — Testing, Prevention & Treatment Basics",
+  "severity": "acute",
+  "icon": "🎗️",
+  "color": "teal",
+  "summary": "HIV is a manageable chronic condition. With antiretroviral therapy, people with HIV live full, healthy lives and cannot transmit the virus. Testing is the most important first step. Africa carries 70% of the global HIV burden — knowing your status saves lives.",
+  "steps": [
+    "Know your HIV status. HIV testing is free, confidential, and available at all government health facilities. A rapid test gives results in 20 minutes. You cannot know your status without testing.",
+    "Understand transmission. HIV is transmitted through: unprotected sex (vaginal, anal, oral), sharing needles, blood transfusion with untested blood, and mother to child during pregnancy, birth, or breastfeeding. It is NOT transmitted through casual contact, sharing food, handshakes, mosquitoes, or toilets.",
+    "For possible recent exposure (within 72 hours): PEP (Post-Exposure Prophylaxis) can prevent HIV infection if started within 72 hours. Available at hospitals and major clinics. Must be started as soon as possible — effectiveness decreases with every hour of delay.",
+    "For HIV prevention in high-risk situations: PrEP (Pre-Exposure Prophylaxis) is a daily tablet that prevents HIV infection. Available free at many public health facilities in Africa. Discuss with a doctor.",
+    "If diagnosed HIV positive: start antiretroviral therapy (ART) as soon as possible. Modern ART is one tablet once daily. It suppresses the virus to undetectable levels — meaning you cannot transmit it to partners (Undetectable = Untransmittable, U=U).",
+    "Take ART every single day at the same time. Missing doses allows the virus to replicate and develop resistance.",
+    "With ART: a person with HIV has a near-normal life expectancy. HIV is a manageable chronic condition, not a death sentence.",
+    "Disclose to sexual partners and ensure they are tested. Both partners knowing their status enables informed decisions."
+  ],
+  "warnings": [
+    "Never stop ART without medical guidance — causes rapid viral rebound and resistance.",
+    "HIV dramatically increases susceptibility to tuberculosis — screen for TB regularly.",
+    "PEP must be started within 72 hours of exposure — after this window it is not effective.",
+    "A negative HIV test within the first 4 weeks of potential exposure may be a false negative — the window period means the test can miss very recent infection. Retest at 6 weeks and 3 months."
+  ],
+  "redFlags": [
+    "Unexplained weight loss, persistent fever, and chronic diarrhoea — possible advanced HIV or AIDS-defining illness.",
+    "Persistent cough with night sweats and weight loss — possible tuberculosis co-infection.",
+    "Skin lesions appearing as purple patches — possible Kaposi's sarcoma.",
+    "Severe headache and neck stiffness in a known HIV-positive person — possible cryptococcal meningitis.",
+    "Possible exposure to HIV in the last 72 hours — start PEP immediately."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Antiretroviral therapy (ART) — free at government health facilities across Africa",
+      "PrEP (tenofovir/emtricitabine) — free at many public clinics for high-risk individuals",
+      "PEP — available at hospitals for emergency post-exposure prevention within 72 hours"
+    ],
+    "avoid": [
+      "Stopping ART — causes viral rebound and resistance",
+      "Traditional remedies as HIV treatment substitutes — none are effective",
+      "Alcohol in excess — accelerates liver damage with some ART medications"
+    ],
+    "askFor": [
+      "Free HIV rapid test at any government health facility",
+      "ART initiation — same-day treatment is now recommended in most African health systems",
+      "PrEP discussion if you are at ongoing risk",
+      "TB screening alongside HIV testing"
+    ]
+  },
+  "faq": [
+    {
+      "question": "If I test positive, how long will I live?",
+      "answer": "With modern antiretroviral therapy started early, a person diagnosed with HIV today has a near-normal life expectancy. HIV is a chronic manageable condition. The key is starting treatment early and taking it consistently."
+    },
+    {
+      "question": "Can I have children if I am HIV positive?",
+      "answer": "Yes. With proper medical support, HIV-positive women can have HIV-negative babies. ART during pregnancy, safe delivery practices, and guidance on infant feeding dramatically reduce mother-to-child transmission to below 1%."
+    },
+    {
+      "question": "What is U=U?",
+      "answer": "Undetectable equals Untransmittable. When a person with HIV takes ART consistently and their viral load becomes undetectable, they cannot sexually transmit HIV to a partner. This is scientifically proven."
+    }
+  ],
+  "whenToGetHelp": "Test for HIV at your nearest government health facility — it is free and confidential. Go immediately to hospital for possible exposure in the last 72 hours to start PEP. Any advanced HIV symptoms — severe weight loss, persistent fever, cough — need urgent medical care."
+}
