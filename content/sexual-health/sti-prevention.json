@@ -1,0 +1,62 @@
+{
+  "id": "sti-prevention",
+  "category": "sexual-health",
+  "title": "STI Prevention & Sexual Health",
+  "severity": "common",
+  "icon": "🛡️",
+  "color": "teal",
+  "summary": "Sexually transmitted infections are common, treatable, and largely preventable. Understanding prevention, testing, and when to seek help protects you and your partners.",
+  "steps": [
+    "Use condoms correctly and consistently. Male condoms used correctly are 98% effective at preventing HIV and significantly reduce risk of all other STIs. Female condoms are equally effective. Use from start to finish of every sexual encounter.",
+    "Get tested regularly. If you are sexually active with multiple partners, test for HIV, syphilis, gonorrhoea, and chlamydia every 3 to 6 months. Most STIs have no symptoms — you will not know without testing.",
+    "Know your partner's status. Mutual testing before a new sexual relationship significantly reduces risk.",
+    "Reduce the number of concurrent sexual partners — this is the most effective single behaviour change for STI prevention.",
+    "Vaccinate against hepatitis B — the vaccine is safe, effective, and part of the childhood schedule. Adults can still be vaccinated if not previously done.",
+    "Vaccinate against HPV if available — prevents the strains of human papillomavirus that cause cervical cancer and genital warts. Most effective before sexual debut but beneficial at any age.",
+    "For people at high risk of HIV: discuss PrEP (Pre-Exposure Prophylaxis) with a doctor — a daily pill that prevents HIV.",
+    "If exposed to HIV, hepatitis B, or other blood-borne infections: seek emergency PEP or post-exposure management within 72 hours.",
+    "Avoid alcohol and substances before sex — they impair judgement and reduce likelihood of using protection."
+  ],
+  "warnings": [
+    "Condoms do not provide complete protection against herpes and HPV which are transmitted by skin contact in areas not covered by the condom.",
+    "No STI provides immunity — you can be reinfected repeatedly.",
+    "Many STIs have no symptoms — regular testing is the only reliable protection.",
+    "Traditional methods including herbs do not prevent or treat STIs."
+  ],
+  "redFlags": [
+    "Any new genital sore, blister, or ulcer.",
+    "Unusual discharge from the penis or vagina.",
+    "Burning when urinating.",
+    "Pelvic pain or testicular pain.",
+    "Rash on the palms or soles.",
+    "Possible HIV exposure in the last 72 hours."
+  ],
+  "pharmacyGuidance": {
+    "helpful": [
+      "Male condoms — available at all pharmacies and most health facilities, often free",
+      "Female condoms — available at pharmacies and family planning clinics",
+      "Hepatitis B vaccination — free in childhood immunisation programme"
+    ],
+    "avoid": [
+      "Oil-based lubricants with latex condoms — degrades the latex",
+      "Douching — disrupts natural protective bacteria and increases STI risk"
+    ],
+    "askFor": [
+      "Free HIV testing at any government facility",
+      "PrEP if at ongoing high risk of HIV",
+      "HPV vaccine — discuss with a doctor especially for young women",
+      "Combined STI screening panel at a sexual health clinic"
+    ]
+  },
+  "faq": [
+    {
+      "question": "Do I need to tell a new partner about my STI history?",
+      "answer": "For active or transmissible infections — yes, ethically and in many places legally. For fully treated past infections with no ongoing risk, this is a personal decision. For herpes and HIV which are lifelong, disclosure is important for your partner to make informed choices."
+    },
+    {
+      "question": "I am embarrassed to get tested — what should I do?",
+      "answer": "Healthcare workers who do STI testing are bound by confidentiality. They do not judge — STIs are medical conditions like any other. Many clinics offer anonymous testing. Your health and your partners' health are more important than momentary embarrassment."
+    }
+  ],
+  "whenToGetHelp": "Get tested at a clinic for any genital symptoms, after unprotected sex with a new partner, or routinely every 3 to 6 months if sexually active with multiple partners. Go immediately for possible HIV exposure in the last 72 hours."
+}
