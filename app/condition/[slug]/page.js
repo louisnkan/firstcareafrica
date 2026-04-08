@@ -77,33 +77,38 @@ export default function ConditionPage({ params }) {
 
       {/* Header */}
       <div style={{ marginBottom: '24px' }}>
-        <div style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '6px',
-          background: `${accentColor}20`,
-          border: `1px solid ${accentColor}40`,
-          borderRadius: '20px',
-          padding: '4px 12px',
-          marginBottom: '12px'
-        }}>
-          <span style={{
-            width: '6px', height: '6px',
-            borderRadius: '50%',
-            background: severity.color,
-            flexShrink: 0,
-            display: 'inline-block'
-          }} />
-          <span style={{
-            fontSize: '0.65rem',
-            fontWeight: '700',
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-            color: severity.color
+        <Link
+          href={`/category/${condition.category}`}
+          style={{ textDecoration: 'none', display: 'inline-flex' }}>
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '6px',
+            background: `${accentColor}20`,
+            border: `1px solid ${accentColor}40`,
+            borderRadius: '20px',
+            padding: '4px 12px',
+            marginBottom: '12px',
+            cursor: 'pointer'
           }}>
-            {severity.text}
-          </span>
-        </div>
+            <span style={{
+              width: '6px', height: '6px',
+              borderRadius: '50%',
+              background: severity.color,
+              flexShrink: 0,
+              display: 'inline-block'
+            }} />
+            <span style={{
+              fontSize: '0.65rem',
+              fontWeight: '700',
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              color: severity.color
+            }}>
+              {severity.text} ↗
+            </span>
+          </div>
+        </Link>
 
         <h1 style={{
           fontFamily: "'DM Serif Display', serif",
