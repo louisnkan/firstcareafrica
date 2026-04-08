@@ -7,9 +7,13 @@ const emergencies = [
     'severe-bleeding', 'unconscious-person', 'choking',
     'seizure', 'childbirth', 'burns', 'fractures',
     'snake-bite', 'drowning', 'head-injury',
-    'cardiac-event', 'anaphylaxis', 'broken-jaw', 'stroke'
+    'cardiac-event', 'anaphylaxis', 'broken-jaw',
+    'stroke', 'tetanus', 'rabies-exposure'
   ]
-
+  const sexualHealth = [
+    'gonorrhoea', 'chlamydia', 'syphilis',
+    'genital-herpes', 'hiv-basics', 'sti-prevention'
+  ]
   // Categories
   const categories = [
     'emergency', 'acute', 'common',
@@ -50,6 +54,11 @@ const emergencies = [
       priority: 0.7
     },
     ...categoryUrls,
-    ...emergencyUrls
+    ...emergencyUrls,
+    ...sexualHealth.map(slug => ({
+      url: `${baseUrl}/condition/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8
+    }))
   ]
-}
