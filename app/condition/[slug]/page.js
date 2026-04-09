@@ -4,15 +4,11 @@ import fs from 'fs'
 import path from 'path'
 import ConditionChat from '../../../components/ConditionChat'
 
-// Find a condition JSON from any category folder
 function getConditionData(slug) {
-  // Sanitise slug — only allow lowercase letters, 
-  // numbers and hyphens
   if (!slug || !/^[a-z0-9-]+$/.test(slug)) {
     return null
   }
-  // ... rest of function
-function getConditionData(slug) {
+
   const categories = [
     'emergency',
     'acute',
@@ -35,20 +31,20 @@ function getConditionData(slug) {
   return null
 }
 
-// Category color map
 const categoryColors = {
   emergency: '#E03131',
-  acute:     '#D4500A',
-  common:    '#1971C2',
+  acute: '#D4500A',
+  common: '#1971C2',
   'womens-health': '#6741D9',
-  chronic:   '#0C8599',
-  'maternal-child': '#2F9E44'
+  chronic: '#0C8599',
+  'maternal-child': '#2F9E44',
+  'sexual-health': '#0C8599'
 }
 
 const severityLabel = {
   critical: { text: 'Critical Emergency', color: '#E03131' },
-  acute:    { text: 'Acute — Needs Attention', color: '#D4500A' },
-  common:   { text: 'Common Condition', color: '#1971C2' }
+  acute: { text: 'Acute — Needs Attention', color: '#D4500A' },
+  common: { text: 'Common Condition', color: '#1971C2' }
 }
 
 export async function generateMetadata({ params }) {
@@ -56,7 +52,8 @@ export async function generateMetadata({ params }) {
   if (!condition) return { title: 'Not Found' }
   return {
     title: `${condition.title} — FirstCare Africa`,
-    description: condition.summary
+    description: condition.summary,
+    keywords: condition.title + ' symptoms treatment Africa first aid'
   }
 }
 
@@ -66,7 +63,8 @@ export default function ConditionPage({ params }) {
   if (!condition) notFound()
 
   const accentColor = categoryColors[condition.category] || '#E03131'
-  const severity = severityLabel[condition.severity] || severityLabel.common
+  const severity = severityLabel[condition.severity] ||
+    severityLabel.common
 
   return (
     <div style={{ paddingTop: '16px', paddingBottom: '32px' }}>
@@ -89,6 +87,8 @@ export default function ConditionPage({ params }) {
 
       {/* Header */}
       <div style={{ marginBottom: '24px' }}>
+
+        {/* Clickable category badge */}
         <Link
           href={`/category/${condition.category}`}
           style={{ textDecoration: 'none', display: 'inline-flex' }}>
@@ -104,7 +104,8 @@ export default function ConditionPage({ params }) {
             cursor: 'pointer'
           }}>
             <span style={{
-              width: '6px', height: '6px',
+              width: '6px',
+              height: '6px',
               borderRadius: '50%',
               background: severity.color,
               flexShrink: 0,
@@ -129,7 +130,9 @@ export default function ConditionPage({ params }) {
           marginBottom: '8px',
           lineHeight: '1.2'
         }}>
-          <span style={{ marginRight: '10px' }}>{condition.icon}</span>
+          <span style={{ marginRight: '10px' }}>
+            {condition.icon}
+          </span>
           {condition.title}
         </h1>
 
@@ -151,7 +154,8 @@ export default function ConditionPage({ params }) {
           marginBottom: '14px'
         }}>
           <div style={{
-            width: '3px', height: '20px',
+            width: '3px',
+            height: '20px',
             background: accentColor,
             borderRadius: '2px',
             flexShrink: 0
@@ -171,7 +175,8 @@ export default function ConditionPage({ params }) {
 
         {condition.steps.map((step, i) => (
           <div key={i} className="step-item">
-            <div className="step-number"
+            <div
+              className="step-number"
               style={{ background: accentColor }}>
               {i + 1}
             </div>
@@ -197,7 +202,8 @@ export default function ConditionPage({ params }) {
             marginBottom: '12px'
           }}>
             <div style={{
-              width: '3px', height: '20px',
+              width: '3px',
+              height: '20px',
               background: '#E03131',
               borderRadius: '2px',
               flexShrink: 0
@@ -218,7 +224,10 @@ export default function ConditionPage({ params }) {
             <div key={i} className="redflag-box"
               style={{ marginBottom: '8px' }}>
               <div style={{ display: 'flex', gap: '10px' }}>
-                <span style={{ color: '#E03131', flexShrink: 0 }}>
+                <span style={{
+                  color: '#E03131',
+                  flexShrink: 0
+                }}>
                   ⚠
                 </span>
                 <p style={{
@@ -245,7 +254,8 @@ export default function ConditionPage({ params }) {
             marginBottom: '12px'
           }}>
             <div style={{
-              width: '3px', height: '20px',
+              width: '3px',
+              height: '20px',
               background: '#F08C00',
               borderRadius: '2px',
               flexShrink: 0
@@ -266,7 +276,10 @@ export default function ConditionPage({ params }) {
             <div key={i} className="warning-box"
               style={{ marginBottom: '8px' }}>
               <div style={{ display: 'flex', gap: '10px' }}>
-                <span style={{ color: '#F08C00', flexShrink: 0 }}>
+                <span style={{
+                  color: '#F08C00',
+                  flexShrink: 0
+                }}>
                   !
                 </span>
                 <p style={{
@@ -293,7 +306,8 @@ export default function ConditionPage({ params }) {
             marginBottom: '12px'
           }}>
             <div style={{
-              width: '3px', height: '20px',
+              width: '3px',
+              height: '20px',
               background: '#1971C2',
               borderRadius: '2px',
               flexShrink: 0
@@ -324,16 +338,17 @@ export default function ConditionPage({ params }) {
                 }}>
                   ✓ What Helps
                 </p>
-                {condition.pharmacyGuidance.helpful.map((item, i) => (
-                  <p key={i} style={{
-                    color: '#F5F0E8',
-                    fontSize: '0.85rem',
-                    lineHeight: '1.5',
-                    marginBottom: '4px'
-                  }}>
-                    · {item}
-                  </p>
-                ))}
+                {condition.pharmacyGuidance.helpful.map(
+                  (item, i) => (
+                    <p key={i} style={{
+                      color: '#F5F0E8',
+                      fontSize: '0.85rem',
+                      lineHeight: '1.5',
+                      marginBottom: '4px'
+                    }}>
+                      · {item}
+                    </p>
+                  ))}
               </div>
             )}
 
@@ -349,16 +364,17 @@ export default function ConditionPage({ params }) {
                 }}>
                   ✗ What To Avoid
                 </p>
-                {condition.pharmacyGuidance.avoid.map((item, i) => (
-                  <p key={i} style={{
-                    color: '#F5F0E8',
-                    fontSize: '0.85rem',
-                    lineHeight: '1.5',
-                    marginBottom: '4px'
-                  }}>
-                    · {item}
-                  </p>
-                ))}
+                {condition.pharmacyGuidance.avoid.map(
+                  (item, i) => (
+                    <p key={i} style={{
+                      color: '#F5F0E8',
+                      fontSize: '0.85rem',
+                      lineHeight: '1.5',
+                      marginBottom: '4px'
+                    }}>
+                      · {item}
+                    </p>
+                  ))}
               </div>
             )}
 
@@ -374,16 +390,17 @@ export default function ConditionPage({ params }) {
                 }}>
                   → Ask The Pharmacist For
                 </p>
-                {condition.pharmacyGuidance.askFor.map((item, i) => (
-                  <p key={i} style={{
-                    color: '#F5F0E8',
-                    fontSize: '0.85rem',
-                    lineHeight: '1.5',
-                    marginBottom: '4px'
-                  }}>
-                    · {item}
-                  </p>
-                ))}
+                {condition.pharmacyGuidance.askFor.map(
+                  (item, i) => (
+                    <p key={i} style={{
+                      color: '#F5F0E8',
+                      fontSize: '0.85rem',
+                      lineHeight: '1.5',
+                      marginBottom: '4px'
+                    }}>
+                      · {item}
+                    </p>
+                  ))}
               </div>
             )}
           </div>
@@ -418,14 +435,7 @@ export default function ConditionPage({ params }) {
         </p>
       </div>
 
-      {/* AI FOLLOW-UP — Phase D */}
-      <div style={{ marginBottom: '24px' }}>
-        <ConditionChat
-          conditionName={condition.title}
-          conditionCategory={condition.category}
-        />
-      </div>
-{/* FAQ SECTION — SEO goldmine */}
+      {/* FAQ SECTION */}
       {condition.faq && condition.faq.length > 0 && (
         <div style={{ marginBottom: '24px' }}>
           <div style={{
@@ -483,6 +493,14 @@ export default function ConditionPage({ params }) {
           ))}
         </div>
       )}
+
+      {/* AI FOLLOW-UP */}
+      <div style={{ marginBottom: '24px' }}>
+        <ConditionChat
+          conditionName={condition.title}
+          conditionCategory={condition.category}
+        />
+      </div>
 
       {/* Disclaimer */}
       <div className="disclaimer-banner">
