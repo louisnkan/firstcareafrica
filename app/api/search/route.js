@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 
-// Build search index from all condition JSON files
 function buildSearchIndex() {
   const categories = [
     'emergency',
@@ -16,7 +15,9 @@ function buildSearchIndex() {
   const index = []
 
   for (const category of categories) {
-    const dirPath = path.join(process.cwd(), 'content', category)
+    const dirPath = path.join(
+      process.cwd(), 'content', category
+    )
 
     if (!fs.existsSync(dirPath)) continue
 
@@ -31,7 +32,6 @@ function buildSearchIndex() {
         )
         const data = JSON.parse(raw)
 
-        // Skip placeholders
         if (
           data.steps?.[0] === 'Content coming in Phase C.'
         ) continue
@@ -44,8 +44,6 @@ function buildSearchIndex() {
           category: data.category,
           severity: data.severity,
           color: data.color,
-          // Search text combines title + summary + steps
-          // for better matching
           searchText: [
             data.title,
             data.summary,
@@ -57,7 +55,6 @@ function buildSearchIndex() {
             .toLowerCase()
         })
       } catch {
-        // Skip malformed files silently
         continue
       }
     }
@@ -66,7 +63,6 @@ function buildSearchIndex() {
   return index
 }
 
-// Cache the index — rebuilds on server restart only
 let cachedIndex = null
 
 export async function GET(request) {
@@ -78,17 +74,14 @@ export async function GET(request) {
       return Response.json({ results: [] })
     }
 
-    // Build index if not cached
     if (!cachedIndex) {
       cachedIndex = buildSearchIndex()
     }
 
-    // Split query into words for better matching
     const words = query.split(' ').filter(w => w.length > 1)
 
     const results = cachedIndex
       .filter(item => {
-        // Match if ALL words appear in the search text
         return words.every(word =>
           item.searchText.includes(word)
         )
@@ -102,7 +95,6 @@ export async function GET(request) {
         severity: item.severity,
         color: item.color
       }))
-      // Sort by relevance — title matches first
       .sort((a, b) => {
         const aTitle = a.title.toLowerCase().includes(query)
         const bTitle = b.title.toLowerCase().includes(query)
@@ -110,7 +102,7 @@ export async function GET(request) {
         if (!aTitle && bTitle) return 1
         return 0
       })
-      .slice(0, 8) // max 8 results
+      .slice(0, 8)
 
     return Response.json({ results })
 
