@@ -13,6 +13,25 @@ const client = new Anthropic({
 const rateLimitStore = new Map()
 
 function checkRateLimit(ip) {
+  // Cache check — same question within 1 hour returns cached response
+const cacheKey = `triage:${Buffer.from(message).toString('base64').slice(0, 50)}`
+try {
+  const cached = await kv.get(cacheKey)
+  if (cached) {
+    return Response.json(cached)
+  }
+} catch {
+  // Cache miss or KV unavailable — continue normally
+}
+
+// ... existing Anthropic call ...
+
+// After getting response, cache it for 1 hour
+try {
+  await kv.setex(cacheKey, 3600, responseObject)
+} catch {
+  // Non-critical — continue without caching
+}
   const now = Date.now()
   const windowMs = 60 * 1000
   const maxRequests = 15
