@@ -912,16 +912,51 @@ export default function LandingPage() {
               gap: '10px'
             }}>
               {[
-                { icon: '🚨', label: 'Emergency', count: '16 conditions', color: '#E03131' },
-                { icon: '🤒', label: 'Acute Illness', count: '12 conditions', color: '#D4500A' },
-                { icon: '💊', label: 'Common Conditions', count: '13 conditions', color: '#1971C2' },
-                { icon: '🌸', label: "Women's Health", count: '8 conditions', color: '#6741D9' },
-                { icon: '🫀', label: 'Chronic', count: '8 conditions', color: '#0C8599' },
-                { icon: '👶', label: 'Maternal & Child', count: '10 conditions', color: '#2F9E44' },
-                { icon: '🔬', label: 'Sexual Health', count: '6 conditions', color: '#0C8599' },
-                { icon: '🤖', label: 'AI Doctor', count: 'Anything else', color: '#6741D9' }
+                { icon: '🚨', label: 'Emergency', count: '16 conditions', color: '#E03131', href: '/category/emergency' },
+                { icon: '🤒', label: 'Acute Illness', count: '12 conditions', color: '#D4500A', href: '/category/acute' },
+                { icon: '💊', label: 'Common Conditions', count: '13 conditions', color: '#1971C2', href: '/category/common' },
+                { icon: '🌸', label: "Women's Health", count: '8 conditions', color: '#6741D9', href: '/category/womens-health' },
+                { icon: '🫀', label: 'Chronic', count: '8 conditions', color: '#0C8599', href: '/category/chronic' },
+                { icon: '👶', label: 'Maternal & Child', count: '10 conditions', color: '#2F9E44', href: '/category/maternal-child' },
+                { icon: '🔬', label: 'Sexual Health', count: '6 conditions', color: '#0C8599', href: '/category/sexual-health' },
+                { icon: '🤖', label: 'AI Doctor', count: 'Anything else', color: '#6741D9', href: '/triage' }
               ].map((cat, i) => (
-                <div key={i} style={{
+                <Link key={i} href={cat.href} style={{ textDecoration: 'none' }}>
+                  <div style={{
+                    background: 'rgba(255,255,255,0.03)',
+                    border: `1px solid rgba(255,255,255,0.07)`,
+                    borderTop: `2px solid ${cat.color}`,
+                    borderRadius: '0 0 14px 14px',
+                    padding: '14px 12px',
+                    cursor: 'pointer',
+                    minHeight: '90px'
+                  }}>
+                    <span style={{
+                      fontSize: '1.2rem',
+                      display: 'block',
+                      marginBottom: '6px'
+                    }}>
+                      {cat.icon}
+                    </span>
+                    <p style={{
+                      color: '#F2EDE4',
+                      fontSize: '0.78rem',
+                      fontWeight: '600',
+                      margin: '0 0 2px'
+                    }}>
+                      {cat.label}
+                    </p>
+                    <p style={{
+                      color: '#5C6E7E',
+                      fontSize: '0.65rem',
+                      margin: 0
+                    }}>
+                      {cat.count}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
                   background: 'rgba(255,255,255,0.03)',
                   border: `1px solid rgba(255,255,255,0.07)`,
                   borderTop: `2px solid ${cat.color}`,
