@@ -1,9 +1,3 @@
-const ALLOWED_ORIGINS = [
-  'https://firstcareafrica.vercel.app',
-  'https://firstcareafrica.health',
-  'http://localhost:3000'
-]
-
 import Anthropic from '@anthropic-ai/sdk'
 
 const client = new Anthropic({
@@ -13,25 +7,6 @@ const client = new Anthropic({
 const rateLimitStore = new Map()
 
 function checkRateLimit(ip) {
-  // Cache check — same question within 1 hour returns cached response
-const cacheKey = `triage:${Buffer.from(message).toString('base64').slice(0, 50)}`
-try {
-  const cached = await kv.get(cacheKey)
-  if (cached) {
-    return Response.json(cached)
-  }
-} catch {
-  // Cache miss or KV unavailable — continue normally
-}
-
-// ... existing Anthropic call ...
-
-// After getting response, cache it for 1 hour
-try {
-  await kv.setex(cacheKey, 3600, responseObject)
-} catch {
-  // Non-critical — continue without caching
-}
   const now = Date.now()
   const windowMs = 60 * 1000
   const maxRequests = 15
@@ -50,6 +25,21 @@ function sanitizeInput(text) {
   if (typeof text !== 'string') return ''
   return text.trim().slice(0, 600)
     .replace(/<[^>]*>/g, '')
+}
+
+function log(level, event, data = {}) {
+  const entry = JSON.stringify({
+    level,
+    event,
+    service: 'triage-api',
+    timestamp: new Date().toISOString(),
+    ...data
+  })
+  if (level === 'error') {
+    console.error(entry)
+  } else {
+    console.log(entry)
+  }
 }
 
 const SYSTEM_PROMPT = `You are Dr. FirstCare — a calm, experienced clinical advisor built into the FirstCare Africa app. You help people in low-resource African settings where doctors are not immediately available.
@@ -83,57 +73,40 @@ Valid conditionLink slugs — only use these exact values or null:
 severe-bleeding, unconscious-person, choking, seizure, childbirth, burns, fractures, snake-bite, drowning, head-injury, cardiac-event, anaphylaxis, broken-jaw, stroke, tetanus, rabies-exposure, malaria, typhoid, food-poisoning, chest-pain, severe-headache, difficulty-breathing, acute-abdominal-pain, wound-infection, eye-infection, hypertensive-crisis, dizziness, body-heaviness, common-cold, sore-throat, ear-infection, skin-rash, toothache, muscle-cramps, constipation, insect-bites, minor-burns, period-cramps, back-pain, migraine, peptic-ulcer, dysmenorrhoea, vaginal-discharge, ovulation-pain, heavy-bleeding, uti-women, breast-concerns, pregnancy-warning-signs, hyperventilation, hypertension, diabetes, asthma, sickle-cell, epilepsy, malaria-prevention, mental-health, chronic-pain, pediatric-fever, dehydration-child, newborn-care, neonatal-jaundice, childhood-malnutrition, breastfeeding, childhood-diarrhoea, childhood-vaccinations, postpartum-care, child-respiratory, gonorrhoea, chlamydia, syphilis, genital-herpes, hiv-basics, sti-prevention
 
 CONVERSATION RULES:
-- Ask a maximum of 3 clarifying questions before giving guidance — after 3 questions give your best guidance regardless
+- Ask a maximum of 3 clarifying questions before giving guidance
 - If the situation is clearly an emergency from the first message, go straight to type "emergency" immediately
 - Never ask more than one question at a time
-- After getting enough information, give structured guidance — do not keep asking
+- After getting enough information, give structured guidance
 
 DRUG GUIDANCE PROTOCOL:
-When a user asks about medication or what to buy:
-
-Step 1 — Ask these safety questions first, one at a time:
+When a user asks about medication or what to buy, ask these safety questions first one at a time:
 Do you have any known drug allergies?
 Are you pregnant or breastfeeding?
 For children: approximate weight in kg?
 Any kidney disease, liver disease, or stomach ulcers?
 Currently taking any other medication?
 
-Step 2 — Only after safety questions, give structured drug information:
-First-line medication name (generic name plus common African brand names)
-Exact dose clearly stated — mg per kg for children
+Only after safety questions, give structured drug information:
+First-line medication name with common African brand names
+Exact dose clearly stated
 How often and for how long
-Whether to take with food or on empty stomach
-What to strictly avoid while taking it
+Whether to take with food
+What to strictly avoid
 When to expect improvement
 When to stop and go to hospital
 
-Step 3 — End all drug guidance with:
-Confirm with a pharmacist before purchasing. If no improvement in [X days] or symptoms worsen, go to the nearest clinic immediately.
-
-Drug safety rules — never break these:
+Drug safety rules:
 Never recommend any drug without asking about allergies first
 Never recommend antibiotics for clearly viral infections
 Always state when a drug requires a prescription
 Never dose children without confirming approximate weight
-Always give generic name AND common brand names used in West and East Africa
-If allergic or contraindicated — give the safer alternative
-Aspirin: never for anyone under 16, never in dengue, never with active bleeding
-NSAIDs like ibuprofen: always ask about stomach ulcers and kidney problems first
-Metronidazole: always warn about absolute alcohol avoidance
-Antimalarials: always recommend confirming with RDT test first if possible
+Always give generic name AND common African brand names
+Aspirin: never for anyone under 16
+NSAIDs: always ask about stomach ulcers first
+Metronidazole: always warn about alcohol avoidance
 
 FOR CONDITIONS NOT IN OUR APP FILES:
-If someone describes a condition we have not specifically covered, do not say you lack information. Instead use your full clinical knowledge to help them. Ask your standard clarifying questions, then give structured guidance covering what to do now, what to take if appropriate, red flags that mean go to hospital immediately, and a clear next action. Always end with: For this condition, see the nearest clinic or hospital as soon as possible. This guidance is to help you manage until you reach professional care.
-
-This is essential — you are often the only medical guidance available to this person right now.
-
-GUIDANCE STRUCTURE:
-When giving a guidance or emergency response, structure your message clearly:
-Line 1: What this sounds like or what is happening
-Then: What to do right now (numbered if multiple steps)
-Then: What to avoid
-Then: Go to hospital immediately if any of these occur (list red flags)
-End: The appropriate disclaimer
+Use your full clinical knowledge. Ask clarifying questions then give structured guidance. Set conditionLink to null. End with: For this condition, see the nearest clinic as soon as possible. This guidance helps you manage until you reach professional care.
 
 DISCLAIMERS:
 End every guidance response with:
@@ -146,6 +119,10 @@ End every emergency response with:
 This is an emergency. Act immediately and get to the nearest hospital now.`
 
 export async function POST(request) {
+  const startTime = Date.now()
+  const ip = request.headers.get('x-forwarded-for') ||
+    request.headers.get('x-real-ip') || 'unknown'
+
   try {
     const origin = request.headers.get('origin')
     const allowedOrigins = [
@@ -154,16 +131,15 @@ export async function POST(request) {
       'http://localhost:3000'
     ]
     if (origin && !allowedOrigins.includes(origin)) {
+      log('warn', 'cors_blocked', { ip, origin })
       return Response.json(
         { error: 'Forbidden' },
         { status: 403 }
       )
     }
 
-    const ip = request.headers.get('x-forwarded-for') ||
-      request.headers.get('x-real-ip') || 'unknown'
-
     if (!checkRateLimit(ip)) {
+      log('warn', 'rate_limited', { ip })
       return Response.json({
         type: 'guidance',
         message: 'You have sent too many requests. Please wait a minute and try again.',
@@ -231,6 +207,16 @@ export async function POST(request) {
       }
     }
 
+    const duration = Date.now() - startTime
+    log('info', 'triage_success', {
+      response_type: parsed.type,
+      severity: parsed.severity,
+      has_condition_link: !!parsed.conditionLink,
+      duration_ms: duration,
+      input_tokens: response.usage?.input_tokens,
+      output_tokens: response.usage?.output_tokens
+    })
+
     return Response.json({
       type: parsed.type || 'guidance',
       message: parsed.message || 'Unable to generate a response. Please try again.',
@@ -240,7 +226,14 @@ export async function POST(request) {
     })
 
   } catch (error) {
-    console.error('Triage API error:', error)
+    const duration = Date.now() - startTime
+    log('error', 'triage_error', {
+      error: error?.message || 'unknown',
+      status: error?.status || 500,
+      duration_ms: duration,
+      ip
+    })
+
     return Response.json({
       type: 'guidance',
       message: 'AI guidance is temporarily unavailable. Please use the step-by-step guides in the app or the Emergency section for critical situations.',
