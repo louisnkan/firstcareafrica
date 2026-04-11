@@ -1,9 +1,3 @@
-const ALLOWED_ORIGINS = [
-  'https://firstcareafrica.vercel.app',
-  'https://firstcareafrica.health',
-  'http://localhost:3000'
-]
-
 import Anthropic from '@anthropic-ai/sdk'
 
 const client = new Anthropic({
@@ -34,6 +28,21 @@ function sanitizeInput(text) {
     .slice(0, 500)
     .replace(/<[^>]*>/g, '')
     .replace(/[^\w\s.,?!'\-()]/g, '')
+}
+
+function log(level, event, data = {}) {
+  const entry = JSON.stringify({
+    level,
+    event,
+    service: 'chat-api',
+    timestamp: new Date().toISOString(),
+    ...data
+  })
+  if (level === 'error') {
+    console.error(entry)
+  } else {
+    console.log(entry)
+  }
 }
 
 function getTriageSystemPrompt() {
@@ -74,6 +83,10 @@ Guidance only. Seek professional medical help as soon as possible.`
 }
 
 export async function POST(request) {
+  const startTime = Date.now()
+  const ip = request.headers.get('x-forwarded-for') ||
+    request.headers.get('x-real-ip') || 'unknown'
+
   try {
     const origin = request.headers.get('origin')
     const allowedOrigins = [
@@ -82,16 +95,15 @@ export async function POST(request) {
       'http://localhost:3000'
     ]
     if (origin && !allowedOrigins.includes(origin)) {
+      log('warn', 'cors_blocked', { ip, origin })
       return Response.json(
         { error: 'Forbidden' },
         { status: 403 }
       )
     }
 
-    const ip = request.headers.get('x-forwarded-for') ||
-      request.headers.get('x-real-ip') || 'unknown'
-
     if (!checkRateLimit(ip)) {
+      log('warn', 'rate_limited', { ip })
       return Response.json(
         {
           error: 'rate_limited',
@@ -135,13 +147,28 @@ export async function POST(request) {
     const aiText = response.content[0]?.text ||
       'Unable to generate a response. Please try again.'
 
+    const duration = Date.now() - startTime
+    log('info', 'chat_success', {
+      mode,
+      condition: conditionName || null,
+      duration_ms: duration,
+      input_tokens: response.usage?.input_tokens,
+      output_tokens: response.usage?.output_tokens
+    })
+
     return Response.json({
       response: aiText,
       mode: mode
     })
 
   } catch (error) {
-    console.error('Chat API error:', error)
+    const duration = Date.now() - startTime
+    log('error', 'chat_error', {
+      error: error?.message || 'unknown',
+      status: error?.status || 500,
+      duration_ms: duration,
+      ip
+    })
 
     const errorMessage = error?.message || ''
     const errorStatus = error?.status || 500
@@ -166,16 +193,6 @@ export async function POST(request) {
       )
     }
 
-    if (errorStatus === 529 || errorMessage.includes('overload')) {
-      return Response.json(
-        {
-          error: 'overload_error',
-          message: 'AI is busy right now. Please try again in a moment. The steps above are still fully accurate.'
-        },
-        { status: 503 }
-      )
-    }
-
     return Response.json(
       {
         error: 'server_error',
@@ -184,4 +201,4 @@ export async function POST(request) {
       { status: 500 }
     )
   }
-      }
+}
