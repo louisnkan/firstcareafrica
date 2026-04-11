@@ -1,14 +1,9 @@
 export async function GET() {
-  const status = {
+  return Response.json({
     status: 'ok',
+    app: 'FirstCare Africa',
     timestamp: new Date().toISOString(),
-    services: {
-      api: 'ok',
-      anthropicKey: process.env.ANTHROPIC_API_KEY
-        ? 'configured'
-        : 'missing'
-    }
-  }
-
-  return Response.json(status)
+    environment: process.env.NODE_ENV || 'production',
+    anthropicConfigured: !!process.env.ANTHROPIC_API_KEY
+  })
 }
