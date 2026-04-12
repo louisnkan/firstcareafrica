@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import ShareButton from '../components/ShareButton'
+import SearchBar from '../components/SearchBar'
 
-// Onboarding modal — shows once per visitor
 function OnboardingModal({ onClose }) {
   return (
     <div style={{
@@ -33,7 +33,6 @@ function OnboardingModal({ onClose }) {
           borderRadius: '2px',
           margin: '0 auto 28px'
         }} />
-
         <div style={{
           width: '56px',
           height: '56px',
@@ -44,10 +43,7 @@ function OnboardingModal({ onClose }) {
           justifyContent: 'center',
           fontSize: '1.6rem',
           marginBottom: '20px'
-        }}>
-          ✚
-        </div>
-
+        }}>✚</div>
         <h2 style={{
           fontFamily: "'Playfair Display', Georgia, serif",
           fontSize: '1.6rem',
@@ -58,7 +54,6 @@ function OnboardingModal({ onClose }) {
         }}>
           Before you continue
         </h2>
-
         <p style={{
           color: '#9BA8B5',
           fontSize: '0.9rem',
@@ -67,10 +62,9 @@ function OnboardingModal({ onClose }) {
         }}>
           FirstCare Africa provides general medical guidance
           based on WHO and international first-aid protocols.
-          It is designed to help when professional care is
+          Designed to help when professional care is
           unavailable, delayed, or out of reach.
         </p>
-
         <div style={{
           background: 'rgba(232,160,32,0.08)',
           border: '1px solid rgba(232,160,32,0.2)',
@@ -91,43 +85,34 @@ function OnboardingModal({ onClose }) {
             help as soon as possible.
           </p>
         </div>
-
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '10px'
-        }}>
-          <button
-            onClick={onClose}
-            style={{
-              background: 'linear-gradient(135deg, #E8A020, #C4622D)',
-              border: 'none',
-              borderRadius: '14px',
-              padding: '16px',
-              color: 'white',
-              fontFamily: "'DM Sans', sans-serif",
-              fontWeight: '700',
-              fontSize: '1rem',
-              cursor: 'pointer',
-              width: '100%',
-              letterSpacing: '0.02em'
-            }}>
-            I Understand — Enter FirstCare Africa
-          </button>
-
-          <p style={{
-            color: '#3D5166',
-            fontSize: '0.72rem',
-            textAlign: 'center',
-            margin: 0,
-            lineHeight: '1.5'
+        <button
+          onClick={onClose}
+          style={{
+            background: 'linear-gradient(135deg, #E8A020, #C4622D)',
+            border: 'none',
+            borderRadius: '14px',
+            padding: '16px',
+            color: 'white',
+            fontFamily: "'DM Sans', sans-serif",
+            fontWeight: '700',
+            fontSize: '1rem',
+            cursor: 'pointer',
+            width: '100%',
+            letterSpacing: '0.02em',
+            marginBottom: '10px'
           }}>
-            This notice is shown once.
-            No account or data required.
-          </p>
-        </div>
+          I Understand — Enter FirstCare Africa
+        </button>
+        <p style={{
+          color: '#3D5166',
+          fontSize: '0.72rem',
+          textAlign: 'center',
+          margin: 0,
+          lineHeight: '1.5'
+        }}>
+          This notice is shown once. No account required.
+        </p>
       </div>
-
       <style>{`
         @keyframes slideUp {
           from { transform: translateY(100%); opacity: 0; }
@@ -138,7 +123,6 @@ function OnboardingModal({ onClose }) {
   )
 }
 
-// Animated ECG pulse line
 function PulseLine() {
   return (
     <div style={{
@@ -149,7 +133,7 @@ function PulseLine() {
       height: '80px',
       transform: 'translateY(-50%)',
       overflow: 'hidden',
-      opacity: 0.25,
+      opacity: 0.2,
       pointerEvents: 'none'
     }}>
       <svg
@@ -179,7 +163,6 @@ function PulseLine() {
   )
 }
 
-// Stat card component
 function StatCard({ number, label, sub }) {
   return (
     <div style={{
@@ -198,33 +181,26 @@ function StatCard({ number, label, sub }) {
         color: '#E8A020',
         margin: '0 0 4px',
         lineHeight: 1
-      }}>
-        {number}
-      </p>
+      }}>{number}</p>
       <p style={{
         color: '#F2EDE4',
         fontSize: '0.78rem',
         fontWeight: '600',
         margin: '0 0 2px',
         lineHeight: 1.3
-      }}>
-        {label}
-      </p>
+      }}>{label}</p>
       {sub && (
         <p style={{
           color: '#5C6E7E',
           fontSize: '0.65rem',
           margin: 0,
           lineHeight: 1.3
-        }}>
-          {sub}
-        </p>
+        }}>{sub}</p>
       )}
     </div>
   )
 }
 
-// Section label component
 function SectionLabel({ children, color = '#E8A020' }) {
   return (
     <div style={{
@@ -246,37 +222,89 @@ function SectionLabel({ children, color = '#E8A020' }) {
         letterSpacing: '0.15em',
         textTransform: 'uppercase',
         fontFamily: "'DM Sans', sans-serif"
-      }}>
-        {children}
-      </span>
+      }}>{children}</span>
     </div>
   )
 }
 
+const categories = [
+  {
+    icon: '🚨',
+    label: 'Emergency',
+    count: '16 conditions',
+    color: '#E03131',
+    href: '/category/emergency'
+  },
+  {
+    icon: '🤒',
+    label: 'Acute Illness',
+    count: '12 conditions',
+    color: '#D4500A',
+    href: '/category/acute'
+  },
+  {
+    icon: '💊',
+    label: 'Common Conditions',
+    count: '13 conditions',
+    color: '#1971C2',
+    href: '/category/common'
+  },
+  {
+    icon: '🌸',
+    label: "Women's Health",
+    count: '8 conditions',
+    color: '#6741D9',
+    href: '/category/womens-health'
+  },
+  {
+    icon: '🫀',
+    label: 'Chronic',
+    count: '8 conditions',
+    color: '#0C8599',
+    href: '/category/chronic'
+  },
+  {
+    icon: '👶',
+    label: 'Maternal & Child',
+    count: '10 conditions',
+    color: '#2F9E44',
+    href: '/category/maternal-child'
+  },
+  {
+    icon: '🔬',
+    label: 'Sexual Health',
+    count: '6 conditions',
+    color: '#0C8599',
+    href: '/category/sexual-health'
+  },
+  {
+    icon: '🤖',
+    label: 'AI Doctor',
+    count: 'Anything else',
+    color: '#6741D9',
+    href: '/triage'
+  }
+]
+
 export default function LandingPage() {
   const [showModal, setShowModal] = useState(false)
-  const [hasVisited, setHasVisited] = useState(true)
 
   useEffect(() => {
     try {
       const visited = localStorage.getItem('fca_visited')
       if (!visited) {
         setShowModal(true)
-        setHasVisited(false)
       }
     } catch {
-      // localStorage not available — skip modal
+      // localStorage not available
     }
   }, [])
 
   function handleModalClose() {
     try {
       localStorage.setItem('fca_visited', 'true')
-    } catch {
-      // ignore
-    }
+    } catch {}
     setShowModal(false)
-    setHasVisited(true)
   }
 
   return (
@@ -287,17 +315,16 @@ export default function LandingPage() {
       overflowX: 'hidden'
     }}>
 
-      {/* Onboarding modal */}
       {showModal && (
         <OnboardingModal onClose={handleModalClose} />
       )}
 
-      {/* ── NAVIGATION ───────────────────────────── */}
+      {/* NAV */}
       <nav style={{
         position: 'sticky',
         top: 0,
         zIndex: 100,
-        background: 'rgba(10,22,40,0.92)',
+        background: 'rgba(10,22,40,0.95)',
         backdropFilter: 'blur(16px)',
         borderBottom: '1px solid rgba(255,255,255,0.06)',
         padding: '0 20px'
@@ -333,50 +360,32 @@ export default function LandingPage() {
               fontFamily: "'Playfair Display', serif",
               fontSize: '1.1rem',
               color: '#F2EDE4',
-              fontWeight: '700',
-              letterSpacing: '-0.01em'
+              fontWeight: '700'
             }}>
               FirstCare
               <span style={{ color: '#E8A020' }}> Africa</span>
             </span>
           </div>
-
-          <div style={{
-            display: 'flex',
+          <Link href="/category/emergency" style={{
+            background: 'linear-gradient(135deg, #E03131, #C92A2A)',
+            color: 'white',
+            textDecoration: 'none',
+            padding: '8px 16px',
+            borderRadius: '10px',
+            fontSize: '0.82rem',
+            fontWeight: '700',
+            boxShadow: '0 2px 12px rgba(224,49,49,0.3)',
+            display: 'inline-flex',
             alignItems: 'center',
-            gap: '10px'
+            gap: '6px',
+            minHeight: 0
           }}>
-            <Link href="/category/emergency" style={{
-              color: '#9BA8B5',
-              textDecoration: 'none',
-              fontSize: '0.8rem',
-              fontWeight: '500',
-              display: 'none'
-            }}>
-              Conditions
-            </Link>
-            <Link href="/category/emergency" style={{
-              background: 'linear-gradient(135deg, #E03131, #C92A2A)',
-              color: 'white',
-              textDecoration: 'none',
-              padding: '8px 16px',
-              borderRadius: '10px',
-              fontSize: '0.82rem',
-              fontWeight: '700',
-              letterSpacing: '0.02em',
-              boxShadow: '0 2px 12px rgba(224,49,49,0.3)',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px',
-              minHeight: 0
-            }}>
-              🚨 Open App
-            </Link>
-          </div>
+            🚨 Open App
+          </Link>
         </div>
       </nav>
 
-      {/* ── HERO ─────────────────────────────────── */}
+      {/* HERO */}
       <section style={{
         position: 'relative',
         minHeight: '100vh',
@@ -385,38 +394,17 @@ export default function LandingPage() {
         overflow: 'hidden',
         padding: '80px 20px'
       }}>
-
-        {/* Background mesh gradient */}
         <div style={{
           position: 'absolute',
           inset: 0,
           background: `
             radial-gradient(ellipse 80% 60% at 10% 50%,
-              rgba(232,160,32,0.06) 0%,
-              transparent 60%),
+              rgba(232,160,32,0.06) 0%, transparent 60%),
             radial-gradient(ellipse 60% 80% at 90% 30%,
-              rgba(196,98,45,0.05) 0%,
-              transparent 60%),
-            radial-gradient(ellipse 100% 100% at 50% 100%,
-              rgba(103,65,217,0.04) 0%,
-              transparent 50%)
+              rgba(196,98,45,0.05) 0%, transparent 60%)
           `,
           pointerEvents: 'none'
         }} />
-
-        {/* Grain texture */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E")`,
-          pointerEvents: 'none',
-          opacity: 0.6
-        }} />
-
-        {/* ECG pulse line */}
-        <PulseLine />
-
-        {/* Grid lines */}
         <div style={{
           position: 'absolute',
           inset: 0,
@@ -427,6 +415,7 @@ export default function LandingPage() {
           backgroundSize: '60px 60px',
           pointerEvents: 'none'
         }} />
+        <PulseLine />
 
         <div style={{
           maxWidth: '1100px',
@@ -435,8 +424,6 @@ export default function LandingPage() {
           position: 'relative',
           zIndex: 1
         }}>
-
-          {/* Pre-headline badge */}
           <div style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -445,8 +432,7 @@ export default function LandingPage() {
             border: '1px solid rgba(232,160,32,0.25)',
             borderRadius: '20px',
             padding: '6px 14px',
-            marginBottom: '28px',
-            animation: 'fadeInUp 0.6s ease 0.1s both'
+            marginBottom: '28px'
           }}>
             <div style={{
               width: '7px',
@@ -466,7 +452,6 @@ export default function LandingPage() {
             </span>
           </div>
 
-          {/* Main headline */}
           <h1 style={{
             fontFamily: "'Playfair Display', Georgia, serif",
             fontSize: 'clamp(2.4rem, 8vw, 5rem)',
@@ -474,8 +459,7 @@ export default function LandingPage() {
             lineHeight: '1.1',
             letterSpacing: '-0.02em',
             marginBottom: '24px',
-            maxWidth: '700px',
-            animation: 'fadeInUp 0.6s ease 0.2s both'
+            maxWidth: '700px'
           }}>
             When the doctor
             <span style={{
@@ -490,14 +474,12 @@ export default function LandingPage() {
             </span>
           </h1>
 
-          {/* Subheadline */}
           <p style={{
             color: '#9BA8B5',
             fontSize: 'clamp(1rem, 2.5vw, 1.15rem)',
             lineHeight: '1.7',
             maxWidth: '520px',
-            marginBottom: '40px',
-            animation: 'fadeInUp 0.6s ease 0.3s both'
+            marginBottom: '40px'
           }}>
             Emergency guidance. Illness advice. Drug recommendations.
             AI-powered medical knowledge — built for the millions
@@ -505,13 +487,11 @@ export default function LandingPage() {
             unavailable, or hasn't arrived yet.
           </p>
 
-          {/* CTA buttons */}
           <div style={{
             display: 'flex',
             gap: '12px',
             flexWrap: 'wrap',
-            marginBottom: '56px',
-            animation: 'fadeInUp 0.6s ease 0.4s both'
+            marginBottom: '32px'
           }}>
             <Link href="/category/emergency" style={{
               background: 'linear-gradient(135deg, #E03131, #C92A2A)',
@@ -525,12 +505,11 @@ export default function LandingPage() {
               alignItems: 'center',
               gap: '8px',
               minHeight: 0,
-              boxShadow: '0 4px 24px rgba(224,49,49,0.35)',
-              letterSpacing: '0.02em'
+              boxShadow: '0 4px 24px rgba(224,49,49,0.35)'
             }}>
               🚨 Open App Now
             </Link>
-            <a href="#how-it-works" style={{
+            <a href="#conditions" style={{
               background: 'rgba(255,255,255,0.05)',
               border: '1px solid rgba(255,255,255,0.12)',
               color: '#F2EDE4',
@@ -544,15 +523,13 @@ export default function LandingPage() {
               gap: '8px',
               minHeight: 0
             }}>
-              Learn More ↓
+              Explore Conditions ↓
             </a>
           </div>
 
-          {/* Stats row */}
           <div style={{
             display: 'flex',
             gap: '12px',
-            animation: 'fadeInUp 0.6s ease 0.5s both',
             flexWrap: 'wrap'
           }}>
             <StatCard number="75+" label="Conditions Covered" sub="Across 7 categories" />
@@ -560,62 +537,20 @@ export default function LandingPage() {
             <StatCard number="0₦" label="Forever Free" sub="No account needed" />
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div style={{
-          position: 'absolute',
-          bottom: '32px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '8px',
-          animation: 'fadeInUp 0.6s ease 0.8s both'
-        }}>
-          <span style={{
-            color: '#3D5166',
-            fontSize: '0.65rem',
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase'
-          }}>
-            Scroll
-          </span>
-          <div style={{
-            width: '1px',
-            height: '40px',
-            background: 'linear-gradient(to bottom, #3D5166, transparent)',
-            animation: 'scrollPulse 2s ease-in-out infinite'
-          }} />
-        </div>
       </section>
 
-      {/* ── THE PROBLEM ──────────────────────────── */}
+      {/* THE PROBLEM */}
       <section style={{
         padding: '100px 20px',
-        background: 'linear-gradient(180deg, #0A1628 0%, #0D1E35 100%)',
-        position: 'relative'
+        background: '#0D1E35'
       }}>
-        {/* Diagonal top divider */}
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: '60px',
-          background: '#0A1628',
-          clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 100%)',
-          pointerEvents: 'none'
-        }} />
-
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <SectionLabel>The Problem</SectionLabel>
-
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '24px',
-            marginBottom: '60px'
+            marginBottom: '48px'
           }}>
             <div>
               <h2 style={{
@@ -644,11 +579,10 @@ export default function LandingPage() {
               }}>
                 Across Sub-Saharan Africa, the reality is stark.
                 Hospitals are hours away. Ambulances are unavailable.
-                Trained help hasn't arrived. And in those critical
-                minutes, most people have nothing to turn to.
+                In those critical minutes, most people have nothing
+                to turn to.
               </p>
             </div>
-
             <div style={{
               display: 'flex',
               flexDirection: 'column',
@@ -684,31 +618,22 @@ export default function LandingPage() {
                     fontWeight: '800',
                     color: '#E8A020',
                     margin: '0 0 4px'
-                  }}>
-                    {item.stat}
-                  </p>
+                  }}>{item.stat}</p>
                   <p style={{
                     color: '#F2EDE4',
                     fontSize: '0.85rem',
                     lineHeight: '1.5',
                     margin: '0 0 4px'
-                  }}>
-                    {item.desc}
-                  </p>
+                  }}>{item.desc}</p>
                   <p style={{
                     color: '#3D5166',
                     fontSize: '0.65rem',
-                    margin: 0,
-                    letterSpacing: '0.03em'
-                  }}>
-                    {item.source}
-                  </p>
+                    margin: 0
+                  }}>{item.source}</p>
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Bridge statement */}
           <div style={{
             background: 'linear-gradient(135deg, rgba(232,160,32,0.08), rgba(196,98,45,0.08))',
             border: '1px solid rgba(232,160,32,0.15)',
@@ -734,14 +659,13 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ─────────────────────────── */}
-      <section id="how-it-works" style={{
+      {/* HOW IT WORKS */}
+      <section style={{
         padding: '100px 20px',
-        background: '#0D1E35'
+        background: '#0A1628'
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <SectionLabel>Getting Started</SectionLabel>
-
           <h2 style={{
             fontFamily: "'Playfair Display', serif",
             fontSize: 'clamp(1.8rem, 4vw, 2.6rem)',
@@ -752,12 +676,9 @@ export default function LandingPage() {
             maxWidth: '500px'
           }}>
             No app store.
-            <span style={{ color: '#E8A020', fontStyle: 'italic' }}>
-              {' '}No account.{' '}
-            </span>
+            <span style={{ color: '#E8A020', fontStyle: 'italic' }}> No account. </span>
             No waiting.
           </h2>
-
           <p style={{
             color: '#9BA8B5',
             fontSize: '0.95rem',
@@ -768,7 +689,6 @@ export default function LandingPage() {
             Open it on any phone, any browser, anywhere.
             Works offline after the first visit.
           </p>
-
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
@@ -784,13 +704,13 @@ export default function LandingPage() {
               {
                 number: '02',
                 title: 'Find your situation',
-                desc: 'Search by symptom, browse by category, or tap the AI doctor button and describe what\'s happening in plain language.',
+                desc: 'Search by symptom, browse by category, or tap the AI doctor button and describe what\'s happening.',
                 icon: '🔍'
               },
               {
                 number: '03',
                 title: 'Get clear guidance',
-                desc: 'Step-by-step instructions, drug recommendations with safety checks, and red flags that tell you when to go to hospital.',
+                desc: 'Step-by-step instructions, drug recommendations with safety checks, and red flags for hospital.',
                 icon: '✅'
               }
             ].map((step, i) => (
@@ -809,55 +729,42 @@ export default function LandingPage() {
                   fontFamily: "'Playfair Display', serif",
                   fontSize: '3rem',
                   fontWeight: '800',
-                  color: 'rgba(232,160,32,0.08)',
-                  lineHeight: 1,
-                  letterSpacing: '-0.04em'
-                }}>
-                  {step.number}
-                </div>
-                <div style={{
-                  fontSize: '1.8rem',
-                  marginBottom: '16px'
-                }}>
-                  {step.icon}
-                </div>
+                  color: 'rgba(232,160,32,0.07)',
+                  lineHeight: 1
+                }}>{step.number}</div>
+                <div style={{ fontSize: '1.8rem', marginBottom: '16px' }}>{step.icon}</div>
                 <h3 style={{
                   fontFamily: "'Playfair Display', serif",
                   fontSize: '1.1rem',
                   fontWeight: '700',
                   color: '#F2EDE4',
                   marginBottom: '10px'
-                }}>
-                  {step.title}
-                </h3>
+                }}>{step.title}</h3>
                 <p style={{
                   color: '#9BA8B5',
                   fontSize: '0.85rem',
                   lineHeight: '1.65',
                   margin: 0
-                }}>
-                  {step.desc}
-                </p>
+                }}>{step.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── WHAT'S INSIDE ────────────────────────── */}
-      <section style={{
+      {/* CONDITIONS GRID */}
+      <section id="conditions" style={{
         padding: '100px 20px',
-        background: '#0A1628',
-        position: 'relative'
+        background: '#0D1E35'
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <SectionLabel>What's Inside</SectionLabel>
-
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '24px',
-            alignItems: 'start'
+            alignItems: 'start',
+            marginBottom: '48px'
           }}>
             <div>
               <h2 style={{
@@ -873,9 +780,7 @@ export default function LandingPage() {
                   color: '#E8A020',
                   fontStyle: 'italic',
                   display: 'block'
-                }}>
-                  Every emergency.
-                </span>
+                }}>Every emergency.</span>
                 Any situation.
               </h2>
               <p style={{
@@ -890,46 +795,36 @@ export default function LandingPage() {
                 African health contexts. Drug names you can
                 actually find at your local pharmacy.
               </p>
-              <Link href="/category/emergency" style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                color: '#E8A020',
-                textDecoration: 'none',
-                fontSize: '0.9rem',
-                fontWeight: '600',
-                borderBottom: '1px solid rgba(232,160,32,0.3)',
-                paddingBottom: '2px',
-                minHeight: 0
-              }}>
-                Browse all conditions →
-              </Link>
+
+              {/* Search bar embedded in landing */}
+              <div style={{ maxWidth: '400px', marginBottom: '20px' }}>
+                <SearchBar />
+              </div>
+
             </div>
 
+            {/* CLICKABLE CATEGORY GRID */}
             <div style={{
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
               gap: '10px'
             }}>
-              {[
-                { icon: '🚨', label: 'Emergency', count: '16 conditions', color: '#E03131', href: '/category/emergency' },
-                { icon: '🤒', label: 'Acute Illness', count: '12 conditions', color: '#D4500A', href: '/category/acute' },
-                { icon: '💊', label: 'Common Conditions', count: '13 conditions', color: '#1971C2', href: '/category/common' },
-                { icon: '🌸', label: "Women's Health", count: '8 conditions', color: '#6741D9', href: '/category/womens-health' },
-                { icon: '🫀', label: 'Chronic', count: '8 conditions', color: '#0C8599', href: '/category/chronic' },
-                { icon: '👶', label: 'Maternal & Child', count: '10 conditions', color: '#2F9E44', href: '/category/maternal-child' },
-                { icon: '🔬', label: 'Sexual Health', count: '6 conditions', color: '#0C8599', href: '/category/sexual-health' },
-                { icon: '🤖', label: 'AI Doctor', count: 'Anything else', color: '#6741D9', href: '/triage' }
-              ].map((cat, i) => (
-                <Link key={i} href={cat.href} style={{ textDecoration: 'none' }}>
+              {categories.map((cat) => (
+                <Link
+                  key={cat.href}
+                  href={cat.href}
+                  style={{ textDecoration: 'none' }}
+                >
                   <div style={{
                     background: 'rgba(255,255,255,0.03)',
-                    border: `1px solid rgba(255,255,255,0.07)`,
+                    border: '1px solid rgba(255,255,255,0.07)',
                     borderTop: `2px solid ${cat.color}`,
                     borderRadius: '0 0 14px 14px',
                     padding: '14px 12px',
                     cursor: 'pointer',
-                    minHeight: '90px'
+                    minHeight: '90px',
+                    transition: 'background 0.15s',
+                    display: 'block'
                   }}>
                     <span style={{
                       fontSize: '1.2rem',
@@ -957,49 +852,17 @@ export default function LandingPage() {
                 </Link>
               ))}
             </div>
-                  background: 'rgba(255,255,255,0.03)',
-                  border: `1px solid rgba(255,255,255,0.07)`,
-                  borderTop: `2px solid ${cat.color}`,
-                  borderRadius: '0 0 14px 14px',
-                  padding: '14px 12px'
-                }}>
-                  <span style={{
-                    fontSize: '1.2rem',
-                    display: 'block',
-                    marginBottom: '6px'
-                  }}>
-                    {cat.icon}
-                  </span>
-                  <p style={{
-                    color: '#F2EDE4',
-                    fontSize: '0.78rem',
-                    fontWeight: '600',
-                    margin: '0 0 2px'
-                  }}>
-                    {cat.label}
-                  </p>
-                  <p style={{
-                    color: '#5C6E7E',
-                    fontSize: '0.65rem',
-                    margin: 0
-                  }}>
-                    {cat.count}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
-      {/* ── DR FIRSTCARE AI ───────────────────────── */}
+      {/* DR FIRSTCARE */}
       <section style={{
         padding: '100px 20px',
-        background: 'linear-gradient(180deg, #0D1E35 0%, #0A1628 100%)',
+        background: '#0A1628',
         position: 'relative',
         overflow: 'hidden'
       }}>
-        {/* Background glow */}
         <div style={{
           position: 'absolute',
           top: '50%',
@@ -1007,13 +870,11 @@ export default function LandingPage() {
           transform: 'translate(-50%, -50%)',
           width: '600px',
           height: '600px',
-          background: 'radial-gradient(circle, rgba(103,65,217,0.06) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(103,65,217,0.05) 0%, transparent 70%)',
           pointerEvents: 'none'
         }} />
-
         <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative' }}>
           <SectionLabel color="#6741D9">AI Doctor</SectionLabel>
-
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
@@ -1030,12 +891,7 @@ export default function LandingPage() {
                 marginBottom: '20px'
               }}>
                 Meet
-                <span style={{
-                  color: '#8B5CF6',
-                  fontStyle: 'italic'
-                }}>
-                  {' '}Dr. FirstCare.
-                </span>
+                <span style={{ color: '#8B5CF6', fontStyle: 'italic' }}> Dr. FirstCare.</span>
               </h2>
               <p style={{
                 color: '#9BA8B5',
@@ -1045,48 +901,49 @@ export default function LandingPage() {
                 maxWidth: '420px'
               }}>
                 An AI clinical advisor available 24 hours a day.
-                Describe any symptom in plain language — including
-                typos, incomplete sentences, or describing it for
-                someone else. Dr. FirstCare asks the right
-                questions, then gives structured guidance.
+                Describe any symptom in plain language.
+                Dr. FirstCare asks the right questions then
+                gives structured guidance including safe
+                drug recommendations.
               </p>
-
-              <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '12px',
-                marginBottom: '28px'
+              {[
+                'Asks safety questions before recommending drugs',
+                'Covers conditions not listed in the app',
+                'Understands African drug brands and availability',
+                'Tells you exactly when to go to hospital'
+              ].map((point, i) => (
+                <div key={i} style={{
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  gap: '10px',
+                  marginBottom: '12px'
+                }}>
+                  <span style={{ color: '#8B5CF6', flexShrink: 0, marginTop: '2px' }}>✓</span>
+                  <p style={{
+                    color: '#9BA8B5',
+                    fontSize: '0.85rem',
+                    lineHeight: '1.5',
+                    margin: 0
+                  }}>{point}</p>
+                </div>
+              ))}
+              <Link href="/triage" style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: 'rgba(103,65,217,0.15)',
+                border: '1px solid rgba(103,65,217,0.3)',
+                borderRadius: '14px',
+                padding: '14px 20px',
+                color: '#8B5CF6',
+                textDecoration: 'none',
+                fontWeight: '600',
+                fontSize: '0.9rem',
+                marginTop: '8px',
+                minHeight: 0
               }}>
-                {[
-                  'Asks safety questions before recommending drugs',
-                  'Covers conditions not listed in the app',
-                  'Understands African drug brands and availability',
-                  'Tells you exactly when to go to hospital'
-                ].map((point, i) => (
-                  <div key={i} style={{
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    gap: '10px'
-                  }}>
-                    <span style={{
-                      color: '#8B5CF6',
-                      fontSize: '0.85rem',
-                      flexShrink: 0,
-                      marginTop: '2px'
-                    }}>
-                      ✓
-                    </span>
-                    <p style={{
-                      color: '#9BA8B5',
-                      fontSize: '0.85rem',
-                      lineHeight: '1.5',
-                      margin: 0
-                    }}>
-                      {point}
-                    </p>
-                  </div>
-                ))}
-              </div>
+                🩺 Talk to Dr. FirstCare →
+              </Link>
             </div>
 
             {/* Mock conversation */}
@@ -1096,7 +953,6 @@ export default function LandingPage() {
               borderRadius: '20px',
               overflow: 'hidden'
             }}>
-              {/* Chat header */}
               <div style={{
                 background: 'rgba(103,65,217,0.1)',
                 borderBottom: '1px solid rgba(103,65,217,0.15)',
@@ -1114,41 +970,17 @@ export default function LandingPage() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   fontSize: '1rem'
-                }}>
-                  🩺
-                </div>
+                }}>🩺</div>
                 <div>
-                  <p style={{
-                    color: '#F2EDE4',
-                    fontWeight: '700',
-                    fontSize: '0.85rem',
-                    margin: 0
-                  }}>
+                  <p style={{ color: '#F2EDE4', fontWeight: '700', fontSize: '0.85rem', margin: 0 }}>
                     Dr. FirstCare
                   </p>
-                  <p style={{
-                    color: '#2F9E44',
-                    fontSize: '0.65rem',
-                    margin: 0,
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '4px'
-                  }}>
-                    <span style={{
-                      width: '5px',
-                      height: '5px',
-                      background: '#2F9E44',
-                      borderRadius: '50%',
-                      display: 'inline-block'
-                    }} />
-                    AI Medical Guidance
+                  <p style={{ color: '#2F9E44', fontSize: '0.65rem', margin: 0 }}>
+                    ● AI Medical Guidance
                   </p>
                 </div>
               </div>
-
-              {/* Conversation */}
-              <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {/* AI message */}
+              <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <div style={{
                   background: '#1C2B3A',
                   border: '1px solid rgba(255,255,255,0.06)',
@@ -1156,42 +988,21 @@ export default function LandingPage() {
                   padding: '12px 14px',
                   maxWidth: '85%'
                 }}>
-                  <p style={{
-                    color: '#F2EDE4',
-                    fontSize: '0.82rem',
-                    lineHeight: '1.6',
-                    margin: 0
-                  }}>
+                  <p style={{ color: '#F2EDE4', fontSize: '0.82rem', lineHeight: '1.6', margin: 0 }}>
                     What's happening right now?
                   </p>
                 </div>
-
-                {/* Option buttons */}
-                <div style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '6px',
-                  maxWidth: '85%'
-                }}>
-                  {['Fever or high temperature', 'Child is sick', 'Chest pain or breathing'].map((opt, i) => (
-                    <div key={i} style={{
-                      background: '#1C2B3A',
-                      border: '1px solid rgba(255,255,255,0.08)',
-                      borderRadius: '10px',
-                      padding: '9px 12px'
-                    }}>
-                      <p style={{
-                        color: '#F2EDE4',
-                        fontSize: '0.78rem',
-                        margin: 0
-                      }}>
-                        {opt}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-
-                {/* User reply */}
+                {['Fever or high temperature', 'Child is sick', 'Chest pain or breathing'].map((opt, i) => (
+                  <div key={i} style={{
+                    background: '#1C2B3A',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    borderRadius: '10px',
+                    padding: '9px 12px',
+                    maxWidth: '85%'
+                  }}>
+                    <p style={{ color: '#F2EDE4', fontSize: '0.78rem', margin: 0 }}>{opt}</p>
+                  </div>
+                ))}
                 <div style={{
                   alignSelf: 'flex-end',
                   background: 'rgba(103,65,217,0.2)',
@@ -1200,16 +1011,10 @@ export default function LandingPage() {
                   padding: '10px 14px',
                   maxWidth: '85%'
                 }}>
-                  <p style={{
-                    color: '#F2EDE4',
-                    fontSize: '0.82rem',
-                    margin: 0
-                  }}>
+                  <p style={{ color: '#F2EDE4', fontSize: '0.82rem', margin: 0 }}>
                     My 3 year old has fever
                   </p>
                 </div>
-
-                {/* AI follow-up */}
                 <div style={{
                   background: '#1C2B3A',
                   border: '1px solid rgba(255,255,255,0.06)',
@@ -1217,54 +1022,34 @@ export default function LandingPage() {
                   padding: '12px 14px',
                   maxWidth: '90%'
                 }}>
-                  <p style={{
-                    color: '#F2EDE4',
-                    fontSize: '0.82rem',
-                    lineHeight: '1.6',
-                    margin: 0
-                  }}>
-                    Before I advise, how high is the temperature?
+                  <p style={{ color: '#F2EDE4', fontSize: '0.82rem', lineHeight: '1.6', margin: 0 }}>
+                    How high is the temperature?
                   </p>
                 </div>
-
-                {/* Options */}
-                <div style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '6px',
-                  maxWidth: '85%'
-                }}>
-                  {['Above 39°C (very hot)', '38 to 39°C (warm)', 'No thermometer'].map((opt, i) => (
-                    <div key={i} style={{
-                      background: '#1C2B3A',
-                      border: '1px solid rgba(255,255,255,0.08)',
-                      borderRadius: '10px',
-                      padding: '9px 12px'
-                    }}>
-                      <p style={{
-                        color: '#F2EDE4',
-                        fontSize: '0.78rem',
-                        margin: 0
-                      }}>
-                        {opt}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+                {['Above 39°C', '38 to 39°C', 'No thermometer'].map((opt, i) => (
+                  <div key={i} style={{
+                    background: '#1C2B3A',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    borderRadius: '10px',
+                    padding: '9px 12px',
+                    maxWidth: '85%'
+                  }}>
+                    <p style={{ color: '#F2EDE4', fontSize: '0.78rem', margin: 0 }}>{opt}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── WHY TRUST US ─────────────────────────── */}
+      {/* WHY TRUST US */}
       <section style={{
         padding: '100px 20px',
-        background: '#0A1628'
+        background: '#0D1E35'
       }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <SectionLabel>Why Trust Us</SectionLabel>
-
           <h2 style={{
             fontFamily: "'Playfair Display', serif",
             fontSize: 'clamp(1.8rem, 4vw, 2.6rem)',
@@ -1275,40 +1060,37 @@ export default function LandingPage() {
             maxWidth: '500px'
           }}>
             Built with
-            <span style={{ color: '#E8A020', fontStyle: 'italic' }}>
-              {' '}medical rigour.
-            </span>
+            <span style={{ color: '#E8A020', fontStyle: 'italic' }}> medical rigour.</span>
           </h2>
-
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
             gap: '20px',
-            marginBottom: '48px'
+            marginBottom: '40px'
           }}>
             {[
               {
                 icon: '⚕️',
                 title: 'Medically Reviewed',
-                desc: 'All content reviewed by medical professionals before publication. Based on WHO, Red Cross, and international first-aid protocols.',
+                desc: 'All content reviewed by medical professionals. Based on WHO, Red Cross, and international first-aid protocols.',
                 accent: '#E8A020'
               },
               {
                 icon: '🌍',
                 title: 'Africa-Specific',
-                desc: 'Drug names, brands, and dosages match what is actually available at pharmacies across Nigeria, Kenya, Ghana, and beyond.',
+                desc: 'Drug names and brands match what is actually available at pharmacies across Nigeria, Kenya, Ghana, and beyond.',
                 accent: '#2F9E44'
               },
               {
                 icon: '📶',
                 title: 'Offline First',
-                desc: 'Works after a single visit even without internet connection. Built for areas where data is expensive or unavailable.',
+                desc: 'Works after a single visit even without internet. Built for areas where data is expensive or unavailable.',
                 accent: '#1971C2'
               },
               {
                 icon: '🔒',
                 title: 'Private By Design',
-                desc: 'No account. No tracking. No data collection. Your health questions stay on your device. Always.',
+                desc: 'No account. No tracking. No data collection. Your health questions stay private. Always.',
                 accent: '#6741D9'
               }
             ].map((trust, i) => (
@@ -1329,31 +1111,23 @@ export default function LandingPage() {
                   justifyContent: 'center',
                   fontSize: '1.2rem',
                   marginBottom: '16px'
-                }}>
-                  {trust.icon}
-                </div>
+                }}>{trust.icon}</div>
                 <h3 style={{
                   fontFamily: "'Playfair Display', serif",
                   fontSize: '1rem',
                   fontWeight: '700',
                   color: '#F2EDE4',
                   marginBottom: '10px'
-                }}>
-                  {trust.title}
-                </h3>
+                }}>{trust.title}</h3>
                 <p style={{
                   color: '#9BA8B5',
                   fontSize: '0.83rem',
                   lineHeight: '1.65',
                   margin: 0
-                }}>
-                  {trust.desc}
-                </p>
+                }}>{trust.desc}</p>
               </div>
             ))}
           </div>
-
-          {/* Medical disclaimer box */}
           <div style={{
             background: 'rgba(232,160,32,0.06)',
             border: '1px solid rgba(232,160,32,0.15)',
@@ -1374,17 +1148,15 @@ export default function LandingPage() {
               FirstCare Africa provides general medical guidance only.
               It does not replace a doctor or professional medical advice.
               Always seek professional help when available.
-              In a true emergency, call for help and go to the
-              nearest clinic immediately.
             </p>
           </div>
         </div>
       </section>
 
-      {/* ── THE STORY ────────────────────────────── */}
+      {/* THE STORY */}
       <section style={{
         padding: '100px 20px',
-        background: 'linear-gradient(180deg, #0D1E35 0%, #0A1628 100%)'
+        background: '#0A1628'
       }}>
         <div style={{
           maxWidth: '700px',
@@ -1392,15 +1164,7 @@ export default function LandingPage() {
           textAlign: 'center'
         }}>
           <SectionLabel>The Story</SectionLabel>
-
-          <div style={{
-            fontSize: '3rem',
-            marginBottom: '24px',
-            opacity: 0.6
-          }}>
-            📖
-          </div>
-
+          <div style={{ fontSize: '3rem', marginBottom: '24px', opacity: 0.6 }}>📖</div>
           <h2 style={{
             fontFamily: "'Playfair Display', serif",
             fontSize: 'clamp(1.6rem, 4vw, 2.2rem)',
@@ -1411,12 +1175,8 @@ export default function LandingPage() {
             color: '#F2EDE4'
           }}>
             Inspired by a book written
-            <span style={{ color: '#E8A020', fontStyle: 'italic' }}>
-              {' '}for people just like you.
-            </span>
+            <span style={{ color: '#E8A020', fontStyle: 'italic' }}> for people just like you.</span>
           </h2>
-
-          {/* Story placeholder — your personal words go here */}
           <div style={{
             background: 'rgba(255,255,255,0.03)',
             border: '1px solid rgba(255,255,255,0.07)',
@@ -1435,12 +1195,11 @@ export default function LandingPage() {
             }}>
               "Where There Is No Doctor is a book that has saved
               countless lives in rural communities — a practical
-              guide for situations exactly like the ones
-              FirstCare Africa addresses. That book proved that
-              accessible medical knowledge saves lives.
-              We built FirstCare Africa to prove it again,
-              for a new generation, on the device already
-              in every hand across Africa."
+              guide written for exactly the situations FirstCare
+              Africa addresses. That book proved that accessible
+              medical knowledge saves lives. We built FirstCare
+              Africa to prove it again, for a new generation,
+              on the device already in every hand across Africa."
             </p>
             <p style={{
               color: '#5C6E7E',
@@ -1451,39 +1210,30 @@ export default function LandingPage() {
               — Louis Nkan Enobong, Founder
             </p>
           </div>
-
           <p style={{
             color: '#5C6E7E',
             fontSize: '0.8rem',
             lineHeight: '1.6',
             fontStyle: 'italic'
           }}>
-            Your personal story goes here. 2 to 3 sentences
-            in your own voice about why you built this.
-            Replace this placeholder before launch.
+            Personally,This product can prove to us that even with distance barriers and no doctor anxieties life can still be preserve through our well vetted medical care instructions.
           </p>
         </div>
       </section>
 
-      {/* ── FINAL CTA ────────────────────────────── */}
+      {/* FINAL CTA */}
       <section style={{
         padding: '100px 20px',
-        background: '#0A1628',
+        background: '#0D1E35',
         position: 'relative',
         overflow: 'hidden'
       }}>
-        {/* Background pulse */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: `
-            radial-gradient(ellipse 80% 60% at 50% 50%,
-              rgba(232,160,32,0.05) 0%,
-              transparent 70%)
-          `,
+          background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(232,160,32,0.04) 0%, transparent 70%)',
           pointerEvents: 'none'
         }} />
-
         <div style={{
           maxWidth: '700px',
           margin: '0 auto',
@@ -1507,7 +1257,6 @@ export default function LandingPage() {
               needs this right now.
             </span>
           </h2>
-
           <p style={{
             color: '#9BA8B5',
             fontSize: '1rem',
@@ -1516,18 +1265,15 @@ export default function LandingPage() {
             maxWidth: '440px',
             margin: '0 auto 40px'
           }}>
-            Share FirstCare Africa with your family,
-            your community, and anyone who lives far
-            from a hospital. It is free. It works offline.
-            It could save a life.
+            Share FirstCare Africa with your family and community.
+            Free. Works offline. Could save a life.
           </p>
-
           <div style={{
             display: 'flex',
             gap: '12px',
             justifyContent: 'center',
             flexWrap: 'wrap',
-            marginBottom: '32px'
+            marginBottom: '24px'
           }}>
             <Link href="/category/emergency" style={{
               background: 'linear-gradient(135deg, #E03131, #C92A2A)',
@@ -1541,20 +1287,17 @@ export default function LandingPage() {
               alignItems: 'center',
               gap: '8px',
               minHeight: 0,
-              boxShadow: '0 4px 32px rgba(224,49,49,0.3)',
-              letterSpacing: '0.02em'
+              boxShadow: '0 4px 32px rgba(224,49,49,0.3)'
             }}>
               🚨 Open FirstCare Africa
             </Link>
           </div>
-
-          {/* Share buttons */}
           <div style={{
             display: 'flex',
             gap: '10px',
             justifyContent: 'center',
             flexWrap: 'wrap',
-            marginBottom: '32px'
+            marginBottom: '24px'
           }}>
             <a
               href="https://wa.me/?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.%20Works%20offline.%20Free%20forever.%20https%3A%2F%2Ffirstcareafrica.vercel.app"
@@ -1576,9 +1319,8 @@ export default function LandingPage() {
               }}>
               💬 WhatsApp
             </a>
-
             <a
-              href="https://twitter.com/intent/tweet?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.%20Free%2C%20works%20offline.&url=https%3A%2F%2Ffirstcareafrica.vercel.app"
+              href="https://twitter.com/intent/tweet?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.&url=https%3A%2F%2Ffirstcareafrica.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -1597,7 +1339,6 @@ export default function LandingPage() {
               }}>
               𝕏 Twitter
             </a>
-
             <a
               href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffirstcareafrica.vercel.app"
               target="_blank"
@@ -1618,22 +1359,15 @@ export default function LandingPage() {
               }}>
               💼 LinkedIn
             </a>
-
             <ShareButton />
           </div>
-
-          <p style={{
-            color: '#3D5166',
-            fontSize: '0.72rem',
-            lineHeight: '1.6'
-          }}>
-            Free forever · Works offline · No account required ·
-            Built for Africa
+          <p style={{ color: '#3D5166', fontSize: '0.72rem', lineHeight: '1.6' }}>
+            Free forever · Works offline · No account required · Built for Africa
           </p>
         </div>
       </section>
 
-      {/* ── FOOTER ───────────────────────────────── */}
+      {/* FOOTER */}
       <footer style={{
         borderTop: '1px solid rgba(255,255,255,0.06)',
         padding: '40px 20px',
@@ -1671,17 +1405,13 @@ export default function LandingPage() {
                   fontSize: '10px',
                   color: 'white',
                   fontWeight: 'bold'
-                }}>
-                  ✚
-                </div>
+                }}>✚</div>
                 <span style={{
                   fontFamily: "'Playfair Display', serif",
                   fontSize: '0.95rem',
                   color: '#F2EDE4',
                   fontWeight: '700'
-                }}>
-                  FirstCare Africa
-                </span>
+                }}>FirstCare Africa</span>
               </div>
               <p style={{
                 color: '#3D5166',
@@ -1694,12 +1424,7 @@ export default function LandingPage() {
                 Built for Africa. Free forever.
               </p>
             </div>
-
-            <div style={{
-              display: 'flex',
-              gap: '32px',
-              flexWrap: 'wrap'
-            }}>
+            <div style={{ display: 'flex', gap: '32px', flexWrap: 'wrap' }}>
               <div>
                 <p style={{
                   color: '#F2EDE4',
@@ -1708,43 +1433,12 @@ export default function LandingPage() {
                   marginBottom: '10px',
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase'
-                }}>
-                  Conditions
-                </p>
+                }}>Conditions</p>
                 {[
                   ['Emergency', '/category/emergency'],
                   ['Acute Illness', '/category/acute'],
                   ["Women's Health", '/category/womens-health'],
-                  ['Maternal & Child', '/category/maternal-child']
-                ].map(([label, href]) => (
-                  <Link key={href} href={href} style={{
-                    display: 'block',
-                    color: '#5C6E7E',
-                    textDecoration: 'none',
-                    fontSize: '0.78rem',
-                    marginBottom: '6px',
-                    minHeight: 0
-                  }}>
-                    {label}
-                  </Link>
-                ))}
-              </div>
-
-              <div>
-                <p style={{
-                  color: '#F2EDE4',
-                  fontSize: '0.75rem',
-                  fontWeight: '700',
-                  marginBottom: '10px',
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase'
-                }}>
-                  Tools
-                </p>
-                {[
-                  ['AI Doctor', '/triage'],
-                  ['Quick Reference', '/quick-reference'],
-                  ['Search', '/'],
+                  ['Maternal & Child', '/category/maternal-child'],
                   ['Sexual Health', '/category/sexual-health']
                 ].map(([label, href]) => (
                   <Link key={href} href={href} style={{
@@ -1754,14 +1448,36 @@ export default function LandingPage() {
                     fontSize: '0.78rem',
                     marginBottom: '6px',
                     minHeight: 0
-                  }}>
-                    {label}
-                  </Link>
+                  }}>{label}</Link>
+                ))}
+              </div>
+              <div>
+                <p style={{
+                  color: '#F2EDE4',
+                  fontSize: '0.75rem',
+                  fontWeight: '700',
+                  marginBottom: '10px',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase'
+                }}>Tools</p>
+                {[
+                  ['AI Doctor', '/triage'],
+                  ['Quick Reference', '/quick-reference'],
+                  ['Common Conditions', '/category/common'],
+                  ['Chronic Conditions', '/category/chronic']
+                ].map(([label, href]) => (
+                  <Link key={href} href={href} style={{
+                    display: 'block',
+                    color: '#5C6E7E',
+                    textDecoration: 'none',
+                    fontSize: '0.78rem',
+                    marginBottom: '6px',
+                    minHeight: 0
+                  }}>{label}</Link>
                 ))}
               </div>
             </div>
           </div>
-
           <div style={{
             borderTop: '1px solid rgba(255,255,255,0.05)',
             paddingTop: '20px',
@@ -1771,11 +1487,7 @@ export default function LandingPage() {
             flexWrap: 'wrap',
             gap: '12px'
           }}>
-            <p style={{
-              color: '#3D5166',
-              fontSize: '0.7rem',
-              margin: 0
-            }}>
+            <p style={{ color: '#3D5166', fontSize: '0.7rem', margin: 0 }}>
               © 2025 FirstCare Africa · Free forever · Built for Africa
             </p>
             <p style={{
@@ -1786,14 +1498,12 @@ export default function LandingPage() {
               maxWidth: '400px',
               lineHeight: '1.5'
             }}>
-              This platform provides general medical guidance only.
-              It does not replace professional medical advice.
+              General medical guidance only. Does not replace professional advice.
             </p>
           </div>
         </div>
       </footer>
 
-      {/* Global animations */}
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(20px); }
@@ -1802,10 +1512,6 @@ export default function LandingPage() {
         @keyframes blink {
           0%, 100% { opacity: 1; }
           50% { opacity: 0.3; }
-        }
-        @keyframes scrollPulse {
-          0%, 100% { opacity: 0.3; transform: scaleY(0.8); }
-          50% { opacity: 1; transform: scaleY(1); }
         }
       `}</style>
 
