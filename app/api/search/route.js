@@ -1,6 +1,11 @@
 import fs from 'fs'
 import path from 'path'
 
+// In-memory search index — built once per server instance
+let cachedIndex = null
+let cacheBuiltAt = null
+const CACHE_TTL_MS = 10 * 60 * 1000 // 10 minutes
+
 function buildSearchIndex() {
   const categories = [
     'emergency',
@@ -15,26 +20,21 @@ function buildSearchIndex() {
   const index = []
 
   for (const category of categories) {
-    const dirPath = path.join(
-      process.cwd(), 'content', category
-    )
-
+    const dirPath = path.join(process.cwd(), 'content', category)
     if (!fs.existsSync(dirPath)) continue
 
     const files = fs.readdirSync(dirPath)
 
     for (const file of files) {
       if (!file.endsWith('.json')) continue
-
       try {
         const raw = fs.readFileSync(
           path.join(dirPath, file), 'utf-8'
         )
         const data = JSON.parse(raw)
 
-        if (
-          data.steps?.[0] === 'Content coming in Phase C.'
-        ) continue
+        // Skip placeholder content
+        if (data.steps?.[0] === 'Content coming in Phase C.') continue
 
         index.push({
           id: data.id,
@@ -50,9 +50,7 @@ function buildSearchIndex() {
             ...(data.steps || []),
             ...(data.warnings || []),
             ...(data.redFlags || [])
-          ]
-            .join(' ')
-            .toLowerCase()
+          ].join(' ').toLowerCase()
         })
       } catch {
         continue
@@ -63,7 +61,19 @@ function buildSearchIndex() {
   return index
 }
 
-let cachedIndex = null
+function getIndex() {
+  const now = Date.now()
+  // Rebuild if cache is stale or missing
+  if (
+    !cachedIndex ||
+    !cacheBuiltAt ||
+    now - cacheBuiltAt > CACHE_TTL_MS
+  ) {
+    cachedIndex = buildSearchIndex()
+    cacheBuiltAt = now
+  }
+  return cachedIndex
+}
 
 export async function GET(request) {
   try {
@@ -71,21 +81,23 @@ export async function GET(request) {
     const query = searchParams.get('q')?.toLowerCase().trim()
 
     if (!query || query.length < 2) {
-      return Response.json({ results: [] })
+      return Response.json(
+        { results: [] },
+        {
+          headers: {
+            'Cache-Control': 'public, max-age=60'
+          }
+        }
+      )
     }
 
-    if (!cachedIndex) {
-      cachedIndex = buildSearchIndex()
-    }
-
+    const index = getIndex()
     const words = query.split(' ').filter(w => w.length > 1)
 
-    const results = cachedIndex
-      .filter(item => {
-        return words.every(word =>
-          item.searchText.includes(word)
-        )
-      })
+    const results = index
+      .filter(item =>
+        words.every(word => item.searchText.includes(word))
+      )
       .map(item => ({
         id: item.id,
         title: item.title,
@@ -104,10 +116,23 @@ export async function GET(request) {
       })
       .slice(0, 8)
 
-    return Response.json({ results })
+    return Response.json(
+      { results },
+      {
+        headers: {
+          // Cache search results for 5 minutes in browser
+          // and on Vercel CDN edge
+          'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600'
+        }
+      }
+    )
 
   } catch (error) {
-    console.error('Search error:', error)
+    console.error(JSON.stringify({
+      event: 'search_error',
+      error: error?.message || 'unknown',
+      timestamp: new Date().toISOString()
+    }))
     return Response.json(
       { error: 'Search unavailable', results: [] },
       { status: 500 }
