@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 const INITIAL_MESSAGE = {
   role: 'assistant',
   type: 'question',
-  message: "Hello. I'm Dr. FirstCare. What's happening right now?",
+  message: "Hello, I am Dr. FirstCare. I am here to help with any health concern, any time. What is happening right now?",
   options: [
     'Fever or high temperature',
     'Chest pain or breathing problem',
@@ -19,11 +19,22 @@ const INITIAL_MESSAGE = {
   severity: 'low'
 }
 
-const severityColors = {
-  low: '#2F9E44',
-  medium: '#F08C00',
-  high: '#D4500A',
-  emergency: '#E03131'
+function cleanMessage(text) {
+  if (!text) return ''
+  return text
+    .replace(/```json\s*/gi, '')
+    .replace(/```\s*/gi, '')
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/\*(.*?)\*/g, '$1')
+    .replace(/^#{1,3}\s/gm, '')
+    .replace(/"type":\s*"[^"]*",?\s*/g, '')
+    .replace(/"options":\s*\[[^\]]*\],?\s*/g, '')
+    .replace(/"conditionLink":\s*(null|"[^"]*"),?\s*/g, '')
+    .replace(/"severity":\s*"[^"]*",?\s*/g, '')
+    .replace(/"message":\s*"/g, '')
+    .replace(/^[{"\s]+/, '')
+    .replace(/[}"]+$/, '')
+    .trim()
 }
 
 export default function FABChat() {
@@ -32,23 +43,18 @@ export default function FABChat() {
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [showInput, setShowInput] = useState(false)
-  const [questionCount, setQuestionCount] = useState(0)
   const messagesEndRef = useRef(null)
   const inputRef = useRef(null)
   const router = useRouter()
 
-  // Scroll to bottom on new messages
   useEffect(() => {
     if (open) {
       setTimeout(() => {
-        messagesEndRef.current?.scrollIntoView({
-          behavior: 'smooth'
-        })
+        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
       }, 100)
     }
   }, [messages, open])
 
-  // Focus input when it appears
   useEffect(() => {
     if (showInput && open) {
       setTimeout(() => inputRef.current?.focus(), 100)
@@ -58,24 +64,16 @@ export default function FABChat() {
   async function sendMessage(text) {
     if (!text.trim() || loading) return
 
-    const userMessage = {
-      role: 'user',
-      message: text.trim()
-    }
-
+    const userMessage = { role: 'user', message: text.trim() }
     const updatedMessages = [...messages, userMessage]
     setMessages(updatedMessages)
     setInput('')
     setShowInput(false)
     setLoading(true)
 
-    // Build history for API
     const history = updatedMessages
       .filter(m => m.role === 'user' || m.role === 'assistant')
-      .map(m => ({
-        role: m.role,
-        content: m.message
-      }))
+      .map(m => ({ role: m.role, content: m.message }))
 
     try {
       const res = await fetch('/api/triage', {
@@ -83,32 +81,29 @@ export default function FABChat() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: text.trim(),
-          history: history.slice(0, -1) // exclude current message
+          history: history.slice(0, -1)
         })
       })
 
       const data = await res.json()
 
-      const aiMessage = {
+      // Clean the message as a safety net
+      const cleanedMessage = cleanMessage(data.message || '')
+
+      setMessages(prev => [...prev, {
         role: 'assistant',
-        type: data.type,
-        message: data.message,
-        options: data.options || [],
-        conditionLink: data.conditionLink,
+        type: data.type || 'guidance',
+        message: cleanedMessage || 'I was unable to process that. Please try again.',
+        options: Array.isArray(data.options) ? data.options : [],
+        conditionLink: data.conditionLink || null,
         severity: data.severity || 'medium'
-      }
-
-      setMessages(prev => [...prev, aiMessage])
-
-      if (data.type === 'question') {
-        setQuestionCount(prev => prev + 1)
-      }
+      }])
 
     } catch {
       setMessages(prev => [...prev, {
         role: 'assistant',
         type: 'guidance',
-        message: 'Connection error. Please check your internet and try again. For emergencies, use the Emergency section directly.',
+        message: 'I lost connection for a moment. Please check your internet and try again. For anything urgent, use the Emergency section.',
         options: [],
         conditionLink: null,
         severity: 'low'
@@ -118,9 +113,7 @@ export default function FABChat() {
     setLoading(false)
   }
 
-  function handleOption(option) {
-    sendMessage(option)
-  }
+  function handleOption(option) { sendMessage(option) }
 
   function handleSubmit() {
     if (input.trim()) sendMessage(input.trim())
@@ -142,12 +135,7 @@ export default function FABChat() {
     setMessages([INITIAL_MESSAGE])
     setInput('')
     setShowInput(false)
-    setQuestionCount(0)
     setLoading(false)
-  }
-
-  function handleClose() {
-    setOpen(false)
   }
 
   const lastMessage = messages[messages.length - 1]
@@ -160,7 +148,7 @@ export default function FABChat() {
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          aria-label="Open AI Doctor Chat"
+          aria-label="Open Dr. FirstCare AI Chat"
           style={{
             position: 'fixed',
             bottom: '24px',
@@ -182,7 +170,7 @@ export default function FABChat() {
         </button>
       )}
 
-      {/* Chat Panel Overlay */}
+      {/* Chat Panel */}
       {open && (
         <div style={{
           position: 'fixed',
@@ -192,10 +180,9 @@ export default function FABChat() {
           flexDirection: 'column',
           justifyContent: 'flex-end'
         }}>
-
           {/* Backdrop */}
           <div
-            onClick={handleClose}
+            onClick={() => setOpen(false)}
             style={{
               position: 'absolute',
               inset: 0,
@@ -204,7 +191,7 @@ export default function FABChat() {
             }}
           />
 
-          {/* Chat panel */}
+          {/* Panel */}
           <div style={{
             position: 'relative',
             background: '#0F1923',
@@ -217,7 +204,7 @@ export default function FABChat() {
             animation: 'slideUp 0.3s ease'
           }}>
 
-            {/* Handle bar */}
+            {/* Handle */}
             <div style={{
               display: 'flex',
               justifyContent: 'center',
@@ -245,17 +232,15 @@ export default function FABChat() {
                 gap: '10px'
               }}>
                 <div style={{
-                  width: '36px',
-                  height: '36px',
+                  width: '40px',
+                  height: '40px',
                   background: 'linear-gradient(135deg, #6741D9, #5433B0)',
-                  borderRadius: '10px',
+                  borderRadius: '12px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '1.1rem'
-                }}>
-                  🩺
-                </div>
+                  fontSize: '1.2rem'
+                }}>🩺</div>
                 <div>
                   <p style={{
                     color: '#F5F0E8',
@@ -263,9 +248,7 @@ export default function FABChat() {
                     fontSize: '0.95rem',
                     margin: 0,
                     fontFamily: "'DM Sans', sans-serif"
-                  }}>
-                    Dr. FirstCare
-                  </p>
+                  }}>Dr. FirstCare</p>
                   <p style={{
                     color: '#2F9E44',
                     fontSize: '0.68rem',
@@ -285,12 +268,7 @@ export default function FABChat() {
                   </p>
                 </div>
               </div>
-
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}>
+              <div style={{ display: 'flex', gap: '8px' }}>
                 {messages.length > 1 && (
                   <button
                     onClick={resetChat}
@@ -308,7 +286,7 @@ export default function FABChat() {
                   </button>
                 )}
                 <button
-                  onClick={handleClose}
+                  onClick={() => setOpen(false)}
                   style={{
                     color: '#9BA8B5',
                     background: 'rgba(255,255,255,0.05)',
@@ -322,9 +300,7 @@ export default function FABChat() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     minHeight: 0
-                  }}>
-                  ×
-                </button>
+                  }}>×</button>
               </div>
             </div>
 
@@ -338,7 +314,7 @@ export default function FABChat() {
                 alignItems: 'center',
                 gap: '8px'
               }}>
-                <span style={{ fontSize: '0.9rem' }}>🚨</span>
+                <span>🚨</span>
                 <p style={{
                   color: '#E03131',
                   fontSize: '0.78rem',
@@ -359,14 +335,11 @@ export default function FABChat() {
               flexDirection: 'column',
               gap: '14px'
             }}>
-
               {messages.map((msg, i) => (
                 <div key={i} style={{
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: msg.role === 'user'
-                    ? 'flex-end'
-                    : 'flex-start',
+                  alignItems: msg.role === 'user' ? 'flex-end' : 'flex-start',
                   gap: '8px'
                 }}>
 
@@ -391,7 +364,7 @@ export default function FABChat() {
                     <p style={{
                       color: '#F5F0E8',
                       fontSize: '0.9rem',
-                      lineHeight: '1.6',
+                      lineHeight: '1.65',
                       margin: 0,
                       whiteSpace: 'pre-wrap'
                     }}>
@@ -399,12 +372,10 @@ export default function FABChat() {
                     </p>
                   </div>
 
-                  {/* Condition link button */}
+                  {/* Condition link */}
                   {msg.conditionLink && (
                     <button
-                      onClick={() =>
-                        handleGoToCondition(msg.conditionLink)
-                      }
+                      onClick={() => handleGoToCondition(msg.conditionLink)}
                       style={{
                         background: 'rgba(240,140,0,0.1)',
                         border: '1px solid rgba(240,140,0,0.3)',
@@ -417,9 +388,7 @@ export default function FABChat() {
                         maxWidth: '88%',
                         minHeight: '44px'
                       }}>
-                      <span style={{ fontSize: '0.85rem' }}>
-                        📋
-                      </span>
+                      <span>📋</span>
                       <p style={{
                         color: '#F08C00',
                         fontSize: '0.82rem',
@@ -432,7 +401,7 @@ export default function FABChat() {
                     </button>
                   )}
 
-                  {/* Option buttons */}
+                  {/* Options */}
                   {msg.options && msg.options.length > 0 && (
                     <div style={{
                       display: 'flex',
@@ -445,8 +414,7 @@ export default function FABChat() {
                         <button
                           key={j}
                           onClick={() => handleOption(option)}
-                          disabled={loading ||
-                            i < messages.length - 1}
+                          disabled={loading || i < messages.length - 1}
                           style={{
                             background: i === messages.length - 1
                               ? '#1C2B3A'
@@ -455,11 +423,9 @@ export default function FABChat() {
                             borderRadius: '12px',
                             padding: '11px 14px',
                             cursor: i === messages.length - 1
-                              ? 'pointer'
-                              : 'default',
+                              ? 'pointer' : 'default',
                             textAlign: 'left',
-                            opacity: i < messages.length - 1
-                              ? 0.4 : 1,
+                            opacity: i < messages.length - 1 ? 0.4 : 1,
                             minHeight: '44px',
                             transition: 'background 0.15s'
                           }}>
@@ -475,35 +441,33 @@ export default function FABChat() {
                       ))}
 
                       {/* Type instead option */}
-                      {i === messages.length - 1 &&
-                        !showInput && (
-                          <button
-                            onClick={() => setShowInput(true)}
-                            style={{
-                              background: 'transparent',
-                              border: '1px dashed rgba(255,255,255,0.15)',
-                              borderRadius: '12px',
-                              padding: '10px 14px',
-                              cursor: 'pointer',
-                              textAlign: 'left',
-                              minHeight: '44px'
-                            }}>
-                            <p style={{
-                              color: '#5C6E7E',
-                              fontSize: '0.8rem',
-                              margin: 0
-                            }}>
-                              ✏️ Describe it yourself instead
-                            </p>
-                          </button>
-                        )}
+                      {i === messages.length - 1 && !showInput && (
+                        <button
+                          onClick={() => setShowInput(true)}
+                          style={{
+                            background: 'transparent',
+                            border: '1px dashed rgba(255,255,255,0.15)',
+                            borderRadius: '12px',
+                            padding: '10px 14px',
+                            cursor: 'pointer',
+                            textAlign: 'left',
+                            minHeight: '44px'
+                          }}>
+                          <p style={{
+                            color: '#5C6E7E',
+                            fontSize: '0.8rem',
+                            margin: 0
+                          }}>
+                            ✏️ Describe it yourself instead
+                          </p>
+                        </button>
+                      )}
                     </div>
                   )}
-
                 </div>
               ))}
 
-              {/* Loading indicator */}
+              {/* Loading */}
               {loading && (
                 <div style={{
                   display: 'flex',
@@ -517,8 +481,7 @@ export default function FABChat() {
                       height: '7px',
                       borderRadius: '50%',
                       background: '#6741D9',
-                      animation: `fabDot 1.2s ease-in-out
-                        ${i * 0.2}s infinite`
+                      animation: `fabDot 1.2s ease-in-out ${i * 0.2}s infinite`
                     }} />
                   ))}
                   <span style={{
@@ -534,17 +497,15 @@ export default function FABChat() {
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Text input area */}
-            {(showInput || messages[messages.length - 1]
-              ?.options?.length === 0) && (
+            {/* Input area */}
+            {(showInput ||
+              messages[messages.length - 1]?.options?.length === 0
+            ) && (
               <div style={{
                 padding: '12px 16px 20px',
                 borderTop: '1px solid rgba(255,255,255,0.06)'
               }}>
-                <div style={{
-                  display: 'flex',
-                  gap: '8px'
-                }}>
+                <div style={{ display: 'flex', gap: '8px' }}>
                   <input
                     ref={inputRef}
                     type="text"
@@ -578,8 +539,7 @@ export default function FABChat() {
                       borderRadius: '12px',
                       width: '48px',
                       cursor: loading || !input.trim()
-                        ? 'not-allowed'
-                        : 'pointer',
+                        ? 'not-allowed' : 'pointer',
                       color: 'white',
                       fontSize: '1.1rem',
                       display: 'flex',
@@ -610,45 +570,24 @@ export default function FABChat() {
                 For emergencies tap 🚨 Emergency on home screen
               </p>
             </div>
-
           </div>
         </div>
       )}
 
-      {/* Animations */}
       <style>{`
         @keyframes fabPulse {
-          0%, 100% {
-            box-shadow: 0 4px 20px rgba(103,65,217,0.5);
-          }
-          50% {
-            box-shadow: 0 4px 32px rgba(103,65,217,0.8),
-                        0 0 0 8px rgba(103,65,217,0.1);
-          }
+          0%, 100% { box-shadow: 0 4px 20px rgba(103,65,217,0.5); }
+          50% { box-shadow: 0 4px 32px rgba(103,65,217,0.8), 0 0 0 8px rgba(103,65,217,0.1); }
         }
-
         @keyframes slideUp {
-          from {
-            transform: translateY(100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
+          from { transform: translateY(100%); opacity: 0; }
+          to { transform: translateY(0); opacity: 1; }
         }
-
         @keyframes fabDot {
-          0%, 100% {
-            opacity: 0.3;
-            transform: scale(0.7);
-          }
-          50% {
-            opacity: 1;
-            transform: scale(1);
-          }
+          0%, 100% { opacity: 0.3; transform: scale(0.7); }
+          50% { opacity: 1; transform: scale(1); }
         }
       `}</style>
     </>
   )
-}
+        }
