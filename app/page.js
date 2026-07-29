@@ -1300,7 +1300,7 @@ export default function LandingPage() {
             marginBottom: '24px'
           }}>
             <a
-              href="https://wa.me/?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.%20Works%20offline.%20Free%20forever.%20https%3A%2F%2Ffirstcareafrica.vercel.app"
+              href="https://wa.me/?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.%20Works%20offline.%20Free%20forever.%20https%3A%2F%2Ffirstcareafrica.health"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -1320,7 +1320,7 @@ export default function LandingPage() {
               💬 WhatsApp
             </a>
             <a
-              href="https://twitter.com/intent/tweet?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.&url=https%3A%2F%2Ffirstcareafrica.vercel.app"
+              href="https://twitter.com/intent/tweet?text=FirstCare%20Africa%20%E2%80%94%20Medical%20guidance%20when%20doctors%20aren't%20available.&url=https%3A%2F%2Ffirstcareafrica.health"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -1340,7 +1340,7 @@ export default function LandingPage() {
               𝕏 Twitter
             </a>
             <a
-              href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffirstcareafrica.vercel.app"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffirstcareafrica.health"
               target="_blank"
               rel="noopener noreferrer"
               style={{
