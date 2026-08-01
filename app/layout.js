@@ -2,6 +2,9 @@ import './globals.css'
 import FABChat from '../components/FABChat'
 
 export const metadata = {
+  verification: {
+    google: '<meta name="google-site-verification" content="IaOeWbJNEKXSW-p1fNsidhXsxW8boQ9U-B9PteNm0a0" />'
+  }
   title: 'FirstCare Africa — Medical Guidance When Doctors Aren\'t Available',
   description: 'Emergency first-aid, illness guidance, drug recommendations and AI-powered medical advice for Africa. Free forever. Works offline. No login required.',
   keywords: 'first aid africa, medical emergency africa, no doctor, health guidance nigeria, malaria first aid, emergency help africa, AI doctor africa',
