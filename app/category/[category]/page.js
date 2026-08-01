@@ -76,13 +76,18 @@ function getConditionsForCategory(category) {
     .sort((a, b) => a.title.localeCompare(b.title))
 }
 
-export async function generateMetadata({ params }) {
-  const meta = categoryMeta[params.category]
-  if (!meta) return { title: 'Not Found' }
-  return {
-    title: `${meta.title} — FirstCare Africa`,
-    description: meta.subtitle
-  }
+export const dynamic = 'force-static'
+
+export async function generateStaticParams() {
+  return [
+    { category: 'emergency' },
+    { category: 'acute' },
+    { category: 'common' },
+    { category: 'womens-health' },
+    { category: 'chronic' },
+    { category: 'maternal-child' },
+    { category: 'sexual-health' }
+  ]
 }
 
 export default function CategoryPage({ params }) {
