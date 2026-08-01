@@ -47,14 +47,33 @@ const severityLabel = {
   common: { text: 'Common Condition', color: '#1971C2' }
 }
 
-export async function generateMetadata({ params }) {
-  const condition = getConditionData(params.slug)
-  if (!condition) return { title: 'Not Found' }
-  return {
-    title: `${condition.title} — FirstCare Africa`,
-    description: condition.summary,
-    keywords: condition.title + ' symptoms treatment Africa first aid'
+export const dynamic = 'force-static'
+export async function generateStaticParams() {
+  const fs = require('fs')
+  const path = require('path')
+
+  const categories = [
+    'emergency', 'acute', 'common',
+    'womens-health', 'chronic',
+    'maternal-child', 'sexual-health'
+  ]
+
+  const slugs = []
+
+  for (const category of categories) {
+    const dirPath = path.join(
+      process.cwd(), 'content', category
+    )
+    if (!fs.existsSync(dirPath)) continue
+    const files = fs.readdirSync(dirPath)
+    for (const file of files) {
+      if (file.endsWith('.json')) {
+        slugs.push({ slug: file.replace('.json', '') })
+      }
+    }
   }
+
+  return slugs
 }
 
 export default function ConditionPage({ params }) {
