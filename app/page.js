@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import ShareButton from '../components/ShareButton'
 import SearchBar from '../components/SearchBar'
+import ContactSection from '../components/ContactSection'
 
 function OnboardingModal({ onClose }) {
   return (
@@ -1367,6 +1368,9 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* CONTACT */}
+      <ContactSection />
+
       {/* FOOTER */}
       <footer style={{
         borderTop: '1px solid rgba(255,255,255,0.06)',
@@ -1475,6 +1479,23 @@ export default function LandingPage() {
                     minHeight: 0
                   }}>{label}</Link>
                 ))}
+              </div>
+              <div>
+                <p style={{
+                  color: '#F2EDE4',
+                  fontSize: '0.75rem',
+                  fontWeight: '700',
+                  marginBottom: '10px',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase'
+                }}>Contact</p>
+                <a href="#contact" style={{
+                  display: 'block',
+                  color: '#5C6E7E',
+                  textDecoration: 'none',
+                  fontSize: '0.78rem',
+                  marginBottom: '6px'
+                }}>Get in touch</a>
               </div>
             </div>
           </div>
