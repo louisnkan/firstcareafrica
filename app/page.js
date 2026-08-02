@@ -5,6 +5,7 @@ import Link from 'next/link'
 import ShareButton from '../components/ShareButton'
 import SearchBar from '../components/SearchBar'
 import ContactSection from '../components/ContactSection'
+import FAQSection from '../components/FAQSection'
 
 function OnboardingModal({ onClose }) {
   return (
@@ -105,7 +106,7 @@ function OnboardingModal({ onClose }) {
           I Understand — Enter FirstCare Africa
         </button>
         <p style={{
-          color: '#3D5166',
+          color: '#7A8B9C',
           fontSize: '0.72rem',
           textAlign: 'center',
           margin: 0,
@@ -228,60 +229,71 @@ function SectionLabel({ children, color = '#E8A020' }) {
   )
 }
 
+// `count` values here are fallbacks only — used if the live
+// /api/condition-counts fetch fails or hasn't resolved yet.
+// `folder` must match the folder name under /content.
 const categories = [
   {
     icon: '🚨',
     label: 'Emergency',
-    count: '16 conditions',
+    folder: 'emergency',
+    count: 16,
     color: '#E03131',
     href: '/category/emergency'
   },
   {
     icon: '🤒',
     label: 'Acute Illness',
-    count: '12 conditions',
+    folder: 'acute',
+    count: 12,
     color: '#D4500A',
     href: '/category/acute'
   },
   {
     icon: '💊',
     label: 'Common Conditions',
-    count: '13 conditions',
+    folder: 'common',
+    count: 13,
     color: '#1971C2',
     href: '/category/common'
   },
   {
     icon: '🌸',
     label: "Women's Health",
-    count: '8 conditions',
+    folder: 'womens-health',
+    count: 8,
     color: '#6741D9',
     href: '/category/womens-health'
   },
   {
     icon: '🫀',
     label: 'Chronic',
-    count: '8 conditions',
+    folder: 'chronic',
+    count: 8,
     color: '#0C8599',
     href: '/category/chronic'
   },
   {
     icon: '👶',
     label: 'Maternal & Child',
-    count: '10 conditions',
+    folder: 'maternal-child',
+    count: 10,
     color: '#2F9E44',
     href: '/category/maternal-child'
   },
   {
     icon: '🔬',
     label: 'Sexual Health',
-    count: '6 conditions',
+    folder: 'sexual-health',
+    count: 6,
     color: '#0C8599',
     href: '/category/sexual-health'
   },
   {
     icon: '🤖',
     label: 'AI Doctor',
-    count: 'Anything else',
+    folder: null,
+    count: null,
     color: '#6741D9',
     href: '/triage'
   }
@@ -289,6 +301,7 @@ const categories = [
 
 export default function LandingPage() {
   const [showModal, setShowModal] = useState(false)
+  const [liveCounts, setLiveCounts] = useState(null)
 
   useEffect(() => {
     try {
@@ -300,6 +313,30 @@ export default function LandingPage() {
       // localStorage not available
     }
   }, [])
+
+  useEffect(() => {
+    fetch('/api/condition-counts')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data) setLiveCounts(data)
+      })
+      .catch(() => {
+        // network hiccup — fallback counts on `categories` stay in place
+      })
+  }, [])
+
+  const resolvedCategories = categories.map((cat) => ({
+    ...cat,
+    count:
+      cat.folder && liveCounts && typeof liveCounts[cat.folder] === 'number'
+        ? liveCounts[cat.folder]
+        : cat.count
+  }))
+
+  const totalConditions = resolvedCategories.reduce(
+    (sum, cat) => (cat.folder ? sum + cat.count : sum),
+    0
+  )
 
   function handleModalClose() {
     try {
@@ -533,7 +570,7 @@ export default function LandingPage() {
             gap: '12px',
             flexWrap: 'wrap'
           }}>
-            <StatCard number="75+" label="Conditions Covered" sub="Across 7 categories" />
+            <StatCard number={`${totalConditions}+`} label="Conditions Covered" sub="Across 7 categories" />
             <StatCard number="1 in 5" label="Africans" sub="Has no nearby doctor" />
             <StatCard number="0₦" label="Forever Free" sub="No account needed" />
           </div>
@@ -627,7 +664,7 @@ export default function LandingPage() {
                     margin: '0 0 4px'
                   }}>{item.desc}</p>
                   <p style={{
-                    color: '#3D5166',
+                    color: '#7A8B9C',
                     fontSize: '0.65rem',
                     margin: 0
                   }}>{item.source}</p>
@@ -776,7 +813,7 @@ export default function LandingPage() {
                 letterSpacing: '-0.02em',
                 marginBottom: '20px'
               }}>
-                75+ conditions.
+                {totalConditions}+ conditions.
                 <span style={{
                   color: '#E8A020',
                   fontStyle: 'italic',
@@ -810,7 +847,7 @@ export default function LandingPage() {
               gridTemplateColumns: '1fr 1fr',
               gap: '10px'
             }}>
-              {categories.map((cat) => (
+              {resolvedCategories.map((cat) => (
                 <Link
                   key={cat.href}
                   href={cat.href}
@@ -847,7 +884,7 @@ export default function LandingPage() {
                       fontSize: '0.65rem',
                       margin: 0
                     }}>
-                      {cat.count}
+                      {cat.folder ? `${cat.count} conditions` : 'Anything else'}
                     </p>
                   </div>
                 </Link>
@@ -1362,11 +1399,14 @@ export default function LandingPage() {
             </a>
             <ShareButton />
           </div>
-          <p style={{ color: '#3D5166', fontSize: '0.72rem', lineHeight: '1.6' }}>
+          <p style={{ color: '#7A8B9C', fontSize: '0.72rem', lineHeight: '1.6' }}>
             Free forever · Works offline · No account required · Built for Africa
           </p>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQSection />
 
       {/* CONTACT */}
       <ContactSection />
@@ -1418,7 +1458,7 @@ export default function LandingPage() {
                 }}>FirstCare Africa</span>
               </div>
               <p style={{
-                color: '#3D5166',
+                color: '#7A8B9C',
                 fontSize: '0.75rem',
                 lineHeight: '1.6',
                 maxWidth: '260px',
@@ -1508,11 +1548,11 @@ export default function LandingPage() {
             flexWrap: 'wrap',
             gap: '12px'
           }}>
-            <p style={{ color: '#3D5166', fontSize: '0.7rem', margin: 0 }}>
+            <p style={{ color: '#7A8B9C', fontSize: '0.7rem', margin: 0 }}>
               © 2025 FirstCare Africa · Built by Louis IV Studio
             </p>
             <p style={{
-              color: '#3D5166',
+              color: '#7A8B9C',
               fontSize: '0.7rem',
               margin: 0,
               textAlign: 'right',
