@@ -16,12 +16,21 @@ export const metadata = {
     description: 'Emergency first-aid, illness guidance, and AI-powered medical advice for Africa. Free. Offline. No login.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'FirstCare Africa'
+    siteName: 'FirstCare Africa',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'FirstCare Africa — Medical guidance when doctors aren\'t available'
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'FirstCare Africa',
-    description: 'Medical guidance when doctors aren\'t available.'
+    description: 'Medical guidance when doctors aren\'t available.',
+    images: ['/og-image.png']
   }
 }
 
