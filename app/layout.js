@@ -2,15 +2,15 @@ import './globals.css'
 import FABChat from '../components/FABChat'
 
 export const metadata = {
-  verification: {
-    google: '<meta name="google-site-verification" content="IaOeWbJNEKXSW-p1fNsidhXsxW8boQ9U-B9PteNm0a0" />'
-  }
   title: 'FirstCare Africa — Medical Guidance When Doctors Aren\'t Available',
   description: 'Emergency first-aid, illness guidance, drug recommendations and AI-powered medical advice for Africa. Free forever. Works offline. No login required.',
   keywords: 'first aid africa, medical emergency africa, no doctor, health guidance nigeria, malaria first aid, emergency help africa, AI doctor africa',
   manifest: '/manifest.json',
   authors: [{ name: 'FirstCare Africa' }],
   robots: 'index, follow',
+  verification: {
+    google: 'IaOeWbJNEKXSW-p1fNsidhXsxW8boQ9U-B9PteNm0a0'
+  },
   openGraph: {
     title: 'FirstCare Africa — Medical Guidance When Doctors Aren\'t Available',
     description: 'Emergency first-aid, illness guidance, and AI-powered medical advice for Africa. Free. Offline. No login.',
@@ -38,15 +38,15 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-  <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
           rel="preload"
           href="https://fonts.gstatic.com/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYh0.woff2"
           as="font"
           type="font/woff2"
-          crossOrigin="anonymous"
-        />
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
         <link
@@ -89,4 +89,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   )
-            }
+}
