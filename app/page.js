@@ -1207,7 +1207,7 @@ export default function LandingPage() {
               marginTop: '16px',
               marginBottom: 0
             }}>
-              — Louis Nkan Enobong, Founder
+              — Founder, Louis IV Studio
             </p>
           </div>
           <p style={{
@@ -1488,7 +1488,7 @@ export default function LandingPage() {
             gap: '12px'
           }}>
             <p style={{ color: '#3D5166', fontSize: '0.7rem', margin: 0 }}>
-              © 2025 FirstCare Africa · Free forever · Built for Africa
+              © 2025 FirstCare Africa · Built by Louis IV Studio
             </p>
             <p style={{
               color: '#3D5166',
@@ -1517,4 +1517,4 @@ export default function LandingPage() {
 
     </div>
   )
-  }
+}
