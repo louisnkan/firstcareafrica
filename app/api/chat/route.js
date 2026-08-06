@@ -1,25 +1,9 @@
 import Anthropic from '@anthropic-ai/sdk'
+import { checkRateLimit, chatRateLimit } from '../../../lib/rate-limit'
 
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY
 })
-
-const rateLimitStore = new Map()
-
-function checkRateLimit(ip) {
-  const now = Date.now()
-  const windowMs = 60 * 1000
-  const maxRequests = 10
-  const record = rateLimitStore.get(ip) ||
-    { count: 0, resetAt: now + windowMs }
-  if (now > record.resetAt) {
-    record.count = 0
-    record.resetAt = now + windowMs
-  }
-  record.count++
-  rateLimitStore.set(ip, record)
-  return record.count <= maxRequests
-}
 
 function sanitizeInput(text) {
   if (typeof text !== 'string') return ''
@@ -102,14 +86,18 @@ export async function POST(request) {
       )
     }
 
-    if (!checkRateLimit(ip)) {
-      log('warn', 'rate_limited', { ip })
+    const rl = await checkRateLimit(request, chatRateLimit)
+    if (!rl.success) {
+      log('warn', 'rate_limited', { ip, remaining: rl.remaining })
       return Response.json(
         {
           error: 'rate_limited',
           message: 'You have sent too many requests. Please wait a minute before trying again.'
         },
-        { status: 429 }
+        {
+          status: 429,
+          headers: { 'Retry-After': '60' }
+        }
       )
     }
 
