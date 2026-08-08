@@ -2,6 +2,10 @@ import './globals.css'
 import FABChat from '../components/FABChat'
 
 export const metadata = {
+  metadataBase: new URL('https://firstcareafrica.health'),
+  alternates: {
+    canonical: '/'
+  },
   title: 'FirstCare Africa — Medical Guidance When Doctors Aren\'t Available',
   description: 'Emergency first-aid, illness guidance, drug recommendations and AI-powered medical advice for Africa. Free forever. Works offline. No login required.',
   keywords: 'first aid africa, medical emergency africa, no doctor, health guidance nigeria, malaria first aid, emergency help africa, AI doctor africa',
