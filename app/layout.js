@@ -1,5 +1,6 @@
 import './globals.css'
 import FABChat from '../components/FABChat'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   metadataBase: new URL('https://firstcareafrica.health'),
@@ -99,6 +100,7 @@ export default function RootLayout({ children }) {
           {children}
           <FABChat />
         </div>
+        <Analytics />
       </body>
     </html>
   )
