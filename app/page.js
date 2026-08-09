@@ -490,6 +490,16 @@ export default function LandingPage() {
             </span>
           </div>
 
+          <p style={{
+            color: '#E8A020',
+            fontSize: 'clamp(0.85rem, 2vw, 1rem)',
+            fontWeight: '700',
+            letterSpacing: '0.02em',
+            marginBottom: '10px'
+          }}>
+            Free Emergency Health Help — No Doctor Needed
+          </p>
+
           <h1 style={{
             fontFamily: "'Playfair Display', Georgia, serif",
             fontSize: 'clamp(2.4rem, 8vw, 5rem)',
@@ -511,6 +521,18 @@ export default function LandingPage() {
               we are already there.
             </span>
           </h1>
+
+          <p style={{
+            color: '#F2EDE4',
+            fontSize: 'clamp(0.95rem, 2.3vw, 1.05rem)',
+            fontWeight: '600',
+            lineHeight: '1.6',
+            maxWidth: '540px',
+            marginBottom: '16px'
+          }}>
+            A free website that tells you exactly what to do when someone
+            is sick or hurt and no doctor is nearby — even without internet.
+          </p>
 
           <p style={{
             color: '#9BA8B5',
