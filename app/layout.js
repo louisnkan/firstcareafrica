@@ -100,11 +100,11 @@ export default function RootLayout({ children }) {
           }}
         />
         <ModeProvider>
-          <ModeToggle />
           <div style={{ minHeight: '100vh', backgroundColor: '#0A1628' }}>
             {children}
             <FABChat />
           </div>
+          <ModeToggle />
           <ClinicalModeAcknowledgment />
         </ModeProvider>
         <Analytics />
