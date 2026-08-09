@@ -1,6 +1,9 @@
 import './globals.css'
 import FABChat from '../components/FABChat'
 import { Analytics } from '@vercel/analytics/next'
+import { ModeProvider } from '../contexts/ModeContext'
+import ModeToggle from '../components/ModeToggle'
+import ClinicalModeAcknowledgment from '../components/ClinicalModeAcknowledgment'
 
 export const metadata = {
   metadataBase: new URL('https://firstcareafrica.health'),
@@ -96,10 +99,14 @@ export default function RootLayout({ children }) {
             `
           }}
         />
-        <div style={{ minHeight: '100vh', backgroundColor: '#0A1628' }}>
-          {children}
-          <FABChat />
-        </div>
+        <ModeProvider>
+          <ModeToggle />
+          <div style={{ minHeight: '100vh', backgroundColor: '#0A1628' }}>
+            {children}
+            <FABChat />
+          </div>
+          <ClinicalModeAcknowledgment />
+        </ModeProvider>
         <Analytics />
       </body>
     </html>
