@@ -87,7 +87,6 @@ export default function FABChat() {
 
       const data = await res.json()
 
-      // Clean the message as a safety net
       const cleanedMessage = cleanMessage(data.message || '')
 
       setMessages(prev => [...prev, {
@@ -144,29 +143,38 @@ export default function FABChat() {
 
   return (
     <>
-      {/* FAB Button */}
+      {/* FAB Button — now labeled, not a bare icon */}
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          aria-label="Open Dr. FirstCare AI Chat"
+          aria-label="Ask Dr. FirstCare — AI medical guidance chat"
           style={{
             position: 'fixed',
             bottom: '24px',
             right: '20px',
-            width: '60px',
-            height: '60px',
-            borderRadius: '50%',
+            height: '52px',
+            padding: '0 18px 0 14px',
+            borderRadius: '26px',
             background: 'linear-gradient(135deg, #6741D9, #5433B0)',
             border: '2px solid rgba(103,65,217,0.4)',
             boxShadow: '0 4px 20px rgba(103,65,217,0.5)',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
+            gap: '8px',
             zIndex: 1000,
             animation: 'fabPulse 3s ease-in-out infinite'
           }}>
-          <span style={{ fontSize: '1.5rem' }}>🩺</span>
+          <span style={{ fontSize: '1.35rem' }}>🩺</span>
+          <span style={{
+            color: 'white',
+            fontFamily: "'DM Sans', sans-serif",
+            fontSize: '0.85rem',
+            fontWeight: '700',
+            whiteSpace: 'nowrap'
+          }}>
+            Ask Dr. FirstCare
+          </span>
         </button>
       )}
 
@@ -180,7 +188,6 @@ export default function FABChat() {
           flexDirection: 'column',
           justifyContent: 'flex-end'
         }}>
-          {/* Backdrop */}
           <div
             onClick={() => setOpen(false)}
             style={{
@@ -191,7 +198,6 @@ export default function FABChat() {
             }}
           />
 
-          {/* Panel */}
           <div style={{
             position: 'relative',
             background: '#0F1923',
@@ -204,7 +210,6 @@ export default function FABChat() {
             animation: 'slideUp 0.3s ease'
           }}>
 
-            {/* Handle */}
             <div style={{
               display: 'flex',
               justifyContent: 'center',
@@ -218,7 +223,6 @@ export default function FABChat() {
               }} />
             </div>
 
-            {/* Header */}
             <div style={{
               display: 'flex',
               alignItems: 'center',
@@ -264,7 +268,7 @@ export default function FABChat() {
                       borderRadius: '50%',
                       display: 'inline-block'
                     }} />
-                    AI Medical Guidance
+                    Ask me anything about a health concern
                   </p>
                 </div>
               </div>
@@ -304,7 +308,6 @@ export default function FABChat() {
               </div>
             </div>
 
-            {/* Emergency banner */}
             {isEmergency && (
               <div style={{
                 background: 'rgba(224,49,49,0.12)',
@@ -326,7 +329,6 @@ export default function FABChat() {
               </div>
             )}
 
-            {/* Messages */}
             <div style={{
               flex: 1,
               overflowY: 'auto',
@@ -343,7 +345,6 @@ export default function FABChat() {
                   gap: '8px'
                 }}>
 
-                  {/* Message bubble */}
                   <div style={{
                     maxWidth: '88%',
                     background: msg.role === 'user'
@@ -372,7 +373,6 @@ export default function FABChat() {
                     </p>
                   </div>
 
-                  {/* Condition link */}
                   {msg.conditionLink && (
                     <button
                       onClick={() => handleGoToCondition(msg.conditionLink)}
@@ -401,7 +401,6 @@ export default function FABChat() {
                     </button>
                   )}
 
-                  {/* Options */}
                   {msg.options && msg.options.length > 0 && (
                     <div style={{
                       display: 'flex',
@@ -440,7 +439,6 @@ export default function FABChat() {
                         </button>
                       ))}
 
-                      {/* Type instead option */}
                       {i === messages.length - 1 && !showInput && (
                         <button
                           onClick={() => setShowInput(true)}
@@ -467,7 +465,6 @@ export default function FABChat() {
                 </div>
               ))}
 
-              {/* Loading */}
               {loading && (
                 <div style={{
                   display: 'flex',
@@ -497,7 +494,6 @@ export default function FABChat() {
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Input area */}
             {(showInput ||
               messages[messages.length - 1]?.options?.length === 0
             ) && (
@@ -555,7 +551,6 @@ export default function FABChat() {
               </div>
             )}
 
-            {/* Disclaimer */}
             <div style={{
               padding: '0 16px 20px',
               textAlign: 'center'
@@ -590,4 +585,4 @@ export default function FABChat() {
       `}</style>
     </>
   )
-        }
+}
