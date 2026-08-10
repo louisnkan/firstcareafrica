@@ -1,4 +1,4 @@
-const CACHE_NAME = 'firstcare-v1'
+const CACHE_NAME = 'firstcare-v2'
 
 const STATIC_ASSETS = [
   '/',
@@ -39,14 +39,17 @@ self.addEventListener('fetch', event => {
   // Only cache GET requests
   if (event.request.method !== 'GET') return
 
-  // Don't cache API calls
+  // Don't cache API calls — these must always hit the network
   if (event.request.url.includes('/api/')) return
 
+  // Network-first: always try to get the freshest version.
+  // Only fall back to cache if the network genuinely fails
+  // (offline, or no connection) — this is what actually makes
+  // "works offline" true without also making "shows the latest
+  // deploy" false.
   event.respondWith(
-    caches.match(event.request).then(cached => {
-      if (cached) return cached
-
-      return fetch(event.request).then(response => {
+    fetch(event.request)
+      .then(response => {
         if (!response || response.status !== 200) {
           return response
         }
@@ -55,10 +58,12 @@ self.addEventListener('fetch', event => {
           cache.put(event.request, responseClone)
         })
         return response
-      }).catch(() => {
-        // Offline fallback
-        return caches.match('/')
       })
-    })
+      .catch(() => {
+        return caches.match(event.request).then(cached => {
+          if (cached) return cached
+          return caches.match('/')
+        })
+      })
   )
 })
