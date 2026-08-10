@@ -34,6 +34,28 @@ export default function ClinicalModeAcknowledgment() {
           margin: '0 auto 28px'
         }} />
         <div style={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          marginBottom: '4px'
+        }}>
+          <button
+            onClick={() => setMode('patient')}
+            aria-label="Close"
+            style={{
+              background: 'rgba(255,255,255,0.06)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              borderRadius: '10px',
+              width: '32px',
+              height: '32px',
+              color: '#9BA8B5',
+              fontSize: '1.1rem',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>×</button>
+        </div>
+        <div style={{
           width: '56px',
           height: '56px',
           background: 'linear-gradient(135deg, #0C8599, #1971C2)',
