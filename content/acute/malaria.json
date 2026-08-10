@@ -53,5 +53,49 @@
       "Artemether-Lumefantrine — confirm availability and correct formulation"
     ]
   },
+  "differentials": [
+    "Typhoid fever — often coexists with malaria in the same patient; consider if fever persists despite a negative RDT or completed antimalarial course.",
+    "Viral febrile illness (e.g. dengue, chikungunya) — RDT negative, self-limiting, no response expected to antimalarials.",
+    "Bacterial sepsis — consider especially in a child who looks more unwell than the fever alone would suggest.",
+    "Meningitis — any neck stiffness, bulging fontanelle in infants, or altered consciousness should prompt urgent evaluation beyond malaria.",
+    "Pneumonia — check respiratory rate and for chest indrawing, especially in children under 5.",
+    "Urinary tract infection — consider in children with fever and no clear source, particularly if RDT is negative."
+  ],
+  "dosageTable": [
+    {
+      "drug": "Artemether-Lumefantrine (Coartem) — 5 to 14 kg",
+      "dose": "1 tablet, twice daily, for 3 days",
+      "notes": "Give with fatty food or milk. Confirm weight before dosing — never dose by age alone."
+    },
+    {
+      "drug": "Artemether-Lumefantrine (Coartem) — 15 to 24 kg",
+      "dose": "2 tablets, twice daily, for 3 days",
+      "notes": "6 doses total. If a dose is vomited within 30 minutes, repeat that dose."
+    },
+    {
+      "drug": "Artemether-Lumefantrine (Coartem) — 25 to 34 kg",
+      "dose": "3 tablets, twice daily, for 3 days",
+      "notes": "Standard weight band for most school-age children."
+    },
+    {
+      "drug": "Artemether-Lumefantrine (Coartem) — 35 kg and above / adult",
+      "dose": "4 tablets, twice daily, for 3 days",
+      "notes": "Standard adult dosing. Full 6-dose course required even if symptoms resolve early."
+    },
+    {
+      "drug": "Paracetamol (fever/pain, all ages)",
+      "dose": "10 to 15 mg/kg per dose, every 6 hours as needed",
+      "notes": "Do not exceed 4 doses in 24 hours. Confirm weight-based dose for children rather than using adult tablets."
+    }
+  ],
+  "referralCriteria": [
+    "Any red-flag sign present — refer immediately, do not attempt outpatient management.",
+    "Child under 5kg — below safe weight threshold for standard Coartem dosing.",
+    "No clinical improvement after 24 to 48 hours of correctly taken first-line treatment.",
+    "Confirmed or suspected malaria in pregnancy — refer regardless of symptom severity.",
+    "Repeated vomiting preventing oral medication from being retained.",
+    "Suspicion of severe malaria (any red flag) — requires injectable artesunate, only available at a health facility."
+  ],
+  "clinicalNotes": "WHO guidance places IV or IM artesunate as first-line for severe malaria, superseding quinine in most treatment protocols. RDTs have high sensitivity but are not infallible — a negative result in a patient with strong clinical suspicion and ongoing risk exposure warrants continued clinical judgement rather than automatic exclusion of malaria. In high-transmission, low-RDT-access settings, presumptive treatment may still be appropriate per local protocol.",
   "whenToGetHelp": "Go to hospital immediately if the person has any danger signs listed above, if they cannot keep medication down, if there is no improvement after 24 hours of treatment, or if malaria is confirmed in a child under 5 or a pregnant woman. Severe malaria requires injectable treatment that is only available at a health facility."
 }
